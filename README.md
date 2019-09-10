@@ -1,2 +1,0 @@
-# Kaufmann
-Stage
