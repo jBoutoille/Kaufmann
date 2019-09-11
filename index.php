@@ -11,16 +11,16 @@
             getIndex();
         }
         // si j'ai le get contact j'affiche la page contact
-        elseif(isset($_GET['contact'])){
+        elseif(isset($_GET['page']) && $_GET['page'] == 'contact'){
             getContact();
         }
         // si j'ai le get actualite j'affiche la page actualite
-        elseif(isset($_GET['actualite'])){
+        elseif(isset($_GET['page']) && $_GET['page'] == 'actualite'){
             getActualite();
         }
         else{
             // erreur 404
-            getError(404);
+            getIndex();
         }
     }
     catch(Exception $e) 

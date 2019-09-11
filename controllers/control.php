@@ -13,6 +13,6 @@
     }
 
     function getError($err){
-        $error = $err;
+        echo $err;
     }
 ?>

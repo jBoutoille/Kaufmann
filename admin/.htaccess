@@ -1,4 +1,4 @@
 AuthName "Page d'administration protégée"
 AuthType Basic
-AuthUserFile "/wamp/www/projets/Kaufmann/admin/.htpasswd"
+AuthUserFile "/wamp/www/projets/Kaufmann/admin/.htmdp"
 Require valid-user
