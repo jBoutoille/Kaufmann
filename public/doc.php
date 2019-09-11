@@ -26,5 +26,21 @@
     index.php?page=admin&p1=login
     index.php?page=admin&p1=new-password&p2=8zaf9876feaf876fz876
 
+    CODE COULEUR : 
+
+        bleu :                      background-color: rgba(11,36,91,0.8);
+        titres et icones :          background-color: rgba(11,36,91,1);
+        filtre :                    background-color: rgba(5,18,87,0.35);
+        blanc :                     background-color: rgba(255,255,255,1);
+        gris :                      background-color: rgba(64,64,64,1);
+
+
+    FONTS :
+    
+        ROBOTO - texte
+        THRYOMANES - titres
+
+
 */
 ?>
+

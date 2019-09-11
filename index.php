@@ -1,30 +1,31 @@
 <?php 
-    // démarrage de la session
-    session_start();
-    // titre du site
-    $htmlTitle = "Cabinet G.Kaufmann - Expert comptable";
+
+    session_start();   
+
+    require 'controllers/control.php';
+
+    try
+    {
+        // si j'ai pas de get j'affiche l'index
+        if(empty($_GET)){
+            getIndex();
+        }
+        // si j'ai le get contact j'affiche la page contact
+        elseif(isset($_GET['contact'])){
+            getContact();
+        }
+        // si j'ai le get actualite j'affiche la page actualite
+        elseif(isset($_GET['actualite'])){
+            getActualite();
+        }
+        else{
+            // erreur 404
+            getError(404);
+        }
+    }
+    catch(Exception $e) 
+    {
+        echo 'Erreur : ' . $e->getMessage();
+    }
+
 ?>
-
-<!DOCTYPE html>
-<html lang="fr">
-
-    <?php 
-        // on inclut le head
-        require './inc/head.php';
-
-
-        //CONTENT
-
-            //content here
-
-        //\CONTENT\
-
-
-        // on inclut le footer
-        require './inc/footer.php';
-
-        //on inclut les scripts JS
-        require './inc/scripts.php';
-    ?>
-
-</html>
