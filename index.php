@@ -10,11 +10,11 @@
         if(empty($_GET)){
             getIndex();
         }
-        // si j'ai le get contact j'affiche la page contact
+        // si j'ai le get page ET qu'il vaut 'contact' j'affiche la page contact
         elseif(isset($_GET['page']) && $_GET['page'] == 'contact'){
             getContact();
         }
-        // si j'ai le get actualite j'affiche la page actualite
+        // si j'ai le get page ET qu'il vaut 'actualite' j'affiche la page actualite
         elseif(isset($_GET['page']) && $_GET['page'] == 'actualite'){
             getActualite();
         }
