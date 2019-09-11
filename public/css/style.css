@@ -1,0 +1,26 @@
+/*--------------- basic styling --------------- */
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    font-family:'Arial',sans-serif;
+    
+}     
+
+
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url("../public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Thryn";
+    src: url("../public/Thryn.ttf") format("truetype");
+}
+
+#sarl{
+	text-align: center;
+	font-family: "Thryn";
+	font-size: 
+}
