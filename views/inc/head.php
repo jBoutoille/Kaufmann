@@ -17,7 +17,7 @@
     <title><?= $htmlTitle ?></title>
 
     <!-- CSS LIBRARIES -->
-    <link href="./css/libs/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/libs/bootstrap.css" rel="stylesheet" type="text/css">
 
     <!-- CSS CUSTOM -->
     
