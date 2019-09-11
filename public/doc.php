@@ -45,6 +45,7 @@
         * {
             --mavariable : #123321 ;
             --ma-variable-2 : #321123 ;
+            --ma
         }
 
         Utilisation des variables :

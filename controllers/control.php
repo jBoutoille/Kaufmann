@@ -1,5 +1,7 @@
 <?php 
 
+    require './models/frontManager.php';
+
     function getIndex(){
         require './views/indexView.php';
     }
