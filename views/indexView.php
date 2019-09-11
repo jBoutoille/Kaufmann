@@ -6,9 +6,9 @@
 	<div id="imgHeader">
 	 <div id="filter">
       <div id="titleHeader"> 
-    	<p class="sarl"> S.A.R.L </p>
+    	<p class="sarl">  S.A.R.L </p>
     	<p id="kaufmann"> G.KAUFMANN </p>
-    	<h1 class="textOne"> Expertise comptable - Audit <br> Conseil & Accompagement </h1>
+    	<h1 id="textOne"> Expertise comptable, Audit <br> Conseil & Accompagement </h1>
     	<div id="animGif"></div>
       </div>
      </div>

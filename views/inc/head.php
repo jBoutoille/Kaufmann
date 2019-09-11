@@ -24,7 +24,8 @@
 
     <!-- CSS CUSTOM -->
     <link href="./public/css/style.css" rel="stylesheet" type="text/css">
-
+    <link href="./public/css/libs/header.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/libs/footer.css" rel="stylesheet" type="text/css">
     
    
 </head>
