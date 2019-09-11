@@ -16,6 +16,9 @@
     <!-- TITLE -->
     <title><?= $htmlTitle ?></title>
 
+    <!-- FAVICON -->
+    <link rel="icon" href="./favicon.ico">
+
     <!-- CSS LIBRARIES -->
     <link href="./public/css/libs/bootstrap.css" rel="stylesheet" type="text/css">
 

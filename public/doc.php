@@ -34,13 +34,24 @@
         blanc :                     background-color: rgba(255,255,255,1);
         gris :                      background-color: rgba(64,64,64,1);
 
-
     FONTS :
     
         ROBOTO - texte
         THRYOMANES - titres
 
+    UTILISATION DES VARIABLES CSS
 
+        Déclaration tout en haut du premier CSS du head : 
+        * {
+            --mavariable : #123321 ;
+            --ma-variable-2 : #321123 ;
+        }
+
+        Utilisation des variables :
+        #maclass {
+            background-color : var(--mavariable) ;
+            color : var(--ma-variable-2) ;
+        }
 */
 ?>
 
