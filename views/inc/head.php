@@ -23,6 +23,8 @@
     <link href="./public/css/libs/bootstrap.css" rel="stylesheet" type="text/css">
 
     <!-- CSS CUSTOM -->
+    <link href="./public/css/style.css" rel="stylesheet" type="text/css">
+
     
    
 </head>
