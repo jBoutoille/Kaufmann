@@ -100,14 +100,14 @@
     text-align: center;
 	color : var(--colorWhite);
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: 3px;
     }
 
     #textOne{
-	margin-top: 15vh;
+	margin-top: 17vh;
 	font-size: 2.5vh;
 	font-family: "Thryn";
 	transform: translate(0%, -50%);
@@ -116,7 +116,7 @@
     .sarl{
 	font-family: "Thryn";
 	font-size: 3vh;
-	transform: translate(0%, 100%); 
+	transform: translate(-10%, 100%); 
     }
 
     .sarl:before{	
@@ -127,8 +127,9 @@
 	width: 50px;
     }
 
-    .sarl:after{	
-	margin-right: 10%;
+    .sarl:after{
+    margin-top: 7%;	
+	margin-right: -25%;
 	float: right;
 	background: white;
 	height: 2px;
@@ -136,7 +137,6 @@
     }
 
     #animGif{
-	background-image: url(../img/scrollDown.gif);
 	background-size: cover; 
 	background-repeat: no-repeat;
 	position: absolute;

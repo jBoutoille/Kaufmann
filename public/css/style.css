@@ -4,7 +4,6 @@
     padding: 0%;
     list-style:none;
     text-decoration:none;
-    font-family:'Arial',sans-serif;
     --colorBlue : rgba(11,36,91,0.8);
     --colorWhite : rgba(255,255,255,1);
     --colorGrey : rgba(64,64,64,1);
@@ -19,10 +18,18 @@
 
 @font-face {
     font-family: "Thryn";
-    src: url("../public/Thryn.ttf") format("truetype");
+    src: url("../../public/fonts/Thryn.ttf") format("truetype");
 }
 
+.titleNav{
+    padding: 5% 0%;
+    font-family: "Thryn";
+    color: var(--colorBlue);
+    text-align: center;
+}
 
+.texteSection{
+    padding: 5% 10%;
 
 
 
