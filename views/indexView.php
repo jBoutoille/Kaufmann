@@ -16,18 +16,38 @@
 </header>
     <!-- CABINET SECTION -->
 	<div class="titleNav">
-		<h2>| Le cabinet</h2>
-		<p class="texteSection">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens 
-		est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
-		L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'
-		</p>
+		<h2 id="titleOne">| Le cabinet</h2>
+			<p id="texteSectionOne">
+				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens 
+				est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
+				L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'
+				<br>
+				<br>
+				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens 
+				est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
+				L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'
+			</p>
 	</div>
+	<div id="bluBoxOne">
+		<h2 id="titleTwo">Notre expertise en quelques chiffres :</h2>
+		<div id="barOne"></div>
+		<p id="texteSectionTwo">
+			Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.
+			<br>
+			<br>
+			Confiez-nous vos retards comptabilité, la gestion de vos projets, ou toute autre besoin.
+		</p>
+		
+		<p class="sizeNumber">350 40</p>
+		<div class="experienceOne">
+			<h2>Clients</h2>
+		</div>
+		<div class="experienceTwo">
+			<h2>Années/expertise</h2>
+		</div>
+	</div>
+
 	
-
-
-
-
-
 
 	<!-- SERVICES SECTION -->
 	<div class="titleNav">

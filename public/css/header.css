@@ -20,8 +20,8 @@
 
 /*--------------- line one & two --------------- */
 
-.sarl:before{
-	
+.sarl::before{
+	content: "";
 	margin-top: 2vh;
 	margin-left: 20%;
 	content: ' ';
@@ -31,7 +31,8 @@
 	width: 100px;
 }
 
-.sarl:after{
+.sarl::after{
+	content: "";
 	margin-top: 2vh;
 	margin-right: 20%;
 	content: ' ';
@@ -119,7 +120,7 @@
 	transform: translate(-10%, 100%); 
     }
 
-    .sarl:before{	
+    .sarl::before{	
 	margin-left: 10%;
 	float: left;
 	background: white;
@@ -127,7 +128,7 @@
 	width: 50px;
     }
 
-    .sarl:after{
+    .sarl::after{
     margin-top: 7%;	
 	margin-right: -25%;
 	float: right;
