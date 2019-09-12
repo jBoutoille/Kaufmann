@@ -60,6 +60,15 @@ body {
     MENU STYLES    
     =============================================*/
 
+.adminHeaderRetour {
+    background: var(--mainColor);
+    color: white!important;
+    display: flex;
+    align-items: center;
+}
+.adminHeaderRetour i{
+    padding-right: 1vh;
+}
 
 .navbar-cls-top .navbar-brand {
     color: #fff;
@@ -158,8 +167,7 @@ body {
         padding-left: 25px;
     }
 
-    .sidebar-collapse .nav > li > a:hover,
-    .sidebar-collapse .nav > li > a:focus {
+    .sidebar-collapse .nav > li > a:hover {
         background: #0A0A0A;
         outline: 0;
     }
@@ -192,15 +200,16 @@ body {
 }
 
 .navbar-header {
-    background: #000000;
+    background: var(--adminGrey);
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #00CA79;
+    background-color: var(--mainColor);
 }
 
 .navbar-default .navbar-toggle {
     border-color: #fff;
+    margin-top: 15px;
 }
 
     .navbar-default .navbar-toggle .icon-bar {
@@ -248,4 +257,13 @@ body {
     .navbar {
         border-radius: 0px;
     }
+}
+@media (max-width:768px) {
+
+    .header-right{
+        width: 80%;
+        margin: 0px 10%;
+        padding: 10px 0;
+    }
+
 }

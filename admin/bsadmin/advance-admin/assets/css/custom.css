@@ -14,14 +14,30 @@
         text-decoration:none;
 
     }
-.mb-dull {
+.mb-1 {
     background-color:#8F8F2C;
 }
-.mb-red {
+.mb-2 {
     background-color:#d36f2e;
 }
-.mb-pink {
+.mb-3 {
     background-color:#FF2F71;
+}
+.mb-4 {
+    background-color:#315A70;
+}
+.mb-5 {
+    background-color:#64A2DB;
+}
+.mb-6 {
+    background-color: #202020;
+}
+.modulesLinks{
+    color:white;
+}
+.modulesLinks:hover{
+    color:white;
+    text-decoration: none;
 }
     .main-box h5 {
         font-size:16px;

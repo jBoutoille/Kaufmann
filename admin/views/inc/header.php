@@ -9,8 +9,6 @@
         <a class="navbar-brand" href="./">G.KAUFMANN ADMIN</a>
     </div>
     <div class="header-right">
-        <a href="#" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
-        <a href="#" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
-        <a href="#" class="btn btn-danger" title="Logout"><i class="fa fa-sign-out fa-2x"></i></a>
+        <a href="../" class="btn adminHeaderRetour" title="Retourner sur le site"><i class="fa fa-sign-out fa-2x"></i> Retourner sur le site</a>
     </div>
 </nav>

@@ -1,6 +1,6 @@
 <?php 
 
-    require './models/frontManager.php';
+    require './models/visitorManager.php';
 
     function getIndex(){
         require './views/indexView.php';
@@ -17,4 +17,5 @@
     function getError($err){
         echo $err;
     }
+
 ?>

@@ -7,7 +7,7 @@
     <meta name="author" content="A CHANGER">
     <meta name="description" content="A CHANGER">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index,follow">
+    <meta name="robots" content="noindex,nofollow">
     <meta name="keywords" content="A CHANGER">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="content-language" content="fr">

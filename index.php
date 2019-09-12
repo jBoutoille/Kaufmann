@@ -2,24 +2,33 @@
 
     session_start();   
 
-    require 'controllers/control.php';
+    require 'controllers/visitorController.php';
+    require 'controllers/adminController.php';
 
     try
     {
-        // si j'ai pas de get j'affiche l'index
+        // PAS DE GET -> Affiche la page Accueil
         if(empty($_GET)){
             getIndex();
         }
-        // si j'ai le get page ET qu'il vaut 'contact' j'affiche la page contact
+
+        // GET LOGOUT -> Execute la déconnexion et redirige vers l'index 
+        elseif(isset($_GET['logout'])){
+            getLogout();
+        }
+
+        // GET PAGE = CONTACT -> Affiche la page Contact
         elseif(isset($_GET['page']) && $_GET['page'] == 'contact'){
             getContact();
         }
-        // si j'ai le get page ET qu'il vaut 'actualite' j'affiche la page actualite
+
+        // GET PAGE = ACTUALITE -> Affiche la page Actualité
         elseif(isset($_GET['page']) && $_GET['page'] == 'actualite'){
             getActualite();
         }
+
+        // si URL introuvable, redirection vers l'index
         else{
-            // erreur 404
             getIndex();
         }
     }

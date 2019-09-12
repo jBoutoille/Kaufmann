@@ -3,35 +3,60 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-head-line">Tableau de bord</h1>
-                        <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+                        <h2 class="page-subhead-line">Bienvenue sur la page d'administration du site du cabinet Gilles KAUKMANN.</h2>
 
                     </div>
                 </div>
+
                 <!-- /. ROW  -->
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="main-box mb-red">
-                            <a href="#">
-                                <i class="fa fa-bolt fa-5x"></i>
-                                <h5>Zero Issues</h5>
-                            </a>
-                        </div>
+                        <a href="./?page=config&p1=infos" class="modulesLinks">
+                            <div class="main-box mb-1">
+                                <i class="fa fa-desktop fa-5x"></i>
+                                <h5>Configuration</h5>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="main-box mb-dull">
-                            <a href="#">
-                                <i class="fa fa-plug fa-5x"></i>
-                                <h5>40 Task In Check</h5>
-                            </a>
-                        </div>
+                        <a href="./?page=modif&p1=header" class="modulesLinks">
+                            <div class="main-box mb-2">
+                                <i class="fa fa-code fa-5x"></i>
+                                <h5>Modifications</h5>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="main-box mb-pink">
-                            <a href="#">
-                                <i class="fa fa-dollar fa-5x"></i>
-                                <h5>200K Pending</h5>
-                            </a>
-                        </div>
+                        <a href="./?page=newsletter" class="modulesLinks">
+                            <div class="main-box mb-3">
+                                <i class="fa fa-envelope fa-5x"></i>
+                                <h5>Newsletter</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="./?page=actualite" class="modulesLinks">
+                            <div class="main-box mb-4">
+                                <i class="fa fa-bullhorn fa-5x"></i>
+                                <h5>Actualité</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="./?page=candidatures" class="modulesLinks">
+                            <div class="main-box mb-5">
+                                <i class="fa fa-briefcase fa-5x"></i>
+                                <h5>Candidatures</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="./?logout" class="modulesLinks">
+                            <div class="main-box mb-6">
+                                <i class="fa fa-power-off fa-5x"></i>
+                                <h5>Déconnection</h5>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
