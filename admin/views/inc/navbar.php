@@ -9,54 +9,50 @@
                         <a href=""><i class="fa fa-desktop "></i>Configuration du site<span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level collapse">
                             <li>
-                                <a href="panel-tabs.html"><i class="fa fa-desktop "></i>Informations</a>
+                                <a href="./"><i class="fa fa-desktop "></i>Informations</a>
                             </li>
                             <li>
-                                <a href="notification.html"><i class="fa fa-desktop "></i>Référencement / SEO</a>
+                                <a href="./"><i class="fa fa-desktop "></i>Référencement / SEO</a>
                             </li>
                              <li>
-                                <a href="progress.html"><i class="fa fa-desktop "></i>Maintenance</a>
+                                <a href="./"><i class="fa fa-desktop "></i>Maintenance</a>
                             </li>
                         </ul>
                     </li>
                      <li>
-                        <a href="#"><i class="fa fa-code "></i>Modifications<span class="fa arrow"></span></a>
+                        <a href=""><i class="fa fa-code "></i>Modifications<span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level collapse">
                             <li>
-                                <a href="invoice.html"><i class="fa fa-code "></i>Haut de page</a>
+                                <a href="./"><i class="fa fa-code "></i>Haut de page</a>
                             </li>
                             <li>
-                                <a href="pricing.html"><i class="fa fa-code "></i>Présentation</a>
+                                <a href="./"><i class="fa fa-code "></i>Présentation</a>
                             </li>
                              <li>
-                                <a href="component.html"><i class="fa fa-code "></i>Services</a>
+                                <a href="./"><i class="fa fa-code "></i>Services</a>
                             </li>
                             <li>
-                                <a href="social.html"><i class="fa fa-code "></i>Newsletter</a>
+                                <a href="./"><i class="fa fa-code "></i>Newsletter</a>
                             </li>
                              <li>
-                                <a href="social.html"><i class="fa fa-code "></i>Contact</a>
+                                <a href="./"><i class="fa fa-code "></i>Contact</a>
                             </li>                       
                              <li>
-                                <a href="message-task.html"><i class="fa fa-code "></i>Pied de page</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                     <li>
-                        <a href="#"><i class="fa fa-bicycle "></i>Réception de courrier<span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level collapse"> 
-                             <li>
-                                <a href="form.html"><i class="fa fa-desktop "></i>Demandes de devis</a>
-                            </li>
-                             <li>
-                                <a href="form-advance.html"><i class="fa fa-code "></i>Demandes de renseignements</a>
+                                <a href="./"><i class="fa fa-code "></i>Pied de page</a>
                             </li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="./"><i class="fa fa-envelope"></i>Candidatures reçues</a>
+                        <a href="./"><i class="fa fa-envelope"></i>Gestion de la Newsletter</a>
+                    </li>
+
+                    <li>
+                        <a href=""><i class="fa fa-bullhorn"></i>Gestion de l'actualité</a>
+                    </li>
+
+                    <li>
+                        <a href="./"><i class="fa fa-briefcase"></i>Candidatures reçues</a>
                     </li>
                    
                     <li>
