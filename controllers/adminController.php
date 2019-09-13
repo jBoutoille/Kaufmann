@@ -4,7 +4,7 @@
 
     // DASHBOARD
     function getAdmin(){
-
+        require './views/admin/adminView.php';
     }
 
     // CONFIGURATION DU SITE

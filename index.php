@@ -27,6 +27,11 @@
             getActualite();
         }
 
+        // GET PAGE = ACTUALITE -> Affiche la page Actualité
+        elseif(isset($_GET['page']) && $_GET['page'] == 'admin'){
+            getAdmin();
+        }
+
         // si URL introuvable, redirection vers l'index
         else{
             get404();
