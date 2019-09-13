@@ -93,25 +93,26 @@
 
 	<!-- CONTACT SECTION -->
 	<div id="bluBoxTwo" >
-			<h2 class="titleNav" id="contact">| Contact</h2>
-			<div>
-				<ul id="boxAdresse">
-					<li id="adresse">5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
-					<li id="telMobile">03.21.30.19.19</li>
-					<li id="adMail">contact@kaufman.fr</li>
-					<li id="numFax">03.91.18.65.65</li>
-				</ul>
-
-			</div>
-			<div>
-				<div>
-					
+		<h2 class="titleNav" id="contact">| Contact</h2>
+		<div id="boxContner">
+			<ul id="boxAdresse">
+				<h3 id="coordonnees">Coordonnées :</h3>
+				<li id="adresse">5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
+				<li id="telMobile">03 21 30 19 19</li>
+				<li id="adMail">contact@kaufman.fr</li>
+				<li id="numFax">03 91 18 65 65</li>
+			</ul>
+			<div id="twoBox">
+				<div id="boxContactOne">
+					<p> Optenez un devis de comptable et d'experts-comptables</p>
+					<button class="myBtn">Remplir le devis</button>
 				</div>
-				<div>
-					
+				<div id="boxContactTwo">
+					<p> Rejoindre notre équipe</p>
+					<button class="myBtn">Envoyer un c.v</button>	
 				</div>
 			</div>
-
+		</div>
 	</div>
 	<!-- ACTUALITES SECTION -->
 	<div class="titleNav">
