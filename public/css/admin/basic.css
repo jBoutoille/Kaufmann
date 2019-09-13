@@ -2,9 +2,10 @@
     BASIC  STYLES    
     =============================================*/
 *{
-    --mainColor:#3b4f7c;
-    --navActive: #3b4f7c;
-    --adminGrey: #202020;
+    --mainColor:#3b4f7c; 
+    --navActive: #3f51b5;
+    --navActiveSub: #64A2DB;
+    --adminGrey: #243167;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
     color: #000;
     font-weight: 800;
     padding-bottom: 20px;
-    border-bottom: 2px solid #00CA79;
+    border-bottom: 2px solid var(--mainColor);
     margin-bottom: 10px;
 }
 
@@ -51,7 +52,7 @@ body {
     padding-bottom: 20px;
     font-style:italic;
     margin-bottom:30px;
-    border-bottom:1px dashed #00CA79;
+    border-bottom:1px dashed var(--mainColor);
 
 }
 
@@ -61,7 +62,7 @@ body {
     =============================================*/
 
 .adminHeaderRetour {
-    background: var(--mainColor);
+    background: var(--navActiveSub);
     color: white!important;
     display: flex;
     align-items: center;
@@ -114,10 +115,10 @@ body {
     }
 
 .active-menu {
-    background-color: var(--navActive)!important;
+    background-color: var(--navActiveSub)!important;
 }
 .active-menu-top {
-    background-color: #000!important;
+    background-color: var(--navActive)!important;
 }
 
 .arrow {
@@ -159,7 +160,7 @@ body {
             background: var(--adminGrey);
             text-shadow: none;
             padding: 15px 40px;
-            border-bottom: 1px solid #2F2E31;
+            /* border-bottom: 1px solid white; */
         }
 
     .sidebar-collapse > .nav > li > a {
@@ -167,8 +168,9 @@ body {
         padding-left: 25px;
     }
 
-    .sidebar-collapse .nav > li > a:hover {
-        background: #0A0A0A;
+    .sidebar-collapse .nav > li > a:hover,
+    .sidebar-collapse .nav > li > a:focus{
+        background: var(--navActive);
         outline: 0;
     }
 

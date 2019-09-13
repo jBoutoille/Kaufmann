@@ -8,7 +8,7 @@
             require './views/admin/adminView.php';            
         }
         else{
-            require './views/admin/loginView.php';
+            require './views/admin/adminView.php';
         }
 
     }
