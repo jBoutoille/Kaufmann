@@ -3,15 +3,15 @@
     require './models/visitorManager.php';
 
     function getIndex(){
-        require './views/indexView.php';
+        require './views/visitor/indexView.php';
     }
 
     function getContact(){
-        require './views/contactView.php';
+        require './views/visitor/contactView.php';
     }
 
     function getActualite(){
-        require './views/actualiteView.php';
+        require './views/visitor/actualiteView.php';
     }
 
     function get404(){
