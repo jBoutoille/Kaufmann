@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<?php require './views/inc/sections/dashboard.php' ?>
+<?php require './views/admin/sections/dashboard.php' ?>
 
 <?php
     $htmlTitle = 'Admin | Cabinet G.KAUFMANN';
