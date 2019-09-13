@@ -5,5 +5,5 @@
 <?php
     $htmlTitle = 'Admin | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
-    require './views/template.php';
+    require './views/admin/template.php';
 ?>

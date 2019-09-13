@@ -17,18 +17,18 @@
     <title><?= $htmlTitle ?></title>
 
     <!-- FAVICON -->
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="./favicon.ico">
 
     <!-- BOOTSTRAP STYLES-->
-    <link href="bsadmin/advance-admin/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="./public/css/admin/bootstrap.css" rel="stylesheet">
     <!-- FONTAWESOME STYLES-->
-    <link href="bsadmin/advance-admin/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="./public/css/admin/font-awesome.css" rel="stylesheet">
        <!--CUSTOM BASIC STYLES-->
-    <link href="bsadmin/advance-admin/assets/css/basic.css" rel="stylesheet" />
+    <link href="./public/css/admin/basic.css" rel="stylesheet">
     <!--CUSTOM MAIN STYLES-->
-    <link href="bsadmin/advance-admin/assets/css/custom.css" rel="stylesheet" />
+    <link href="./public/css/admin/custom.css" rel="stylesheet">
     <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
    
 </head>
