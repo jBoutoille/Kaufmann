@@ -16,8 +16,8 @@
 </header>
 
     <!-- CABINET SECTION -->
-	<div class="titleNav">
-		<h2 id="cabinet">| Le cabinet</h2>
+	<div>
+		<h2 class="titleNav">| Le cabinet</h2>
 			<p id="texteSectionOne">
 				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens 
 				est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
@@ -50,13 +50,11 @@
 		</div>
 	</div>
 
-	
-
 	<!-- SERVICES SECTION -->
-	<h2 id="services">| Nos services</h2>	
+	<h2 class="titleNav">| Nos services</h2>	
 	<div id="serviceBox">
 		
-		<h2 id="audit">AUDIT</h2>
+		<h2 class="serviceSection">AUDIT</h2>
 		
 			<p>Nous intervenons au titre de vos besoins en matière de:</p>
 				
@@ -68,7 +66,7 @@
 					<li> Audit d'acquisition</li>
 				</ul>
 		
-		<h2 id="expertise">EXPERTISE COMPTABLE</h2>
+		<h2 class="serviceSection">EXPERTISE COMPTABLE</h2>
 
 			<p>Nous vous proposons un accompagnement sur mesure en comptabilité, 
 			fiscalité, social et juridique.</p>
@@ -83,8 +81,10 @@
 
 
 	<!-- CONTACT SECTION -->
-	<div class="titleNav">
-		<h2>| Contact</h2>
+	<div id="bluBoxTwo">
+		<div class="titleNav">
+			<h2 id="contact">| Contact</h2>
+		</div>
 	</div>
 	<!-- ACTUALITES SECTION -->
 	<div class="titleNav">
