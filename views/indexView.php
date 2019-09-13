@@ -60,12 +60,13 @@
 		
 		<h2 id="audit">AUDIT</h2>
 		<p>Nous intervenons au titre de vos besoins en matière de:</p>
-		<p>
-			<p class="puces"> Commissairiat aux comptes,</p>
-			<p class="puces"> Audit Contractuel,</p>
-			<p class="puces"> Commissariat à la transformation,</p>
-			<p class="puces"> Commissariat à la fusion,</p>
-			<p class="puces"> Audit d'acquisition,</p>
+		<ul>
+			<li class="toto">Commissairiat aux comptes,</li>
+			<li>Audit Contractuel,</li>
+			<li>Commissariat à la transformation,</li>
+			<li>Commissariat à la fusion,</li>
+			<li>Audit d'acquisition,</li>
+		</ul>
 		<h2>EXPERTISE COMPTABLE</h2>
 		<p>
 			Nous vous proposons un accompagnement sur mesure en comptabilité, 

@@ -104,21 +104,21 @@
 
 #audit{
     font-family: "Thryn";
-    color: var(--colorBleu);
+    color: var(--colorBlue);
 }
 
 #serviceBox{
     font-family: "Roboto-Regular";
-    color: var(--colorGrey);
-    text-align: left;
     width: 40%;
     transform: translate(70%, 0%);
 }
 
-.puces::before{
-    font-size: 3.5vh;
-    background-image: url(../img/icons/ios-checkmark-circle-outline.jpg);
-    color: var(--colorBlue);
+li{
+    color: red;
+    width: 10px;
+    height: 10px;
+    display: list-item;
+    list-style-image: url(../img/ios-checkmark-circle-outline.png);
 }
 
 
