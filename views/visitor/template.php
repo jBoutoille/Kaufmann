@@ -2,7 +2,7 @@
 <html lang="fr">
 
     <?php 
-        require './views/inc/head.php';
+        require './views/visitor/inc/head.php';
     ?>
 
     <body>
@@ -12,9 +12,9 @@
             echo $htmlContent;
 
             // on inclut le footer
-            require './views/inc/footer.php';
+            require './views/visitor/inc/footer.php';
             //on inclut les scripts JS
-            require './views/inc/scripts.php';
+            require './views/visitor/inc/scripts.php';
 
         ?>
     
