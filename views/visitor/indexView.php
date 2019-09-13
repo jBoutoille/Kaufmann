@@ -95,6 +95,11 @@
 	<div id="bluBoxTwo">
 		<div class="titleNav">
 			<h2 id="contact">| Contact</h2>
+			<div id="boxContact">
+				<div id="boxAddress"></div>
+				<div id="boxDevis"></div>
+				<div id="boxRejoin"></div>
+			</div>
 		</div>
 	</div>
 	<!-- ACTUALITES SECTION -->

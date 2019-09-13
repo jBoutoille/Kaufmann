@@ -156,7 +156,7 @@ li{
 
 #contact{
     color: var(--colorWhite);
-    margin-top: -7%;
+    margin-top: -10%;
 }
 
 #bluBoxTwo{
@@ -164,6 +164,33 @@ li{
     width: 100%;
     height: 80vh;
     background-color: var(--colorBlue);
+}
+
+#boxContact{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#boxAddress{
+    background-color: var(--colorWhite);
+    width: 35vh;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+#boxDevis{
+    background-color: var(--colorWhite);
+    width: 35vh;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+#boxRejoin{
+    background-color: var(--colorWhite);
+    width: 35vh;
+    height: 50vh;
+    border-radius: 10px;
 }
 
 
