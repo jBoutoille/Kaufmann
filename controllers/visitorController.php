@@ -14,8 +14,8 @@
         require './views/actualiteView.php';
     }
 
-    function getError($err){
-        echo $err;
+    function get404(){
+        require './views/others/404View.php';
     }
 
 ?>

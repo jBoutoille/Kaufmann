@@ -12,9 +12,9 @@
             getIndex();
         }
 
-        // GET LOGOUT -> Execute la déconnexion et redirige vers l'index 
+        // GET LOGOUT -> Execute la déconnexion et Affiche la page Accueil
         elseif(isset($_GET['logout'])){
-            getLogout();
+            adminLogout();
         }
 
         // GET PAGE = CONTACT -> Affiche la page Contact
@@ -29,8 +29,9 @@
 
         // si URL introuvable, redirection vers l'index
         else{
-            getIndex();
+            get404();
         }
+
     }
     catch(Exception $e) 
     {
