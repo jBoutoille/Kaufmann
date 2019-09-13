@@ -61,7 +61,7 @@
 		<h2 id="audit">AUDIT</h2>
 		<p>Nous intervenons au titre de vos besoins en matière de:</p>
 		<ul>
-			<li class="toto">Commissairiat aux comptes,</li>
+			<li>Commissairiat aux comptes,</li>
 			<li>Audit Contractuel,</li>
 			<li>Commissariat à la transformation,</li>
 			<li>Commissariat à la fusion,</li>
