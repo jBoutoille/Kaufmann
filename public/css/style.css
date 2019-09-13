@@ -13,7 +13,7 @@
 
 @font-face {
 	font-family: "Roboto-Regular";
-	src: url("../public/fonts/Roboto-Regular.ttf") format("truetype");
+	src: url("../../public/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -22,7 +22,8 @@
 }
 
 .titleNav{
-    padding: 2% 0%;
+    padding: 5vh 0%;
+    padding-bottom: 0;
     font-family: "Thryn";
     color: var(--colorBlue);
     text-align: center;
@@ -36,7 +37,7 @@
 }
 
 #texteSectionOne{
-    padding: 0% 10%;
+    padding: 10vh 10%;
     text-align: center;
     font-family: "Roboto-Regular";
     color: var(--colorGrey);
@@ -140,7 +141,7 @@
 #serviceBox{
     font-family: "Roboto-Regular";
     width: 50%;
-    transform: translate(60%, -5%);
+    transform: translate(60%, 4vh);
 }
 
 li{
@@ -208,19 +209,20 @@ li{
 }
 
 #boxContactOne{
-    height:150px;
-    width:300px;
-    border-radius: 10px;
+    width:100%;
+    border-radius: 5px;
     background-color: var(--colorWhite);
     padding: 2vh 5vh 5vh;
+    margin-bottom:3vh;
+    font-weight: bold;
 }
 
 #boxContactTwo{
-    height:120px;
-    width:300px;
-    border-radius: 10px;
+    width:100%;
+    border-radius: 5px;
     background-color: var(--colorWhite);
     padding: 2vh 5vh 5vh;
+    font-weight: bold;
 }
 
 #twoBox{
@@ -229,19 +231,18 @@ li{
     flex-direction: column;
     justify-content: space-around;
     width: 30%;
-    font-style: bold;
 }
 
 .myBtn {
-     width: 100px;
-     padding: 2px;
-     border: none;
-     background-color: var(--colorBlue);
-     color: #fff;
-     cursor: pointer;
-     font-size: 1em;
-     letter-spacing: 2px; 
-     border-radius: 5%   
+    width: 75%;
+    padding: 2vh;
+    border: none;
+    background-color: var(--colorBlue);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5%;
+    font-size: 2.5vh;
 }
 
 .myBtn:hover {
