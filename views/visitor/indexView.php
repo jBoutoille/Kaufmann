@@ -92,15 +92,26 @@
 	</div>
 
 	<!-- CONTACT SECTION -->
-	<div id="bluBoxTwo">
-		<div class="titleNav">
-			<h2 id="contact">| Contact</h2>
-			<div id="boxContact">
-				<div id="boxAddress"></div>
-				<div id="boxDevis"></div>
-				<div id="boxRejoin"></div>
+	<div id="bluBoxTwo" >
+			<h2 class="titleNav" id="contact">| Contact</h2>
+			<div>
+				<ul id="boxAdresse">
+					<li id="adresse">5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
+					<li id="telMobile">03.21.30.19.19</li>
+					<li id="adMail">contact@kaufman.fr</li>
+					<li id="numFax">03.91.18.65.65</li>
+				</ul>
+
 			</div>
-		</div>
+			<div>
+				<div>
+					
+				</div>
+				<div>
+					
+				</div>
+			</div>
+
 	</div>
 	<!-- ACTUALITES SECTION -->
 	<div class="titleNav">

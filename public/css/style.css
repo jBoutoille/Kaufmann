@@ -22,7 +22,7 @@
 }
 
 .titleNav{
-    padding: 6% 10%;
+    padding: 2% 0%;
     font-family: "Thryn";
     color: var(--colorBlue);
     text-align: center;
@@ -106,7 +106,7 @@
     font-family: "Thryn";
     color: var(--colorBlue);
     display: list-item;
-    background-image: url(../img/ios-paper.png);
+    background-image: url(../img/icons/ios-paper.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10px 0 0px 50px;
@@ -118,7 +118,7 @@
     font-family: "Thryn";
     color: var(--colorBlue);
     display: list-item;
-    background-image: url(../img/ios-people.png);
+    background-image: url(../img/icons/ios-people.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10px 0 0px 50px;
@@ -130,7 +130,7 @@
     font-family: "Thryn";
     color: var(--colorBlue);
     display: list-item;
-    background-image: url(../img/md-bowtie.png);
+    background-image: url(../img/icons/md-bowtie.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10px 0 0px 50px;
@@ -145,7 +145,7 @@
 
 li{
     display: list-item;
-    background-image: url(../img/ios-checkmark-circle-outline.png);
+    background-image: url(../img/icons/ios-checkmark-circle-outline.png);
     background-size: 25px;
     background-position: 5px 0px;
     background-repeat: no-repeat;
@@ -156,43 +156,23 @@ li{
 
 #contact{
     color: var(--colorWhite);
-    margin-top: -10%;
 }
 
 #bluBoxTwo{
-    padding: 10vh;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-color: var(--colorBlue);
 }
 
-#boxContact{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
+#boxAdresse{
+    color: var(--colorWhite);
+    font-family: "Roboto-Regular";
+    padding: 10vh 5vh 10vh;
 }
 
-#boxAddress{
-    background-color: var(--colorWhite);
-    width: 35vh;
-    height: 50vh;
-    border-radius: 10px;
-}
+#adresse{
 
-#boxDevis{
-    background-color: var(--colorWhite);
-    width: 35vh;
-    height: 50vh;
-    border-radius: 10px;
 }
-
-#boxRejoin{
-    background-color: var(--colorWhite);
-    width: 35vh;
-    height: 50vh;
-    border-radius: 10px;
-}
-
 
 
 
