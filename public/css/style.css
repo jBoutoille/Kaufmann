@@ -101,7 +101,7 @@
 /*--------------- SERVICES SECTION --------------- */
 
 
-.serviceSection{
+.serviceSectionOne{
     font-size: 3.5vh;
     font-family: "Thryn";
     color: var(--colorBlue);
@@ -113,10 +113,34 @@
     font-weight:bold;
 }
 
+.serviceSectionTwo{
+    font-size: 3.5vh;
+    font-family: "Thryn";
+    color: var(--colorBlue);
+    display: list-item;
+    background-image: url(../img/ios-people.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 0 0px 50px;
+    font-weight:bold;
+}
+
+.serviceSectionTree{
+    font-size: 3.5vh;
+    font-family: "Thryn";
+    color: var(--colorBlue);
+    display: list-item;
+    background-image: url(../img/md-bowtie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 0 0px 50px;
+    font-weight:bold;
+}
+
 #serviceBox{
     font-family: "Roboto-Regular";
     width: 50%;
-    transform: translate(60%, 0%);
+    transform: translate(60%, -5%);
 }
 
 li{
@@ -133,7 +157,6 @@ li{
 #contact{
     color: var(--colorWhite);
     margin-top: -7%;
-
 }
 
 #bluBoxTwo{

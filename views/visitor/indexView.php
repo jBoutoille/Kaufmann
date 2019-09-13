@@ -54,19 +54,19 @@
 	<h2 class="titleNav">| Nos services</h2>	
 	<div id="serviceBox">
 		
-		<h2 class="serviceSection">AUDIT</h2>
+		<h2 class="serviceSectionOne">AUDIT</h2>
 		
 			<p>Nous intervenons au titre de vos besoins en matière de:</p>
 				
 				<ul>
-					<li> Commissairiat aux comptes</li>
-					<li> Audit Contractuel</li>
-					<li> Commissariat à la transformation</li>
-					<li> Commissariat à la fusion</li>
-					<li> Audit d'acquisition</li>
+					<li> Commissairiat aux comptes.</li>
+					<li> Audit Contractuel.</li>
+					<li> Commissariat à la transformation.</li>
+					<li> Commissariat à la fusion.</li>
+					<li> Audit d'acquisition.</li>
 				</ul>
 		
-		<h2 class="serviceSection">EXPERTISE COMPTABLE</h2>
+		<h2 class="serviceSectionTwo">EXPERTISE COMPTABLE</h2>
 
 			<p>Nous vous proposons un accompagnement sur mesure en comptabilité, 
 			fiscalité, social et juridique.</p>
@@ -77,8 +77,19 @@
 						<li>Particuliers (Impot sur le revenu, IFI, conseil patrimonial...)</li>
 						<li>Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)</li>
 					</ul>
-	</div>
 
+
+			<h2 class="serviceSectionTree">CONSEILS / ACCOMPAGNEMENT</h2>
+		
+					<ul>
+						<li>Création / reprise de socités.</li>
+						<li>Mise en place de tableaux de boards.</li>
+						<li>Prévisionnels.</li>
+						<li>Évaluation de socités.</li>
+						<li>Mise à disposition de logiciels sans engagement à tarifs avantageux:
+							"comptabilité, facturation, notes de frais"</li>
+					</ul>
+	</div>
 
 	<!-- CONTACT SECTION -->
 	<div id="bluBoxTwo">
