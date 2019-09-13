@@ -96,29 +96,56 @@
     width: 50%;
 }
 
-/*--------------- services section --------------- */
+/*--------------- audit section --------------- */
 
 #services{
     font-size: 7vh;
 }
 
 #audit{
+    font-size: 4vh;
     font-family: "Thryn";
     color: var(--colorBlue);
+    display: list-item;
+    background-image: url(../img/ios-paper.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 0 0px 50px;
 }
 
 #serviceBox{
     font-family: "Roboto-Regular";
-    width: 40%;
-    transform: translate(70%, 0%);
+    width: 50%;
+    transform: translate(60%, 0%);
 }
 
 li{
     display: list-item;
-    list-style-image: url(../img/ios-checkmark-circle-outline.png);
+    background-image: url(../img/ios-checkmark-circle-outline.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2px 0 0px 35px;
 }
 
+/*--------------- expertise section --------------- */
 
+#expertise{
+    font-family: "Thryn";
+    color: var(--colorBlue);
+    display: list-item;
+    background-image: url(../img/ios-people.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 0 0px 50px;
+}
+
+li{
+    display: list-item;
+    background-image: url(../img/ios-checkmark-circle-outline.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2px 0 0px 35px;
+}
 
 
 
