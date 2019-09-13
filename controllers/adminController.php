@@ -2,14 +2,20 @@
 
     require './models/adminManager.php';
 
-    // DASHBOARD
+    // ACCUEIL ADMIN LOGGED - Dashboard
     function getAdmin(){
-        require './views/admin/adminView.php';
+        if(isset($_SESSION['userToken'])){
+            require './views/admin/adminView.php';            
+        }
+        else{
+            require './views/admin/loginView.php';
+        }
+
     }
 
     // CONFIGURATION DU SITE
     function adminConfigInfos(){
-
+        
     }
     function adminConfigSEO(){
 
