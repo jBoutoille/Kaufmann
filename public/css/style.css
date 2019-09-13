@@ -28,9 +28,9 @@
     text-align: center;
     letter-spacing: 2px;
 }
-/*--------------- section one --------------- */
+/*--------------- cabinet section --------------- */
 
-#titleOne{
+#cabinet{
     font-size: 7vh;
 }
 
@@ -40,17 +40,14 @@
     color: var(--colorGrey);
 }
 
-/*--------------- cabinet section --------------- */
-
 #bluBoxOne{
     padding: 10vh;
     width: 100%;
     height: 100vh;
     background-color: var(--colorBlue);
-
 }
 
-#titleTwo{   
+#titleOne{   
     font-family: "Thryn";
     text-align: center;
     color: var(--colorWhite);
@@ -73,6 +70,12 @@
     color: var(--colorWhite);
 }
 
+#experiences{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
 .sizeNumber{
     font-size: 15vh;
     font-family: "Roboto-Regular";
@@ -84,17 +87,38 @@
 .experienceOne{
     font-family: "Roboto-Regular";
     color: var(--colorWhite);
-    float: left;
-    margin-left: 50vh;
-    word-spacing: 30vh;
+    width: 50%;
 }
 
 .experienceTwo{
     font-family: "Roboto-Regular";
     color: var(--colorWhite);
-    float: left;
-    margin-left: 31vh;
-    word-spacing: 30vh;
+    width: 50%;
+}
+
+/*--------------- services section --------------- */
+
+#services{
+    font-size: 7vh;
+}
+
+#audit{
+    font-family: "Thryn";
+    color: var(--colorBleu);
+}
+
+#serviceBox{
+    font-family: "Roboto-Regular";
+    color: var(--colorGrey);
+    text-align: left;
+    width: 40%;
+    transform: translate(70%, 0%);
+}
+
+.puces::before{
+    font-size: 3.5vh;
+    background-image: url(../img/icons/ios-checkmark-circle-outline.jpg);
+    color: var(--colorBlue);
 }
 
 

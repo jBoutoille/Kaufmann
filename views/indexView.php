@@ -14,9 +14,10 @@
      </div>
     </div>
 </header>
+
     <!-- CABINET SECTION -->
 	<div class="titleNav">
-		<h2 id="titleOne">| Le cabinet</h2>
+		<h2 id="cabinet">| Le cabinet</h2>
 			<p id="texteSectionOne">
 				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens 
 				est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
@@ -29,7 +30,7 @@
 			</p>
 	</div>
 	<div id="bluBoxOne">
-		<h2 id="titleTwo">Notre expertise en quelques chiffres :</h2>
+		<h2 id="titleOne">Notre expertise en quelques chiffres :</h2>
 		<div id="barOne"></div>
 		<p id="texteSectionTwo">
 			Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.
@@ -37,13 +38,15 @@
 			<br>
 			Confiez-nous vos retards comptabilité, la gestion de vos projets, ou toute autre besoin.
 		</p>
-		
-		<p class="sizeNumber">350 40</p>
-		<div class="experienceOne">
-			<h2>Clients</h2>
-		</div>
-		<div class="experienceTwo">
-			<h2>Années/expertise</h2>
+		<div id="experiences">
+			<div class="experienceOne">
+				<p class="sizeNumber">350</p>
+				<h2>Clients</h2>
+			</div>
+			<div class="experienceTwo">
+				<p class="sizeNumber">40</p>
+				<h2>Années d'expertise</h2>
+			</div>
 		</div>
 	</div>
 
@@ -51,8 +54,38 @@
 
 	<!-- SERVICES SECTION -->
 	<div class="titleNav">
-		<h2>| Nos services</h2>
+		<h2 id="services">| Nos services</h2>
 	</div>
+	<div id="serviceBox">
+		
+		<h2 id="audit">AUDIT</h2>
+		<p>Nous intervenons au titre de vos besoins en matière de:</p>
+		<p>
+			<p class="puces"> Commissairiat aux comptes,</p>
+			<p class="puces"> Audit Contractuel,</p>
+			<p class="puces"> Commissariat à la transformation,</p>
+			<p class="puces"> Commissariat à la fusion,</p>
+			<p class="puces"> Audit d'acquisition,</p>
+		<h2>EXPERTISE COMPTABLE</h2>
+		<p>
+			Nous vous proposons un accompagnement sur mesure en comptabilité, 
+			fiscalité, social et juridique.<br><br>
+
+			Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)<br>
+
+			Associations (tenue, accompagnement, révision...)<br>
+
+			Particuliers (Impot sur le revenu, IFI, conseil patrimonial...)<br>
+
+			Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)
+		</p>
+	</div>
+
+
+
+
+
+
 	<!-- CONTACT SECTION -->
 	<div class="titleNav">
 		<h2>| Contact</h2>
