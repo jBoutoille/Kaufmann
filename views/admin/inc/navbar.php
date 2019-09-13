@@ -3,13 +3,13 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a href="./?page=gk-admin"><i class="fa fa-dashboard"></i>Tableau de bord</a>
+                        <a class="active-menu" href="./?page=gk-admin"><i class="fa fa-dashboard"></i>Tableau de bord</a>
                     </li>
                     <li>
-                        <a href="" class="active-menu-top"><i class="fa fa-desktop"></i>Configuration du site<span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level collapse in">
+                        <a href=""><i class="fa fa-desktop"></i>Configuration du site<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level collapse">
                             <li>
-                                <a class="active-menu" href="./?page=gk-admin&p1=infos"><i class="fa fa-desktop"></i>Informations</a>
+                                <a href="./?page=gk-admin&p1=infos"><i class="fa fa-desktop"></i>Informations</a>
                             </li>
                             <li>
                                 <a href="./?page=gk-admin&p1=referencement"><i class="fa fa-desktop"></i>Référencement / SEO</a>

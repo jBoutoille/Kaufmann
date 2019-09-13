@@ -4,38 +4,35 @@
 
     require 'controllers/visitorController.php';
     require 'controllers/adminController.php';
+    require 'controllers/dataController.php';
 
     try
     {
-        // PAS DE GET -> Affiche la page Accueil
-        if(empty($_GET)){
-            getIndex();
-        }
 
-        // GET LOGOUT -> Execute la déconnexion et Affiche la page Accueil
-        elseif(isset($_GET['action']) && $_GET['action'] == 'logout'){
-            adminLogout();
-        }
+        // TRAITEMENT DES FORMULAIRES -------------------
+        if(isset($_GET['treatment']))
+            { dataTraitment(); }
 
-        // GET PAGE = CONTACT -> Affiche la page Contact
-        elseif(isset($_GET['page']) && $_GET['page'] == 'contact'){
-            getContact();
-        }
 
-        // GET PAGE = ACTUALITE -> Affiche la page Actualité
-        elseif(isset($_GET['page']) && $_GET['page'] == 'actualite'){
-            getActualite();
-        }
+        // PARTIE VISITOR --------------------------------
+        elseif(empty($_GET))
+            { getIndex(); }
+        elseif(isset($_GET['page']) && $_GET['page'] == 'contact')
+            { getContact(); }
+        elseif(isset($_GET['page']) && $_GET['page'] == 'actualite')
+            { getActualite(); }
 
-        // GET PAGE = ACTUALITE -> Affiche la page Admin
-        elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin'){
-            getAdmin();
-        }
 
-        // si URL introuvable, redirection vers l'index
-        else{
-            get404();
-        }
+        // PARTIE ADMIN ----------------------------------
+        elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin')
+            { getAdmin(); }
+        elseif(isset($_GET['action']) && $_GET['action'] == 'logout')
+            { adminLogout(); }
+
+
+        // URL INTROUVABLE
+        else
+            { get404(); }
 
     }
     catch(Exception $e) 
