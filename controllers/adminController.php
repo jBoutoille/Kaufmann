@@ -4,15 +4,15 @@
 
     // DASHBOARD
     function getAdmin(){
-        require './views/adminView.php';
+
     }
 
     // CONFIGURATION DU SITE
     function adminConfigInfos(){
-        $navChecker = 'configInfos';
+
     }
     function adminConfigSEO(){
-        $navChecker = 'configInfos';
+
     }
 
     // MODIFICATIONS
