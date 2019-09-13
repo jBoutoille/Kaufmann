@@ -13,7 +13,7 @@
         }
 
         // GET LOGOUT -> Execute la déconnexion et Affiche la page Accueil
-        elseif(isset($_GET['logout'])){
+        elseif(isset($_GET['action']) && $_GET['action'] == 'logout'){
             adminLogout();
         }
 
@@ -27,8 +27,8 @@
             getActualite();
         }
 
-        // GET PAGE = ACTUALITE -> Affiche la page Actualité
-        elseif(isset($_GET['page']) && $_GET['page'] == 'admin'){
+        // GET PAGE = ACTUALITE -> Affiche la page Admin
+        elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin'){
             getAdmin();
         }
 

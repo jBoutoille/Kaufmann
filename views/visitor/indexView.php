@@ -53,38 +53,33 @@
 	
 
 	<!-- SERVICES SECTION -->
-	<div class="titleNav">
-		<h2 id="services">| Nos services</h2>
-	</div>
+	<h2 id="services">| Nos services</h2>	
 	<div id="serviceBox">
 		
 		<h2 id="audit">AUDIT</h2>
-		<p>Nous intervenons au titre de vos besoins en matière de:</p>
-		<ul>
-			<li>Commissairiat aux comptes,</li>
-			<li>Audit Contractuel,</li>
-			<li>Commissariat à la transformation,</li>
-			<li>Commissariat à la fusion,</li>
-			<li>Audit d'acquisition,</li>
-		</ul>
-		<h2>EXPERTISE COMPTABLE</h2>
-		<p>
-			Nous vous proposons un accompagnement sur mesure en comptabilité, 
-			fiscalité, social et juridique.<br><br>
+		
+			<p>Nous intervenons au titre de vos besoins en matière de:</p>
+				
+				<ul>
+					<li> Commissairiat aux comptes</li>
+					<li> Audit Contractuel</li>
+					<li> Commissariat à la transformation</li>
+					<li> Commissariat à la fusion</li>
+					<li> Audit d'acquisition</li>
+				</ul>
+		
+		<h2 id="expertise">EXPERTISE COMPTABLE</h2>
 
-			Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)<br>
-
-			Associations (tenue, accompagnement, révision...)<br>
-
-			Particuliers (Impot sur le revenu, IFI, conseil patrimonial...)<br>
-
-			Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)
-		</p>
+			<p>Nous vous proposons un accompagnement sur mesure en comptabilité, 
+			fiscalité, social et juridique.</p>
+		
+					<ul>
+						<li>Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)</li>
+						<li>Associations (tenue, accompagnement, révision...)</li>
+						<li>Particuliers (Impot sur le revenu, IFI, conseil patrimonial...)</li>
+						<li>Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)</li>
+					</ul>
 	</div>
-
-
-
-
 
 
 	<!-- CONTACT SECTION -->
@@ -99,5 +94,5 @@
 <?php
     $htmlTitle = 'Accueil | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
-    require './views/visitor/template.php';
+    require './views/template.php';
 ?>

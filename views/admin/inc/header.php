@@ -6,9 +6,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./">G.KAUFMANN ADMIN</a>
+        <a class="navbar-brand" href="./?page=gk-admin">G.KAUFMANN ADMIN</a>
     </div>
     <div class="header-right">
-        <a href="../" class="btn adminHeaderRetour" title="Retourner sur le site"><i class="fa fa-sign-out fa-2x"></i> Retourner sur le site</a>
+        <a href="./" class="btn adminHeaderRetour" title="Retourner sur le site"><i class="fa fa-sign-out fa-2x"></i> Retourner sur le site</a>
     </div>
 </nav>
