@@ -1,0 +1,589 @@
+/*--------------- BASIC STYLING --------------- */
+*{
+	margin: 0%;
+    padding: 0%;
+    list-style:none;
+    text-decoration:none;
+    --colorBlue : rgba(11,36,91,0.8);
+    --colorWhite : rgba(255,255,255,1);
+    --colorGrey : rgba(64,64,64,1);
+    --titresIcones : rgba(11,36,91,1);
+    --filter : rgba(5,18,87,0.6);
+}
+
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url("../../public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Thryn";
+    src: url("../../public/fonts/Thryn.ttf") format("truetype");
+}
+
+/*--------------- HEADER START HERE --------------- */
+
+/*--------------- IMG COVER --------------- */
+
+#imgHeader{
+    background-image: url(../../img/photoIndex.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    height: 100vh;
+    width: 100%;
+}
+
+.filterOne{
+    background-color : var(--filter);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/*--------------- lINE ONE & TWO --------------- */
+
+.sarl::before{
+    content: "";
+    margin-top: 2vh;
+    margin-left: 20%;
+    content: ' ';
+    float: left;
+    background: white;
+    height: 2px;
+    width: 100px;
+}
+
+.sarl::after{
+    content: "";
+    margin-top: 2vh;
+    margin-right: 20%;
+    content: ' ';
+    float: right;
+    background: white;
+    height: 2px;
+    width: 100px;
+}
+
+/*--------------- BLOCK TEXT --------------- */
+
+#titleHeader{   
+    text-align: center;
+    color : var(--colorWhite);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+}
+
+.sarl{
+    font-family: "Thryn";
+    font-size: 3vh;
+    transform: translate(0%, 90%);
+}
+
+#kaufmann{
+    font-size: 12vh;
+    font-family: "Thryn";
+}
+
+#textOne{
+    margin-top: 5vh;
+    font-size: 4vh;
+    font-family: "Thryn";
+    transform: translate(0%, -50%);
+}
+
+/*--------------- ICON SCROLLDOWN --------------- */
+
+#animGif{
+    background-image: url(../../img/scrollDown.gif);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    margin-left: 40%;
+    bottom: -80%;
+}
+
+/*--------------- HEADER ENDS HERE --------------- */
+
+/*--------------- MEDIA QUERIES HEADER START HERE --------------- */
+
+@media(max-width: 900px) {
+
+#titleHeader{
+    top: 50%;
+    left: 50%;
+    }
+
+    #kaufmann{
+    font-size: 6vh;
+    text-align: center;
+    color : var(--colorWhite);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    letter-spacing: 3px;
+    }
+
+    #textOne{
+    margin-top: 17vh;
+    font-size: 2.5vh;
+    font-family: "Thryn";
+    transform: translate(0%, -50%);
+    }
+
+    .sarl{
+    font-family: "Thryn";
+    font-size: 3vh;
+    transform: translate(-10%, 40%); 
+    }
+
+    .sarl::before{  
+    margin-left: 10%;
+    float: left;
+    background: white;
+    height: 2px;
+    width: 50px;
+    }
+
+    .sarl::after{
+    margin-right: -27%;
+    float: right;
+    background: white;
+    height: 2px;
+    width: 50px;
+    }
+
+    #animGif{
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    margin-left: 25%;
+    bottom: -85%;
+    }
+}
+
+
+/*--------------- MEDIA QUERIES HEADER ENDS HERE --------------- */
+
+
+
+/*--------------- BODY SECTION START HERE --------------- */
+
+.titleNav{
+    font-size: 8vh;
+    margin-top: 5%;
+    font-family: "Thryn";
+    color: var(--colorBlue);
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight:bold;
+}
+
+/*--------------- CABINET SECTION --------------- */
+
+
+#cabinet{
+    font-size: 7vh;
+}
+
+#texteSectionOne{
+    font-size: 2.8vh;
+    padding: 10vh 10%;
+    text-align: center;
+    font-family: "Roboto-Regular";
+    color: var(--colorGrey);
+}
+
+#bluBoxOne{
+    padding: 10vh;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorBlue);
+}
+
+#titleOne{   
+    font-family: "Thryn";
+    text-align: center;
+    color: var(--colorWhite);
+    letter-spacing: 2px;
+}
+
+#barOne{
+    transform: translate(12%, 5%); 
+    height:2px;
+    width:80%;
+    background-color: var(--colorWhite);
+}
+
+#texteSectionTwo{
+    font-size: 3vh;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5% 10%;
+    font-family: "Roboto-Regular";
+    color: var(--colorWhite);
+}
+
+#experiences{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.sizeNumber{
+    font-size: 15vh;
+    font-family: "Roboto-Regular";
+    color: var(--colorWhite);
+    text-align: center;
+    word-spacing: 30vh;
+}
+
+.experienceOne{
+    font-family: "Roboto-Regular";
+    color: var(--colorWhite);
+    width: 50%;
+}
+
+.experienceTwo{
+    font-family: "Roboto-Regular";
+    color: var(--colorWhite);
+    width: 50%;
+}
+
+/*--------------- MEDIA QUERIES CABINET START HERE --------------- */
+
+@media(max-width: 900px) {
+
+/*--------------- BODY SECTION START HERE --------------- */
+
+.titleNav{
+    font-size: 5vh;
+}
+
+/*--------------- CABINET SECTION --------------- */
+
+#bluBoxOne{
+    height: 131vh;
+}
+
+#titleOne{   
+    font-size: 4vh;
+}
+
+#texteSectionTwo{
+    font-size: 2.2vh;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 8% 0%;
+}
+
+#experiences{
+    flex-direction: column;
+    transform: translate(25%);
+}
+
+.sizeNumber{
+    font-size: 8vh;
+}
+
+#titleOne{   
+    margin-top: -5%;
+}
+
+
+
+
+
+}
+/*--------------- SERVICES SECTION --------------- */
+
+#globalBoxService{
+    padding: 0% 0% 5% 0%;
+}
+
+.serviceSection{
+    font-family: "Roboto-Regular";
+    color: var(--colorBlue);
+    display: list-item;
+    background-image: url(../img/icons/md-filing.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-weight:bold;
+}
+
+#serviceBox{
+    font-size: 2.8vh;
+    font-family: "Roboto-Regular";
+    width: 50%;
+    transform: translate(60%, 4vh);
+}
+
+li{
+    display: list-item;
+    background-image: url(../img/icons/ios-checkmark-circle-outline.svg);
+    background-size: 25px;
+    background-position: 5px 0px;
+    background-repeat: no-repeat;
+    padding: 2px 0 0px 35px;
+}
+
+/*--------------- MEDIA QUERIES SERVICE START HERE --------------- */
+
+@media(max-width: 900px) {
+
+#serviceBox{
+    font-size: 2.5vh;
+    width: 76%;
+    transform: translate(12%, 2vh);
+}
+
+
+
+
+}
+
+/*--------------- CONTACT SECTION --------------- */
+
+#bluBoxTwo{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../../img/staffWork.jpg);
+    background-size: cover;   
+}
+
+.filterTwo{
+    background-color : rgba(5,18,87,0.3);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#contact{
+    color: var(--colorWhite);
+}
+
+#boxContner{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#boxAdresse{
+    color: black;
+    font-family: "Roboto-Regular";
+    background-color: var(--colorWhite);
+    opacity: 0.8;
+    padding: 2vh 5vh 5vh;
+    font-weight: bold;
+    height: 35vh;
+}
+
+#coordonnees{
+    font-family: "Thryn";
+    font-size: 4vh;
+    letter-spacing: 2px;
+    color: var(--colorBlue);
+}
+
+#adresse{
+    letter-spacing: 1px;
+    font-size: 3vh;
+    background-image: url(../img/icons/ios-business.svg);
+}
+
+#telMobile{
+    letter-spacing: 1px;
+    font-size: 3vh;
+    background-image: url(../img/icons/ios-call.svg);
+}
+
+#adMail{
+    letter-spacing: 1px;
+    font-size: 3vh;
+    background-image: url(../img/icons/ios-mail.svg);
+}
+
+#numFax{
+    letter-spacing: 1px;
+    font-size: 3vh;
+    background-image: url(../img/icons/md-print.svg);
+}
+
+#boxContactOne{
+    background-color: var(--colorWhite);
+    opacity: 0.8;
+    padding: 2vh 5vh 5vh;
+    margin-bottom:3vh;
+    font-weight: bold;
+}
+
+#boxContactTwo{
+    background-color: var(--colorWhite);
+    opacity: 0.8;
+    padding: 2vh 5vh 5vh;
+    font-weight: bold;
+}
+
+#twoBox{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.myBtn {
+    width: 75%;
+    padding: 2vh;
+    border: none;
+    background: #0a3d62;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 1em;
+    font-size: 2.5vh;
+}
+
+.myBtn:hover {
+     background: #60a3bc;
+     color: #f1f2f6;
+}
+
+/*--------------- MEDIA QUERIES CONTACT START HERE --------------- */
+
+@media(max-width: 900px) {
+
+#bluBoxTwo{
+    height: 110vh;
+}
+
+#boxContner{
+    flex-direction: column;
+}
+
+#boxAdresse{
+    height: 40vh;
+}
+
+#twoBox{
+    width: 100%;
+}
+
+#boxContactOne{
+    background-color: var(--colorWhite);
+    opacity: 0.8;
+    padding: 2vh 5vh 3vh;
+    margin-bottom:3vh;
+    font-weight: bold;
+}
+
+#boxContactTwo{
+    padding: 2vh 5vh 3vh;
+}
+
+.textBtn{
+    font-size: 2.7vh
+}
+
+}
+
+/*--------------- ACTUALITES SECTION --------------- */
+
+#globalNewsSection{
+    height: 90vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- NEWSLETTER SECTION STARTS --------------- */
+
+.newsletter {
+      padding: 80px 0;
+      background-color : var(--colorBlue);
+}
+
+.newsletter input {
+      text-transform: uppercase;
+}
+
+.newsletter .news-data {
+      max-width: 650px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+}
+
+.newsletter h1 {
+      color: #fff;
+      margin-bottom: 50px;
+}
+
+.newsletter .form-control {
+      height: 50px;
+      border-color: #fff;
+      border-radius: 0;
+}
+
+
+::placeholder {
+      letter-spacing: 4px;
+}
+
+.newsletter .btn {
+      min-height: 50px;
+      padding: 0 30px;
+      border-radius: 0;
+      background: #0a3d62;
+      color: #fff;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+}
+
+.newsletter .btn:hover {
+     background: #60a3bc;
+     color: #f1f2f6;
+}
+
+/*--------------- MEDIA QUERIES NEWSLATTER START HERE --------------- */
+
+@media(max-width: 900px) {
+
+.newsletter {
+      padding: 40px 0;
+}
+
+::placeholder {
+      font-size: 1.2vh;
+      letter-spacing: 3px;
+}
+
+.wow {
+    font-size: 4vh;
+
+}
+
+}
+
+
+
+
+
