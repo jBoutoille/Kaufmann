@@ -19,7 +19,7 @@
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
                     <div class="panel-body">
                         <form role="form" method="POST" action="./?treatment" style="display:flex;flex-direction:column;justify-content:center;">
-                            <hr>
+                            <?php echo $notif ?>
                             <h5>Entrez vos identifiants pour vous connecter</h5>
                             <br>
                             <div class="form-group input-group">

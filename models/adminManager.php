@@ -3,7 +3,7 @@
 
     //// CETTE CLASSE EST A APPELER EN PREMIER LIEU CAR ELLE SE CONNECTE A LA BDD
     
-    //// -> PERMET DE SE CONNECTER ET DECONNECTER D'UN COMPTE ADMIN
+    //OK// -> PERMET DE SE CONNECTER ET DECONNECTER D'UN COMPTE ADMIN
     //// -> PERMET DE RECUPERER LES INFORMATIONS SITE VITRINE STOCKEES EN BDD
     //// -> PERMET D'AFFICHER LES DONNEES FORMULAIRES UTILISATEURS
     //// -> PERMET DE CREER DES NOUVEAUX ARTICLES EN BDD
@@ -32,7 +32,7 @@
                 $data = $query->fetch();
         
                 if($_POST['loginUser'] != $data['username']){
-                    echo "Nom d'utilisateur inexistant";
+                    $_SESSION['notif'] = "Nom d'utilisateur inexistant";
                 }
                 else{
                     if($_POST['loginPw'] == $data['password']){
@@ -42,7 +42,7 @@
                         $_SESSION['sessionToken'] = $token;
                     }
                     else {
-                        echo 'Mot de passe incorrect';
+                        $_SESSION['notif'] = "Mot de passe incorrect";
                     }
                 }
             }
@@ -66,7 +66,7 @@
         // Fonction pour mettre un token de session random à un utilisateur 
         public function setToken($id){
             try{
-                $token = openssl_random_pseudo_bytes(50);
+                $token = openssl_random_pseudo_bytes(25);
                 $hex = bin2hex($token);
                 $db = $this->dbConnect();
                 $req = $db->prepare("UPDATE users SET session_token = :tok WHERE users.id = :theid");

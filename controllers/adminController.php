@@ -6,7 +6,15 @@
             require './views/admin/adminView.php';            
         }
         else{
+            if(isset($_SESSION['notif'])){
+                $notif = '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> ' . $_SESSION['notif'] . '</div>';
+            }
+            else{
+                $notif = NULL;
+            }
             require './views/admin/loginView.php';
+            $notif = NULL;
+            $_SESSION['notif'] = NULL;
         }
     }
 
@@ -61,6 +69,7 @@
         $AM = new AdminManager();
         $AM->unsetToken($_TOKEN);
         $_SESSION['sessionToken'] = NULL;
+        session_destroy();
         header('Location: ./?page=gk-admin');
     }
 

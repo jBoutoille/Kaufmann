@@ -43,4 +43,7 @@
         echo 'Erreur : ' . $e->getMessage();
     }
 
+    // DESTRUCTION DES NOTIFICATIONS
+    $notif = NULL;
+
 ?>
