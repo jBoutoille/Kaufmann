@@ -6,15 +6,7 @@
                         <a class="active-menu" href="./?page=gk-admin"><i class="fa fa-dashboard"></i>Tableau de bord</a>
                     </li>
                     <li>
-                        <a href=""><i class="fa fa-desktop"></i>Configuration du site<span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level collapse">
-                            <li>
-                                <a href="./?page=gk-admin&p1=infos"><i class="fa fa-desktop"></i>Informations</a>
-                            </li>
-                            <li>
-                                <a href="./?page=gk-admin&p1=referencement"><i class="fa fa-desktop"></i>Référencement / SEO</a>
-                            </li>
-                        </ul>
+                        <a href="./?page=gk-admin&p1=config"><i class="fa fa-desktop"></i>Configuration du site</a>
                     </li>
                      <li>
                         <a href=""><i class="fa fa-code"></i>Modifications<span class="fa arrow"></span></a>
@@ -38,7 +30,7 @@
                                 <a href="./?page=gk-admin&p1=newsletter"><i class="fa fa-code"></i>Newsletter</a>
                             </li>                       
                              <li>
-                                <a href="./?page=gk-admin&p1=footer"><i class="fa fa-code"></i>Pied de page</a>
+                                <a href="./?page=gk-admin&p1=footer"><i class="fa fa-code"></i>Bas de page</a>
                             </li>
                         </ul>
                     </li>

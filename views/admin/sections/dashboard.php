@@ -6,10 +6,16 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-subhead-line">Connecté en tant que {username}</h2>
+            </div>
+        </div>
+
         <!-- /. ROW  -->
         <div class="row">
             <div class="col-md-4">
-                <a href="./?page=gk-admin&p1=infos" class="modulesLinks">
+                <a href="./?page=gk-admin&p1=config" class="modulesLinks">
                     <div class="main-box mb-1">
                         <i class="fa fa-desktop fa-5x"></i>
                         <h5>Configuration</h5>

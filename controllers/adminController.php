@@ -1,16 +1,16 @@
 <?php 
 
-    require './models/adminManager.php';
+    // variable globale de la BDD
+    $dbObject = new AdminManager();
 
     // ACCUEIL ADMIN LOGGED - Dashboard
     function getAdmin(){
-        if(isset($_SESSION['userToken'])){
+        if(isset($_SESSION['sessionToken'])){
             require './views/admin/adminView.php';            
         }
         else{
             require './views/admin/adminView.php';
         }
-
     }
 
     // CONFIGURATION DU SITE
@@ -61,7 +61,8 @@
 
     // SE DECONNECTER
     function adminLogout(){
-
+        unsetToken($_TOKEN);
+        header('Location: ./');
     }
 
 ?>
