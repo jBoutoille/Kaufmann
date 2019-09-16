@@ -34,7 +34,7 @@
                 $data = $query->fetch();
         
                 if($user != $data['username']){
-                    $_SESSION['notif'] = "Nom d'utilisateur inexistant";
+                    $_SESSION['notif'] = "Identifiant invalide";
                 }
                 else{
                     if($pw == $data['password']){
@@ -44,7 +44,7 @@
                         $_SESSION['sessionToken'] = $token;
                     }
                     else {
-                        $_SESSION['notif'] = "Mot de passe incorrect";
+                        $_SESSION['notif'] = "Identifiant invalide";
                     }
                 }
             }
