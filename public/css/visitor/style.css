@@ -286,7 +286,7 @@
 
 #experiences{
     flex-direction: column;
-    transform: translate(25%);
+    align-items: center;
 }
 
 .sizeNumber{
@@ -394,25 +394,25 @@ li{
 #adresse{
     letter-spacing: 1px;
     font-size: 3vh;
-    background-image: url(../img/icons/ios-business.svg);
+    background-image: url(../../img/icons/ios-business.svg);
 }
 
 #telMobile{
     letter-spacing: 1px;
     font-size: 3vh;
-    background-image: url(../img/icons/ios-call.svg);
+    background-image: url(../../img/icons/md-call.svg);
 }
 
 #adMail{
     letter-spacing: 1px;
     font-size: 3vh;
-    background-image: url(../img/icons/ios-mail.svg);
+    background-image: url(../../img/icons/md-mail.svg);
 }
 
 #numFax{
     letter-spacing: 1px;
     font-size: 3vh;
-    background-image: url(../img/icons/md-print.svg);
+    background-image: url(../../img/icons/md-print.svg);
 }
 
 #boxContactOne{
@@ -493,29 +493,11 @@ li{
 
 }
 
-/*--------------- ACTUALITES SECTION --------------- */
-
-#globalNewsSection{
-    height: 90vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------- NEWSLETTER SECTION STARTS --------------- */
 
 .newsletter {
       padding: 80px 0;
-      background-color : var(--colorBlue);
+      background-color : var(--colorWhite);
 }
 
 .newsletter input {
@@ -530,19 +512,20 @@ li{
 }
 
 .newsletter h1 {
-      color: #fff;
+      color : var(--colorBlue);
       margin-bottom: 50px;
 }
 
 .newsletter .form-control {
       height: 50px;
-      border-color: #fff;
+      border-color: black;
       border-radius: 0;
 }
 
 
 ::placeholder {
       letter-spacing: 4px;
+      color: black;
 }
 
 .newsletter .btn {
@@ -581,8 +564,6 @@ li{
 }
 
 }
-
-
 
 
 

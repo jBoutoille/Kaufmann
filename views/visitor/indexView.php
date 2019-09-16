@@ -124,10 +124,6 @@
 				</div>
 			</div>
 		</section>
-		<!-- ACTUALITES SECTION -->
-		<div id="globalNewsSection">
-			<h2 class="titleNav">| Actualités</h2>
-		</div>
 <!-- NEWSLETTER SECTION -->
 
            <section class="newsletter">
