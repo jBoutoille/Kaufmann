@@ -2,7 +2,9 @@
 
     function dataTraitment(){
         if(isset($_POST['formlogin'])){
-            
+            $AM = new AdminManager();
+            $AM->TryConnexion();
+            header('Location: ./?page=gk-admin');
         }
     }
 
@@ -11,7 +13,7 @@
         $_TOKEN = $_SESSION['sessionToken'];
     }
     else{
-        $_TOKEN = '';
+        $_TOKEN = NULL;
     }
 
 ?>

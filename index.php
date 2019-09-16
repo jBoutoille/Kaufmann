@@ -30,7 +30,7 @@
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin')
             { getAdmin(); }
         elseif(isset($_GET['action']) && $_GET['action'] == 'logout')
-            { adminLogout(); }
+            { adminLogout($_TOKEN); }
 
 
         // URL INTROUVABLE
