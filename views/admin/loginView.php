@@ -24,11 +24,11 @@
                             <br>
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-tag"></i></span>
-                                <input type="text" class="form-control" name="loginUser" placeholder="Nom d'utilisateur">
+                                <input type="text" class="form-control" name="loginUser" placeholder="Nom d'utilisateur" required>
                             </div>
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                <input type="password" class="form-control" name="loginPw" placeholder="Mot de passe">
+                                <input type="password" class="form-control" name="loginPw" placeholder="Mot de passe" required>
                             </div>   
                             <button type="submit" class="btn btn-primary" name="formlogin">Se connecter</button>
                             <hr>
