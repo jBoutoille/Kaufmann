@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     background-color : var(--colorBlue);
 }
 
@@ -13,31 +13,35 @@ footer{
 #adresse2{
     letter-spacing: 1px;
     font-size: 2vh;
-    background-image: url(../../img/icons/ios-business.svg);
+    background-image: url(../../img/icons/ios-business2.png);
 }
 
 #telMobile2{
+    margin-top: 5px;
     letter-spacing: 1px;
     font-size: 2vh;
-    background-image: url(../../img/icons/md-call.svg);
+    background-image: url(../../img/icons/md-call2.png);
 }
 
 #adMail2{
+    margin-top: 5px;
     letter-spacing: 1px;
     font-size: 2vh;
-    background-image: url(../../img/icons/md-mail.svg);
+    background-image: url(../../img/icons/md-mail2.png);
 }
 
 #numFax2{
+    margin-top: 5px;
     letter-spacing: 1px;
     font-size: 2vh;
-    background-image: url(../../img/icons/md-print.svg);
+    background-image: url(../../img/icons/md-print2.png);
 }
 
 #linkedin{
+    margin-top: 5px;
     letter-spacing: 1px;
     font-size: 2vh;
-    background-image: url(../../img/icons/logo-linkedin.svg);
+    background-image: url(../../img/icons/logo-linkedin2.png);
 }
 
 #myLogo{
@@ -45,9 +49,29 @@ footer{
     background-repeat: no-repeat;
     position: absolute;
     background-size: contain;
-    width: 12%;
-    height: 65%;
-    transform: translate(60vw, -6vw);
+    width: 20%;
+    height: 100%;
+    transform: translate(60vw, -9vw);
+}
+
+#basicLogoOne{
+    background-image: url(../../img/logo/cncc.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    width: 20%;
+    height: 20%;
+    transform: translate(10vw, -12vw);
+}
+
+#basicLogoTwo{
+    background-image: url(../../img/logo/ordre.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    width: 20%;
+    height: 20%;
+    transform: translate(20vw, -12vw);
 }
 
 #copyright{
@@ -64,10 +88,9 @@ footer{
 @media(max-width: 900px) {
 
 #myLogo{
-
-    width: 30vh;
-    height: 25%;
-    transform: translate(36vh, -10vh);
+    width: 50vh;
+    height: 55%;
+    transform: translate(40vh, -20vh);
 }
 
 #adresseBox {
@@ -80,11 +103,34 @@ footer{
     transform: translate(0vh, 3vh);
 }
 
-footer{
-    height: 32vh;
+#telMobile2{
+    margin-top: 10px;
+}
+
+#adMail2{
+    margin-top: 10px;
+}
+
+#numFax2{
+    margin-top: 10px;
+}
+
+#linkedin{
+    margin-top: 10px;
+}
+
+#basicLogoOne{
+    transform: translate(80vw, -33vw);
+}
+
+#basicLogoTwo{
+    transform: translate(85vw, -24vw);
 }
 
 
+footer{
+    height: 40vh;
+}
 }
 
     

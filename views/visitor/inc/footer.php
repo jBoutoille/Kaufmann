@@ -11,6 +11,8 @@
               </ul>
 
               <div id="myLogo"></div>
+              <div id="basicLogoOne"></div>
+              <div id="basicLogoTwo"></div>
 
             <div id="copyright">
                 <p>
