@@ -19,11 +19,13 @@
     }
 
     // CONFIGURATION DU SITE
-    function adminConfigInfos(){
-        
-    }
-    function adminConfigSEO(){
-
+    function getAdminConfig(){
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/configView.php';            
+        }
+        else{
+            header('Location: ./');
+        }
     }
 
     // MODIFICATIONS
@@ -42,8 +44,8 @@
     function adminModifContact(){
         
     }
-    function adminModifNewsletter(){
-        
+    function getAdminNewsletter(){
+
     }
     function adminModifFooter(){
         

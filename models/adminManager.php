@@ -25,24 +25,26 @@
         // PUBLIC FUNCTION TO LOGIN AN ACCOUNT FROM formlogin
         public function TryConnexion(){
             try{
+                $user = htmlspecialchars($_POST['loginUser']);
+                $pw = htmlspecialchars($_POST['loginPw']);
                 $bdd = $this->dbConnect();
                 $query = $bdd->prepare("SELECT * FROM users WHERE username = :username");
-                $query->bindParam(':username',$_POST['loginUser'],PDO::PARAM_STR);
+                $query->bindParam(':username',$user,PDO::PARAM_STR);
                 $query->execute();
                 $data = $query->fetch();
         
-                if($_POST['loginUser'] != $data['username']){
-                    $_SESSION['notif'] = "Nom d'utilisateur inexistant";
+                if($user != $data['username']){
+                    $_SESSION['notif'] = "Identifiant invalide";
                 }
                 else{
-                    if($_POST['loginPw'] == $data['password']){
+                    if($pw == $data['password']){
                         $id = $data['id'];
                         $token = $this->setToken($id);
                         $this->setLastConnexionDate($id);
                         $_SESSION['sessionToken'] = $token;
                     }
                     else {
-                        $_SESSION['notif'] = "Mot de passe incorrect";
+                        $_SESSION['notif'] = "Identifiant invalide";
                     }
                 }
             }
