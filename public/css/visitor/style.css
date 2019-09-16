@@ -372,11 +372,11 @@ li{
     padding: 5%;
     display: flex;
     justify-content: space-around;
+    align-items:center;
 }
 
 #boxAdresse{
     color: black;
-    font-family: "Roboto-Regular";
     background-color: var(--colorWhite);
     opacity: 0.8;
     padding: 2vh 5vh 5vh;
@@ -389,11 +389,12 @@ li{
     font-size: 4vh;
     letter-spacing: 2px;
     color: var(--colorBlue);
+    font-family: "Roboto-Regular"!important;
 }
 
 #adresse{
     letter-spacing: 1px;
-    font-size: 4vh;
+    font-size: 3vh;
     background-image: url(../../img/icons/ios-business.svg);
 }
 

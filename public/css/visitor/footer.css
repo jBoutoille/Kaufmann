@@ -5,29 +5,30 @@ footer{
 }
 
 #adresseBox{
-	color: white;
-transform: translate(5vh, 5vh);
+    color: white;
+    transform: translate(60vh, 5vh);
+    width: 30%;
 }
 
-#adresse{
+#adresse2{
     letter-spacing: 1px;
     font-size: 2vh;
     background-image: url(../../img/icons/ios-business.svg);
 }
 
-#telMobile{
+#telMobile2{
     letter-spacing: 1px;
     font-size: 2vh;
     background-image: url(../../img/icons/md-call.svg);
 }
 
-#adMail{
+#adMail2{
     letter-spacing: 1px;
     font-size: 2vh;
     background-image: url(../../img/icons/md-mail.svg);
 }
 
-#numFax{
+#numFax2{
     letter-spacing: 1px;
     font-size: 2vh;
     background-image: url(../../img/icons/md-print.svg);
@@ -40,22 +41,26 @@ transform: translate(5vh, 5vh);
 }
 
 #myLogo{
-	background-image: url(../../img/logo/logo4white.png); 
+    background-image: url(../../img/logo/logo4white.png);
     background-repeat: no-repeat;
     position: absolute;
-	background-size: contain;
-	width: 50vh;
-	height: 20%;
-    transform: translate(120vh, -17vh);
+    background-size: contain;
+    width: 12%;
+    height: 65%;
+    transform: translate(60vw, -6vw);
 }
 
 #copyright{
-	color : var(--colorWhite);
+    color: var(--colorWhite);
     text-align: center;
     font-size: 2vh;
-    transform: translate(5vh, 5vh);
+    transform: translate(-3vh, 5vh);
 }
 
+#footerSection {
+    width:100%;
+    position:relative;
+}
 @media(max-width: 900px) {
 
 #myLogo{

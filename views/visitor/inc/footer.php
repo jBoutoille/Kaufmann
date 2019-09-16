@@ -3,10 +3,10 @@
           <section id="footerSection">
 
               <ul id="adresseBox">
-                <li id="adresse">5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
-                <li id="telMobile">03 21 30 19 19</li>
-                <li id="adMail">contact@kaufmann.fr</li>
-                <li id="numFax">03 91 18 65 65</li>
+                <li id="adresse2">5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
+                <li id="telMobile2">03 21 30 19 19</li>
+                <li id="adMail2">contact@kaufmann.fr</li>
+                <li id="numFax2">03 91 18 65 65</li>
                 <li id="linkedin">Linkedin</li>
               </ul>
 
