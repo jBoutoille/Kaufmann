@@ -9,7 +9,7 @@
             require './views/admin/adminView.php';            
         }
         else{
-            require './views/admin/adminView.php';
+            require './views/admin/loginView.php';
         }
     }
 

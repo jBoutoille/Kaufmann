@@ -4,7 +4,6 @@ footer{
 }
 
 #adresseBox{
-	transform: translate(10vh, 0vh);
 	color: white;
 }
 
@@ -13,15 +12,13 @@ footer{
     background-repeat: no-repeat;
     position: absolute;
 	background-size: contain;
-	width: 50%;
+	width: 39%;
 	height: 20%;
     transform: translate(70vh, -15vh);
 }
 
 #copyright{
 	color : var(--colorWhite);
-	margin-top: 10vh; 
-
 }
 
 
