@@ -1,7 +1,5 @@
 <?php 
 
-    require './models/visitorManager.php';
-
     function getIndex(){
         require './views/visitor/indexView.php';
     }

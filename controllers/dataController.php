@@ -6,4 +6,12 @@
         }
     }
 
+    // RECUPERATION DE LA SESSION UTILISATEUR
+    if(isset($_SESSION['sessionToken'])){
+        $_TOKEN = $_SESSION['sessionToken'];
+    }
+    else{
+        $_TOKEN = '';
+    }
+
 ?>

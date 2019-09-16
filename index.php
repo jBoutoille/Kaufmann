@@ -2,9 +2,12 @@
 
     session_start();   
 
-    require 'controllers/visitorController.php';
-    require 'controllers/adminController.php';
-    require 'controllers/dataController.php';
+    require './models/adminManager.php';
+    require './models/visitorManager.php';
+
+    require './controllers/visitorController.php';
+    require './controllers/adminController.php';
+    require './controllers/dataController.php';
 
     try
     {
@@ -14,7 +17,7 @@
             { dataTraitment(); }
 
 
-        // PARTIE VISITOR --------------------------------
+        // PARTIE VISITEUR --------------------------------
         elseif(empty($_GET))
             { getIndex(); }
         elseif(isset($_GET['page']) && $_GET['page'] == 'contact')
