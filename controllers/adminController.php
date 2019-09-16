@@ -1,8 +1,5 @@
 <?php 
 
-    // variable globale de la BDD
-    $dbObject = new AdminManager();
-
     // ACCUEIL ADMIN LOGGED - Dashboard
     function getAdmin(){
         if(isset($_SESSION['sessionToken'])){
@@ -60,9 +57,11 @@
     }
 
     // SE DECONNECTER
-    function adminLogout(){
-        unsetToken($_TOKEN);
-        header('Location: ./');
+    function adminLogout($_TOKEN){
+        $AM = new AdminManager();
+        $AM->unsetToken($_TOKEN);
+        $_SESSION['sessionToken'] = NULL;
+        header('Location: ./?page=gk-admin');
     }
 
 ?>
