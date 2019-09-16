@@ -1,10 +1,42 @@
 footer{
-    height: 40vh;
+    width: 100%;
+    height: 35vh;
     background-color : var(--colorBlue);
 }
 
 #adresseBox{
 	color: white;
+transform: translate(5vh, 5vh);
+}
+
+#adresse{
+    letter-spacing: 1px;
+    font-size: 2vh;
+    background-image: url(../../img/icons/ios-business.svg);
+}
+
+#telMobile{
+    letter-spacing: 1px;
+    font-size: 2vh;
+    background-image: url(../../img/icons/md-call.svg);
+}
+
+#adMail{
+    letter-spacing: 1px;
+    font-size: 2vh;
+    background-image: url(../../img/icons/md-mail.svg);
+}
+
+#numFax{
+    letter-spacing: 1px;
+    font-size: 2vh;
+    background-image: url(../../img/icons/md-print.svg);
+}
+
+#linkedin{
+    letter-spacing: 1px;
+    font-size: 2vh;
+    background-image: url(../../img/icons/logo-linkedin.svg);
 }
 
 #myLogo{
@@ -12,38 +44,28 @@ footer{
     background-repeat: no-repeat;
     position: absolute;
 	background-size: contain;
-	width: 39%;
+	width: 50vh;
 	height: 20%;
-    transform: translate(70vh, -15vh);
+    transform: translate(120vh, -17vh);
 }
 
 #copyright{
 	color : var(--colorWhite);
+    text-align: center;
+    font-size: 2vh;
+    transform: translate(5vh, 5vh);
 }
 
+@media(max-width: 900px) {
 
+#myLogo{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#adresseSection{
-    background-image: url(../../img/logo/logo4white.png);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 30vh;
     width: 30vh;
-    margin-top: -10%;
-    float: right;
+    height: 20%;
+    transform: translate(45vh, -15vh);
 }
+
+
+}
+
     

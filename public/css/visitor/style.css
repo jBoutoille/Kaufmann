@@ -393,7 +393,7 @@ li{
 
 #adresse{
     letter-spacing: 1px;
-    font-size: 3vh;
+    font-size: 4vh;
     background-image: url(../../img/icons/ios-business.svg);
 }
 
@@ -518,7 +518,7 @@ li{
 
 .newsletter .form-control {
       height: 50px;
-      border-color: black;
+      border-color: var(--colorBlue);
       border-radius: 0;
 }
 
