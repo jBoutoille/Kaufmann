@@ -66,8 +66,22 @@ footer{
 #myLogo{
 
     width: 30vh;
-    height: 20%;
-    transform: translate(45vh, -15vh);
+    height: 25%;
+    transform: translate(36vh, -10vh);
+}
+
+#adresseBox {
+    transform: translate(3vh, 2vh);
+    width: 100%;
+}
+
+#copyright{
+    font-size: 1vh;
+    transform: translate(0vh, 3vh);
+}
+
+footer{
+    height: 32vh;
 }
 
 
