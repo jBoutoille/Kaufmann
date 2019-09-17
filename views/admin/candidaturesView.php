@@ -24,25 +24,26 @@
                     </div>
                     <div class="panel-body">
                         <div class="table-responsive">
-                            <table class="table table-striped table-bordered table-hover">
+                            <p><strong>Il n'y a aucune candidature à afficher</strong></p>
+                            <table class="table table-striped table-bordered table-hover adminTableTitles">
                                 <thead>
                                     <tr>
-                                        <th>Nom</th>
-                                        <th>Prénom</th>
+                                        <th>Prénom Nom</th>
                                         <th>Poste recherché</th>
                                         <th>Adresse mail</th>
                                         <th>Téléphone</th>
+                                        <th>Date d'envoi</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Otto</td>
-                                        <td>Mark</td>
+                                        <td>Mark Otto</td>
                                         <td>Expert comptable</td>
                                         <td>democandidatures0@gmail.com</td>
                                         <td>06.06.06.06.06</td>
-                                        <td style="text-align:center;letter-spacing:1vh;">
+                                        <td>17/09/2019 à 11h49</td>
+                                        <td style="letter-spacing:1vh;">
                                             <a href="javascript:multiOpen('./toto.php','tata.php')"><i class="fa fa-search" title="Voir les fichiers"></i></a>
                                             <a href=""><i class="fa fa-download" title="Télécharger les fichiers"></i></a>
                                             <a href=""><i class="fa fa-envelope" title="Répondre à la candidature"></i></a>
@@ -50,12 +51,12 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Kaufmann</td>
-                                        <td>Gilles</td>
+                                        <td>Gilles Kaufmann</td>
                                         <td>Expert comptable</td>
                                         <td>gkaumann@hotmail.fr</td>
                                         <td>07.70.07.70.07</td>
-                                        <td style="text-align:center;letter-spacing:1vh;">
+                                        <td>16/09/2019 à 14h37</td>
+                                        <td style="letter-spacing:1vh;">
                                             <a href="#"><i class="fa fa-search" title="Voir les fichiers"></i></a>
                                             <a href="#"><i class="fa fa-download" title="Télécharger les fichiers"></i></a>
                                             <a href="#"><i class="fa fa-envelope" title="Répondre à la candidature"></i></a>
@@ -63,12 +64,12 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Ligny</td>
-                                        <td>Manuel</td>
+                                        <td>Manuel Ligny</td>
                                         <td>Développeur Web</td>
                                         <td>simplonboulogne@gmail.com</td>
                                         <td>03.21.00.00.00</td>
-                                        <td style="text-align:center;letter-spacing:1vh;">
+                                        <td>17/09/2019 à 09h19</td>
+                                        <td style="letter-spacing:1vh;">
                                             <a href="#"><i class="fa fa-search" title="Voir les fichiers"></i></a>
                                             <a href="#"><i class="fa fa-download" title="Télécharger les fichiers"></i></a>
                                             <a href="#"><i class="fa fa-envelope" title="Répondre à la candidature"></i></a>
