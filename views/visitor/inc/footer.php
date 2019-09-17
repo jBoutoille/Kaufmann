@@ -61,8 +61,8 @@
            Développé par 
            <a href="" style="color: white">JBoutoille</a> & 
            <a href="" style="color: white">JFasquelle</a> | 
-           <a href="" style="color: white">Mentions lègale</a>
-          
+           <a href="" style="color: white">Mentions lègale</a> | 
+           <a href="" style="color: white">Admin</a>
         </p>
 
       </div>
