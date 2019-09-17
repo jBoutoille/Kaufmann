@@ -37,7 +37,7 @@
 				Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.
 				<br>
 				<br>
-				Confiez-nous vos retards comptabilité, la gestion de vos projets, ou toute autre besoin.
+				Confiez-nous vos retards de comptabilité, la gestion de vos projets, ou toute autres besoins.
 			</p>
 			<div id="experiences">
 				<div class="experienceOne">
@@ -46,7 +46,7 @@
 				</div>
 				<div class="experienceTwo">
 					<p class="sizeNumber">40</p>
-					<h2>Années d'expertise</h2>
+					<h2>Années d'expertises</h2>
 				</div>
 			</div>
 		</div>
@@ -77,20 +77,20 @@
 						<ul>
 							<li class="liPuce">Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)</li>
 							<li class="liPuce">Associations (tenue, accompagnement, révision...)</li>
-							<li class="liPuce">Particuliers (Impot sur le revenu, IFI, conseil patrimonial...)</li>
+							<li class="liPuce">Particuliers (impôts sur le revenu, IFI, conseil patrimonial...)</li>
 							<li class="liPuce">Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)</li>
 						</ul>
 
 
-			<h2 class="serviceSection">CONSEILS / ACCOMPAGNEMENT</h2>
+			<h2 class="serviceSection">CONSEIL ET ACCOMPAGNEMENT</h2>
 
-				<p>text à définir :</p>
+				<p>texte à définir :</p>
 			
 						<ul>
-							<li class="liPuce">Création / reprise de socités.</li>
-							<li class="liPuce">Mise en place de tableaux de boards.</li>
+							<li class="liPuce">Création et reprise de sociétés.</li>
+							<li class="liPuce">Mise en place de tableaux de bords.</li>
 							<li class="liPuce">Prévisionnels.</li>
-							<li class="liPuce">Évaluation de socités.</li>
+							<li class="liPuce">Évaluation de sociétés.</li>
 							<li class="liPuce">Mise à disposition de logiciels sans engagement à tarifs avantageux:
 								"comptabilité, facturation, notes de frais"</li>
 						</ul>
@@ -106,7 +106,7 @@
 					<ul id="boxAdresse">
 						<h3 id="coordonnees">Coordonnées :</h3>
 
-							<li id="adresse"><i class="fas fa-building mr-2"></i>5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
+							<li id="adresse"><i class="fas fa-building mr-2"></i>5 Place d'Angleterre <br>62200, Boulogne-sur-mer</li>
 							<li id="telMobile"><i class="fas fa-phone mr-2"></i>03 21 30 19 19</li>
 							<li id="adMail"><i class="fas fa-envelope mr-2"></i>contact@kaufmann.fr</li>
 							<li id="numFax"><i class="fas fa-print mr-2"></i>03 91 18 65 65</li>
@@ -119,7 +119,7 @@
 						</div>
 						<div id="boxContactTwo">
 							<p class="textBtn"> Rejoindre notre équipe</p>
-							<button class="myBtn">ENVOYER UN C.V</button>	
+							<button class="myBtn">ENVOYER UN CV</button>	
 						</div>
 					</div>
 
@@ -134,11 +134,11 @@
 
                     <div class="news-data">
                     <div class="section-subheading">
-                          <h1 class="wow fadeInUp">Recevoir notre newsletter</h1>
+                          <h1 class="wow fadeInUp">Abonnez vous à notre Newsletter</h1>
                     </div>
 
                     <div class="input-group wow fadeInUp">
-                          <input type="email" class="form-control" placeholder="Entrez votre Email">
+                          <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail">
                           <span class="input-group-btn">
                                 <button class="btn" type="submit">S'abonner</button>
                           </span>
