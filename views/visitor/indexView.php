@@ -123,10 +123,15 @@
 				<p>texte à définir :</p>
 			
 						<ul>
-							<li class="liPuce">Création et reprise de sociétés.</li>
-							<li class="liPuce">Mise en place de tableaux de bords.</li>
-							<li class="liPuce">Prévisionnels.</li>
-							<li class="liPuce">Évaluation de sociétés.</li>
+							<li class="liPuce">Création et reprise de sociétés</li>
+							<li class="liPuce">Mise en place de tableaux de bords</li>
+							<li class="liPuce">Prévisionnels</li>
+							<li class="liPuce">
+								Évaluation de sociétés
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExampleModal">
+									Voir plus
+								</button>
+							</li>
 							<li class="liPuce">Mise à disposition de logiciels sans engagement à tarifs avantageux:
 								"comptabilité, facturation, notes de frais"</li>
 						</ul>
@@ -186,8 +191,8 @@
            </section>
            <div style="height:40vh"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.4996106340805!2d1.6007255077783342!3d50.72309948130056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc2c42e0ba61b7%3A0x7b8d42d029cd746d!2s5%20Place%20d&#39;Angleterre%2C%2062200%20Boulogne-sur-Mer!5e0!3m2!1sfr!2sfr!4v1568721375304!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
 
-
 <?php
+	require './views/visitor/inc/modals.php';
     $htmlTitle = 'Accueil | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
