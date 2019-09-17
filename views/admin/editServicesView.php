@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-head-line">Modifications - Services</h1>
-                <h2 class="page-subhead-line">Ceci représente la page de modification du bloc Services</h2>
+                <h2 class="page-subhead-line">Cette section permet de modifier le contenu du bloc "Services" sur le site</h2>
             </div>
         </div>
         <div class="row">

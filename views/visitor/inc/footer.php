@@ -16,7 +16,9 @@
 
             <div id="copyright">
                 <p>
-                  S.A.R.L au capital de 10.000€ - siret 429 453 392 00012 - code APE 6920 Z - N° de T.V.A INTRACOMMUNAUTAIRE : FR 77429 453 392 <br> © 2019 JBoutoille - JFasquelle Mention légales  
+                  S.A.R.L au capital de 10.000€ - siret 429 453 392 00012 - code APE 6920 Z - N° de T.V.A INTRACOMMUNAUTAIRE : FR 77429 453 392
+                  <br> 
+                  © 2019 G.KAUFMANN | Développé par JBoutoille & JFasquelle | <a href="#">Mention légales</a> | <a href="./?page=gk-admin">Admin</a>
                 </p>
             </div>
 

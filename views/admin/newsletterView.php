@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-head-line">Gestion de la Newsletter</h1>
-                <h2 class="page-subhead-line">Ceci représente la page de gestion de la Newsletter</h2>
+                <h2 class="page-subhead-line">Cette section permet de télécharger la liste à jour des adresses mails inscrites à la newsletter</h2>
             </div>
         </div>
         <div class="row">
