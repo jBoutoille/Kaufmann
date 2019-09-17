@@ -4,8 +4,8 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="page-head-line">Configuration du site</h1>
-                <h2 class="page-subhead-line">Ceci représente la page de configuration du site</h2>
+                <h1 class="page-head-line">Gestion de la Newsletter</h1>
+                <h2 class="page-subhead-line">Ceci représente la page de gestion de la Newsletter</h2>
             </div>
         </div>
         <div class="row">
@@ -19,7 +19,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Configuration du site | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Gestion de la Newsletter | Admin | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

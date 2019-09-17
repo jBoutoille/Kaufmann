@@ -21,7 +21,7 @@
     // CONFIGURATION DU SITE
     function getAdminConfig(){
         if(isset($_SESSION['sessionToken'])){
-            require './views/admin/configView.php';            
+            require './views/admin/configView.php';
         }
         else{
             header('Location: ./');
@@ -29,41 +29,91 @@
     }
 
     // MODIFICATIONS
-    function adminModifHeader(){
-
+    function getAdminHeader(){
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/editHeaderView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
-    function adminModifPresentation(){
-        
+    function getAdminPresentation(){
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/editPresentationView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
-    function adminModifExpertise(){
-        
+    function getAdminExpertise(){
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/editExpertiseView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
-    function adminModifServices(){
-        
+    function getAdminServices(){
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/editServicesView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
-    function adminModifContact(){
-        
+    function getAdminContact(){
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/editContactView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
     function getAdminNewsletter(){
-
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/editNewsletterView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
-    function adminModifFooter(){
-        
+    function getAdminFooter(){
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/editFooterView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
 
     // GESTION DE LA NEWSLETTER
     function adminNewsletter(){
-
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/newsletterView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
 
     // GESTION DE L'ACTUALITE
     function adminActualite(){
-
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/actualiteView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
 
     // CANDIDATURES RECUES
     function adminCandidatures(){
-
+        if(isset($_SESSION['sessionToken'])){
+            require './views/admin/candidaturesView.php';
+        }
+        else{
+            header('Location: ./');
+        }
     }
 
     // SE DECONNECTER

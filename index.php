@@ -2,6 +2,12 @@
 
     session_start();   
 
+    function startsWith ($string, $startString) 
+    { 
+        $len = strlen($startString); 
+        return (substr($string, 0, $len) === $startString); 
+    } 
+
     require './models/adminManager.php';
     require './models/visitorManager.php';
 
@@ -12,12 +18,12 @@
     try
     {
 
-        // TRAITEMENT DES FORMULAIRES -------------------
+// TRAITEMENT DES FORMULAIRES -------------------
         if(isset($_GET['treatment']))
             { dataTraitment(); }
 
 
-        // PARTIE VISITEUR --------------------------------
+// PARTIE VISITEUR --------------------------------
         elseif(empty($_GET))
             { getIndex(); }
 
@@ -28,42 +34,55 @@
             { getActualite(); }
 
 
-        // PARTIE ADMIN ----------------------------------
+// PARTIE ADMIN ----------------------------------
+    // DASHBOARD
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && empty($_GET['p1']))
             { getAdmin(); }
-
+    // CONFIGURATION DU SITE
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
             isset($_GET['p1']) && $_GET['p1'] == 'config')
             { getAdminConfig(); }
-
+    // MODIFICATIONS -> HEADER
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'header')
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-header')
             { getAdminHeader(); }
-
+    // MODIFICATIONS -> PRESENTATION
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'presentation')
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-presentation')
             { getAdminPresentation(); }
-
+    // MODIFICATIONS -> EXPERTISE
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'expertise')
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-expertise')
             { getAdminExpertise(); }
-
+    // MODIFICATIONS -> SERVICES
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'services')
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-services')
             { getAdminServices(); }
-
+    // MODIFICATIONS -> CONTACT
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'contact')
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-contact')
             { getAdminContact(); }
-
+    // MODIFICATIONS -> NEWSLETTER
+        elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-newsletter')
+            { getAdminNewsletter(); }
+    // MODIFICATIONS -> FOOTER
+        elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-footer')
+            { getAdminFooter(); }
+    // GESTION DE LA NEWSLETTER
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
             isset($_GET['p1']) && $_GET['p1'] == 'newsletter')
-            { getAdminNewsletter(); }
-
+            { adminNewsletter(); }
+    // GESTION DE L'ACTUALITE
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'footer')
-            { getAdminFooter(); }
-
+            isset($_GET['p1']) && $_GET['p1'] == 'actualite')
+            { adminActualite(); }
+    // CANDIDATURES RECUES
+        elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
+            isset($_GET['p1']) && $_GET['p1'] == 'candidatures')
+            { adminCandidatures(); }
+    // SE DECONNECTER
         elseif(isset($_GET['action']) && $_GET['action'] == 'logout')
             { adminLogout($_TOKEN); }
 
