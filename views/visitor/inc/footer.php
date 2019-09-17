@@ -14,8 +14,8 @@
         </a>
                     <div class="row">
               <div class="col-md-12">
-                <img src="./public/img/logo/cncc2.png" style="width: 10vh;margin-top: 3vh;margin-right: 3vh">
-                <img src="./public/img/logo/ordre.png" style="width: 10vh;margin-top: 3vh">       
+                <a href="https://www.cncc.fr/"><img src="./public/img/logo/cncc2.png"  style="width: 15vh;margin-top: 3vh;margin-right: 3vh"></a>
+                <a href="https://www.experts-comptables.fr/"><img src="./public/img/logo/ordre.png" style="width: 15vh;margin-top: 3vh"></a>     
               </div>
               
             </div>
@@ -37,7 +37,7 @@
           <i class="fas fa-print mr-2"></i>03 91 18 65 65 </p>
 
             <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://fr.linkedin.com/">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.linkedin.com/in/benjamin-cauchet-642792153/" target="_blank">
                 <i class="fab fa-linkedin" style="color: white; font-size: 6vh"></i>
               </a>
             </li>
