@@ -60,8 +60,7 @@
         <p class="text-center text-md-left" style="color: white">© 2018 Copyright:
           <a href="" style="color: white">JBoutoille</a>
            <a href="" style="color: white">JFasquelle</a>
-           <a href="" style="color: white">Mentions lègale</a>
-          
+           <a href="" style="color: white">Mentions légales</a>
         </p>
 
       </div>
