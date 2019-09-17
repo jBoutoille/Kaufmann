@@ -28,7 +28,7 @@
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" style="color: white">
         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
         <p>
-          <i class="fas fa-building mr-2"></i>5 Place d'Angleterre 62200 BOULOGNE/MER </p>
+          <i class="fas fa-building mr-2"></i>5 Place d'Angleterre <br>62200, Boulogne-sur-mer </p>
         <p>
           <i class="fas fa-envelope mr-2"></i>contact@kaufmann.fr </p>
         <p>
@@ -57,10 +57,12 @@
     justify-content: center;">
 
         <!--Copyright-->
-        <p class="text-center text-md-left" style="color: white">© 2018 Copyright:
-          <a href="" style="color: white">JBoutoille</a>
-           <a href="" style="color: white">JFasquelle</a>
-           <a href="" style="color: white">Mentions légales</a>
+        <p class="text-center text-md-left" style="color: white">© 2019 G.KAUFMANN |  
+           Développé par 
+           <a href="" style="color: white">JBoutoille</a> & 
+           <a href="" style="color: white">JFasquelle</a> | 
+           <a href="" style="color: white">Mentions lègale</a>
+          
         </p>
 
       </div>
