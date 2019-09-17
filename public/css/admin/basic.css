@@ -201,6 +201,10 @@ body {
 .nav > li > a > i {
     margin-right: 10px;
 }
+
+.adminTableTitles th, .adminTableTitles td{
+    text-align:center;
+}
 /*==============================================
     FOOTER  STYLES    
     =============================================*/

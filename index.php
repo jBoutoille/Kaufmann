@@ -24,14 +24,21 @@
 
 
 // PARTIE VISITEUR --------------------------------
+    // PAGE D'ACCUEIL - ONE PAGE
         elseif(empty($_GET))
             { getIndex(); }
-
+    // PAGE DE CONTACT / DEMANDE DE DEVIS
         elseif(isset($_GET['page']) && $_GET['page'] == 'contact')
-            { getContact(); }
-
+            { getDevis(); }
+    // PAGE DE CONTACT / NOUS REJOINDRE
+        elseif(isset($_GET['page']) && $_GET['page'] == 'contact')
+            { getRejoindre(); }
+    // PAGE D'ACTUALITES
         elseif(isset($_GET['page']) && $_GET['page'] == 'actualite')
             { getActualite(); }
+    // PAGE DES MENTIONS LEGALES
+        elseif(isset($_GET['page']) && $_GET['page'] == 'mentions-legales')
+            { getMentions(); }
 
 
 // PARTIE ADMIN ----------------------------------

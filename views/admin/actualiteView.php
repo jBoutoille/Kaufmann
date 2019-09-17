@@ -5,13 +5,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-head-line">Gestion de l'actualité</h1>
-                <h2 class="page-subhead-line">Ceci représente la page de gestion de l'actualité</h2>
+                <h2 class="page-subhead-line">Cette section permet de créer, modifier et supprimer des articles d'actualité</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="alert alert-info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestiae sint debitis molestias tempora illum vero laborum veritatis. Ducimus aut necessitatibus in quibusdam similique vel quasi ab at sapiente, maxime iusto, nobis neque eum vitae tempore quidem saepe natus quis.
+                    CETTE PAGE EST ACTUELLEMENT EN STANDBY PAR MANQUE D'INFORMATIONS POUR SON DEVELOPPEMENT.
                 </div>
             </div>
         </div>
