@@ -61,7 +61,8 @@ footer{
     background-size: contain;
     width: 20%;
     height: 20%;
-    transform: translate(10vw, -12vw);
+    margin-left: 20vh;
+    margin-top: -5vh;
 }
 
 #basicLogoTwo{
@@ -71,7 +72,8 @@ footer{
     background-size: contain;
     width: 20%;
     height: 20%;
-    transform: translate(20vw, -12vw);
+    margin-left: 22vh;
+    margin-top: -15vh;
 }
 
 #copyright{
@@ -99,8 +101,8 @@ footer{
 }
 
 #copyright{
-    font-size: 1vh;
-    transform: translate(0vh, 3vh);
+    font-size: 1.8vh;
+    transform: translate(0vh, 15vh);
 }
 
 #telMobile2{
@@ -120,16 +122,18 @@ footer{
 }
 
 #basicLogoOne{
-    transform: translate(80vw, -33vw);
+    margin-left: 20vh;
+    margin-top: 5vh;
 }
 
 #basicLogoTwo{
-    transform: translate(85vw, -24vw);
+    margin-left: 5vh;
+    margin-top: 5vh;
 }
 
 
 footer{
-    height: 40vh;
+    height: 55vh;
 }
 }
 

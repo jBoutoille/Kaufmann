@@ -201,11 +201,13 @@
     color: var(--colorGrey);
 }
 
+
 #bluBoxOne{
-    padding: 10vh;
     width: 100%;
-    height: 100vh;
-    background-color: var(--colorBlue);
+    height: 90vh;
+    background-image: url(../../img/deskTop.jpg);
+    background-size: cover;
+    opacity: 0.8;
 }
 
 #titleOne{   
@@ -270,7 +272,7 @@
 /*--------------- CABINET SECTION --------------- */
 
 #bluBoxOne{
-    height: 131vh;
+    height: 100vh;
 }
 
 #titleOne{   
@@ -294,7 +296,7 @@
 }
 
 #titleOne{   
-    margin-top: -5%;
+    margin-top: 5%;
 }
 
 
@@ -354,11 +356,12 @@ li{
     width: 100%;
     height: 90vh;
     background-image: url(../../img/staffWork.jpg);
-    background-size: cover;   
+    background-size: cover;
+    opacity: 0.8;   
 }
 
-.filterTwo{
-    background-color : rgba(5,18,87,0.3);
+.filter{
+    background-color : rgba(5,18,87,0.5);
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -555,7 +558,7 @@ li{
 }
 
 ::placeholder {
-      font-size: 1.2vh;
+      font-size: 1.4vh;
       letter-spacing: 3px;
 }
 

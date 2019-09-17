@@ -30,22 +30,24 @@
 			</p>
 	</section>
 	<section id="bluBoxOne">
-		<h2 id="titleOne">Notre expertise en quelques chiffres :</h2>
-		<div id="barOne"></div>
-		<p id="texteSectionTwo">
-			Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.
-			<br>
-			<br>
-			Confiez-nous vos retards comptabilité, la gestion de vos projets, ou toute autre besoin.
-		</p>
-		<div id="experiences">
-			<div class="experienceOne">
-				<p class="sizeNumber">350</p>
-				<h2>Clients</h2>
-			</div>
-			<div class="experienceTwo">
-				<p class="sizeNumber">40</p>
-				<h2>Années d'expertise</h2>
+		<div class="filter">
+			<h2 id="titleOne">Notre expertise en quelques chiffres :</h2>
+			<div id="barOne"></div>
+			<p id="texteSectionTwo">
+				Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.
+				<br>
+				<br>
+				Confiez-nous vos retards comptabilité, la gestion de vos projets, ou toute autre besoin.
+			</p>
+			<div id="experiences">
+				<div class="experienceOne">
+					<p class="sizeNumber">350</p>
+					<h2>Clients</h2>
+				</div>
+				<div class="experienceTwo">
+					<p class="sizeNumber">40</p>
+					<h2>Années d'expertise</h2>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -96,7 +98,7 @@
 	</section>
 		<!-- CONTACT SECTION -->
 		<section id="bluBoxTwo">
-			<div class="filterTwo">
+			<div class="filter">
 
 			<h2 class="titleNav" id="contact">| Contact</h2>
 
