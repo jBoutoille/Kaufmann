@@ -25,6 +25,9 @@
     <!-- CSS CUSTOM -->
     <link href="./public/css/visitor/style.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/footer.css" rel="stylesheet" type="text/css">
+
+    <!--CDN-->
+    <script src="https://kit.fontawesome.com/dba9f403c3.js"></script>
     
    
 </head>

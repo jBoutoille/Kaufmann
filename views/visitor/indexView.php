@@ -62,11 +62,11 @@
 				<p>Nous intervenons au titre de vos besoins en matière de :</p>
 					
 					<ul>
-						<li> Commissairiat aux comptes.</li>
-						<li> Audit Contractuel.</li>
-						<li> Commissariat à la transformation.</li>
-						<li> Commissariat à la fusion.</li>
-						<li> Audit d'acquisition.</li>
+						<li class="liPuce"> Commissairiat aux comptes.</li>
+						<li class="liPuce"> Audit Contractuel.</li>
+						<li class="liPuce"> Commissariat à la transformation.</li>
+						<li class="liPuce"> Commissariat à la fusion.</li>
+						<li class="liPuce"> Audit d'acquisition.</li>
 					</ul>
 			
 			<h2 class="serviceSection">EXPERTISE COMPTABLE</h2>
@@ -75,10 +75,10 @@
 				fiscalité, social et juridique :</p>
 			
 						<ul>
-							<li>Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)</li>
-							<li>Associations (tenue, accompagnement, révision...)</li>
-							<li>Particuliers (Impot sur le revenu, IFI, conseil patrimonial...)</li>
-							<li>Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)</li>
+							<li class="liPuce">Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)</li>
+							<li class="liPuce">Associations (tenue, accompagnement, révision...)</li>
+							<li class="liPuce">Particuliers (Impot sur le revenu, IFI, conseil patrimonial...)</li>
+							<li class="liPuce">Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)</li>
 						</ul>
 
 
@@ -87,11 +87,11 @@
 				<p>text à définir :</p>
 			
 						<ul>
-							<li>Création / reprise de socités.</li>
-							<li>Mise en place de tableaux de boards.</li>
-							<li>Prévisionnels.</li>
-							<li>Évaluation de socités.</li>
-							<li>Mise à disposition de logiciels sans engagement à tarifs avantageux:
+							<li class="liPuce">Création / reprise de socités.</li>
+							<li class="liPuce">Mise en place de tableaux de boards.</li>
+							<li class="liPuce">Prévisionnels.</li>
+							<li class="liPuce">Évaluation de socités.</li>
+							<li class="liPuce">Mise à disposition de logiciels sans engagement à tarifs avantageux:
 								"comptabilité, facturation, notes de frais"</li>
 						</ul>
 		</div>
@@ -106,10 +106,10 @@
 					<ul id="boxAdresse">
 						<h3 id="coordonnees">Coordonnées :</h3>
 
-							<li id="adresse">5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
-							<li id="telMobile">03 21 30 19 19</li>
-							<li id="adMail">contact@kaufmann.fr</li>
-							<li id="numFax">03 91 18 65 65</li>
+							<li id="adresse"><i class="fas fa-building mr-2"></i>5 Place d'Angleterre <br>62200 BOULOGNE SUR MER</li>
+							<li id="telMobile"><i class="fas fa-phone mr-2"></i>03 21 30 19 19</li>
+							<li id="adMail"><i class="fas fa-envelope mr-2"></i>contact@kaufmann.fr</li>
+							<li id="numFax"><i class="fas fa-print mr-2"></i>03 91 18 65 65</li>
 
 					</ul>
 					<div id="twoBox">
