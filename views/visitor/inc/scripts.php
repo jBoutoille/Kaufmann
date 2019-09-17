@@ -3,3 +3,4 @@
 <script src="./public/js/libs/bootstrap.js"></script>
 
 <!-- JS CUSTOM -->
+<script src="./public/js/nav.js"></script>
