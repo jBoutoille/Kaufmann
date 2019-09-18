@@ -53,10 +53,10 @@
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
             isset($_GET['p1']) && $_GET['p1'] == 'edit-header')
             { getAdminHeader(); }
-    // MODIFICATIONS -> PRESENTATION
+    // MODIFICATIONS -> LE CABINET
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'edit-presentation')
-            { getAdminPresentation(); }
+            isset($_GET['p1']) && $_GET['p1'] == 'edit-lecabinet')
+            { getAdminLecabinet(); }
     // MODIFICATIONS -> EXPERTISE
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
             isset($_GET['p1']) && $_GET['p1'] == 'edit-expertise')

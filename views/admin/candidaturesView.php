@@ -44,7 +44,7 @@
                                         <td class="trCandid">06.06.06.06.06</td>
                                         <td class="trCandid">17/09/2019 à 11h49</td>
                                         <td>
-                                            <div class="btn-group open">
+                                            <div class="btn-group">
                                                 <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Actions <span class="caret"></span></button>
                                                 <ul class="dropdown-menu">
                                                     <li><a onclick='multiOpen("","")'><i class="fa fa-search"></i> Aperçu</a></li>

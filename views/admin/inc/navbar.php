@@ -15,7 +15,7 @@
                                 <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='edit-header'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=edit-header"><i class="fa fa-code"></i>Haut de page</a>
                             </li>
                             <li>
-                                <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='edit-presentation'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=edit-presentation"><i class="fa fa-code"></i>Présentation</a>
+                                <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='edit-lecabinet'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=edit-lecabinet"><i class="fa fa-code"></i>Le cabinet</a>
                             </li>
                             <li>
                                 <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='edit-expertise'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=edit-expertise"><i class="fa fa-code"></i>Expertise</a>
