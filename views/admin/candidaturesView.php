@@ -33,47 +33,27 @@
                                         <th>Adresse mail</th>
                                         <th>Téléphone</th>
                                         <th>Date d'envoi</th>
-                                        <th>Actions</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Mark Otto</td>
-                                        <td>Expert comptable</td>
-                                        <td>democandidatures0@gmail.com</td>
-                                        <td>06.06.06.06.06</td>
-                                        <td>17/09/2019 à 11h49</td>
-                                        <td style="letter-spacing:1vh;">
-                                            <a href="javascript:multiOpen('./toto.php','tata.php')"><i class="fa fa-search" title="Voir les fichiers"></i></a>
-                                            <a href=""><i class="fa fa-download" title="Télécharger les fichiers"></i></a>
-                                            <a href=""><i class="fa fa-envelope" title="Répondre à la candidature"></i></a>
-                                            <a href=""><i class="fa fa-trash-o" title="Supprimer la candidature"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Gilles Kaufmann</td>
-                                        <td>Expert comptable</td>
-                                        <td>gkaumann@hotmail.fr</td>
-                                        <td>07.70.07.70.07</td>
-                                        <td>16/09/2019 à 14h37</td>
-                                        <td style="letter-spacing:1vh;">
-                                            <a href="#"><i class="fa fa-search" title="Voir les fichiers"></i></a>
-                                            <a href="#"><i class="fa fa-download" title="Télécharger les fichiers"></i></a>
-                                            <a href="#"><i class="fa fa-envelope" title="Répondre à la candidature"></i></a>
-                                            <a href="#"><i class="fa fa-trash-o" title="Supprimer la candidature"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Manuel Ligny</td>
-                                        <td>Développeur Web</td>
-                                        <td>simplonboulogne@gmail.com</td>
-                                        <td>03.21.00.00.00</td>
-                                        <td>17/09/2019 à 09h19</td>
-                                        <td style="letter-spacing:1vh;">
-                                            <a href="#"><i class="fa fa-search" title="Voir les fichiers"></i></a>
-                                            <a href="#"><i class="fa fa-download" title="Télécharger les fichiers"></i></a>
-                                            <a href="#"><i class="fa fa-envelope" title="Répondre à la candidature"></i></a>
-                                            <a href="#"><i class="fa fa-trash-o" title="Supprimer la candidature"></i></a>
+                                        <td class="trCandid">Mark Otto</td>
+                                        <td class="trCandid">Expert comptable</td>
+                                        <td class="trCandid">democandidatures0@gmail.com</td>
+                                        <td class="trCandid">06.06.06.06.06</td>
+                                        <td class="trCandid">17/09/2019 à 11h49</td>
+                                        <td>
+                                            <div class="btn-group open">
+                                                <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Actions <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a onclick='multiOpen("","")'><i class="fa fa-search"></i> Aperçu</a></li>
+                                                    <li><a onclick=''><i class="fa fa-download"></i> Télécharger</a></li>
+                                                    <li><a href=""><i class="fa fa-envelope"></i> Répondre</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href=""><i class="fa fa-trash-o"></i> Supprimer</a></li>
+                                                </ul>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>

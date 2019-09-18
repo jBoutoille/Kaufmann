@@ -205,6 +205,10 @@ body {
 .adminTableTitles th, .adminTableTitles td{
     text-align:center;
 }
+
+.trCandid {
+    padding:17px!important;
+}
 /*==============================================
     FOOTER  STYLES    
     =============================================*/
