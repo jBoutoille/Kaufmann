@@ -59,10 +59,10 @@
         <!--Copyright-->
         <p class="text-center text-md-left" style="color: white">© 2019 G.KAUFMANN |  
            Développé par 
-           <a href="" style="color: white">JBoutoille</a> & 
-           <a href="" style="color: white">JFasquelle</a> | 
-           <a href="" style="color: white">Mentions lègale</a> | 
-           <a href="" style="color: white">Admin</a>
+           <a href="#" style="color: white">JBoutoille</a> & 
+           <a href="#" style="color: white">JFasquelle</a> | 
+           <a href="./?page=mentions" style="color: white">Mentions légales</a> | 
+           <a href="./?page=gk-admin" style="color: white">Admin</a>
         </p>
 
       </div>

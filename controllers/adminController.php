@@ -7,7 +7,7 @@
         }
         else{
             if(isset($_SESSION['notif'])){
-                $notif = '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> ' . $_SESSION['notif'] . '</div>';
+                $notif = $_SESSION['notif'];
             }
             else{
                 $notif = NULL;
@@ -122,6 +122,8 @@
         $AM->unsetToken($_TOKEN);
         $_SESSION['sessionToken'] = NULL;
         session_destroy();
+        session_start();
+        $_SESSION['notif'] = '<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> Vous venez de vous déconnecter</div>';
         header('Location: ./?page=gk-admin');
     }
 

@@ -34,7 +34,7 @@
                 $data = $query->fetch();
         
                 if($user != $data['username']){
-                    $_SESSION['notif'] = "Identifiant invalide";
+                    $_SESSION['notif'] = '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Identifiant invalide</div>';
                 }
                 else{
                     if($pw == $data['password']){
@@ -44,7 +44,7 @@
                         $_SESSION['sessionToken'] = $token;
                     }
                     else {
-                        $_SESSION['notif'] = "Identifiant invalide";
+                        $_SESSION['notif'] = '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Identifiant invalide</div>';
                     }
                 }
             }
