@@ -3,46 +3,39 @@
 
     <!-- HTML DE LA PAGE INDEX -->
 <header>
+	<!-- NAV -->
+	<nav class="nav">
+		<span id="brand">
+			<a href=""><img src="./public/img/logo/logo2white.png" class="logoBaner" ></a>
+		</span>
 
+		<ul id="menu">
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#cabinet">Le cabinet</a></li>
+			<li><a href="#services">Nos services</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#">Actualités</a></li>
+			<li><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button></li>
+		</ul>
 
-<nav class="nav">
-                  <span id="brand">
-                        <a href=""><img src="./public/img/logo/logo2white.png" class="logoBaner" ></a>
-                  </span>
+		<div id="toggle">
+			<div class="span"><i class="fas fa-bars"></i></div>
+		</div>
+	</nav>
+	<!-- NAV MOBILE-->
+	<div id="resize">
+		<div class="close-btn"><i class="fas fa-times"></i></div>
 
-                  <ul id="menu">
-
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#cabinet">Le cabinet</a></li>
-                        <li><a href="#services">Nos services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Actualités</a></li>
-                        <li><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button></li>
-
-                  </ul>
-
-
-                  <div id="toggle">
-                        <div class="span"><i class="fas fa-bars"></i></div>
-                  </div>
-
-            </nav>
-
-            <div id="resize">
-                  <div class="close-btn"><i class="fas fa-times"></i></div>
-
-                  <ul id="menu">
-                  		<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button>
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#cabinet">Le cabinet</a></li>
-                        <li><a href="#services">Nos services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Actualités</a></li>
-                  </ul>
-            </div>
-
-
-
+		<ul id="menu">
+			<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button>
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#cabinet">Le cabinet</a></li>
+			<li><a href="#services">Nos services</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#">Actualités</a></li>
+		</ul>
+	</div>
+	<!-- HEADER -->
 	<div id="imgHeader">
 	 <div class="filterOne">
       <div id="titleHeader"> 
@@ -54,7 +47,6 @@
      </div>
     </div>
 </header>
-
     <!-- CABINET SECTION -->
     <a name="cabinet"></a>
 	<section>
@@ -92,13 +84,11 @@
 			</div>
 		</div>
 	</section>
-
 	<!-- SERVICES SECTION -->
 	<a name="services"></a>
 	<section id="globalBoxService">	
 		<h2 class="titleNav">| Nos services</h2>	
 		<div id="serviceBox">
-			
 			<h2 class="serviceSection">AUDIT</h2>
 			
 				<p>Nous intervenons au titre de vos besoins en matière de :</p>
@@ -122,7 +112,6 @@
 							<li class="liPuce">Particuliers (impôts sur le revenu, IFI, conseil patrimonial...)</li>
 							<li class="liPuce">Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)</li>
 						</ul>
-
 
 			<h2 class="serviceSection">CONSEIL ET ACCOMPAGNEMENT</h2>
 
@@ -149,61 +138,55 @@
 					</ul>
 		</div>
 	</section>
-		<!-- CONTACT SECTION -->
-		<a name="contact"></a>
+	<!-- CONTACT SECTION -->
+	<a name="contact"></a>
+	<section id="bluBoxTwo">
+		<div class="filter">
 
-		<section id="bluBoxTwo">
-			<div class="filter">
+		<h2 class="titleNav" id="contact">| Contact</h2>
 
-			<h2 class="titleNav" id="contact">| Contact</h2>
+			<div id="boxContner">
+				<ul id="boxAdresse">
+					<h3 id="coordonnees">Coordonnées :</h3>
 
-				<div id="boxContner">
-					<ul id="boxAdresse">
-						<h3 id="coordonnees">Coordonnées :</h3>
+						<li id="adresse"><i class="fas fa-building mr-2"></i>5 Place d'Angleterre <br>62200, Boulogne-sur-mer</li>
+						<li id="telMobile"><i class="fas fa-phone mr-2"></i>03 21 30 19 19</li>
+						<li id="adMail"><i class="fas fa-envelope mr-2"></i>contact@kaufmann.fr</li>
+						<li id="numFax"><i class="fas fa-print mr-2"></i>03 91 18 65 65</li>
 
-							<li id="adresse"><i class="fas fa-building mr-2"></i>5 Place d'Angleterre <br>62200, Boulogne-sur-mer</li>
-							<li id="telMobile"><i class="fas fa-phone mr-2"></i>03 21 30 19 19</li>
-							<li id="adMail"><i class="fas fa-envelope mr-2"></i>contact@kaufmann.fr</li>
-							<li id="numFax"><i class="fas fa-print mr-2"></i>03 91 18 65 65</li>
-
-					</ul>
-					<div id="twoBox">
-						<div id="boxContactOne">
-							<p class="textBtn"> Optenir un devis de comptable et d'experts-comptables</p>
-							<button class="myBtn">REMPLIR LE DEVIS</button>
-						</div>
-						<div id="boxContactTwo">
-							<p class="textBtn"> Rejoindre notre équipe</p>
-							<button class="myBtn">ENVOYER UN CV</button>	
-						</div>
+				</ul>
+				<div id="twoBox">
+					<div id="boxContactOne">
+						<p class="textBtn"> Optenir un devis de comptable et d'experts-comptables</p>
+						<button class="myBtn">REMPLIR LE DEVIS</button>
 					</div>
-
+					<div id="boxContactTwo">
+						<p class="textBtn"> Rejoindre notre équipe</p>
+						<button class="myBtn">ENVOYER UN CV</button>	
+					</div>
 				</div>
+
 			</div>
-		</section>
-<!-- NEWSLETTER SECTION -->
-		
-           <section class="newsletter">
-
-                  <div class="container">
-
-                    <div class="news-data">
-                    <div class="section-subheading">
-                          <h1 class="wow fadeInUp">Abonnez vous à notre Newsletter</h1>
-                    </div>
-
-                    <div class="input-group wow fadeInUp">
-                          <input type="email" class="form-control" placeholder="Entrez votre e-mail">
-                          <span class="input-group-btn">
-                                <button class="btn" type="submit">S'abonner</button>
-                          </span>
-                    </div>
-                    </div>
-
-                  </div>
-
-           </section>
-           <div style="height:40vh"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.4996106340805!2d1.6007255077783342!3d50.72309948130056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc2c42e0ba61b7%3A0x7b8d42d029cd746d!2s5%20Place%20d&#39;Angleterre%2C%2062200%20Boulogne-sur-Mer!5e0!3m2!1sfr!2sfr!4v1568721375304!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+		</div>
+	</section>
+	<!-- NEWSLETTER SECTION -->	
+    <section class="newsletter">
+      <div class="container">
+        <div class="news-data">
+        <div class="section-subheading">
+              <h1 class="wow fadeInUp">Abonnez vous à notre Newsletter</h1>
+        </div>
+        <div class="input-group wow fadeInUp">
+              <input type="email" class="form-control" placeholder="Entrez votre e-mail">
+              <span class="input-group-btn">
+                    <button class="btn" type="submit">S'abonner</button>
+              </span>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- API GOOGLE MAP -->	
+    <div style="height:40vh"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.4996106340805!2d1.6007255077783342!3d50.72309948130056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc2c42e0ba61b7%3A0x7b8d42d029cd746d!2s5%20Place%20d&#39;Angleterre%2C%2062200%20Boulogne-sur-Mer!5e0!3m2!1sfr!2sfr!4v1568721375304!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
 
 <?php
 	require './views/visitor/inc/modals.php';
