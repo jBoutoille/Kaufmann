@@ -2420,19 +2420,21 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #0b245b;
+  background-color: #fff;
+  border-color: #0b245b;
+  transition: all 500ms ease-out;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #60a3bc;
+  border-color: #60a3bc;
+  border: none;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem #60a3bc;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {

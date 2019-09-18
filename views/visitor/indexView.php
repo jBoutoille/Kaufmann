@@ -7,17 +7,20 @@
 
 <nav class="nav">
                   <span id="brand">
-                        <a href="index.html">10ventures</a>
+                        <a href=""><img src="./public/img/logo/logo2white.png" class="logoBaner" ></a>
                   </span>
 
                   <ul id="menu">
 
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Our team</a></li>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#cabinet">Le cabinet</a></li>
+                        <li><a href="#services">Nos services</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button></li>
+
                   </ul>
+
 
                   <div id="toggle">
                         <div class="span"><i class="fas fa-bars"></i></div>
@@ -29,11 +32,12 @@
                   <div class="close-btn"><i class="fas fa-times"></i></div>
 
                   <ul id="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Our team</a></li>
+                  		<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#cabinet">Le cabinet</a></li>
+                        <li><a href="#services">Nos services</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Actualités</a></li>
                   </ul>
             </div>
 
@@ -45,13 +49,14 @@
     	<p class="sarl">S.A.R.L</p>
     	<p id="kaufmann">G.KAUFMANN</p>
     	<h1 id="textOne">Expertise comptable, Audit<br>Conseil & Accompagement</h1>
-    	<div id="animGif"></div>
+    	<div href="#cabinet" id="animGif"></div>
       </div>
      </div>
     </div>
 </header>
 
     <!-- CABINET SECTION -->
+    <a name="cabinet"></a>
 	<section>
 		<h2 class="titleNav">| Le cabinet</h2>
 			<p id="texteSectionOne">
@@ -89,6 +94,7 @@
 	</section>
 
 	<!-- SERVICES SECTION -->
+	<a name="services"></a>
 	<section id="globalBoxService">	
 		<h2 class="titleNav">| Nos services</h2>	
 		<div id="serviceBox">
@@ -122,22 +128,30 @@
 
 				<p>texte à définir :</p>
 			
-						<ul>
-							<li class="liPuce">Création et reprise de sociétés</li>
-							<li class="liPuce">Mise en place de tableaux de bords</li>
-							<li class="liPuce">Prévisionnels</li>
-							<li class="liPuce">
-								Évaluation de sociétés
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExampleModal">
-									Voir plus
-								</button>
-							</li>
-							<li class="liPuce">Mise à disposition de logiciels sans engagement à tarifs avantageux:
-								"comptabilité, facturation, notes de frais"</li>
-						</ul>
+					<ul>
+						<li class="liPuce">Création et reprise de sociétés <button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+
+						</button>
+						</li>
+						
+						<li class="liPuce">Mise en place de tableaux de bords <button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button></li>
+						
+						<li class="liPuce">Prévisionnels <button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button></li>
+						
+						<li class="liPuce">Évaluation de sociétés
+						<button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+
+						</button>
+						</li>
+						
+						<li class="liPuce">Mise à disposition de logiciels sans engagement à tarifs avantageux 
+						<button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+
+						</button>
+						</li>
+					</ul>
 		</div>
 	</section>
 		<!-- CONTACT SECTION -->
+		<a name="contact"></a>
+
 		<section id="bluBoxTwo">
 			<div class="filter">
 
@@ -179,7 +193,7 @@
                     </div>
 
                     <div class="input-group wow fadeInUp">
-                          <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail">
+                          <input type="email" class="form-control" placeholder="Entrez votre e-mail">
                           <span class="input-group-btn">
                                 <button class="btn" type="submit">S'abonner</button>
                           </span>
