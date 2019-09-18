@@ -10,7 +10,7 @@
       <!-- Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <a href="">
-        <img src="./public/img/logo/logo4white.png" style="width: 50vh">
+        <img src="./public/img/logo/logo4white.png" style="width: 30vh">
         </a>
                     <div class="row">
               <div class="col-md-12">
@@ -38,7 +38,7 @@
 
             <li class="list-inline-item">
               <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.linkedin.com/in/benjamin-cauchet-642792153/" target="_blank">
-                <i class="fab fa-linkedin" style="color: white; font-size: 6vh"></i>
+                <i class="fab fa-linkedin" style="color: white; font-size: 6vh;"></i>
               </a>
             </li>
       </div>
