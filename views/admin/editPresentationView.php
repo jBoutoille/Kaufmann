@@ -18,7 +18,7 @@
                             <div class="form-group">
                                 <label>Titre de la section</label>
                                 <input class="form-control" type="text" placeholder="Le cabinet" required>
-                                <p class="help-block">Modifie le titre de la section de présentation du cabinet</p>
+                                <p class="help-block">Modifie le titre de la section "Le cabinet"</p>
                             </div>
                             <hr>
                             <div class="form-group">

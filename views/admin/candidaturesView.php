@@ -18,9 +18,9 @@
         <div class="row">
             <div class="col-md-12">
                 
-                <div class="panel panel-default">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
-                        Liste des candidatures reçues
+                        LISTE DES CANDIDATURES REÇUES
                     </div>
                     <div class="panel-body">
                         <div class="table-responsive">
@@ -47,8 +47,8 @@
                                             <div class="btn-group">
                                                 <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Actions <span class="caret"></span></button>
                                                 <ul class="dropdown-menu">
-                                                    <li><a onclick='multiOpen("","")'><i class="fa fa-search"></i> Aperçu</a></li>
-                                                    <li><a onclick=''><i class="fa fa-download"></i> Télécharger</a></li>
+                                                    <li><a onclick='multiOpen("","")' href="#"><i class="fa fa-search"></i> Aperçu</a></li>
+                                                    <li><a onclick='' href="#"><i class="fa fa-download"></i> Télécharger</a></li>
                                                     <li><a href=""><i class="fa fa-envelope"></i> Répondre</a></li>
                                                     <li class="divider"></li>
                                                     <li><a href=""><i class="fa fa-trash-o"></i> Supprimer</a></li>

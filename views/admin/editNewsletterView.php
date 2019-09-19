@@ -18,12 +18,12 @@
                             <div class="form-group">
                                 <label>Titre de la section</label>
                                 <input class="form-control" type="text" placeholder="Abonnez vous à notre Newsletter" required>
-                                <p class="help-block">Modifie le titre de la section Newsletter</p>
+                                <p class="help-block">Modifie le titre de la section "Newsletter"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte dans le formulaire</label>
-                                <input class="form-control" type="text" placeholder="ENTREZ VOTRE E.MAIL" required>
+                                <input class="form-control" type="text" placeholder="ENTREZ VOTRE E-MAIL" required>
                                 <p class="help-block">Modifie le texte dans le formulaire du bloc Newsletter</p>
                             </div>
                             <hr>

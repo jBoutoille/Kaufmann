@@ -18,7 +18,7 @@
                             <div class="form-group">
                                 <label>Titre de la section</label>
                                 <input class="form-control" type="text" placeholder="Notre expertise en quelques chiffres :" required>
-                                <p class="help-block">Modifie le titre de la section</p>
+                                <p class="help-block">Modifie le titre de la section "Expertise"</p>
                             </div>
                             <hr>
                             <div class="form-group">
@@ -37,7 +37,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Chiffre 1</label>
-                                        <input class="form-control" type="numer" placeholder="350" required>
+                                        <input class="form-control" type="number" placeholder="350" required>
                                         <p class="help-block">Modifie le 1er chiffre de l'expertise</p>
                                     </div>
                                 </div>

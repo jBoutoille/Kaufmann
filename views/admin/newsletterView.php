@@ -11,7 +11,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="alert alert-info">
-                    CETTE PAGE EST ACTUELLEMENT EN STANDBY PAR MANQUE D'INFORMATIONS POUR SON DEVELOPPEMENT.                </div>
+                    CETTE PAGE EST ACTUELLEMENT EN STANDBY PAR MANQUE D'INFORMATIONS POUR SON DEVELOPPEMENT.
+                </div>
             </div>
         </div>
     </div>

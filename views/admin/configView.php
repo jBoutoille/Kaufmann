@@ -11,38 +11,73 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">CONFIGURATION DU SITE</div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label>Nom du site</label>
-                                <input class="form-control" type="text" placeholder="NomDuSite" required>
-                                <p class="help-block">Essentiel pour le référencement naturel - Idéalement entre 45 et 70 caractères</p>
-                            </div>
-                            <hr>
-                            <div class="form-group">
-                                <label>Description du site</label>
-                                <input class="form-control" type="text" placeholder="Description du site NomDuSite" required>
-                                <p class="help-block">Essentiel pour le référencement naturel - Idéalement entre 150 et 200 caractères</p>
-                            </div>
-                            <hr>
-                            <div class="form-group">
-                                <label>URL du site</label>
-                                <input class="form-control" type="text" placeholder="https://nomdusite.com/" required>
-                                <p class="help-block">Essentiel pour le référencement naturel</p>
-                            </div>
-                            <hr>
-                            <div class="form-group">
-                                <label>Indexer le site sur les moteurs de recherches</label>
-                                <select class="form-control">
-                                    <option>Activer l'indexation (par défaut)</option>
-                                    <option>Désactiver l'indexation (non recommandé)</option> 
-                                </select>       
-                            </div>
-                            <hr>
-                            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                    <div class="panel-heading">
+                        CONFIGURATION DU SITE
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Nom du site</label>
+                            <input class="form-control" type="text" placeholder="NomDuSite" required>
+                            <p class="help-block">Essentiel pour le référencement naturel - Idéalement entre 45 et 70 caractères</p>
                         </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>Description du site</label>
+                            <input class="form-control" type="text" placeholder="Description du site NomDuSite" required>
+                            <p class="help-block">Essentiel pour le référencement naturel - Idéalement entre 150 et 200 caractères</p>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>URL du site</label>
+                            <input class="form-control" type="text" placeholder="https://nomdusite.com/" required>
+                            <p class="help-block">Essentiel pour le référencement naturel</p>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>Indexer le site sur les moteurs de recherches</label>
+                            <select class="form-control">
+                                <option>Activer l'indexation (par défaut)</option>
+                                <option>Désactiver l'indexation (non recommandé)</option> 
+                            </select>       
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        COORDONNÉES DU CABINET
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Adresse</label>
+                            <input class="form-control" type="text" placeholder="5 Place d'Angleterre 62200, Boulogne-sur-mer" required>
+                            <p class="help-block">Modifie l'adresse du cabinet, présent dans la section "Contact" et le bas du site</p>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>E-mail de contact</label>
+                            <input class="form-control" type="text" placeholder="contact@gkaufmann.fr" required>
+                            <p class="help-block">Modifie l'adresse e-mail de contact, présent dans la section "Contact" et le bas du site</p>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>Téléphone</label>
+                            <input class="form-control" type="text" placeholder="03 21 30 19 19" required>
+                            <p class="help-block">Modifie le numéro de téléphone du cabinet, présent dans la section "Contact" et le bas du site</p>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>FAX</label>
+                            <input class="form-control" type="text" placeholder="03 91 18 65 65" required>
+                            <p class="help-block">Modifie le numéro de FAX du cabinet, présent dans la section "Contact" et le bas du site</p>
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-primary">Sauvegarder</button>
                     </div>
                 </div>
             </div>
