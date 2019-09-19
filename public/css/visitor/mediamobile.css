@@ -1,0 +1,156 @@
+/*--------------- MEDIA QUERIES MOBILE --------------- */
+
+@media(max-width: 900px) {
+
+/*--------------- HEADER --------------- */
+
+#titleHeader{
+    top: 50%;
+    left: 50%;
+    }
+
+#kaufmann{
+    font-size: 6vh;
+    text-align: center;
+    color : var(--colorWhite);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    letter-spacing: 3px;
+    }
+
+#textOne{
+    margin-top: 17vh;
+    font-size: 2.5vh;
+    font-family: "Thryn";
+    transform: translate(0%, -50%);
+    }
+
+.sarl{
+    font-family: "Thryn";
+    font-size: 3vh;
+    transform: translate(-20%, -15%); 
+    }
+
+.sarl::before{  
+    margin-left: 20%;
+    float: left;
+    background: white;
+    height: 2px;
+    width: 50px;
+    }
+
+.sarl::after{
+    margin-right: -25%;
+    float: right;
+    background: white;
+    height: 2px;
+    width: 50px;
+    }
+
+#animGif{
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    margin-left: 25%;
+    bottom: -85%;
+    }
+
+/*--------------- CABINET SECTION --------------- */
+
+
+.titleNav{
+    font-size: 5vh;
+}
+
+#bluBoxOne{
+    height: 100vh;
+}
+
+#titleOne{   
+    font-size: 4vh;
+}
+
+#texteSectionTwo{
+    font-size: 2.2vh;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 8% 0%;
+}
+
+#experiences{
+    flex-direction: column;
+    align-items: center;
+}
+
+.sizeNumber{
+    font-size: 8vh;
+}
+
+#titleOne{   
+    margin-top: 5%;
+}
+
+/*--------------- SERVICE SECTION --------------- */
+
+#serviceBox{
+    font-size: 2.5vh;
+    width: 76%;
+    transform: translate(12%, 2vh);
+}
+
+/*--------------- CONTACT SECTION --------------- */
+
+#bluBoxTwo{
+    height: 110vh;
+}
+
+#boxContner{
+    flex-direction: column;
+    height: 85vh;
+}
+
+#boxAdresse{
+    height: 40vh;
+}
+
+#twoBox{
+    width: 100%;
+}
+
+#boxContactOne{
+    background-color: var(--colorWhite);
+    padding: 2vh 5vh 3vh;
+    margin-bottom:3vh;
+    font-weight: bold;
+}
+
+#boxContactTwo{
+    padding: 2vh 5vh 3vh;
+}
+
+.textBtn{
+    font-size: 2.7vh;
+    font-weight:bold;
+}
+
+/*--------------- NEWSLATTER SECTION--------------- */
+
+.newsletter {
+    padding: 40px 0;
+}
+
+::placeholder {
+    font-size: 2vh;
+    letter-spacing: 3px;
+}
+
+.wow {
+    font-size: 4vh;
+
+}
+
+}

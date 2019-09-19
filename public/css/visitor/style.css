@@ -24,336 +24,17 @@
 /*------------------- SCROLLBAR -----------------*/
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 2px #0B245B; 
+    box-shadow: inset 0 0 2px #222f3e; 
     border-radius: 10px;
 }
  
 ::-webkit-scrollbar-thumb {
-    background: #0B245B;
+    background: #222f3e;
     border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: grey; 
-}
-
-/*--------------- NAV --------------- */
-
-.nav {
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    z-index: 2;
-}
-
-.nav.scrolled {
-    background-color: rgba(11,36,91); !important;
-    transition: background-color 500ms linear;
-}
-
-.logoBaner{
-    width: 40px;
-}
-
-.nav #brand {
-    float: left;
-    display: block;
-    margin-left: 40px;
-    line-height: 70px;
-    text-transform: uppercase;
-}
-
-.nav #brand a {
-    color: #fff;
-    font-family: "Roboto-Regular" !important;
-    transition: all 500ms ease-out;
-}
-
-.nav #brand a:hover {
-    text-decoration: none;
-}
-
-.nav #menu {
-    float: left;
-    right: 40px;
-    position: fixed;
-}
-
-.nav #menu li {
-    padding-left: 60px;
-    display: inline-block;
-    font-weight: lighter !important;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 80px;
-    position: relative;
-    transition: all 500ms ease-out;
-}
-
-.nav #menu li a {
-    font-family: "Roboto-Regular" !important;
-    color: rgba(255,255,255,1);
-    transition: all 500ms ease-out;
-}
-
-.nav #menu li a:hover {
-    text-decoration: none;
-    color: #ecf0f1;
-    transition: all 500ms ease-out;
-}
-
-#toggle {
-    position: absolute;
-    right: 40px;
-    top: 20px;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    float: right;
-    transition: all 0.3s ease-out;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.close-btn {
-    position: absolute;
-    right: 30px;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    z-index: 2;
-    top: -2px;
-    line-height: 80px;
-}
-
-#resize {
-    z-index: 2;
-    top: 0px;
-    position: fixed;
-    background: rgba(11,36,91);
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 1s ease-out;
-}
-
-#resize #menu {
-    height: 90px;
-    position: absolute;
-    left: 45%;
-    transform: translateX(-40%);
-    text-align: center;
-    display: table-cell;
-    vertical-align: center;
-    margin-top: 20vh;
-}
-
-#resize #menu li {
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    text-transform: uppercase;
-    min-height: 50px;
-    font-weight: bold;
-    transition: all 0.3s ease-out;
-}
-
-#resize li:nth-child(1) {
-    margin-top: 75px;
-}
-
-#resize #menu li a {
-    color: #fff;
-}
-
-#resize #menu li a:hover {
-    text-decoration: none;
-}
-
-#resize.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-@media(max-width: 900px) {
-
-#toggle {
-    visibility: visible;
-    opacity: 1;
-    margin-top: 4px;
-    margin-right: 4px;
-}
-
-nav #brand {
-    margin-left: 10px;
-}
-
-#resize ul li a {
-    font-size: 15px;
-    font-family: "Roboto-Regular" !important;
-    font-weight: lighter !important;
-    color: rgba(255,255,255,1) !important;
-    transition: all 500ms ease-out;
-}
-
-nav #menu {
-    display: none;
-}
-}
-
-@media(min-width: 900px) {
-      
-#resize {
-    visibility: hidden !important;
-}
-}
-
-/*--------------- HEADER START HERE --------------- */
-
-#imgHeader{
-    background-image: url(../../img/photoIndex.jpg);
-    background-size: cover;
-    opacity: 0.6;
-    height: 100vh;
-    width: 100%;
-}
-
-.filterOne{
-    background-color : var(--filter);
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.sarl::before{
-    content: " ";
-    margin-top: 2vh;
-    margin-left: 20%;
-    content: ' ';
-    float: left;
-    background: white;
-    height: 2px;
-    width: 100px;
-}
-
-.sarl::after{
-    content: " ";
-    margin-top: 2vh;
-    margin-right: 20%;
-    content: ' ';
-    float: right;
-    background: white;
-    height: 2px;
-    width: 100px;
-}
-
-#titleHeader{   
-    text-align: center;
-    color : var(--colorWhite);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: 3px;
-}
-
-.sarl{
-    font-family: "Thryn";
-    font-size: 3vh;
-    transform: translate(0%, 90%);
-}
-
-#kaufmann{
-    font-size: 12vh;
-    font-family: "Thryn";
-}
-
-#textOne{
-    margin-top: 5vh;
-    font-size: 4vh;
-    font-family: "Thryn";
-    transform: translate(0%, -50%);
-}
-
-#animGif{
-    background-image: url(../../img/scrollDown.gif);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 20vh;
-    width: 20vh;
-    margin-left: 40%;
-    bottom: -80%;
-}
-
-/*--------------- MEDIA QUERIES HEADER --------------- */
-
-@media(max-width: 900px) {
-
-#titleHeader{
-    top: 50%;
-    left: 50%;
-    }
-
-    #kaufmann{
-    font-size: 6vh;
-    text-align: center;
-    color : var(--colorWhite);
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    letter-spacing: 3px;
-    }
-
-    #textOne{
-    margin-top: 17vh;
-    font-size: 2.5vh;
-    font-family: "Thryn";
-    transform: translate(0%, -50%);
-    }
-
-    .sarl{
-    font-family: "Thryn";
-    font-size: 3vh;
-    transform: translate(-10%, -15%); 
-    }
-
-    .sarl::before{  
-    margin-left: 20%;
-    float: left;
-    background: white;
-    height: 2px;
-    width: 50px;
-    }
-
-    .sarl::after{
-    margin-right: 0%;
-    float: right;
-    background: white;
-    height: 2px;
-    width: 50px;
-    }
-
-    #animGif{
-    background-size: cover; 
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 20vh;
-    width: 20vh;
-    margin-left: 25%;
-    bottom: -85%;
-    }
 }
 
 /*--------------- BODY SECTION START HERE --------------- */
@@ -442,43 +123,6 @@ nav #menu {
     width: 50%;
 }
 
-/*--------------- MEDIA QUERIES CABINET SECTION --------------- */
-
-@media(max-width: 900px) {
-
-.titleNav{
-    font-size: 5vh;
-}
-
-#bluBoxOne{
-    height: 100vh;
-}
-
-#titleOne{   
-    font-size: 4vh;
-}
-
-#texteSectionTwo{
-    font-size: 2.2vh;
-    text-align: center;
-    letter-spacing: 2px;
-    padding: 8% 0%;
-}
-
-#experiences{
-    flex-direction: column;
-    align-items: center;
-}
-
-.sizeNumber{
-    font-size: 8vh;
-}
-
-#titleOne{   
-    margin-top: 5%;
-}
-}
-
 /*--------------- SERVICES SECTION --------------- */
 
 #globalBoxService{
@@ -510,17 +154,6 @@ nav #menu {
     background-position: 5px 0px;
     background-repeat: no-repeat;
     padding: 2px 0 0px 35px;
-}
-
-/*--------------- MEDIA QUERIES SERVICE SECTION --------------- */
-
-@media(max-width: 900px) {
-
-#serviceBox{
-    font-size: 2.5vh;
-    width: 76%;
-    transform: translate(12%, 2vh);
-}
 }
 
 /*--------------- CONTACT SECTION --------------- */
@@ -556,6 +189,8 @@ nav #menu {
     background-color: var(--colorWhite);
     padding: 2vh 5vh 5vh;
     height: 35vh;
+    opacity: 0.8;
+    border-radius: 2px;
 }
 
 #coordonnees{
@@ -590,11 +225,13 @@ nav #menu {
     background-color: var(--colorWhite);
     padding: 2vh 5vh 5vh;
     margin-bottom:3vh;
+    border-radius: 2%;
 }
 
 #boxContactTwo{
     background-color: var(--colorWhite);
     padding: 2vh 5vh 5vh;
+    border-radius: 2%;
 }
 
 #twoBox{
@@ -633,49 +270,12 @@ nav #menu {
     cursor: pointer;
     font-size: 1em;
     font-size: 2.5vh;
-    float: right;
+    padding: 2px 2px;
 }
 
 .btnSeeMore:hover {
      background: #60a3bc;
      color: #f1f2f6;
-}
-/*--------------- MEDIA QUERIES CONTACT --------------- */
-
-@media(max-width: 900px) {
-
-#bluBoxTwo{
-    height: 110vh;
-}
-
-#boxContner{
-    flex-direction: column;
-    height: 85vh;
-}
-
-#boxAdresse{
-    height: 40vh;
-}
-
-#twoBox{
-    width: 100%;
-}
-
-#boxContactOne{
-    background-color: var(--colorWhite);
-    padding: 2vh 5vh 3vh;
-    margin-bottom:3vh;
-    font-weight: bold;
-}
-
-#boxContactTwo{
-    padding: 2vh 5vh 3vh;
-}
-
-.textBtn{
-    font-size: 2.7vh;
-    font-weight:bold;
-}
 }
 
 /*--------------- NEWSLETTER SECTION --------------- */
@@ -728,23 +328,4 @@ nav #menu {
 .newsletter .btn:hover {
    background: #60a3bc;
    color: #f1f2f6;
-}
-
-/*--------------- MEDIA QUERIES NEWSLATTER --------------- */
-
-@media(max-width: 900px) {
-
-.newsletter {
-    padding: 40px 0;
-}
-
-::placeholder {
-    font-size: 2vh;
-    letter-spacing: 3px;
-}
-
-.wow {
-    font-size: 4vh;
-
-}
 }

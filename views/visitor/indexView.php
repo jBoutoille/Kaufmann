@@ -3,38 +3,12 @@
 
     <!-- HTML DE LA PAGE INDEX -->
 <header>
-	<!-- NAV -->
-	<nav class="nav">
-		<span id="brand">
-			<a href=""><img src="./public/img/logo/logo2white.png" class="logoBaner" ></a>
-		</span>
 
-		<ul id="menu">
-			<li><a href="#">Accueil</a></li>
-			<li><a href="#cabinet">Le cabinet</a></li>
-			<li><a href="#services">Nos services</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#">Actualités</a></li>
-			<li><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button></li>
-		</ul>
+		<?php 
+        	require './views/visitor/inc/nav.php'; 
+    	?>
 
-		<div id="toggle">
-			<div class="span"><i class="fas fa-bars"></i></div>
-		</div>
-	</nav>
-	<!-- NAV MOBILE-->
-	<div id="resize">
-		<div class="close-btn"><i class="fas fa-times"></i></div>
-
-		<ul id="menu">
-			<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fas fa-users"></i> Espace client</button>
-			<li><a href="#">Accueil</a></li>
-			<li><a href="#cabinet">Le cabinet</a></li>
-			<li><a href="#services">Nos services</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#">Actualités</a></li>
-		</ul>
-	</div>
+	
 	<!-- HEADER -->
 	<div id="imgHeader">
 	 <div class="filterOne">
@@ -118,22 +92,22 @@
 				<p>texte à définir :</p>
 			
 					<ul>
-						<li class="liPuce">Création et reprise de sociétés <button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+
-						</button>
+						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+
+						</button> Création et reprise de sociétés 
 						</li>
 						
-						<li class="liPuce">Mise en place de tableaux de bords <button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button></li>
-						
-						<li class="liPuce">Prévisionnels <button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button></li>
-						
-						<li class="liPuce">Évaluation de sociétés
-						<button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+
-						</button>
+						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button> Mise en place de tableaux de bords
 						</li>
 						
-						<li class="liPuce">Mise à disposition de logiciels sans engagement à tarifs avantageux 
-						<button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+
-						</button>
+						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button> Prévisionnels 
+						</li>
+						
+						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+
+						</button> Évaluation de sociétés
+						</li>
+						
+						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+
+						</button> Mise à disposition de logiciels sans engagement à tarifs avantageux 
 						</li>
 					</ul>
 		</div>
@@ -157,12 +131,12 @@
 				</ul>
 				<div id="twoBox">
 					<div id="boxContactOne">
-						<p class="textBtn"> Optenir un devis de comptable et d'experts-comptables</p>
-						<button class="myBtn">REMPLIR LE DEVIS</button>
+						<p class="textBtn"> Optenir un rendez-vous de comptable et d'experts-comptables</p>
+						<a href="./views/visitor/formOne.php"><button class="myBtn">DEMANDEZ UN R.D.V</button></a>
 					</div>
 					<div id="boxContactTwo">
 						<p class="textBtn"> Rejoindre notre équipe</p>
-						<button class="myBtn">ENVOYER UN CV</button>	
+						<a href="./views/visitor/formOne.php"><button class="myBtn">ENVOYER UN CV</button></a>
 					</div>
 				</div>
 

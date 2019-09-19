@@ -1,0 +1,77 @@
+/*--------------- HEADER START HERE --------------- */
+
+#imgHeader{
+    background-image: url(../../img/photoIndex.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    height: 100vh;
+    width: 100%;
+}
+
+.filterOne{
+    background-color : var(--filter);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sarl::before{
+    content: " ";
+    margin-top: 2vh;
+    margin-left: 20%;
+    content: ' ';
+    float: left;
+    background: white;
+    height: 2px;
+    width: 100px;
+}
+
+.sarl::after{
+    content: " ";
+    margin-top: 2vh;
+    margin-right: 20%;
+    content: ' ';
+    float: right;
+    background: white;
+    height: 2px;
+    width: 100px;
+}
+
+#titleHeader{   
+    text-align: center;
+    color : var(--colorWhite);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 3px;
+}
+
+.sarl{
+    font-family: "Thryn";
+    font-size: 3vh;
+    transform: translate(0%, 90%);
+}
+
+#kaufmann{
+    font-size: 12vh;
+    font-family: "Thryn";
+}
+
+#textOne{
+    margin-top: 5vh;
+    font-size: 4vh;
+    font-family: "Thryn";
+    transform: translate(0%, -50%);
+}
+
+#animGif{
+    background-image: url(../../img/scrollDown.gif);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    margin-left: 40%;
+    bottom: -80%;
+}
