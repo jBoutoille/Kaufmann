@@ -37,7 +37,7 @@
             header('Location: ./');
         }
     }
-    function getAdminPresentation(){
+    function getAdminLecabinet(){
         if(isset($_SESSION['sessionToken'])){
             require './views/admin/editPresentationView.php';
         }
