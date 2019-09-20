@@ -1,6 +1,11 @@
 /*--------------- HEADER START HERE --------------- */
+#boxHeader{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 
-#ione{
+#imgHeader{
     opacity: 0.6;
     background-size: cover;
     width: 100%;
@@ -9,9 +14,13 @@
 
 .filterOne{
     background-color : var(--filter);
-    height: 100vh;
-    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     overflow: hidden;
+    z-index: 2;
 }
 
 .sarl::before{

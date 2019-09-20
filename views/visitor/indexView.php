@@ -8,9 +8,11 @@
         	require './views/visitor/inc/nav.php'; 
     	?>
 
+
 	
 	<!-- HEADER -->
-	<div id="imgHeader">	
+	<div id="boxHeader">
+	<img src="./public/img/photoIndex.jpg" id="imgHeader" alt="">	
 	 <div class="filterOne">
       <div id="titleHeader"> 
     	<p class="sarl">S.A.R.L</p>
@@ -21,7 +23,7 @@
      </div>
     </div>
 </header>
-<img src="./public/img/photoIndex.jpg" id="ione" alt="">
+
     <!-- CABINET SECTION -->
     <a name="cabinet"></a>
 	<section>
