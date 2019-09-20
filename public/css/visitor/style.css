@@ -102,6 +102,10 @@
     color: var(--colorWhite);
 }
 
+#imgBoxOne{
+    height: 100vh;
+}
+
 #experiences{
     display: flex;
     text-align: center;
