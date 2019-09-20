@@ -12,7 +12,7 @@
     height: 100vh;
 }
 
-.filterOne{
+#filterOne{
     background-color : var(--filter);
     top: 0;
     left: 0;

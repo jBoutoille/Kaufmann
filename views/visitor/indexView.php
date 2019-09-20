@@ -13,7 +13,7 @@
 	<!-- HEADER -->
 	<div id="boxHeader">
 	<img src="./public/img/photoIndex.jpg" id="imgHeader" alt="">	
-	 <div class="filterOne">
+	 <div id="filterOne">
       <div id="titleHeader"> 
     	<p class="sarl">S.A.R.L</p>
     	<p id="kaufmann">G.KAUFMANN</p>
@@ -39,8 +39,9 @@
 				L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'
 			</p>
 	</section>
-	<section id="bluBoxOne">
-		<div class="filter">
+	<section id="BoxOne">
+		<img src="./public/img/deskTop.jpg" id="imgBoxOne" alt="">
+		<div id="filterTwo">
 			<h2 id="titleOne">Notre expertise en quelques chiffres :</h2>
 			<div id="barOne"></div>
 			<p id="texteSectionTwo">

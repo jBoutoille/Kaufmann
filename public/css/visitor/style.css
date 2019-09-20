@@ -65,20 +65,17 @@
     color: var(--colorBlack);
 }
 
-
-#bluBoxOne{
+#BoxOne{
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../../img/deskTop.jpg);
-    background-size: cover;
-    opacity: 0.8;
 }
 
 #imgHeader{
     opacity: 0.6;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 }
 
 #titleOne{   
@@ -174,11 +171,15 @@
     opacity: 0.8;   
 }
 
-.filter{
-    background-color : rgba(5,18,87,0.5);
+#filterTwo{
+    background-color : var(--filter);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    position: absolute;
     overflow: hidden;
+    z-index: 2;
 }
 
 #contact{
