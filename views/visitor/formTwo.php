@@ -4,7 +4,7 @@
     require './views/visitor/inc/nav.php'; 
 ?>
 
-<h1>Demandez un rdv</h1>
+<h1>Envoyer un C.V</h1>
 
 <?php
 	require './views/visitor/inc/modals.php';

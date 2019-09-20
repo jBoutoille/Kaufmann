@@ -4,3 +4,4 @@
 
 <!-- JS CUSTOM -->
 <script src="./public/js/nav.js"></script>
+<script src="./public/js/parallax.js"></script>

@@ -1,11 +1,10 @@
 /*--------------- HEADER START HERE --------------- */
 
 #ione{
-    background-image: url(../../img/photoIndex.jpg);
-    
     opacity: 0.6;
-    height: 100vh;
+    background-size: cover;
     width: 100%;
+    height: 100vh;
 }
 
 .filterOne{

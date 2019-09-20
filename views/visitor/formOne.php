@@ -12,3 +12,4 @@
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
 ?>
+

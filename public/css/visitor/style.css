@@ -160,7 +160,7 @@
 
 #bluBoxTwo{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-image: url(../../img/staffWork.jpg);
     background-size: cover;
     opacity: 0.8;   
@@ -252,6 +252,7 @@
     cursor: pointer;
     font-size: 1em;
     font-size: 2.5vh;
+    outline: none;
 }
 
 .myBtn:hover {
@@ -271,6 +272,7 @@
     font-size: 1em;
     font-size: 2.5vh;
     padding: 2px 2px;
+    outline: none;
 }
 
 .btnSeeMore:hover {
@@ -323,6 +325,7 @@
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+    outline: none;
 }
 
 .newsletter .btn:hover {

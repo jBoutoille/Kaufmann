@@ -16,4 +16,11 @@
         require './views/others/404View.php';
     }
 
+        function getRdv(){
+        require './views/visitor/formOne.php';
+    }
+
+        function getCv(){
+        require './views/visitor/formTwo.php';
+    }
 ?>
