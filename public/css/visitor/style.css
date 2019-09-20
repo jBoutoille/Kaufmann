@@ -4,11 +4,12 @@
     padding: 0%;
     list-style:none;
     text-decoration:none;
-    --colorBlue : rgba(11,36,91,0.8);
+    --colorBlue : rgba(11,36,91,1);
     --colorWhite : rgba(255,255,255,1);
-    --colorGrey : rgba(64,64,64,1);
+    --colorWhiteOp : rgba(255,255,255,0.5);
+    --colorBlacl : rgba(0,0,0,1);
     --titresIcones : rgba(11,36,91,1);
-    --filter : rgba(5,18,87,0.6);
+    --filter : rgba(5,18,87,0.3);
 }
 
 @font-face {
@@ -61,7 +62,7 @@
     padding: 10vh 10%;
     text-align: center;
     font-family: "Roboto-Regular";
-    color: var(--colorGrey);
+    color: var(--colorBlack);
 }
 
 
@@ -192,12 +193,11 @@
 }
 
 #boxAdresse{
-    color: black;
-    background-color: var(--colorWhite);
+    background-color: var(--colorWhiteOp);
     padding: 2vh 5vh 5vh;
     height: 35vh;
-    opacity: 0.8;
     border-radius: 2px;
+    font-weight:bold;
 }
 
 #coordonnees{
@@ -211,34 +211,41 @@
 #adresse{
     letter-spacing: 1px;
     font-size: 3vh;
+    color: rgba(0,0,0 ,1);
 }
 
 #telMobile{
     letter-spacing: 1px;
     font-size: 3vh;
+    color: rgba(0,0,0 ,1);
 }
 
 #adMail{
     letter-spacing: 1px;
     font-size: 3vh;
+    color: rgba(0,0,0 ,1);
 }
 
 #numFax{
     letter-spacing: 1px;
     font-size: 3vh;
+    color: rgba(0,0,0 ,1);
 }
 
 #boxContactOne{
-    background-color: var(--colorWhite);
+    background-color: var(--colorWhiteOp);
     padding: 2vh 5vh 5vh;
     margin-bottom:3vh;
     border-radius: 2%;
+    font-weight:bold;
 }
 
 #boxContactTwo{
-    background-color: var(--colorWhite);
+    background-color: var(--colorWhiteOp);
     padding: 2vh 5vh 5vh;
+    margin-bottom:3vh;
     border-radius: 2%;
+    font-weight:bold;
 }
 
 #twoBox{
@@ -253,7 +260,7 @@
     width: 75%;
     padding: 2vh;
     border: none;
-    background: #0a3d62;
+    background: rgba(10,61,98,1);
     color: white;
     letter-spacing: 1px;
     cursor: pointer;

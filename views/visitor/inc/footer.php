@@ -21,14 +21,14 @@
 
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" style="color: white">
         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-        <p>
+        <p style="color: white">
           <i class="fas fa-building mr-2"></i>5 Place d'Angleterre <br>62200, Boulogne-sur-mer </p>
-        <p>
-          <i class="fas fa-envelope mr-2"></i>contact@kaufmann.fr </p>
-        <p>
-          <i class="fas fa-phone mr-2"></i>03 21 30 19 19 </p>
-        <p>
-          <i class="fas fa-print mr-2"></i>03 91 18 65 65 </p>
+        <p style="color: white">
+          <i class="fas fa-envelope mr-2" style="color: white"></i>contact@kaufmann.fr </p>
+        <p style="color: white">
+          <i class="fas fa-phone mr-2" style="color: white"></i>03 21 30 19 19 </p>
+        <p style="color: white">
+          <i class="fas fa-print mr-2" style="color: white"></i>03 91 18 65 65 </p>
 
             <li class="list-inline-item">
               <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.linkedin.com/in/benjamin-cauchet-642792153/" target="_blank">

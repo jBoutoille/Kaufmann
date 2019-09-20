@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: black;
 }
 
 abbr[title],
@@ -2422,7 +2423,6 @@ fieldset:disabled a.btn {
 .btn-primary {
   color: #0b245b;
   background-color: #fff;
-  border-color: #0b245b;
   transition: all 500ms ease-out;
   margin-top: -10px;
 }

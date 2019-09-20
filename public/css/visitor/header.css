@@ -59,11 +59,13 @@
     font-family: "Thryn";
     font-size: 3vh;
     transform: translate(0%, 90%);
+    color: var(--colorWhite);
 }
 
 #kaufmann{
     font-size: 12vh;
     font-family: "Thryn";
+    color: var(--colorWhite);
 }
 
 #textOne{
