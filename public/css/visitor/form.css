@@ -1,0 +1,60 @@
+/* CONTACT */
+
+.boxPremary{
+	padding: 20%;
+}
+
+#titileForm{
+	  position: absolute;
+      font-family: "Thryn";
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.containerText {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5vh;
+}
+
+.add-prod{
+	margin-top: 10vh;
+}
+
+.add-prod a {
+    padding: 20px 40px;
+    background: var(--colorBlue);
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.add-prod a:hover {
+     background: #60a3bc;
+     color: #f1f2f6;
+}
+
+form label, textarea {
+      font-family: "Roboto-Regular";
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+}
+
+.form-control {
+      box-shadow: none !important
+}
+
+form input, textarea {
+      border-radius: 0% !important;
+}
+
+form input:focus, textarea:focus {
+      outline: none !important;
+      border: 2px solid #000 !important;
+}

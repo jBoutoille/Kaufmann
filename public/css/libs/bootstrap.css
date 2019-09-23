@@ -3841,8 +3841,8 @@ input[type="button"].btn-block {
   background-color: #e9ecef;
 }
 
-.custom-file-input:lang(en) ~ .custom-file-label::after {
-  content: "Browse";
+.custom-file-input:lang(fr) ~ .custom-file-label::after {
+  content: "Choisir";
 }
 
 .custom-file-input ~ .custom-file-label[data-browse]::after {

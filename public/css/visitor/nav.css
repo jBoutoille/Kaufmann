@@ -1,5 +1,9 @@
 /*--------------- NAV --------------- */
 
+a{
+    color: white;
+}
+
 .nav {
     width: 100%;
     height: 70px;
@@ -54,7 +58,6 @@
 
 .nav #menu li a {
     font-family: "Roboto-Regular" !important;
-    color: rgba(255,255,255,1);
     transition: all 500ms ease-out;
 }
 
@@ -123,7 +126,7 @@
     text-align: center;
     display: table-cell;
     vertical-align: center;
-    margin-top: 20vh;
+    margin-top: -5vh;
 }
 
 #resize #menu li {
@@ -153,6 +156,7 @@
     opacity: 1;
 }
 @media(max-width: 900px) {
+
 
 #toggle {
     visibility: visible;
