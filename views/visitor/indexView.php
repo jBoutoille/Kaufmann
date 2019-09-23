@@ -29,14 +29,16 @@
 	<section>
 		<h2 class="titleNav">| Le cabinet</h2>
 			<p id="texteSectionOne">
-				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens 
-				est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
-				L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'
+				Indépendant et à taille humaine, notre cabinet, à vocation régionale, est implanté sur la côte d'opale.
+
+				Au service d'une clientèle variée, nous accompagnons depuis longtemps les acteurs économiques majeurs du territoire.
+
+				Nous vous assistons dans toutes les étapes de la vie de votre entreprise et mettons à votre disposition l'ensemble de nos compétences en matière de comptabilité, d'audit, de fiscalité, de droit social.
 				<br>
 				<br>
-				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens 
-				est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
-				L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'
+				En matière associative, nous sommes en mesure de répondre à vos principaux besoins notamment en  expertise comptable ou en commissariat aux comptes.
+
+				Notre expertise en matière de fiscalité personnelle fait également partie de nos compétences reconnues.
 			</p>
 	</section>
 	<section id="BoxOne">
@@ -72,46 +74,46 @@
 				<p>Nous intervenons au titre de vos besoins en matière de :</p>
 					
 					<ul>
-						<li class="liPuce"> Commissairiat aux comptes.</li>
-						<li class="liPuce"> Audit Contractuel.</li>
-						<li class="liPuce"> Commissariat à la transformation.</li>
-						<li class="liPuce"> Commissariat à la fusion.</li>
-						<li class="liPuce"> Audit d'acquisition.</li>
+						<li class="liPuce"> Commissairiat aux comptes,</li>
+						<li class="liPuce"> Audit Contractuel,</li>
+						<li class="liPuce"> Commissariat à la transformation,</li>
+						<li class="liPuce"> Commissariat à la fusion,</li>
+						<li class="liPuce"> Audit d'acquisition,</li>
 					</ul>
 			
-			<h2 class="serviceSection">EXPERTISE COMPTABLE</h2>
+			<h2 class="serviceSection">EXPERTISE COMPTABLE (comptabilité, fiscalité, social, juridique,)</h2>
 
 				<p>Nous vous proposons un accompagnement sur mesure en comptabilité, 
 				fiscalité, social et juridique :</p>
 			
 						<ul>
-							<li class="liPuce">Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)</li>
-							<li class="liPuce">Associations (tenue, accompagnement, révision...)</li>
-							<li class="liPuce">Particuliers (impôts sur le revenu, IFI, conseil patrimonial...)</li>
-							<li class="liPuce">Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)</li>
+							<li class="liPuce">Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie)</li>
+							<li class="liPuce">Associations (tenue, accompagnement, révision)</li>
+							<li class="liPuce">Particuliers (impôts sur le revenu, IFI, conseil patrimonial)</li>
+							<li class="liPuce">Entreprises (tenue complète, comptabilité partagée, révision, secrétariat juridique, paie, déclarations fiscales, consolidation)</li>
 						</ul>
 
-			<h2 class="serviceSection">CONSEIL ET ACCOMPAGNEMENT</h2>
+			<h2 class="serviceSection">CONSEIL/ACCOMPAGNEMENT</h2>
 
-				<p>texte à définir :</p>
+				<p>Partenaire privilégié du dirigeant, nous vous assistons sur de nombreux thèmes :</p>
 			
 					<ul>
 						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+
-						</button> Création et reprise de sociétés 
+						</button> Création/reprise de sociétés,
 						</li>
 						
-						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button> Mise en place de tableaux de bords
+						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button> Mise en place de tableaux de bords,
 						</li>
 						
-						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button> Prévisionnels 
+						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button> Prévisionnels,
 						</li>
 						
 						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+
-						</button> Évaluation de sociétés
+						</button> Évaluation de sociétés,
 						</li>
 						
 						<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+
-						</button> Mise à disposition de logiciels sans engagement à tarifs avantageux 
+						</button> Mise à disposition de logiciels spécifiques à nos différents métiers : (logiciels de comptabilité, de facturation, de notes de frais, de caisse...) 
 						</li>
 					</ul>
 		</div>
@@ -148,6 +150,7 @@
 		</div>
 	</section>
 	<!-- NEWSLETTER SECTION -->	
+	 <a name="newsletter"></a>
     <section class="newsletter">
       <div class="container">
         <div class="news-data">

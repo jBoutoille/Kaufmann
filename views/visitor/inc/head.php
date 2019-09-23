@@ -27,6 +27,7 @@
     <link href="./public/css/visitor/footer.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/nav.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/header.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/form.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/mediamobile.css" rel="stylesheet" type="text/css">
 
     <!-- CDN -->
