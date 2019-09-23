@@ -12,7 +12,7 @@
 	
 	<!-- HEADER -->
 	<div id="boxHeader">
-	<img src="./public/img/logo/photoIndex.jpg" id="imgHeader" alt="">	
+	<img src="./public/img/4.JPG" id="imgHeader" alt="">	
 	 <div id="filterOne">
       <div id="titleHeader"> 
     	<p class="sarl">S.A.R.L</p>
@@ -42,7 +42,7 @@
 			</p>
 	</section>
 	<section id="BoxOne">
-		<img src="./public/img/deskTop.jpg" id="imgBoxOne" alt="">
+		<img src="./public/img/photoBureau.JPG" id="imgBoxOne" alt="">
 		<div id="filterTwo">
 			<h2 id="titleOne">Notre expertise en quelques chiffres :</h2>
 			<div id="barOne"></div>

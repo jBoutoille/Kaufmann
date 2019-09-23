@@ -10,7 +10,6 @@
 	              </div>
 
 	              <div class="containerText">
-	                    <p class="blockText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio expedita minus accusantium facere placeat magnam maiores nulla magni dolore blanditiis eligendi, aliquam odio voluptates cum ut officia sit nemo.</p>
 
 	                    <form>
 	                          <div class="inputData">
