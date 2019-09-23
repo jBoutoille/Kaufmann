@@ -17,13 +17,13 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" placeholder="Contact" required>
+                                <input class="form-control" type="text" name="adminEditContactTitre" placeholder="Contact" required>
                                 <p class="help-block">Modifie le titre de la section "Contact"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Titre du bloc "coordonnées"</label>
-                                <input class="form-control" type="text" placeholder="Coordonnées :" required>
+                                <input class="form-control" type="text" name="adminEditContactCoordonnees" placeholder="Coordonnées :" required>
                                 <p class="help-block">Modifie le titre du bloc "Coordonnées"</p>
                             </div>
                             <hr>
@@ -33,14 +33,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Description du bouton "Demander un RDV"</label>
-                                        <input class="form-control" type="text" placeholder="Obtenir un rendez-vous de comptable et d'experts-comptables" required>
+                                        <input class="form-control" type="text" name="adminEditContactDescBtn1" placeholder="Obtenir un rendez-vous de comptable et d'experts-comptables" required>
                                         <p class="help-block">Modifie la description du bouton "Demander un RDV"</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Texte dans le bouton "Demander un RDV"</label>
-                                        <input class="form-control" type="text" placeholder="DEMANDER UN R.D.V" required>
+                                        <input class="form-control" type="text" name="adminEditContactBtn1" placeholder="DEMANDER UN R.D.V" required>
                                         <p class="help-block">Modifie le texte dans le bouton "Demander un RDV"</p>
                                     </div>
                                 </div>
@@ -50,20 +50,20 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Description du bouton "Envoyer un CV"</label>
-                                        <input class="form-control" type="text" placeholder="Rejoindre notre équipe" required>
+                                        <input class="form-control" type="text" name="adminEditContactDescBtn2" placeholder="Rejoindre notre équipe" required>
                                         <p class="help-block">Modifie la description du bouton "Envoyer un CV"</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Texte dans le bouton "Envoyer un CV"</label>
-                                        <input class="form-control" type="text" placeholder="ENVOYER UN CV" required>
+                                        <input class="form-control" type="text" name="adminEditContactBtn2" placeholder="ENVOYER UN CV" required>
                                         <p class="help-block">Modifie le texte dans le bouton "Envoyer un CV"</p>
                                     </div>
                                 </div>
                             </div>
                             <hr>
-                            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                            <button type="submit" class="btn btn-primary"name="formAdminEditContact">Sauvegarder</button>
                         </div>
                     </div>
                 </div>

@@ -24,13 +24,13 @@
                             <br>
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-tag"></i></span>
-                                <input type="text" class="form-control" name="loginUser" placeholder="Nom d'utilisateur" required>
+                                <input type="text" class="form-control" name="adminLoginUser" placeholder="Nom d'utilisateur" required>
                             </div>
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                <input type="password" class="form-control" name="loginPw" placeholder="Mot de passe" required>
+                                <input type="password" class="form-control" name="adminLoginPw" placeholder="Mot de passe" required>
                             </div>   
-                            <button type="submit" class="btn btn-primary" name="formlogin">Se connecter</button>
+                            <button type="submit" class="btn btn-primary" name="formAdminLogin">Se connecter</button>
                             <hr>
                             <a href="./" style="color:white;text-align:center;">Retourner à l'accueil</a> 
                         </form>

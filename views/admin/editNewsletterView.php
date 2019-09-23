@@ -17,23 +17,23 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" placeholder="Abonnez vous à notre Newsletter" required>
+                                <input class="form-control" type="text" name="adminEditNewsletterTitre" placeholder="Abonnez vous à notre Newsletter" required>
                                 <p class="help-block">Modifie le titre de la section "Newsletter"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte dans le formulaire</label>
-                                <input class="form-control" type="text" placeholder="ENTREZ VOTRE E-MAIL" required>
+                                <input class="form-control" type="text" name="adminEditNewsletterTxtForm" placeholder="ENTREZ VOTRE E-MAIL" required>
                                 <p class="help-block">Modifie le texte dans le formulaire du bloc Newsletter</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte du bouton</label>
-                                <input class="form-control" type="text" placeholder="S'ABONNER" required>
+                                <input class="form-control" type="text" name="adminEditNewsletterTxtBtn" placeholder="S'ABONNER" required>
                                 <p class="help-block">Modifie le texte du bouton pour s'abonner à la Newsletter</p>
                             </div>
                             <hr>
-                            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                            <button type="submit" class="btn btn-primary" name="formAdminEditNewsletter">Sauvegarder</button>
                         </div>
                     </div>
                 </div>

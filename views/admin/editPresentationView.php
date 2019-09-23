@@ -17,23 +17,23 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" placeholder="Le cabinet" required>
+                                <input class="form-control" type="text" name="adminEditLecabinetTitre" placeholder="Le cabinet" required>
                                 <p class="help-block">Modifie le titre de la section "Le cabinet"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>1er paragraphe</label>
-                                <textarea class="form-control" type="text" rows="4" placeholder="On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'" required></textarea>
+                                <textarea class="form-control" type="text" rows="4" name="adminEditLecabinet1er" placeholder="On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'" required></textarea>
                                 <p class="help-block">Modifie le 1er paragraphe de la partie "Le cabinet" - Idéalement environ 250 caractères</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>2ème paragraphe</label>
-                                <textarea class="form-control" type="text" rows="4" placeholder="On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'" required></textarea>
+                                <textarea class="form-control" type="text" rows="4" name="adminEditLecabinet2eme" placeholder="On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'" required></textarea>
                                 <p class="help-block">Modifie le 2ème paragraphe de la partie "Le cabinet" - Idéalement environ 250 caractères</p>
                             </div>
                             <hr>
-                            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                            <button type="submit" class="btn btn-primary" name="formAdminEditLecabinet">Sauvegarder</button>
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@
                     <div class="panel-body">
                         <div class="form-group">
                             <label>Titre des coordonnées</label>
-                            <input class="form-control" type="text" placeholder="CONTACT" required>
+                            <input class="form-control" type="text" name="adminEditFooterTitreCoordonnees" placeholder="CONTACT" required>
                             <p class="help-block">Modifie le titre des coordonnées du bas de page</p>
                         </div>
                         <hr>
@@ -27,17 +27,17 @@
                         <hr>
                         <div class="form-group">
                             <label>Lien linkedin</label>
-                            <input class="form-control" type="text" placeholder="https://www.linkedin.com/in/benjamin-cauchet-642792153/" required>
+                            <input class="form-control" type="text" name="adminEditFooterLinkedin" placeholder="https://www.linkedin.com/in/benjamin-cauchet-642792153/" required>
                             <p class="help-block">Modifie le lien du bouton Linkedin</p>
                         </div>
                         <hr>
                         <div class="form-group">
                             <label>Copyrights du site</label>
-                            <input class="form-control" type="text" placeholder="© 2019 G.KAUFMANN" required>
+                            <input class="form-control" type="text" name="adminEditFooterCopyrights" placeholder="© 2019 G.KAUFMANN" required>
                             <p class="help-block">Modifie les copyrights présent tous en bas du site</p>
                         </div>
                         <hr>
-                        <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                        <button type="submit" class="btn btn-primary" name="formAdminEditFooter">Sauvegarder</button>
                     </div>
                 </div>
             </div>
