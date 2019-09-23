@@ -13,23 +13,26 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">MODIFICATIONS DE L'EXPERTISE</div>
+                    <div class="panel-heading">
+                        MODIFICATIONS DE L'EXPERTISE
+                    </div>
+                    <form action="./?treatment" method="POST">
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" name="adminEditExpertiseTitre" placeholder="Notre expertise en quelques chiffres :" required>
+                                <input class="form-control" type="text" name="adminEditExpertiseTitre" value="Notre expertise en quelques chiffres :" required>
                                 <p class="help-block">Modifie le titre de la section "Expertise"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte 1</label>
-                                <input class="form-control" type="text" name="adminEditExpertiseTxt1" placeholder="Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids." required>
+                                <input class="form-control" type="text" name="adminEditExpertiseTxt1" value="Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids." required>
                                 <p class="help-block">Modifie le 1er texte de l'expertise</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte 2</label>
-                                <input class="form-control" type="text" name="adminEditExpertiseTxt2" placeholder="Confiez-nous vos retards de comptabilité, la gestion de vos projets, ou toute autres besoins." required>
+                                <input class="form-control" type="text" name="adminEditExpertiseTxt2" value="Confiez-nous vos retards de comptabilité, la gestion de vos projets, ou toute autres besoins." required>
                                 <p class="help-block">Modifie le 2ème texte de l'expertise</p>
                             </div>
                             <hr>
@@ -37,14 +40,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Chiffre 1</label>
-                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre1" placeholder="350" required>
+                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre1" value="350" required>
                                         <p class="help-block">Modifie le 1er chiffre de l'expertise</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>chiffre 2</label>
-                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre2" placeholder="40" required>
+                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre2" value="40" required>
                                         <p class="help-block">Modifie le 2ème chiffre de l'expertise</p>
                                     </div>
                                 </div>
@@ -54,22 +57,23 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Titre du chiffre 1</label>
-                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre1" placeholder="Clients" required>
+                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre1" value="Clients" required>
                                         <p class="help-block">Modifie le 1er titre du chiffre de l'expertise</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Titre du chiffre 2</label>
-                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre2" placeholder="Années d'expertises" required>
+                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre2" value="Années d'expertises" required>
                                         <p class="help-block">Modifie le 2ème titre du chiffre de l'expertise</p>
                                     </div>
                                 </div>
                             </div>
                             <hr>
                             <button type="submit" class="btn btn-primary" name="formAdminEditExpertise">Sauvegarder</button>
+                            <a class="btn btn-alert" href="">Annuler les modifications</a>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -78,7 +82,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Modifications > Expertise | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Modifications - Expertise | Admin | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>
