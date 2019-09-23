@@ -25,8 +25,8 @@
         // PUBLIC FUNCTION TO LOGIN AN ACCOUNT FROM formlogin
         public function TryConnexion(){
             try{
-                $user = htmlspecialchars($_POST['loginUser']);
-                $pw = htmlspecialchars($_POST['loginPw']);
+                $user = htmlspecialchars($_POST['adminLoginUser']);
+                $pw = htmlspecialchars($_POST['adminLoginPw']);
                 $bdd = $this->dbConnect();
                 $query = $bdd->prepare("SELECT * FROM users WHERE username = :username");
                 $query->bindParam(':username',$user,PDO::PARAM_STR);

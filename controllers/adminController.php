@@ -126,5 +126,5 @@
         $_SESSION['notif'] = '<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> Vous venez de vous déconnecter</div>';
         header('Location: ./?page=gk-admin');
     }
-
+    
 ?>

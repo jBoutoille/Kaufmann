@@ -20,7 +20,7 @@
 
 // TRAITEMENT DES FORMULAIRES -------------------
         if(isset($_GET['treatment']))
-            { dataTraitment(); }
+            { dataTreatment(); }
 
 
 // PARTIE VISITEUR --------------------------------
