@@ -1,15 +1,18 @@
 /* CONTACT */
 
 .boxPremary{
-	padding: 20%;
+	padding: 15%;
 }
 
 #titileForm{
 	  position: absolute;
-      font-family: "Thryn";
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    font-family: "Thryn";
+    top: 25%;
+    left: 50%;
+    font-size: 2em;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .containerText {
@@ -57,4 +60,17 @@ form input, textarea {
 form input:focus, textarea:focus {
       outline: none !important;
       border: 2px solid #000 !important;
+}
+
+
+@media(max-width: 900px) {
+
+.containerText{
+  margin-top: 25vh;
+}
+
+.add-prod a {
+font-size: 0.5em;
+}
+
 }
