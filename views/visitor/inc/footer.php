@@ -6,8 +6,8 @@
     <div class="row text-center text-md-left mt-3 pb-3">
 
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <a href="">
-        <img src="./public/img/logo/logo4white.png" style="width: 30vh">
+        <a href="./">
+        <img src="./public/img/logo/logo4white.png" style="width: 30vh" alt="Logo du cabinet G.KAUFMANN">
         </a>
             <div class="row">
               <div class="col-md-12">

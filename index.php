@@ -40,10 +40,10 @@
         elseif(isset($_GET['page']) && $_GET['page'] == 'mentions-legales')
             { getMentions(); }
     // PAGE DE RDV
-        elseif(isset($_GET['rdv']))
+        elseif(isset($_GET['page']) && $_GET['page'] == 'rdv')
             { getRdv(); }
     // PAGE DE CV
-        elseif(isset($_GET['cv']))
+        elseif(isset($_GET['page']) && $_GET['page'] == 'cv')
             { getCv(); }
 
 

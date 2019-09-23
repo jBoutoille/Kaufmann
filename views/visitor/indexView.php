@@ -12,7 +12,7 @@
 	
 	<!-- HEADER -->
 	<div id="boxHeader">
-	<img src="./public/img/photoIndex.jpg" id="imgHeader" alt="">	
+	<img src="./public/img/logo/photoIndex.jpg" id="imgHeader" alt="">	
 	 <div id="filterOne">
       <div id="titleHeader"> 
     	<p class="sarl">S.A.R.L</p>
@@ -136,11 +136,11 @@
 				<div id="twoBox">
 					<div id="boxContactOne">
 						<p class="textBtn"> Optenir un rendez-vous de comptable et d'experts-comptables</p>
-						<a href="index.php?rdv"><button class="myBtn">DEMANDEZ UN R.D.V</button></a>
+						<a href="index.php?page=rdv"><button class="myBtn">DEMANDEZ UN R.D.V</button></a>
 					</div>
 					<div id="boxContactTwo">
 						<p class="textBtn"> Rejoindre notre équipe</p>
-						<a href="index.php?cv"><button class="myBtn">ENVOYER UN CV</button></a>
+						<a href="index.php?page=cv"><button class="myBtn">ENVOYER UN CV</button></a>
 					</div>
 				</div>
 
