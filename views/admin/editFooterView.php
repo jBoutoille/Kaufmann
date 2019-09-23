@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-head-line">Modifications - Bas de page</h1>
-                <h2 class="page-subhead-line">Cette section permet de modifier le contenu du bloc "Footer (bas de page)" sur le site</h2>
+                <h2 class="page-subhead-line">Cette section permet de modifier le contenu du bloc "Bas de page" sur le site</h2>
             </div>
         </div>
 
@@ -16,38 +16,41 @@
                     <div class="panel-heading">
                         MODIFICATIONS DU BAS DE PAGE
                     </div>
-                    <div class="panel-body">
-                        <div class="form-group">
-                            <label>Titre des coordonnées</label>
-                            <input class="form-control" type="text" name="adminEditFooterTitreCoordonnees" placeholder="CONTACT" required>
-                            <p class="help-block">Modifie le titre des coordonnées du bas de page</p>
+                    <form action="./?treatment" method="POST">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label>Titre des coordonnées</label>
+                                <input class="form-control" type="text" name="adminEditFooterTitreCoordonnees" value="CONTACT" required>
+                                <p class="help-block">Modifie le titre des coordonnées du bas de page</p>
+                            </div>
+                            <hr>
+                                <p><strong>Les coordonnées sont à modifier dans la partie "Configuration du site"</strong></p>
+                            <hr>
+                            <div class="form-group">
+                                <label>Lien linkedin</label>
+                                <input class="form-control" type="text" name="adminEditFooterLinkedin" value="https://www.linkedin.com/in/benjamin-cauchet-642792153/" required>
+                                <p class="help-block">Modifie le lien du bouton Linkedin</p>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label>Copyrights du site</label>
+                                <input class="form-control" type="text" name="adminEditFooterCopyrights" value="© 2019 G.KAUFMANN" required>
+                                <p class="help-block">Modifie les copyrights présent tous en bas du site</p>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-primary" name="formAdminEditFooter">Sauvegarder</button>
+                            <a class="btn btn-alert" href="">Annuler les modifications</a>
                         </div>
-                        <hr>
-                            <p><strong>Les coordonnées sont à modifier dans la partie "Configuration du site"</strong></p>
-                        <hr>
-                        <div class="form-group">
-                            <label>Lien linkedin</label>
-                            <input class="form-control" type="text" name="adminEditFooterLinkedin" placeholder="https://www.linkedin.com/in/benjamin-cauchet-642792153/" required>
-                            <p class="help-block">Modifie le lien du bouton Linkedin</p>
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <label>Copyrights du site</label>
-                            <input class="form-control" type="text" name="adminEditFooterCopyrights" placeholder="© 2019 G.KAUFMANN" required>
-                            <p class="help-block">Modifie les copyrights présent tous en bas du site</p>
-                        </div>
-                        <hr>
-                        <button type="submit" class="btn btn-primary" name="formAdminEditFooter">Sauvegarder</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-
+        
     </div>
 </div>
 
 <?php
-    $htmlTitle = 'Modifications > Footer | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Modifications - Bas de page | Admin | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

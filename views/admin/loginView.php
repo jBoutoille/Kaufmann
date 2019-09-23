@@ -2,7 +2,7 @@
 <html lang="fr">
 
     <?php 
-        $htmlTitle="Connexion | Cabinet G.KAUFMANN";
+        $htmlTitle="Connexion | Admin | Cabinet G.KAUFMANN";
         $htmlContent="";
         require './views/admin/inc/head.php';
     ?>

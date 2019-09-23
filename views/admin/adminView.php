@@ -67,7 +67,7 @@
     </div>
 
 <?php
-    $htmlTitle = 'Dashboard | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Tableau de bord | Admin | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>
