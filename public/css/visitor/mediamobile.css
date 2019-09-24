@@ -54,9 +54,9 @@
     background-repeat: no-repeat;
     position: absolute;
     height: 15vh;
-    width: 15vh;
-    margin-left: 25%;
-    bottom: -90%;
+    width: 100px;
+    margin-left: 0%;
+    margin: 0px -50px auto;
     }
 
 /*--------------- CABINET SECTION --------------- */
@@ -67,16 +67,23 @@
 }
 
 #contact{
-    margin-top: 8vh;
+    margin-top: -8vh;
 }
 
 #bluBoxOne{
     height: 100vh;
 }
 
-#filterTwo{
-    height: 107vh;
+.filterOne{
+    height: 105vh;
+}
 
+#filterTwo{
+    height: 105vh;
+}
+
+#imgContact{
+    height: 105vh;
 }
 
 #titleOne{   
@@ -118,7 +125,7 @@
 }
 
 #imgBoxOne{
-    height: 107vh;
+    height: 105vh;
 }
 
 #boxContner{
@@ -128,6 +135,7 @@
 
 #boxAdresse{
     height: 40vh;
+    margin-top: 48vh;
 }
 
 #twoBox{
@@ -142,7 +150,7 @@
 }
 
 #boxContactTwo{
-    padding: 2vh 5vh 3vh;
+    padding: 1vh 5vh 2vh;
 }
 
 .textBtn{

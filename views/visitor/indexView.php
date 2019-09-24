@@ -10,7 +10,7 @@
 				<p class="sarl"><?= $RHeader['headerType'] ?></p>
 				<p id="kaufmann"><?= $RHeader['headerTitre'] ?></p>
 				<h1 id="textOne"><?= $RHeader['headerDesc'] ?></h1>
-				<div href="#cabinet" id="animGif"></div>
+				<div><a id="animGif" data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet"></a></div>
 			</div>
 		</div>
 	</section>
