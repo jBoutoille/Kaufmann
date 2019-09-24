@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 
 <!-- HEADER -->
-<header>
+<header id="top">
 	<?php require './views/visitor/inc/nav.php'; ?>
 	<section id="boxHeader">
 		<img src="./public/img/photoHeader.JPG" id="imgHeader" alt="">	
@@ -17,16 +17,17 @@
 </header>
 
 <!-- SECTION CABINET -->
-<a name="cabinet"></a>
-<section>
-	<h2 class="titleNav"><?= $RCabinet['cabinetTitre'] ?></h2>
-		<p id="texteSectionOne">
-			<?= $RCabinet['cabinetTxt1'] ?>
-			<br>
-			<br>
-			<?= $RCabinet['cabinetTxt2'] ?>
-		</p>
-</section>
+<div id="cabinet">
+	<section>
+		<h2 class="titleNav"><?= $RCabinet['cabinetTitre'] ?></h2>
+			<p id="texteSectionOne">
+				<?= $RCabinet['cabinetTxt1'] ?>
+				<br>
+				<br>
+				<?= $RCabinet['cabinetTxt2'] ?>
+			</p>
+	</section>
+</div>
 
 <!-- SECTION EXPERTISE -->
 <section id="BoxOne">
@@ -54,74 +55,75 @@
 </section>
 
 <!-- SERVICES SECTION -->
-<a name="services"></a>
-<section id="globalBoxService">	
-	<h2 class="titleNav"><?= $RServices['servicesTitre'] ?></h2>	
-	<div id="serviceBox">
-		<h2 class="serviceSection"><?= $RServices['services1Titre'] ?></h2>	
-		<p><?= $RServices['services1Desc'] ?></p>		
-		<ul>
-			<li class="liPuce"><?= $RServices['services1SS1'] ?></li>
-			<li class="liPuce"><?= $RServices['services1SS2'] ?></li>
-			<li class="liPuce"><?= $RServices['services1SS3'] ?></li>
-			<li class="liPuce"><?= $RServices['services1SS4'] ?></li>
-			<li class="liPuce"><?= $RServices['services1SS5'] ?></li>
-		</ul>
-		<h2 class="serviceSection"><?= $RServices['services2Titre'] ?></h2>
-		<p><?= $RServices['services2Desc'] ?></p>
-		<ul>
-			<li class="liPuce"><?= $RServices['services2SS1'] ?></li>
-			<li class="liPuce"><?= $RServices['services2SS2'] ?></li>
-			<li class="liPuce"><?= $RServices['services2SS3'] ?></li>
-			<li class="liPuce"><?= $RServices['services2SS4'] ?></li>
-		</ul>
-		<h2 class="serviceSection"><?= $RServices['services3Titre'] ?></h2>
-		<p><?= $RServices['services3Desc'] ?></p>
-		<ul>
-			<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+</button><?= $RServices['services3SS1'] ?></li>				
-			<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button><?= $RServices['services3SS2'] ?></li>				
-			<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button><?= $RServices['services3SS3'] ?></li>			
-			<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+</button><?= $RServices['services3SS4'] ?></li>
-			<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+</button><?= $RServices['services3SS5'] ?></li>
-		</ul>
-	</div>
-</section>
+<div id="services">
+	<section id="globalBoxService">	
+		<h2 class="titleNav"><?= $RServices['servicesTitre'] ?></h2>	
+		<div id="serviceBox">
+			<h2 class="serviceSection"><?= $RServices['services1Titre'] ?></h2>	
+			<p><?= $RServices['services1Desc'] ?></p>		
+			<ul>
+				<li class="liPuce"><?= $RServices['services1SS1'] ?></li>
+				<li class="liPuce"><?= $RServices['services1SS2'] ?></li>
+				<li class="liPuce"><?= $RServices['services1SS3'] ?></li>
+				<li class="liPuce"><?= $RServices['services1SS4'] ?></li>
+				<li class="liPuce"><?= $RServices['services1SS5'] ?></li>
+			</ul>
+			<h2 class="serviceSection"><?= $RServices['services2Titre'] ?></h2>
+			<p><?= $RServices['services2Desc'] ?></p>
+			<ul>
+				<li class="liPuce"><?= $RServices['services2SS1'] ?></li>
+				<li class="liPuce"><?= $RServices['services2SS2'] ?></li>
+				<li class="liPuce"><?= $RServices['services2SS3'] ?></li>
+				<li class="liPuce"><?= $RServices['services2SS4'] ?></li>
+			</ul>
+			<h2 class="serviceSection"><?= $RServices['services3Titre'] ?></h2>
+			<p><?= $RServices['services3Desc'] ?></p>
+			<ul>
+				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+</button><?= $RServices['services3SS1'] ?></li>				
+				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button><?= $RServices['services3SS2'] ?></li>				
+				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button><?= $RServices['services3SS3'] ?></li>			
+				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+</button><?= $RServices['services3SS4'] ?></li>
+				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+</button><?= $RServices['services3SS5'] ?></li>
+			</ul>
+		</div>
+	</section>
+</div>
 
 <!-- CONTACT SECTION -->
-<a name="contact"></a>
-<section id="boxTwo">
-	<img src="./public/img/photoContact.JPG" id="imgContact" alt="">
-	<div class="filterOne">
-		<h2 class="titleNav" id="contact"><?= $RContact['contactTitre'] ?></h2>
-		<div id="boxContner">
-			<ul id="boxAdresse">
-				<h3 id="coordonnees"><?= $RContact['contactCoordonnees'] ?></h3>
-				<li id="adresse"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
-				<li id="adMail"><i class="fas fa-envelope mr-2"></i><?= $RConfig['configMail'] ?></li>
-				<li id="telMobile"><i class="fas fa-phone mr-2"></i><?= $RConfig['configTelephone'] ?></li>
-				<li id="numFax"><i class="fas fa-print mr-2"></i><?= $RConfig['configFax'] ?></li>
-			</ul>
-			<div id="twoBox">
-				<div id="boxContactOne">
-					<p class="textBtn"><?= $RContact['contactDescBtn1'] ?></p>
-					<a href="index.php?page=rdv">
-						<button class="myBtn"><?= $RContact['contactBtn1'] ?></button>
-					</a>
-				</div>
-				<div id="boxContactTwo">
-					<p class="textBtn"><?= $RContact['contactDescBtn2'] ?></p>
-					<a href="index.php?page=cv"><button class="myBtn">
-						<?= $RContact['contactBtn2'] ?></button>
-					</a>
+<div id="contact">
+	<section id="boxTwo">
+		<img src="./public/img/photoContact.JPG" id="imgContact" alt="">
+		<div class="filterOne">
+			<h2 class="titleNav" id="contact"><?= $RContact['contactTitre'] ?></h2>
+			<div id="boxContner">
+				<ul id="boxAdresse">
+					<h3 id="coordonnees"><?= $RContact['contactCoordonnees'] ?></h3>
+					<li id="adresse"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
+					<li id="adMail"><i class="fas fa-envelope mr-2"></i><?= $RConfig['configMail'] ?></li>
+					<li id="telMobile"><i class="fas fa-phone mr-2"></i><?= $RConfig['configTelephone'] ?></li>
+					<li id="numFax"><i class="fas fa-print mr-2"></i><?= $RConfig['configFax'] ?></li>
+				</ul>
+				<div id="twoBox">
+					<div id="boxContactOne">
+						<p class="textBtn"><?= $RContact['contactDescBtn1'] ?></p>
+						<a href="index.php?page=rdv">
+							<button class="myBtn"><?= $RContact['contactBtn1'] ?></button>
+						</a>
+					</div>
+					<div id="boxContactTwo">
+						<p class="textBtn"><?= $RContact['contactDescBtn2'] ?></p>
+						<a href="index.php?page=cv"><button class="myBtn">
+							<?= $RContact['contactBtn2'] ?></button>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+</div>
 
 <!-- SECTION NEWSLETTER -->	
-<a name="newsletter"></a>
-<section class="newsletter">
+<section class="newsletter" id="newsletter">
 	<div class="container">
 		<div class="news-data">
 			<div class="section-subheading">
