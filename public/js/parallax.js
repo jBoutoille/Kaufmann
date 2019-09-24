@@ -1,5 +1,5 @@
 
-	  var image = document.getElementById('imgHeader');
+	var image = document.getElementById('imgHeader');
       new simpleParallax(image, {
             scale: 1.7
       });
