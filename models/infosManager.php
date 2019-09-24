@@ -6,25 +6,60 @@
 
     class InfosManager extends AdminManager {
 
-        // Fonction de connection à la BDD
-        public function dbC(){
-            try{
-                $db = new PDO('mysql:host=localhost;dbname=kaufmann;charset=utf8', 'root', 'root');
-                return $db;
-            }catch (Exception $e){
-                throw new Exception('Connexion SQL impossible');
-            }
-        }
-
         public function recupConfig(){
-            $test = 1;
-            $bdd = $this->dbC();
-            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $bdd = $this->dbConnect();
             $query = $bdd->query("SELECT * FROM gkconfig");
             $data = $query->fetch();
             return $data;
-
         }
 
+        public function recupHeader(){
+            $bdd = $this->dbConnect();
+            $query = $bdd->query("SELECT * FROM gkheader");
+            $data = $query->fetch();
+            return $data;
+        }
+
+        public function recupCabinet(){
+            $bdd = $this->dbConnect();
+            $query = $bdd->query("SELECT * FROM gkcabinet");
+            $data = $query->fetch();
+            return $data;
+        }
+
+        public function recupExpertise(){
+            $bdd = $this->dbConnect();
+            $query = $bdd->query("SELECT * FROM gkexpertise");
+            $data = $query->fetch();
+            return $data;
+        }
+
+        public function recupServices(){
+            $bdd = $this->dbConnect();
+            $query = $bdd->query("SELECT * FROM gkservices");
+            $data = $query->fetch();
+            return $data;
+        }
+
+        public function recupContact(){
+            $bdd = $this->dbConnect();
+            $query = $bdd->query("SELECT * FROM gkcontact");
+            $data = $query->fetch();
+            return $data;
+        }
+
+        public function recupNewsletter(){
+            $bdd = $this->dbConnect();
+            $query = $bdd->query("SELECT * FROM gknewsletter");
+            $data = $query->fetch();
+            return $data;
+        }
+
+        public function recupFooter(){
+            $bdd = $this->dbConnect();
+            $query = $bdd->query("SELECT * FROM gkfooter");
+            $data = $query->fetch();
+            return $data;
+        }
     }
 ?>

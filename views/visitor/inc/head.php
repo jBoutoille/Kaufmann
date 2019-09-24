@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- META & SEO -->
-    <meta name="author" content="A CHANGER">
-    <meta name="description" content="A CHANGER">
+    <meta name="author" content="Julien Boutoille, Jérôme Fasquelle">
+    <meta name="description" content="<?= $RConfig['configDescription'] ?>">
     <meta name="robots" content="index,follow">
-    <meta name="keywords" content="A CHANGER">
     <meta http-equiv="content-language" content="fr">
-    <link rel="canonical" href="URL_DU_SITE">
+    <link rel="canonical" href="<?= $RConfig['configURL'] ?>">
 
     <!-- TITLE -->
     <title><?= $htmlTitle ?></title>

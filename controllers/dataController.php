@@ -68,11 +68,5 @@
     else{
         $_TOKEN = NULL;
     }
-
-    // RECUPERATION DES TABLES
-    $infos = new InfosManager();
-    $RConfig = $infos->recupConfig();
-
-
-
+    
 ?>
