@@ -25,7 +25,7 @@
 /*------------------- SCROLLBAR -----------------*/
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -144,7 +144,7 @@
 
 .serviceSection{
     font-family: "Roboto-Regular";
-    font-size: 4vh;
+    font-size: 3vh;
     color: var(--colorBlue);
     font-weight:bold;
     height: 50px;

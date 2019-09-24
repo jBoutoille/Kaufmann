@@ -6,7 +6,7 @@ a{
 
 .nav {
     width: 100%;
-    height: 70px;
+    height: 60px;
     position: fixed;
     z-index: 2;
 }
@@ -19,6 +19,8 @@ a{
 
 .logoBaner{
     width: 45px;
+    margin-top: -1.5vh;
+    margin-left: -2vh;
 }
 
 .nav #brand {
@@ -46,12 +48,12 @@ a{
 }
 
 .nav #menu li {
-    padding-left: 60px;
+    padding-left: 35px;
     display: inline-block;
     font-weight: lighter !important;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 80px;
+    font-size: 2vh;
+    line-height: 68px;
     position: relative;
     transition: all 500ms ease-out;
 }
@@ -59,6 +61,7 @@ a{
 .nav #menu li a {
     font-family: "Roboto-Regular" !important;
     transition: all 500ms ease-out;
+    font-size: 0.8rem;
 }
 
 .nav #menu li a:hover {
@@ -84,23 +87,24 @@ a{
     opacity: 0;
 }
 
-.span{
+
+.span {
     position: absolute;
-    right: -17px;
-    top: -27px;
+    right: -20px;
+    top: -32px;
     line-height: 80px;
     font-size: 1.5em;
 }
 
 .close-btn {
     position: absolute;
-    right: 30px;
+    right: 25px;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     z-index: 2;
-    top: -2px;
+    top: -5px;
     line-height: 80px;
     cursor: pointer;
     font-size: 1.5em;
