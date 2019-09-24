@@ -51,11 +51,11 @@
 			</p>
 			<div id="experiences">
 				<div class="experienceOne">
-					<p class="sizeNumber">350</p>
+					<p class="sizeNumber" id="compteurOne">350</p>
 					<h2>Clients</h2>
 				</div>
 				<div class="experienceTwo">
-					<p class="sizeNumber">40</p>
+					<p class="sizeNumber" id="compteurTwo">40</p>
 					<h2>Années d'expertises</h2>
 				</div>
 			</div>
