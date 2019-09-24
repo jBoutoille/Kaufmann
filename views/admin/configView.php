@@ -56,9 +56,22 @@
                     <form action="./?treatment" method="POST">
                         <div class="panel-body">
                             <div class="form-group">
-                                <label>Adresse</label>
-                                <input class="form-control" type="text" name="adminConfig2Adresse" value="5 Place d'Angleterre 62200, Boulogne-sur-mer" required>
-                                <p class="help-block">Modifie l'adresse du cabinet, présent dans la section "Contact" et le bas du site</p>
+                                <label>Numéro et rue</label>
+                                <input class="form-control" type="text" name="adminConfig2Adresse" value="5 Place d'Angleterre" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Code postal</label>
+                                        <input class="form-control" type="number" name="adminConfig2CP" value="62200" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label>Ville</label>
+                                        <input class="form-control" type="text" name="adminConfig2Ville" value="Boulogne-sur-Mer" required>
+                                    </div>
+                                </div>
                             </div>
                             <hr>
                             <div class="form-group">

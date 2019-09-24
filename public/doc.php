@@ -66,10 +66,12 @@
                 Lien espace client : adminConfig1Client - sitelinkclient
         formAdminConfig2
             inputs:
-                Adresse : adminConfigAdresse
-                E-mail : adminConfigMail
-                Téléphone : adminConfigTelephone
-                FAX : adminConfigFax
+                Adresse : adminConfig2Adresse
+                Code postal : adminConfig2CP
+                Ville : adminConfig2Ville
+                E-mail : adminConfig2Mail
+                Téléphone : adminConfig2Telephone
+                FAX : adminConfig2Fax
         formAdminEditHeader
             inputs:
                 Type de société : adminEditHeaderType
