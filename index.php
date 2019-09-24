@@ -8,8 +8,9 @@
         return (substr($string, 0, $len) === $startString); 
     } 
 
-    require './models/adminManager.php';
-    require './models/visitorManager.php';
+    require './models/AdminManager.php';
+    require './models/InfosManager.php';
+    require './models/VisitorManager.php';
 
     require './controllers/visitorController.php';
     require './controllers/adminController.php';
