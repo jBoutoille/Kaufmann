@@ -11,3 +11,4 @@
 
 <script src="./public/js/parallax.js"></script>
 <script src="./public/js/counter.js"></script>
+<script src="./public/js/scroll.js"></script>
