@@ -9,7 +9,7 @@
 		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#services">Nos services</a></li>
 		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#contact">Contact</a></li>
 		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#newsletter">Newsletter</a></li>
-		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#actualités">Actualités</a></li>
+		<li><a href="./?page=actualite">Actualités</a></li>
 		<li><a href="<?= $RConfig['configClient'] ?>" class="btn btn-primary" target="blank"><i class="fas fa-users"></i> Espace client </a></li>
 	</ul>
 	<div id="toggle">
@@ -24,10 +24,10 @@
 	</div>
 	<ul id="menu">
 		<li><a href="./">Accueil</a></li>
-		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet">Le cabinet</a></li>
-		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#services">Nos services</a></li>
-		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#contact">Contact</a></li>
-		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#newsletter">Newsletter</a></li>
-		<li><a href="<?php if(!empty($_GET)){ echo './';} ?>#actualités">Actualités</a></li>
+		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet">Le cabinet</a></li>
+		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#services">Nos services</a></li>
+		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#contact">Contact</a></li>
+		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#newsletter">Newsletter</a></li>
+		<li><a data-scroll href="./?page=actualite">Actualités</a></li>
 	</ul>
 </div>
