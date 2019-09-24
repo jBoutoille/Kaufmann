@@ -15,9 +15,7 @@ $("#toggle").click(function() {
 
 $(function () {
   
-  $(".nav").add Class('scrolled');
-  (".nav");
-    $nav.toggleClass('scrolled', $(this).
+  $(".nav").addClass('scrolled');
 });
 
-new WOW().init();
+

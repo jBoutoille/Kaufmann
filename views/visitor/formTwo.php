@@ -10,7 +10,7 @@
 	              </div>
 
 	              <div class="containerText">
-	                    <p class="blockText">Envoyez-nous votre CV et Lettre de motivation en remplissant le formulaire ci-dessous :</p>
+	                    <p class="blockText">Envoyez-nous votre CV et Lettre de motivation en remplissant le formulaire ci-dessous</p>
 
 	                    <form>
 	                          <div class="inputData">

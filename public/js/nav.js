@@ -20,4 +20,3 @@ $(function () {
   });
 });
 
-new WOW().init();
