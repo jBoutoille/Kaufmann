@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 24 sep. 2019 à 07:58
+-- Généré le :  mar. 24 sep. 2019 à 09:38
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.3.5
 
@@ -45,11 +45,11 @@ CREATE TABLE IF NOT EXISTS `candidatures` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-cabinet`
+-- Structure de la table `gkcabinet`
 --
 
-DROP TABLE IF EXISTS `gk-cabinet`;
-CREATE TABLE IF NOT EXISTS `gk-cabinet` (
+DROP TABLE IF EXISTS `gkcabinet`;
+CREATE TABLE IF NOT EXISTS `gkcabinet` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `cabinetTitre` varchar(1000) NOT NULL,
   `cabinetTxt1` varchar(1000) NOT NULL,
@@ -58,20 +58,20 @@ CREATE TABLE IF NOT EXISTS `gk-cabinet` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-cabinet`
+-- Déchargement des données de la table `gkcabinet`
 --
 
-INSERT INTO `gk-cabinet` (`id`, `cabinetTitre`, `cabinetTxt1`, `cabinetTxt2`) VALUES
+INSERT INTO `gkcabinet` (`id`, `cabinetTitre`, `cabinetTxt1`, `cabinetTxt2`) VALUES
 (1, '| Le cabinet', 'Indépendant et à taille humaine, notre cabinet, à vocation régionale, est implanté sur la côte d\'opale. Au service d\'une clientèle variée, nous accompagnons depuis longtemps les acteurs économiques majeurs du territoire. Nous vous assistons dans toutes les étapes de la vie de votre entreprise et mettons à votre disposition l\'ensemble de nos compétences en matière de comptabilité, d\'audit, de fiscalité, de droit social.', 'En matière associative, nous sommes en mesure de répondre à vos principaux besoins notamment en expertise comptable ou en commissariat aux comptes. Notre expertise en matière de fiscalité personnelle fait également partie de nos compétences reconnues.');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-config`
+-- Structure de la table `gkconfig`
 --
 
-DROP TABLE IF EXISTS `gk-config`;
-CREATE TABLE IF NOT EXISTS `gk-config` (
+DROP TABLE IF EXISTS `gkconfig`;
+CREATE TABLE IF NOT EXISTS `gkconfig` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `configNomSite` varchar(1000) NOT NULL,
   `configDescription` varchar(1000) NOT NULL,
@@ -87,20 +87,20 @@ CREATE TABLE IF NOT EXISTS `gk-config` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-config`
+-- Déchargement des données de la table `gkconfig`
 --
 
-INSERT INTO `gk-config` (`id`, `configNomSite`, `configDescription`, `configURL`, `configClient`, `configAdresse`, `configCP`, `configVille`, `configMail`, `configTelephone`, `configFax`) VALUES
+INSERT INTO `gkconfig` (`id`, `configNomSite`, `configDescription`, `configURL`, `configClient`, `configAdresse`, `configCP`, `configVille`, `configMail`, `configTelephone`, `configFax`) VALUES
 (1, 'Cabinet G.KAUFMANN', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu', 'https://gkaufmann.fr/', 'http://185.23.139.150/iSuiteExpert/?CNX=CNX&CAB=CGK', '5 Place d\'Angleterre', '62200', 'Boulogne-sur-Mer', 'contact@gkaufmann.fr', '03 21 30 19 19', '03 91 18 65 65');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-contact`
+-- Structure de la table `gkcontact`
 --
 
-DROP TABLE IF EXISTS `gk-contact`;
-CREATE TABLE IF NOT EXISTS `gk-contact` (
+DROP TABLE IF EXISTS `gkcontact`;
+CREATE TABLE IF NOT EXISTS `gkcontact` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `contactTitre` varchar(1000) NOT NULL,
   `contactCoordonnees` varchar(1000) NOT NULL,
@@ -112,20 +112,20 @@ CREATE TABLE IF NOT EXISTS `gk-contact` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-contact`
+-- Déchargement des données de la table `gkcontact`
 --
 
-INSERT INTO `gk-contact` (`id`, `contactTitre`, `contactCoordonnees`, `contactDescBtn1`, `contactBtn1`, `contactDescBtn2`, `contactBtn2`) VALUES
+INSERT INTO `gkcontact` (`id`, `contactTitre`, `contactCoordonnees`, `contactDescBtn1`, `contactBtn1`, `contactDescBtn2`, `contactBtn2`) VALUES
 (1, '| Contact', 'Coordonnées :', 'Obtenir un rendez-vous de comptable et d\'experts-comptables', 'DEMANDER UN RDV', 'Rejoindre notre équipe', 'ENVOYER UN CV');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-expertise`
+-- Structure de la table `gkexpertise`
 --
 
-DROP TABLE IF EXISTS `gk-expertise`;
-CREATE TABLE IF NOT EXISTS `gk-expertise` (
+DROP TABLE IF EXISTS `gkexpertise`;
+CREATE TABLE IF NOT EXISTS `gkexpertise` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `expertiseTitre` varchar(1000) NOT NULL,
   `expertiseTxt1` varchar(1000) NOT NULL,
@@ -138,20 +138,20 @@ CREATE TABLE IF NOT EXISTS `gk-expertise` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-expertise`
+-- Déchargement des données de la table `gkexpertise`
 --
 
-INSERT INTO `gk-expertise` (`id`, `expertiseTitre`, `expertiseTxt1`, `expertiseTxt2`, `expertiseChiffre1`, `expertiseChiffre2`, `expertiseTitre1`, `expertiseTitre2`) VALUES
+INSERT INTO `gkexpertise` (`id`, `expertiseTitre`, `expertiseTxt1`, `expertiseTxt2`, `expertiseChiffre1`, `expertiseChiffre2`, `expertiseTitre1`, `expertiseTitre2`) VALUES
 (1, 'Notre expertise en quelques chiffres :', 'Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.', 'Confiez-nous vos retards de comptabilité, la gestion de vos projets, ou toute autres besoins.', '350', '40', 'Clients', 'Années d\'expertises');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-footer`
+-- Structure de la table `gkfooter`
 --
 
-DROP TABLE IF EXISTS `gk-footer`;
-CREATE TABLE IF NOT EXISTS `gk-footer` (
+DROP TABLE IF EXISTS `gkfooter`;
+CREATE TABLE IF NOT EXISTS `gkfooter` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `footerTitreCoordonnees` varchar(1000) NOT NULL,
   `footerLinkedin` varchar(1000) NOT NULL,
@@ -160,20 +160,20 @@ CREATE TABLE IF NOT EXISTS `gk-footer` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-footer`
+-- Déchargement des données de la table `gkfooter`
 --
 
-INSERT INTO `gk-footer` (`id`, `footerTitreCoordonnees`, `footerLinkedin`, `footerCopyrights`) VALUES
+INSERT INTO `gkfooter` (`id`, `footerTitreCoordonnees`, `footerLinkedin`, `footerCopyrights`) VALUES
 (1, 'CONTACT', 'https://www.linkedin.com/in/benjamin-cauchet-642792153/', '© 2019 G.KAUFMANN');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-header`
+-- Structure de la table `gkheader`
 --
 
-DROP TABLE IF EXISTS `gk-header`;
-CREATE TABLE IF NOT EXISTS `gk-header` (
+DROP TABLE IF EXISTS `gkheader`;
+CREATE TABLE IF NOT EXISTS `gkheader` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `headerType` varchar(1000) NOT NULL,
   `headerTitre` varchar(1000) NOT NULL,
@@ -182,20 +182,20 @@ CREATE TABLE IF NOT EXISTS `gk-header` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-header`
+-- Déchargement des données de la table `gkheader`
 --
 
-INSERT INTO `gk-header` (`id`, `headerType`, `headerTitre`, `headerDesc`) VALUES
+INSERT INTO `gkheader` (`id`, `headerType`, `headerTitre`, `headerDesc`) VALUES
 (1, 'S.A.R.L', 'G.KAUFMANN', 'Expertise comptable, Audit, Conseil & Accompagement');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-newsletter`
+-- Structure de la table `gknewsletter`
 --
 
-DROP TABLE IF EXISTS `gk-newsletter`;
-CREATE TABLE IF NOT EXISTS `gk-newsletter` (
+DROP TABLE IF EXISTS `gknewsletter`;
+CREATE TABLE IF NOT EXISTS `gknewsletter` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `newsletterTitre` varchar(1000) NOT NULL,
   `newsletterTxtForm` varchar(1000) NOT NULL,
@@ -204,20 +204,20 @@ CREATE TABLE IF NOT EXISTS `gk-newsletter` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-newsletter`
+-- Déchargement des données de la table `gknewsletter`
 --
 
-INSERT INTO `gk-newsletter` (`id`, `newsletterTitre`, `newsletterTxtForm`, `newsletterTxtBtn`) VALUES
+INSERT INTO `gknewsletter` (`id`, `newsletterTitre`, `newsletterTxtForm`, `newsletterTxtBtn`) VALUES
 (1, 'Abonnez vous à notre Newsletter', 'ENTREZ VOTRE E-MAIL', 'S\'ABONNER');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `gk-services`
+-- Structure de la table `gkservices`
 --
 
-DROP TABLE IF EXISTS `gk-services`;
-CREATE TABLE IF NOT EXISTS `gk-services` (
+DROP TABLE IF EXISTS `gkservices`;
+CREATE TABLE IF NOT EXISTS `gkservices` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `servicesTitre` varchar(1000) NOT NULL,
   `services1Titre` varchar(1000) NOT NULL,
@@ -244,10 +244,10 @@ CREATE TABLE IF NOT EXISTS `gk-services` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `gk-services`
+-- Déchargement des données de la table `gkservices`
 --
 
-INSERT INTO `gk-services` (`id`, `servicesTitre`, `services1Titre`, `services1Desc`, `services1SS1`, `services1SS2`, `services1SS3`, `services1SS4`, `services1SS5`, `services2Titre`, `services2Desc`, `services2SS1`, `services2SS2`, `services2SS3`, `services2SS4`, `services3Titre`, `services3Desc`, `services3SS1`, `services3SS2`, `services3SS3`, `services3SS4`, `services3SS5`) VALUES
+INSERT INTO `gkservices` (`id`, `servicesTitre`, `services1Titre`, `services1Desc`, `services1SS1`, `services1SS2`, `services1SS3`, `services1SS4`, `services1SS5`, `services2Titre`, `services2Desc`, `services2SS1`, `services2SS2`, `services2SS3`, `services2SS4`, `services3Titre`, `services3Desc`, `services3SS1`, `services3SS2`, `services3SS3`, `services3SS4`, `services3SS5`) VALUES
 (1, '| Nos services', 'AUDIT', 'Nous intervenons au titre de vos besoins en matière de :', 'Commissariat aux comptes', 'Audit Contractuel', 'Commissariat à la transformation', 'Commissariat à la fusion', 'Audit d\'acquisition', 'EXPERTISE COMPTABLE (comptabilité, fiscalité, social, juridique)', 'Nous vous proposons un accompagnement sur mesure en comptabilité, fiscalité, social et juridique :', 'Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie)', 'Associations (tenue, accompagnement, révision)', 'Particuliers (impôts sur le revenu, IFI, conseil patrimonial)', 'Entreprises (tenue complète, comptabilité partagée, révision, secrétariat juridique, paie, déclarations fiscales, consolidation)', 'CONSEIL/ACCOMPAGNEMENT', 'Partenaire privilégié du dirigeant, nous vous assistons sur de nombreux thèmes :', 'Création/reprise de sociétés', 'Mise en place de tableaux de bords', 'Prévisionnels', 'Évaluation de sociétés', 'Mise à disposition de logiciels spécifiques à nos différents métiers (logiciels de comptabilité, de facturation, de notes de frais, de caisse...)');
 
 -- --------------------------------------------------------
