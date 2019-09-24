@@ -28,12 +28,6 @@
     // PAGE D'ACCUEIL - ONE PAGE
         elseif(empty($_GET))
             { getIndex(); }
-    // PAGE DE CONTACT / DEMANDE DE DEVIS
-        elseif(isset($_GET['page']) && $_GET['page'] == 'contact')
-            { getDevis(); }
-    // PAGE DE CONTACT / NOUS REJOINDRE
-        elseif(isset($_GET['page']) && $_GET['page'] == 'contact')
-            { getRejoindre(); }
     // PAGE D'ACTUALITES
         elseif(isset($_GET['page']) && $_GET['page'] == 'actualite')
             { getActualite(); }
@@ -41,10 +35,10 @@
         elseif(isset($_GET['page']) && $_GET['page'] == 'mentions-legales')
             { getMentions(); }
     // PAGE DE RDV
-        elseif(isset($_GET['page']) && $_GET['page'] == 'rdv')
+        elseif(isset($_GET['page']) && $_GET['page'] == 'rendez-vous')
             { getRdv(); }
     // PAGE DE CV
-        elseif(isset($_GET['page']) && $_GET['page'] == 'cv')
+        elseif(isset($_GET['page']) && $_GET['page'] == 'rejoignez-nous')
             { getCv(); }
 
 

@@ -14,11 +14,10 @@
         require './views/visitor/indexView.php';
     }
 
-    function getContact(){
-        require './views/visitor/contactView.php';
-    }
-
     function getActualite(){
+        // RECUPERATION DES TABLES
+        $infos = new InfosManager();
+        $RConfig = $infos->recupConfig();
         require './views/visitor/actualiteView.php';
     }
 
@@ -26,11 +25,19 @@
         require './views/others/404View.php';
     }
 
-        function getRdv(){
+    function getRdv(){
+        // RECUPERATION DES TABLES
+        $infos = new InfosManager();
+        $RConfig = $infos->recupConfig();
+        $RFooter = $infos->recupFooter();
         require './views/visitor/formOne.php';
     }
 
-        function getCv(){
+    function getCv(){
+        // RECUPERATION DES TABLES
+        $infos = new InfosManager();
+        $RConfig = $infos->recupConfig();
+        $RFooter = $infos->recupFooter();
         require './views/visitor/formTwo.php';
     }
 ?>
