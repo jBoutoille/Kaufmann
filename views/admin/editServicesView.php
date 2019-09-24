@@ -20,7 +20,7 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" name="adminEditServicesTitre" placeholder="Nos services" required>
+                                <input class="form-control" type="text" name="adminEditServicesTitre" value="| Nos services" required>
                                 <p class="help-block">Modifie le titre de la section "Services"</p>
                             </div>
                             <hr>
