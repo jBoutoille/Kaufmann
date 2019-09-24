@@ -106,13 +106,13 @@
 				<div id="twoBox">
 					<div id="boxContactOne">
 						<p class="textBtn"><?= $RContact['contactDescBtn1'] ?></p>
-						<a href="index.php?page=rdv">
+						<a href="./?page=rendez-vous">
 							<button class="myBtn"><?= $RContact['contactBtn1'] ?></button>
 						</a>
 					</div>
 					<div id="boxContactTwo">
 						<p class="textBtn"><?= $RContact['contactDescBtn2'] ?></p>
-						<a href="index.php?page=cv"><button class="myBtn">
+						<a href="./?page=rejoignez-nous"><button class="myBtn">
 							<?= $RContact['contactBtn2'] ?></button>
 						</a>
 					</div>
