@@ -43,11 +43,11 @@
 		</p>
 		<div id="experiences">
 			<div class="experienceOne">
-				<p class="sizeNumber"><?= $RExpertise['expertiseChiffre1'] ?></p>
+				<p class="sizeNumber" id="numberOne"><?= $RExpertise['expertiseChiffre1'] ?></p>
 				<h2><?= $RExpertise['expertiseTitre1'] ?></h2>
 			</div>
 			<div class="experienceTwo">
-				<p class="sizeNumber"><?= $RExpertise['expertiseChiffre2'] ?></p>
+				<p class="sizeNumber" id="numberTwo"><?= $RExpertise['expertiseChiffre2'] ?></p>
 				<h2><?= $RExpertise['expertiseTitre2'] ?></h2>
 			</div>
 		</div>
