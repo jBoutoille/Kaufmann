@@ -10,5 +10,4 @@
 <?php } ?>
 
 <script src="./public/js/parallax.js"></script>
-<script src="./public/js/counterOne.js"></script>
-<script src="./public/js/counterTwo.js"></script>
+<script src="./public/js/counter.js"></script>
