@@ -1,4 +1,5 @@
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 500,
-	speedAsDuration: true
+	speed: 1500,
+	speedAsDuration: true,
+	easing: 'easeOutQuart'
 });

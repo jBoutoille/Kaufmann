@@ -1,6 +1,7 @@
 <!-- JS LIBRARIES -->
 <script src="./public/js/libs/jquery.js"></script>
 <script src="./public/js/libs/bootstrap.js"></script>
+<script src="./public/js/libs/polyfills.js"></script>
 
 <!-- JS CUSTOM -->
 <?php if(empty($_GET)) { ?>
