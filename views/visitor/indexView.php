@@ -1,6 +1,5 @@
 <?php ob_start(); ?>
 
-
     <!-- HTML DE LA PAGE INDEX -->
 <header>
 
@@ -8,8 +7,6 @@
         	require './views/visitor/inc/nav.php'; 
     	?>
 
-
-	
 	<!-- HEADER -->
 	<section id="boxHeader">
 	<img src="./public/img/photoHeader.JPG" id="imgHeader" alt="">	
