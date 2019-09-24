@@ -36,14 +36,14 @@
 	                          	<label>Cv</label>
 	                          <div class="custom-file">
 							    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-							    <label class="custom-file-label" for="validatedCustomFile">sélectionné un fichié</label>
+							    <label class="custom-file-label" for="validatedCustomFile">Choisir un fichié</label>
 							    <div class="invalid-feedback">Fichier non valide</div>
 							  </div>
 
 							  <label>Lettre de motivation</label>
 	                          <div class="custom-file">
 							    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-							    <label class="custom-file-label" for="validatedCustomFile">sélectionné un fichié</label>
+							    <label class="custom-file-label" for="validatedCustomFile">Choisir un fichié</label>
 							    <div class="invalid-feedback">Fichier non valide</div>
 							  </div>
 

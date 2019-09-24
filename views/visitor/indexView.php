@@ -11,8 +11,8 @@
 
 	
 	<!-- HEADER -->
-	<div id="boxHeader">
-	<img src="./public/img/4.JPG" id="imgHeader" alt="">	
+	<section id="boxHeader">
+	<img src="./public/img/photoHeader.JPG" id="imgHeader" alt="">	
 	 <div id="filterOne">
       <div id="titleHeader"> 
     	<p class="sarl">S.A.R.L</p>
@@ -21,7 +21,7 @@
     	<div href="#cabinet" id="animGif"></div>
       </div>
      </div>
-    </div>
+    </section>
 </header>
 
     <!-- CABINET SECTION -->
@@ -81,7 +81,7 @@
 						<li class="liPuce"> Audit d'acquisition,</li>
 					</ul>
 			
-			<h2 class="serviceSection">EXPERTISE COMPTABLE (comptabilité, fiscalité, social, juridique,)</h2>
+			<h2 class="serviceSection">EXPERTISE COMPTABLE </h2>
 
 				<p>Nous vous proposons un accompagnement sur mesure en comptabilité, 
 				fiscalité, social et juridique :</p>
@@ -120,8 +120,9 @@
 	</section>
 	<!-- CONTACT SECTION -->
 	<a name="contact"></a>
-	<section id="bluBoxTwo">
-		<div class="filter">
+	<section id="boxTwo">
+		<img src="./public/img/photoContact.JPG" id="imgContact" alt="">
+		<div class="filterOne">
 
 		<h2 class="titleNav" id="contact">| Contact</h2>
 

@@ -9,7 +9,7 @@
     --colorWhiteOp : rgba(255,255,255,0.5);
     --colorBlacl : rgba(0,0,0,1);
     --titresIcones : rgba(11,36,91,1);
-    --filter : rgba(5,18,87,0.2);
+    --filter : rgba(5,18,87,0.3);
 }
 
 @font-face {
@@ -71,6 +71,14 @@
     height: 100vh;
 }
 
+#titleOne{   
+    font-family: "Thryn";
+    text-align: center;
+    color: var(--colorWhite);
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+
 #filterTwo{
     background-color : var(--filter);
     top: 0;
@@ -80,14 +88,6 @@
     position: absolute;
     overflow: hidden;
     z-index: 1;
-}
-
-#titleOne{   
-    font-family: "Thryn";
-    text-align: center;
-    color: var(--colorWhite);
-    letter-spacing: 2px;
-    margin-top: 5%;
 }
 
 #barOne{
@@ -171,19 +171,26 @@
 
 /*--------------- CONTACT SECTION --------------- */
 
-#bluBoxTwo{
+#boxTwo{
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../../img/photoContact.JPG);
-    background-size: cover;
-    opacity: 0.8;   
 }
 
+#imgContact{
+    
+    height: 100vh;
+}
 
-.filter{
+.filterOne{
     background-color : var(--filter);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #contact{

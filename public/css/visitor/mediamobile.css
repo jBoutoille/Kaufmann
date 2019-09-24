@@ -50,13 +50,13 @@
     }
 
 #animGif{
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    height: 20vh;
-    width: 20vh;
+    height: 15vh;
+    width: 15vh;
     margin-left: 25%;
-    bottom: -85%;
+    bottom: -90%;
     }
 
 /*--------------- CABINET SECTION --------------- */
@@ -66,8 +66,17 @@
     font-size: 5vh;
 }
 
+#contact{
+    margin-top: 8vh;
+}
+
 #bluBoxOne{
     height: 100vh;
+}
+
+#filterTwo{
+    height: 107vh;
+
 }
 
 #titleOne{   
@@ -78,7 +87,7 @@
     font-size: 2.2vh;
     text-align: center;
     letter-spacing: 2px;
-    padding: 8% 0%;
+    padding: 8% 4%;
 }
 
 #experiences{
@@ -99,7 +108,7 @@
 #serviceBox{
     font-size: 2.5vh;
     width: 76%;
-    transform: translate(12%, 2vh);
+    transform: translate(10%, 0vh);
 }
 
 /*--------------- CONTACT SECTION --------------- */
@@ -108,9 +117,13 @@
     height: 110vh;
 }
 
+#imgBoxOne{
+    height: 107vh;
+}
+
 #boxContner{
     flex-direction: column;
-    height: 85vh;
+    height: 50vh;
 }
 
 #boxAdresse{

@@ -12,7 +12,7 @@ a{
 }
 
 .nav.scrolled {
-    background-color: rgba(11,36,91); !important;
+    background-color: rgba(11,36,91);
     transition: background-color 500ms linear;
     z-index: 2;
 }
