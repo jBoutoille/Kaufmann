@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 24 sep. 2019 à 09:38
+-- Généré le :  mer. 25 sep. 2019 à 09:11
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.3.5
 
@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `gkexpertise` (
 --
 
 INSERT INTO `gkexpertise` (`id`, `expertiseTitre`, `expertiseTxt1`, `expertiseTxt2`, `expertiseChiffre1`, `expertiseChiffre2`, `expertiseTitre1`, `expertiseTitre2`) VALUES
-(1, 'Notre expertise en quelques chiffres :', 'Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.', 'Confiez-nous vos retards de comptabilité, la gestion de vos projets, ou toute autres besoins.', '350', '40', 'Clients', 'Années d\'expertises');
+(1, 'Notre expertise en quelques chiffres :', 'Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne-sur-Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids.', 'Confiez-nous vos retards de comptabilité, la gestion de vos projets, ou toute autres besoins.', '350', '40', 'Clients', 'Années d\'expertises');
 
 -- --------------------------------------------------------
 
@@ -294,7 +294,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `role`, `created_at`, `session_token`, `time_last_connect`) VALUES
-(1, 'test', 'test', 'test@test', 'admin', '2019-09-16 00:00:00', '2a9d0958d67eb94fef3f7625b6b9c87c585e596a6e5ea6a931', '2019-09-24 09:09:01');
+(1, 'test', 'test', 'test@test', 'admin', '2019-09-16 00:00:00', '39d94f5dfd9ac04ed4b1412f01cb0d8420f232ce8faa22c180', '2019-09-25 09:26:59');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

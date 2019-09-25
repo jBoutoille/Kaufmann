@@ -60,10 +60,10 @@
                 Mot de passe : adminLoginPw
         formAdminConfig1
             inputs:
-                Nom du site : adminConfig1NomSite - sitename
-                Description du site : adminConfig1Description - sitedesc
-                URL du site : adminConfig1URL - siteurl
-                Lien espace client : adminConfig1Client - sitelinkclient
+                Nom du site : adminConfig1NomSite
+                Description du site : adminConfig1Description
+                URL du site : adminConfig1URL
+                Lien espace client : adminConfig1Client
         formAdminConfig2
             inputs:
                 Adresse : adminConfig2Adresse

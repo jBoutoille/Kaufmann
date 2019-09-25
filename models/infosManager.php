@@ -71,7 +71,7 @@
             $query->bindParam(':p2',$p2,PDO::PARAM_STR);
             $query->bindParam(':p3',$p3,PDO::PARAM_STR);
             $query->bindParam(':p4',$p4,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateConfig2($p1,$p2,$p3,$p4,$p5,$p6){
@@ -83,7 +83,7 @@
             $query->bindParam(':p4',$p4,PDO::PARAM_STR);
             $query->bindParam(':p5',$p5,PDO::PARAM_STR);
             $query->bindParam(':p6',$p6,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateHeader($p1,$p2,$p3){
@@ -92,7 +92,7 @@
             $query->bindParam(':p1',$p1,PDO::PARAM_STR);
             $query->bindParam(':p2',$p2,PDO::PARAM_STR);
             $query->bindParam(':p3',$p3,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateCabinet($p1,$p2,$p3){
@@ -101,7 +101,7 @@
             $query->bindParam(':p1',$p1,PDO::PARAM_STR);
             $query->bindParam(':p2',$p2,PDO::PARAM_STR);
             $query->bindParam(':p3',$p3,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateExpertise($p1,$p2,$p3,$p4,$p5,$p6,$p7){
@@ -114,7 +114,7 @@
             $query->bindParam(':p5',$p5,PDO::PARAM_STR);
             $query->bindParam(':p6',$p6,PDO::PARAM_STR);
             $query->bindParam(':p7',$p7,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateServices($p1,$p2,$p3,$p4,$p5,$p6,$p7,$p8,$p9,$p10,$p11,$p12,$p13,$p14,$p15,$p16,$p17,$p18,$p19,$p20,$p21){
@@ -141,7 +141,7 @@
             $query->bindParam(':p19',$p19,PDO::PARAM_STR);
             $query->bindParam(':p20',$p20,PDO::PARAM_STR);
             $query->bindParam(':p21',$p21,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateContat($p1,$p2,$p3,$p4,$p5,$p6){
@@ -153,7 +153,7 @@
             $query->bindParam(':p4',$p4,PDO::PARAM_STR);
             $query->bindParam(':p5',$p5,PDO::PARAM_STR);
             $query->bindParam(':p6',$p6,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateNewsletter($p1,$p2,$p3){
@@ -162,7 +162,7 @@
             $query->bindParam(':p1',$p1,PDO::PARAM_STR);
             $query->bindParam(':p2',$p2,PDO::PARAM_STR);
             $query->bindParam(':p3',$p3,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
 
         public function updateFooter($p1,$p2,$p3){
@@ -171,7 +171,7 @@
             $query->bindParam(':p1',$p1,PDO::PARAM_STR);
             $query->bindParam(':p2',$p2,PDO::PARAM_STR);
             $query->bindParam(':p3',$p3,PDO::PARAM_STR);
-            $query->excute();
+            $query->execute();
         }
     }
 ?>
