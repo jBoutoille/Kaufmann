@@ -1,5 +1,5 @@
 // GENERAL SETTING
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 
 // Custom Settings
 
