@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<!-- HEADER -->
+<!-- SECTION HEADER -->
 <header id="accueil">
 	<?php require './views/visitor/inc/nav.php'; ?>
 	<section id="boxHeader">
@@ -54,7 +54,7 @@
 	</div>
 </section>
 
-<!-- SERVICES SECTION -->
+<!-- SECTION SERVICES -->
 <div id="services">
 	<section id="globalBoxService">	
 		<h2 class="titleNav"><?= $RServices['servicesTitre'] ?></h2>	
@@ -89,7 +89,7 @@
 	</section>
 </div>
 
-<!-- CONTACT SECTION -->
+<!-- SECTION CONTACT -->
 <div id="contact">
 	<section id="boxTwo">
 		<img src="./public/img/photoContact.JPG" id="imgContact" alt="">
@@ -129,12 +129,14 @@
 			<div class="section-subheading">
 				<h1 class="wow fadeInUp"><?= $RNewsletter['newsletterTitre'] ?></h1>
 			</div>
-			<div class="input-group wow fadeInUp">
-				<input type="email" class="form-control" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>">
-				<span class="input-group-btn">
-					<button class="btn" type="submit"><?= $RNewsletter['newsletterTxtBtn'] ?></button>
-				</span>
-			</div>
+			<form action="./?treatment" method="POST">
+				<div class="input-group wow fadeInUp">
+					<input type="email" class="form-control" name="visitorNewsletterMail" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>">
+					<span class="input-group-btn">
+						<button class="btn" type="submit" name="formVisitorNewsletter"><?= $RNewsletter['newsletterTxtBtn'] ?></button>
+					</span>
+				</div>
+			</form>
 		</div>
 	</div>
 </section>
