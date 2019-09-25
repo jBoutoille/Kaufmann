@@ -6,11 +6,11 @@
 	<section id="boxHeader">
 		<img src="./public/img/photoHeader.JPG" id="imgHeader" alt="">	
 		<div id="filterOne">
-			<div id="titleHeader"> 
-				<p class="sarl"><?= $RHeader['headerType'] ?></p>
-				<p id="kaufmann"><?= $RHeader['headerTitre'] ?></p>
-				<h1 id="textOne"><?= $RHeader['headerDesc'] ?></h1>
-				<div><a id="animGif" data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet"></a></div>
+			<div id="titleHeader" class="foo-2" > 
+				<p class="sarl" class="foo-2"><?= $RHeader['headerType'] ?></p>
+				<p id="kaufmann" class="foo-3"><?= $RHeader['headerTitre'] ?></p>
+				<h1 id="textOne" class="foo-4"><?= $RHeader['headerDesc'] ?></h1>
+				<div class="foo-5"><a id="animGif" data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet"></a></div>
 			</div>
 		</div>
 	</section>
@@ -19,8 +19,8 @@
 <!-- SECTION CABINET -->
 <div id="cabinet">
 	<section>
-		<h2 class="titleNav"><?= $RCabinet['cabinetTitre'] ?></h2>
-			<p id="texteSectionOne">
+		<h2 class="titleNav foo-3"><?= $RCabinet['cabinetTitre'] ?></h2>
+			<p id="texteSectionOne" class="foo-4">
 				<?= $RCabinet['cabinetTxt1'] ?>
 				<br>
 				<br>
@@ -33,21 +33,21 @@
 <section id="BoxOne">
 	<img src="./public/img/photoBureau.JPG" id="imgBoxOne" alt="">
 	<div id="filterTwo">
-		<h2 id="titleOne"><?= $RExpertise['expertiseTitre'] ?></h2>
+		<h2 id="titleOne" class="foo-3"><?= $RExpertise['expertiseTitre'] ?></h2>
 		<div id="barOne"></div>
-		<p id="texteSectionTwo">
+		<p id="texteSectionTwo" class="foo-4">
 			<?= $RExpertise['expertiseTxt1'] ?>
 			<br>
 			<br>
 			<?= $RExpertise['expertiseTxt2'] ?>
 		</p>
 		<div id="experiences">
-			<div class="experienceOne">
+			<div class="experienceOne foo-3">
 				<p class="sizeNumber" id="numberOne"><?= $RExpertise['expertiseChiffre1'] ?></p>
 				<h2><?= $RExpertise['expertiseTitre1'] ?></h2>
 			</div>
-			<div class="experienceTwo">
-				<p class="sizeNumber" id="numberTwo"><?= $RExpertise['expertiseChiffre2'] ?></p>
+			<div class="experienceTwo foo-3">
+				<p class="sizeNumber foo-4" id="numberTwo"><?= $RExpertise['expertiseChiffre2'] ?></p>
 				<h2><?= $RExpertise['expertiseTitre2'] ?></h2>
 			</div>
 		</div>
@@ -57,8 +57,8 @@
 <!-- SECTION SERVICES -->
 <div id="services">
 	<section id="globalBoxService">	
-		<h2 class="titleNav"><?= $RServices['servicesTitre'] ?></h2>	
-		<div id="serviceBox">
+		<h2 class="titleNav foo-3"><?= $RServices['servicesTitre'] ?></h2>	
+		<div id="serviceBox" class="foo-4">
 			<h2 class="serviceSection"><?= $RServices['services1Titre'] ?></h2>	
 			<p><?= $RServices['services1Desc'] ?></p>		
 			<ul>
@@ -94,8 +94,8 @@
 	<section id="boxTwo">
 		<img src="./public/img/photoContact.JPG" id="imgContact" alt="">
 		<div class="filterOne">
-			<h2 class="titleNav" id="contact"><?= $RContact['contactTitre'] ?></h2>
-			<div id="boxContner">
+			<h2 class="titleNav foo-3" id="contact"><?= $RContact['contactTitre'] ?></h2>
+			<div id="boxContner" class="foo-4">
 				<ul id="boxAdresse">
 					<h3 id="coordonnees"><?= $RContact['contactCoordonnees'] ?></h3>
 					<li id="adresse"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
@@ -123,7 +123,7 @@
 </div>
 
 <!-- SECTION NEWSLETTER -->	
-<section class="newsletter" id="newsletter">
+<section class="newsletter foo-3" id="newsletter">
 	<div class="container">
 		<div class="news-data">
 			<div class="section-subheading">
@@ -142,7 +142,7 @@
 </section>
 
 <!-- API GOOGLE MAP -->	
-<div style="height:40vh">
+<div style="height:40vh" class="foo-3">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.4996106340805!2d1.6007255077783342!3d50.72309948130056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc2c42e0ba61b7%3A0x7b8d42d029cd746d!2s5%20Place%20d&#39;Angleterre%2C%2062200%20Boulogne-sur-Mer!5e0!3m2!1sfr!2sfr!4v1568721375304!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 

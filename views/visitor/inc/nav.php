@@ -3,7 +3,7 @@
 	<span id="brand">
 		<a href="./"><img src="./public/img/logo/logo2white.png" class="logoBaner" ></a>
 	</span>
-	<ul id="menu">
+	<ul id="menu" class="foo-1">
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#accueil">Accueil</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet">Le cabinet</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#services">Nos services</a></li>
