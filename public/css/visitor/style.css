@@ -294,8 +294,9 @@
     cursor: pointer;
     font-size: 1em;
     font-size: 2.5vh;
-    padding: 2px 2px;
+    padding: 3px 1px;
     outline: none;
+    margin: 1vh;
 }
 
 .btnSeeMore:hover {
