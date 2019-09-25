@@ -7,6 +7,8 @@
         $AM = new AdminManager();
         // Création de l'objet de gestion des informations du site
         $IM = new InfosManager();
+        // Création de l'objet ge gestion des formulaires visiteurs
+        $VM = new VisitorManager();
 
         // Formulaire de connexion au panel admin
         if(isset($_POST['formAdminLogin'])){
@@ -122,6 +124,34 @@
             $p3 = htmlspecialchars($_POST['adminEditFooterCopyrights']);
             $IM->updateFooter($p1,$p2,$p3);
             header('Location: ./?page=gk-admin&p1=edit-footer');
+        }
+
+        // Formulaire de prise de rendez-vous
+        elseif(isset($_POST['formVisitorRdv'])){
+            $p1 = htmlspecialchars($_POST['visitorRdvNom']);
+            $p2 = htmlspecialchars($_POST['visitorRdvPrenom']);
+            $p3 = htmlspecialchars($_POST['visitorRdvActivite']);
+            $p4 = htmlspecialchars($_POST['visitorRdvTelephone']);
+            $p5 = htmlspecialchars($_POST['visitorRdvMail']);
+            $p6 = htmlspecialchars($_POST['visitorRdvMessge']);
+        }
+
+        // Formulaire d'envois de candidatures spontannées
+        elseif(isset($_POST['formVisitorCandidature'])){
+            $p1 = htmlspecialchars($_POST['visitorCandidatureNom']);
+            $p2 = htmlspecialchars($_POST['visitorCandidaturePrenom']);
+            $p3 = htmlspecialchars($_POST['visitorCandidaturePoste']);
+            $p4 = htmlspecialchars($_POST['visitorCandidatureMessage']);
+            $p5 = htmlspecialchars($_POST['visitorCandidatureFile1']);
+            $p6 = htmlspecialchars($_POST['visitorCandidatureFile2']);
+
+        }
+
+        // Formulaire de Newsletter
+        elseif(isset($_POST['formVisitorNewsletter'])){
+            $p1 = htmlspecialchars($_POST['visitorNewsletterMail']);
+            $VM->insertNewsletter($p1);
+            header('Location: ./');
         }
 
         // AUCUN FORMULAIRE

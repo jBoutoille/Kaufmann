@@ -28,12 +28,5 @@
     <link href="./public/css/visitor/header.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/form.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/mediamobile.css" rel="stylesheet" type="text/css">
-
-    <!-- CDN -->
-    <script src="https://kit.fontawesome.com/dba9f403c3.js"></script>
-
-    <!-- PARALLAX -->
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     
-   
 </head>
