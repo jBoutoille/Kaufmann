@@ -4,7 +4,7 @@
 		<a href="./"><img src="./public/img/logo/logo2white.png" class="logoBaner" ></a>
 	</span>
 	<ul id="menu">
-		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#top">Accueil</a></li>
+		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#accueil">Accueil</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet">Le cabinet</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#services">Nos services</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#contact">Contact</a></li>
@@ -24,7 +24,7 @@
 	</div>
 	<ul id="menu">
 		<li><a data-scroll href="<?= $RConfig['configClient'] ?>" class="btn btn-primary" target="blank"><i class="fas fa-users"></i> Espace client </a></li>
-		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#top">Accueil</a></li>
+		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#accueil">Accueil</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet">Le cabinet</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#services">Nos services</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#contact">Contact</a></li>

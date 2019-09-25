@@ -20,19 +20,19 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" name="adminEditNewsletterTitre" value="Abonnez vous à notre Newsletter" required>
+                                <input class="form-control" type="text" name="adminEditNewsletterTitre" value="<?= $RNewsletter['newsletterTitre'] ?>" required>
                                 <p class="help-block">Modifie le titre de la section "Newsletter"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte dans le formulaire</label>
-                                <input class="form-control" type="text" name="adminEditNewsletterTxtForm" value="ENTREZ VOTRE E-MAIL" required>
+                                <input class="form-control" type="text" name="adminEditNewsletterTxtForm" value="<?= $RNewsletter['newsletterTxtForm'] ?>" required>
                                 <p class="help-block">Modifie le texte dans le formulaire du bloc Newsletter</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte du bouton</label>
-                                <input class="form-control" type="text" name="adminEditNewsletterTxtBtn" value="S'ABONNER" required>
+                                <input class="form-control" type="text" name="adminEditNewsletterTxtBtn" value="<?= $RNewsletter['newsletterTxtBtn'] ?>" required>
                                 <p class="help-block">Modifie le texte du bouton pour s'abonner à la Newsletter</p>
                             </div>
                             <hr>

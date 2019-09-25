@@ -20,7 +20,7 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" name="adminEditServicesTitre" value="| Nos services" required>
+                                <input class="form-control" type="text" name="adminEditServicesTitre" value="<?= $RServices['servicesTitre'] ?>" required>
                                 <p class="help-block">Modifie le titre de la section "Services"</p>
                             </div>
                             <hr>
@@ -31,33 +31,33 @@
                                         <div class="panel-body">
                                             <div class="form-group">
                                                 <label>Titre du service</label>
-                                                <input class="form-control" type="text" name="adminEditServices1Titre" value="AUDIT" required>
+                                                <input class="form-control" type="text" name="adminEditServices1Titre" value="<?= $RServices['services1Titre'] ?>" required>
                                                 <p class="help-block">Modifie le titre du service 1</p>
                                             </div>
                                             <div class="form-group">
                                                 <label>Description du service</label>
-                                                <textarea class="form-control" type="text" rows="3" name="adminEditServices1Description" required>Nous intervenons au titre de vos besoins en matière de :</textarea>
+                                                <textarea class="form-control" type="text" rows="3" name="adminEditServices1Description" required><?= $RServices['services1Desc'] ?></textarea>
                                                 <p class="help-block">Modifie la description du service 1</p>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 1</label>
-                                                <input class="form-control" type="text" name="adminEditServices1SS1" value="Commissariat aux comptes" required>
+                                                <input class="form-control" type="text" name="adminEditServices1SS1" value="<?= $RServices['services1SS1'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 2</label>
-                                                <input class="form-control" type="text" name="adminEditServices1SS2" value="Audit Contractuel" required>
+                                                <input class="form-control" type="text" name="adminEditServices1SS2" value="<?= $RServices['services1SS2'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 3</label>
-                                                <input class="form-control" type="text" name="adminEditServices1SS3" value="Commissariat à la transformation" required>
+                                                <input class="form-control" type="text" name="adminEditServices1SS3" value="<?= $RServices['services1SS3'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 4</label>
-                                                <input class="form-control" type="text" name="adminEditServices1SS4" value="Commissariat à la fusion" required>
+                                                <input class="form-control" type="text" name="adminEditServices1SS4" value="<?= $RServices['services1SS4'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 5</label>
-                                                <input class="form-control" type="text" name="adminEditServices1SS5" value="Audit d'acquisition" required>
+                                                <input class="form-control" type="text" name="adminEditServices1SS5" value="<?= $RServices['services1SS5'] ?>" required>
                                             </div>
                                         </div>
                                     </div>
@@ -68,29 +68,29 @@
                                         <div class="panel-body">
                                             <div class="form-group">
                                                 <label>Titre du service</label>
-                                                <input class="form-control" type="text" name="adminEditServices2Titre" value="EXPERTISE COMPTABLE" required>
+                                                <input class="form-control" type="text" name="adminEditServices2Titre" value="<?= $RServices['services2Titre'] ?>" required>
                                                 <p class="help-block">Modifie le titre du service 2</p>
                                             </div>
                                             <div class="form-group">
                                                 <label>Description du service</label>
-                                                <textarea class="form-control" type="text" rows="3" name="adminEditServices2Description" required>Nous vous proposons un accompagnement sur mesure en comptabilité, fiscalité, social et juridique :</textarea>
+                                                <textarea class="form-control" type="text" rows="3" name="adminEditServices2Description" required><?= $RServices['services2Desc'] ?></textarea>
                                                 <p class="help-block">Modifie la description du service 2</p>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 1</label>
-                                                <input class="form-control" type="text" name="adminEditServices2SS1" value="Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie...)" required>
+                                                <input class="form-control" type="text" name="adminEditServices2SS1" value="<?= $RServices['services2SS1'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 2</label>
-                                                <input class="form-control" type="text" name="adminEditServices2SS2" value="Associations (tenue, accompagnement, révision...)" required>
+                                                <input class="form-control" type="text" name="adminEditServices2SS2" value="<?= $RServices['services2SS2'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 3</label>
-                                                <input class="form-control" type="text" name="adminEditServices2SS3"value="Particuliers (impôts sur le revenu, IFI, conseil patrimonial...)" required>
+                                                <input class="form-control" type="text" name="adminEditServices2SS3" value="<?= $RServices['services2SS3'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 4</label>
-                                                <input class="form-control" type="text" name="adminEditServices2SS4" value="Entreprises (tenue complète, comptabilité partagée, révision, secrétariat, paie...)" required>
+                                                <input class="form-control" type="text" name="adminEditServices2SS4" value="<?= $RServices['services2SS4'] ?>" required>
                                             </div>
                                         </div>
                                     </div>
@@ -101,33 +101,33 @@
                                         <div class="panel-body">
                                             <div class="form-group">
                                                 <label>Titre du service</label>
-                                                <input class="form-control" type="text" name="adminEditServices3Titre" value="CONSEIL ET ACCOMPAGNEMENT" required>
+                                                <input class="form-control" type="text" name="adminEditServices3Titre" value="<?= $RServices['services3Titre'] ?>" required>
                                                 <p class="help-block">Modifie le titre du service 3</p>
                                             </div>
                                             <div class="form-group">
                                                 <label>Description du service</label>
-                                                <textarea class="form-control" type="text" rows="3" name="adminEditServices3Description" required>texte à définir :</textarea>
+                                                <textarea class="form-control" type="text" rows="3" name="adminEditServices3Description" required><?= $RServices['services3Desc'] ?></textarea>
                                                 <p class="help-block">Modifie la description du service 3</p>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 1</label>
-                                                <input class="form-control" type="text" name="adminEditServices3SS1" value="Création et reprise de sociétés" required>
+                                                <input class="form-control" type="text" name="adminEditServices3SS1" value="<?= $RServices['services3SS1'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 2</label>
-                                                <input class="form-control" type="text" name="adminEditServices3SS2" value="Mise en place de tableaux de bords" required>
+                                                <input class="form-control" type="text" name="adminEditServices3SS2" value="<?= $RServices['services3SS2'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 3</label>
-                                                <input class="form-control" type="text" name="adminEditServices3SS3" value="Prévisionnels" required>
+                                                <input class="form-control" type="text" name="adminEditServices3SS3" value="<?= $RServices['services3SS3'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 4</label>
-                                                <input class="form-control" type="text" name="adminEditServices3SS4" value="Évaluation de sociétés" required>
+                                                <input class="form-control" type="text" name="adminEditServices3SS4" value="<?= $RServices['services3SS4'] ?>" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Sous service 5</label>
-                                                <input class="form-control" type="text" name="adminEditServices3SS5" value="Mise à disposition de logiciels sans engagement à tarifs avantageux" required>
+                                                <input class="form-control" type="text" name="adminEditServices3SS5" value="<?= $RServices['services3SS5'] ?>" required>
                                             </div>
                                         </div>
                                     </div>

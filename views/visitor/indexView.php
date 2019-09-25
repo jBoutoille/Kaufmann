@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 
 <!-- HEADER -->
-<header id="top">
+<header id="accueil">
 	<?php require './views/visitor/inc/nav.php'; ?>
 	<section id="boxHeader">
 		<img src="./public/img/photoHeader.JPG" id="imgHeader" alt="">	

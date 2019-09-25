@@ -3,16 +3,6 @@
     // ACCUEIL ADMIN LOGGED - Dashboard
     function getAdmin(){
         if(isset($_SESSION['sessionToken'])){
-            // RECUPERATION DES TABLES
-            $infos = new InfosManager();
-            $RConfig = $infos->recupConfig();
-            $RHeader = $infos->recupHeader();
-            $RCabinet = $infos->recupCabinet();
-            $RExpertise = $infos->recupExpertise();
-            $RServices = $infos->recupServices();
-            $RContact = $infos->recupContact();
-            $RNewsletter = $infos->recupNewsletter();
-            $RFooter = $infos->recupFooter();
             require './views/admin/adminView.php';            
         }
         else{
@@ -31,6 +21,8 @@
     // CONFIGURATION DU SITE
     function getAdminConfig(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             require './views/admin/configView.php';
         }
         else{
@@ -41,6 +33,8 @@
     // MODIFICATIONS
     function getAdminHeader(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RHeader = $infos->recupHeader();
             require './views/admin/editHeaderView.php';
         }
         else{
@@ -49,6 +43,8 @@
     }
     function getAdminLecabinet(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RCabinet = $infos->recupCabinet();
             require './views/admin/editPresentationView.php';
         }
         else{
@@ -57,6 +53,8 @@
     }
     function getAdminExpertise(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RExpertise = $infos->recupExpertise();
             require './views/admin/editExpertiseView.php';
         }
         else{
@@ -65,6 +63,8 @@
     }
     function getAdminServices(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RServices = $infos->recupServices();
             require './views/admin/editServicesView.php';
         }
         else{
@@ -73,6 +73,8 @@
     }
     function getAdminContact(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RContact = $infos->recupContact();
             require './views/admin/editContactView.php';
         }
         else{
@@ -81,6 +83,8 @@
     }
     function getAdminNewsletter(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RNewsletter = $infos->recupNewsletter();
             require './views/admin/editNewsletterView.php';
         }
         else{
@@ -89,6 +93,8 @@
     }
     function getAdminFooter(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RFooter = $infos->recupFooter();
             require './views/admin/editFooterView.php';
         }
         else{

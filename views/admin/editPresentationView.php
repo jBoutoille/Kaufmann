@@ -20,19 +20,19 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" name="adminEditLecabinetTitre" value="Le cabinet" required>
+                                <input class="form-control" type="text" name="adminEditLecabinetTitre" value="<?= $RCabinet['cabinetTitre'] ?>" required>
                                 <p class="help-block">Modifie le titre de la section "Le cabinet"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>1er paragraphe</label>
-                                <textarea class="form-control" type="text" rows="4" name="adminEditLecabinet1er" required>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'</textarea>
+                                <textarea class="form-control" type="text" rows="4" name="adminEditLecabinet1er" required><?= $RCabinet['cabinetTxt1'] ?></textarea>
                                 <p class="help-block">Modifie le 1er paragraphe de la partie "Le cabinet" - Idéalement environ 250 caractères</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>2ème paragraphe</label>
-                                <textarea class="form-control" type="text" rows="4" name="adminEditLecabinet2eme" required>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.'</textarea>
+                                <textarea class="form-control" type="text" rows="4" name="adminEditLecabinet2eme" required><?= $RCabinet['cabinetTxt2'] ?></textarea>
                                 <p class="help-block">Modifie le 2ème paragraphe de la partie "Le cabinet" - Idéalement environ 250 caractères</p>
                             </div>
                             <hr>

@@ -20,13 +20,13 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" name="adminEditContactTitre" value="Contact" required>
+                                <input class="form-control" type="text" name="adminEditContactTitre" value="<?= $RContact['contactTitre'] ?>" required>
                                 <p class="help-block">Modifie le titre de la section "Contact"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Titre du bloc "coordonnées"</label>
-                                <input class="form-control" type="text" name="adminEditContactCoordonnees" value="Coordonnées :" required>
+                                <input class="form-control" type="text" name="adminEditContactCoordonnees" value="<?= $RContact['contactCoordonnees'] ?>" required>
                                 <p class="help-block">Modifie le titre du bloc "Coordonnées"</p>
                             </div>
                             <hr>
@@ -36,14 +36,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Description du bouton "Demander un RDV"</label>
-                                        <input class="form-control" type="text" name="adminEditContactDescBtn1" value="Obtenir un rendez-vous de comptable et d'experts-comptables" required>
+                                        <input class="form-control" type="text" name="adminEditContactDescBtn1" value="<?= $RContact['contactDescBtn1'] ?>" required>
                                         <p class="help-block">Modifie la description du bouton "Demander un RDV"</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Texte dans le bouton "Demander un RDV"</label>
-                                        <input class="form-control" type="text" name="adminEditContactBtn1" value="DEMANDER UN R.D.V" required>
+                                        <input class="form-control" type="text" name="adminEditContactBtn1" value="<?= $RContact['contactBtn1'] ?>" required>
                                         <p class="help-block">Modifie le texte dans le bouton "Demander un RDV"</p>
                                     </div>
                                 </div>
@@ -53,14 +53,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Description du bouton "Envoyer un CV"</label>
-                                        <input class="form-control" type="text" name="adminEditContactDescBtn2" value="Rejoindre notre équipe" required>
+                                        <input class="form-control" type="text" name="adminEditContactDescBtn2" value="<?= $RContact['contactDescBtn2'] ?>" required>
                                         <p class="help-block">Modifie la description du bouton "Envoyer un CV"</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Texte dans le bouton "Envoyer un CV"</label>
-                                        <input class="form-control" type="text" name="adminEditContactBtn2" value="ENVOYER UN CV" required>
+                                        <input class="form-control" type="text" name="adminEditContactBtn2" value="<?= $RContact['contactBtn2'] ?>" required>
                                         <p class="help-block">Modifie le texte dans le bouton "Envoyer un CV"</p>
                                     </div>
                                 </div>

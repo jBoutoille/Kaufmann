@@ -20,19 +20,19 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Type de société</label>
-                                <input class="form-control" type="text" name="adminEditHeaderType" value="S.A.R.L" required>
+                                <input class="form-control" type="text" name="adminEditHeaderType" value="<?= $RHeader['headerType'] ?>" required>
                                 <p class="help-block">Modifie le type de société visible dans le haut de page</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Titre du site / Nom principal</label>
-                                <input class="form-control" type="text" name="adminEditHeaderTitre" value="G.KAUFMANN" required>
+                                <input class="form-control" type="text" name="adminEditHeaderTitre" value="<?= $RHeader['headerTitre'] ?>" required>
                                 <p class="help-block">Modifie le titre principal le plus visible du haut de page</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Sous titres</label>
-                                <input class="form-control" type="text" name="adminEditHeaderDescription" value="Expertise comptable, Audit, Conseil & Accompagement" required>
+                                <input class="form-control" type="text" name="adminEditHeaderDescription" value="<?= $RHeader['headerDesc'] ?>" required>
                                 <p class="help-block">Modifie les sous titres visibles sous le titre principal du haut de page</p>
                             </div>
                             <hr>

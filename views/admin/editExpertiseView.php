@@ -20,19 +20,19 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Titre de la section</label>
-                                <input class="form-control" type="text" name="adminEditExpertiseTitre" value="Notre expertise en quelques chiffres :" required>
+                                <input class="form-control" type="text" name="adminEditExpertiseTitre" value="<?= $RExpertise['expertiseTitre'] ?>" required>
                                 <p class="help-block">Modifie le titre de la section "Expertise"</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte 1</label>
-                                <input class="form-control" type="text" name="adminEditExpertiseTxt1" value="Pourquoi faire du cabinet G.KAUFMANN votre partenaire ? Présent à Boulogne/Mer, nos compétences multiples ainsi que notre expertise feront de nous un allié de poids." required>
+                                <input class="form-control" type="text" name="adminEditExpertiseTxt1" value="<?= $RExpertise['expertiseTxt1'] ?>" required>
                                 <p class="help-block">Modifie le 1er texte de l'expertise</p>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label>Texte 2</label>
-                                <input class="form-control" type="text" name="adminEditExpertiseTxt2" value="Confiez-nous vos retards de comptabilité, la gestion de vos projets, ou toute autres besoins." required>
+                                <input class="form-control" type="text" name="adminEditExpertiseTxt2" value="<?= $RExpertise['expertiseTxt2'] ?>" required>
                                 <p class="help-block">Modifie le 2ème texte de l'expertise</p>
                             </div>
                             <hr>
@@ -40,14 +40,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Chiffre 1</label>
-                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre1" value="350" required>
+                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre1" value="<?= $RExpertise['expertiseChiffre1'] ?>" required>
                                         <p class="help-block">Modifie le 1er chiffre de l'expertise</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>chiffre 2</label>
-                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre2" value="40" required>
+                                        <input class="form-control" type="number" name="adminEditExpertiseChiffre2" value="<?= $RExpertise['expertiseChiffre2'] ?>" required>
                                         <p class="help-block">Modifie le 2ème chiffre de l'expertise</p>
                                     </div>
                                 </div>
@@ -57,14 +57,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Titre du chiffre 1</label>
-                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre1" value="Clients" required>
+                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre1" value="<?= $RExpertise['expertiseTitre1'] ?>" required>
                                         <p class="help-block">Modifie le 1er titre du chiffre de l'expertise</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Titre du chiffre 2</label>
-                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre2" value="Années d'expertises" required>
+                                        <input class="form-control" type="text" name="adminEditExpertiseTitreChiffre2" value="<?= $RExpertise['expertiseTitre2'] ?>" required>
                                         <p class="help-block">Modifie le 2ème titre du chiffre de l'expertise</p>
                                     </div>
                                 </div>
