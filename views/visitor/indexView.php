@@ -6,11 +6,11 @@
 	<section id="boxHeader">
 		<img src="./public/img/photoHeader.JPG" id="imgHeader" alt="">	
 		<div id="filterOne">
-			<div id="titleHeader" class="foo-2" > 
-				<p class="sarl" class="foo-2"><?= $RHeader['headerType'] ?></p>
-				<p id="kaufmann" class="foo-3"><?= $RHeader['headerTitre'] ?></p>
-				<h1 id="textOne" class="foo-4"><?= $RHeader['headerDesc'] ?></h1>
-				<div class="foo-5"><a id="animGif" data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet"></a></div>
+			<div id="titleHeader" class="foo-3"> 
+				<p class="sarl" class="foo-3"><?= $RHeader['headerType'] ?></p>
+				<p id="kaufmann" class="foo-4"><?= $RHeader['headerTitre'] ?></p>
+				<h1 id="textOne" class="foo-5"><?= $RHeader['headerDesc'] ?></h1>
+				<div class="foo-6"><a id="animGif" data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet"></a></div>
 			</div>
 		</div>
 	</section>
@@ -19,8 +19,8 @@
 <!-- SECTION CABINET -->
 <div id="cabinet">
 	<section>
-		<h2 class="titleNav foo-3"><?= $RCabinet['cabinetTitre'] ?></h2>
-			<p id="texteSectionOne" class="foo-4">
+		<h2 class="titleNav foo-1"><?= $RCabinet['cabinetTitre'] ?></h2>
+			<p id="texteSectionOne" class="foo-2">
 				<?= $RCabinet['cabinetTxt1'] ?>
 				<br>
 				<br>
@@ -33,9 +33,9 @@
 <section id="BoxOne">
 	<img src="./public/img/photoBureau.JPG" id="imgBoxOne" alt="">
 	<div id="filterTwo">
-		<h2 id="titleOne" class="foo-3"><?= $RExpertise['expertiseTitre'] ?></h2>
+		<h2 id="titleOne" class="foo-1"><?= $RExpertise['expertiseTitre'] ?></h2>
 		<div id="barOne"></div>
-		<p id="texteSectionTwo" class="foo-4">
+		<p id="texteSectionTwo" class="foo-2">
 			<?= $RExpertise['expertiseTxt1'] ?>
 			<br>
 			<br>
@@ -57,35 +57,41 @@
 <!-- SECTION SERVICES -->
 <div id="services">
 	<section id="globalBoxService">	
-		<h2 class="titleNav foo-3"><?= $RServices['servicesTitre'] ?></h2>	
-		<div id="serviceBox" class="foo-4">
-			<h2 class="serviceSection"><?= $RServices['services1Titre'] ?></h2>	
-			<p><?= $RServices['services1Desc'] ?></p>		
-			<ul>
-				<li class="liPuce"><?= $RServices['services1SS1'] ?></li>
-				<li class="liPuce"><?= $RServices['services1SS2'] ?></li>
-				<li class="liPuce"><?= $RServices['services1SS3'] ?></li>
-				<li class="liPuce"><?= $RServices['services1SS4'] ?></li>
-				<li class="liPuce"><?= $RServices['services1SS5'] ?></li>
-			</ul>
-			<h2 class="serviceSection"><?= $RServices['services2Titre'] ?></h2>
-			<p><?= $RServices['services2Desc'] ?></p>
-			<ul>
-				<li class="liPuce"><?= $RServices['services2SS1'] ?></li>
-				<li class="liPuce"><?= $RServices['services2SS2'] ?></li>
-				<li class="liPuce"><?= $RServices['services2SS3'] ?></li>
-				<li class="liPuce"><?= $RServices['services2SS4'] ?></li>
-			</ul>
-			<h2 class="serviceSection"><?= $RServices['services3Titre'] ?></h2>
-			<p><?= $RServices['services3Desc'] ?></p>
-			<ul>
-				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+</button><?= $RServices['services3SS1'] ?></li>				
-				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button><?= $RServices['services3SS2'] ?></li>				
-				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button><?= $RServices['services3SS3'] ?></li>			
-				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+</button><?= $RServices['services3SS4'] ?></li>
-				<li><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+</button><?= $RServices['services3SS5'] ?></li>
-			</ul>
-		</div>
+		<h2 class="titleNav foo-2"><?= $RServices['servicesTitre'] ?></h2>	
+		  <div id="globalBox">
+				<div id="serviceBox">
+					<h2 class="serviceSection foo-3"><?= $RServices['services1Titre'] ?></h2>	
+					<p class="titleServices foo-3"><?= $RServices['services1Desc'] ?></p>		
+					<ul class="listeServices">
+						<li class="liPuce foo-4"><?= $RServices['services1SS1'] ?></li>
+						<li class="liPuce foo-4"><?= $RServices['services1SS2'] ?></li>
+						<li class="liPuce foo-4"><?= $RServices['services1SS3'] ?></li>
+						<li class="liPuce foo-4"><?= $RServices['services1SS4'] ?></li>
+						<li class="liPuce foo-4"><?= $RServices['services1SS5'] ?></li>
+					</ul>
+				</div>
+				<div id="serviceBox">
+					<h2 class="serviceSection foo-4"><?= $RServices['services2Titre'] ?></h2>
+					<p class="titleServices foo-4"><?= $RServices['services2Desc'] ?></p>
+					<ul class="listeServices">
+						<li class="liPuce foo-5"><?= $RServices['services2SS1'] ?></li>
+						<li class="liPuce foo-5"><?= $RServices['services2SS2'] ?></li>
+						<li class="liPuce foo-5"><?= $RServices['services2SS3'] ?></li>
+						<li class="liPuce foo-5"><?= $RServices['services2SS4'] ?></li>
+					</ul>
+				</div>
+				<div id="serviceBox">
+					<h2 class="serviceSection foo-5"><?= $RServices['services3Titre'] ?></h2>
+					<p class="titleServices foo-5"><?= $RServices['services3Desc'] ?></p>
+					<ul class="listeServices">
+						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+</button><?= $RServices['services3SS1'] ?></li>				
+						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button><?= $RServices['services3SS2'] ?></li>				
+						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button><?= $RServices['services3SS3'] ?></li>			
+						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+</button><?= $RServices['services3SS4'] ?></li>
+						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+</button><?= $RServices['services3SS5'] ?></li>
+					</ul>
+				</div>
+		  </div>
 	</section>
 </div>
 
@@ -94,23 +100,23 @@
 	<section id="boxTwo">
 		<img src="./public/img/photoContact.JPG" id="imgContact" alt="">
 		<div class="filterOne">
-			<h2 class="titleNav foo-3" id="contact"><?= $RContact['contactTitre'] ?></h2>
-			<div id="boxContner" class="foo-4">
+			<h2 class="titleNav foo-2" id="contact"><?= $RContact['contactTitre'] ?></h2>
+			<div id="boxContner" class="foo-1">
 				<ul id="boxAdresse">
-					<h3 id="coordonnees"><?= $RContact['contactCoordonnees'] ?></h3>
-					<li id="adresse"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
-					<li id="adMail"><i class="fas fa-envelope mr-2"></i><?= $RConfig['configMail'] ?></li>
-					<li id="telMobile"><i class="fas fa-phone mr-2"></i><?= $RConfig['configTelephone'] ?></li>
-					<li id="numFax"><i class="fas fa-print mr-2"></i><?= $RConfig['configFax'] ?></li>
+					<h3 id="coordonnees" class="foo-3"><?= $RContact['contactCoordonnees'] ?></h3>
+					<li id="adresse" class="foo-3"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
+					<li id="adMail" class="foo-3"><i class="fas fa-envelope mr-2"></i><?= $RConfig['configMail'] ?></li>
+					<li id="telMobile" class="foo-3"><i class="fas fa-phone mr-2"></i><?= $RConfig['configTelephone'] ?></li>
+					<li id="numFax" class="foo-3"><i class="fas fa-print mr-2"></i><?= $RConfig['configFax'] ?></li>
 				</ul>
 				<div id="twoBox">
-					<div id="boxContactOne">
+					<div id="boxContactOne" class="foo-2">
 						<p class="textBtn"><?= $RContact['contactDescBtn1'] ?></p>
 						<a href="./?page=rendez-vous">
 							<button class="myBtn"><?= $RContact['contactBtn1'] ?></button>
 						</a>
 					</div>
-					<div id="boxContactTwo">
+					<div id="boxContactTwo" class="foo-2">
 						<p class="textBtn"><?= $RContact['contactDescBtn2'] ?></p>
 						<a href="./?page=rejoignez-nous"><button class="myBtn">
 							<?= $RContact['contactBtn2'] ?></button>
@@ -123,17 +129,17 @@
 </div>
 
 <!-- SECTION NEWSLETTER -->	
-<section class="newsletter foo-3" id="newsletter">
+<section class="newsletter" id="newsletter">
 	<div class="container">
 		<div class="news-data">
 			<div class="section-subheading">
-				<h1 class="wow fadeInUp"><?= $RNewsletter['newsletterTitre'] ?></h1>
+				<h1 class="wow fadeInUp foo-3"><?= $RNewsletter['newsletterTitre'] ?></h1>
 			</div>
 			<form action="./?treatment" method="POST">
 				<div class="input-group wow fadeInUp">
-					<input type="email" class="form-control" name="visitorNewsletterMail" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>">
+					<input type="email" class="form-control foo-4" name="visitorNewsletterMail" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>">
 					<span class="input-group-btn">
-						<button class="btn" type="submit" name="formVisitorNewsletter"><?= $RNewsletter['newsletterTxtBtn'] ?></button>
+						<button class="btn foo-6" type="submit" name="formVisitorNewsletter"><?= $RNewsletter['newsletterTxtBtn'] ?></button>
 					</span>
 				</div>
 			</form>

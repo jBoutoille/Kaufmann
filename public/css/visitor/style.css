@@ -4,12 +4,17 @@
     padding: 0%;
     list-style:none;
     text-decoration:none;
-    --colorBlue : rgba(11,36,91,1);
-    --colorWhite : rgba(255,255,255,1);
+    --colorBlue : rgba(44, 44, 84,1.0);
+    --colorWhite : rgba(247, 241, 227,1.0);
     --colorWhiteOp : rgba(255,255,255,0.5);
-    --colorBlacl : rgba(0,0,0,1);
+    --colorBlack : rgba(0,0,0,0.1);
     --titresIcones : rgba(11,36,91,1);
     --filter : rgba(5,18,87,0.3);
+}
+
+html body{
+    background-color : rgba(241, 242, 246,1.0);
+
 }
 
 @font-face {
@@ -45,7 +50,8 @@
     text-align: center;
     letter-spacing: 2px;
     font-weight:bold;
-    padding-top: 12vh;
+    padding-top: 13vh;
+    margin-bottom: 5vh;
 }
 
 /*--------------- CABINET SECTION --------------- */
@@ -56,11 +62,12 @@
 }
 
 #texteSectionOne{
-    font-size: 2.8vh;
-    padding: 10vh 10%;
+    font-size: 3.5vh;
+    padding: 5vh 15vh;
     text-align: center;
     font-family: "Roboto-Regular";
-    color: var(--colorBlack);
+    color: black;
+    margin-bottom: 20vh;
 }
 
 #BoxOne{
@@ -140,22 +147,34 @@
     margin-bottom: 12vh;
 }
 
-.serviceSection{
-    font-family: "Roboto-Regular";
-    font-size: 3vh;
-    color: var(--colorBlue);
-    font-weight:bold;
-    height: 50px;
-    margin-top: 8vh;
+#globalBox{
+    display: flex;
 }
 
+.serviceSection{
+    font-family: "Roboto-Regular";
+    font-size: 4vh;
+    color: var(--colorBlue);
+    font-weight: bold;
+    height: 6vh;
+    text-align: center;
+    padding-top: 3vh;
+    text-decoration: underline;
+}
+
+.titleServices{
+    color: black;
+    margin-top: 10vh;
+}
 
 #serviceBox{
-    font-size: 2.8vh;
     font-family: "Roboto-Regular";
-    width: 60%;
-    transform: translate(35%, 4vh);
-    margin-bottom: 4vh;    
+    margin: 0 2vh;
+    padding: 0vh 6vh 0vh;
+}
+
+.listeServices{
+    margin-left: -5vh;
 }
 
 .liPuce{
@@ -206,7 +225,6 @@
     background-color: var(--colorWhiteOp);
     padding: 2vh 5vh 5vh;
     height: 35vh;
-    border-radius: 2px;
 }
 
 #coordonnees{
@@ -245,7 +263,6 @@
     background-color: var(--colorWhiteOp);
     padding: 2vh 5vh 5vh;
     margin-bottom:3vh;
-    border-radius: 2%;
     font-weight:bold;
 }
 
@@ -253,7 +270,6 @@
     background-color: var(--colorWhiteOp);
     padding: 2vh 5vh 5vh;
     margin-bottom:3vh;
-    border-radius: 2%;
     font-weight:bold;
 }
 
@@ -307,7 +323,7 @@
 /*--------------- NEWSLETTER SECTION --------------- */
 
 .newsletter {
-    padding: 80px 0;
+    padding: 20vh 0;
     background-color : var(--colorWhite);
 }
 
