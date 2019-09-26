@@ -1,6 +1,6 @@
 <?php 
 
-    // traitement des données formulaires
+    // FONCTION DE TRAITEMENT DES DONNEES UTILISATEUR
     function dataTreatment(){
 
         // Création de l'objet de gestion du compte Administrateur
@@ -9,6 +9,18 @@
         $IM = new InfosManager();
         // Création de l'objet ge gestion des formulaires visiteurs
         $VM = new VisitorManager();
+        // Création de l'objet de gestion d'envoi de mails
+        $mail = new PHPMailer\PHPMailer\PHPMailer();
+
+        // Paramètres SMTP
+        $mail->IsSMTP(); // activation des fonctions SMTP
+        $mail->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
+        $mail->SMTPSecure = 'ssl'; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
+        $mail->Host = "smtp.gmail.com"; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
+        $mail->Port = 465; // définition du port du serveur SMTP
+        $mail->Username = "jfasquelle.dev@gmail.com"; // le nom d’utilisateur SMTP
+        $mail->Password = "jf-simplon*19"; // son mot de passe SMTP
+        $mail->CharSet = 'UTF-8';
 
         // Formulaire de connexion au panel admin
         if(isset($_POST['formAdminLogin'])){
@@ -21,6 +33,9 @@
             $p1 = htmlspecialchars($_POST['adminConfig1NomSite']);
             $p2 = htmlspecialchars($_POST['adminConfig1Description']);
             $p3 = htmlspecialchars($_POST['adminConfig1URL']);
+            if(!endsWith($p3,"/")){
+                $p3 = $p3 . '/';
+            }
             $p4 = htmlspecialchars($_POST['adminConfig1Client']);
             $IM->updateConfig1($p1,$p2,$p3,$p4);
             header('Location: ./?page=gk-admin&p1=config');
@@ -149,14 +164,51 @@
 
         // Formulaire de Newsletter
         elseif(isset($_POST['formVisitorNewsletter'])){
+
             $p1 = htmlspecialchars($_POST['visitorNewsletterMail']);
-            $VM->insertNewsletter($p1);
-            header('Location: ./');
+            $token = $VM->insertNewsletter($p1);
+            $RConfig = $IM->recupConfig();
+            
+            require './views/mailer/newsletterConfirm.php';
+        
+            // Paramètres du mail
+            $mail->AddAddress($p1,'Destinataire'); // ajout du destinataire
+            $mail->From = "jfasquelle.dev@gmail.com"; // adresse mail de l’expéditeur
+            $mail->FromName = "Cabinet G.KAUFMANN"; // nom de l’expéditeur
+            $mail->AddReplyTo("jfasquelle.dev@gmail.com","JFASQUELLE"); // adresse mail et nom du contact de retour
+            $mail->IsHTML(true); // envoi du mail au format HTML
+            $mail->Subject = "Veuillez confirmer votre inscription à notre Newsletter"; // sujet du mail
+            $mail->Body = $mailContent; // le corps de texte du mail en HTML
+            $mail->AltBody = $mailContentText; // le corps de texte du mail en texte brut si le HTML n'est pas supporté
+
+            // Envoi du mail
+            if(!$mail->Send()) { 
+                echo "Mail Error: " . $mail->ErrorInfo; // affichage des erreurs, s’il y en a
+            } 
+            else {
+                header('Location: ./');
+                echo "Le message a bien été envoyé !";
+            }
+
         }
 
         // AUCUN FORMULAIRE
         else{
             require './views/others/404View.php';
+        }
+    }
+
+    // FONCTION DE CONFIRMATION DE MAIL
+    function mailConfirm(){
+        if(!isset($_GET['id'])){
+            if(empty($_GET['id'])){
+                require './views/others/404View.php';
+            }
+            require './views/others/404View.php';
+        }
+        else{
+            $tokenToCheck = $_GET['id'];
+            
         }
     }
 

@@ -12,6 +12,7 @@
             $query->bindParam(':mail',$mail);
             $query->bindParam(':token',$hex);
             $query->execute();
+            return $hex;
         }
 
     }

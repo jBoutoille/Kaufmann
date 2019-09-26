@@ -7,10 +7,26 @@
         $len = strlen($startString); 
         return (substr($string, 0, $len) === $startString); 
     } 
+    function endsWith($currentString, $target)
+    {
+        $length = strlen($target);
+        if ($length == 0) {
+            return true;
+        }
+        return (substr($currentString, -$length) === $target);
+    }
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require './models/phpmailer/PHPMailer.php';
+    require './models/phpmailer/SMTP.php';
+    require './models/phpmailer/Exception.php';
 
     require './models/AdminManager.php';
     require './models/InfosManager.php';
     require './models/VisitorManager.php';
+    require './models/MailManager.php';
 
     require './controllers/visitorController.php';
     require './controllers/adminController.php';
@@ -93,6 +109,16 @@
     // SE DECONNECTER
         elseif(isset($_GET['action']) && $_GET['action'] == 'logout')
             { adminLogout($_TOKEN); }
+
+
+// PARTIE GESTION MAILS ----------------------------------
+    // CONFIRMER L'INSCRIPTION A LA NEWSLETTER
+        elseif(isset($_GET['action']) && $_GET['action'] == 'confirmNewsletter')
+        { mailConfirm(); }
+
+    // CONFIRMER L'INSCRIPTION A LA NEWSLETTER
+        elseif(isset($_GET['action']) && $_GET['action'] == 'deleteNewsletter')
+        { mailDelete(); }
 
 
         // URL INTROUVABLE
