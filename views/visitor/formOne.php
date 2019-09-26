@@ -5,36 +5,36 @@
 
 <div class="boxPremary">
 	<div>
-		<h1 id="titileForm">| Demander un rendez-vous</h1>
+		<h1 id="titileForm" class="foo-2">| Demander un rendez-vous</h1>
 	</div>
 	<div class="containerText">
 		<form action="./?treatment" method="POST">
 			<div class="inputData">
-				<label>Nom :</label>
-				<input type="text" class="form-control wow fadeInUp" name="visitorRdvNom">
+				<label class="foo-3">Nom :</label>
+				<input type="text" class="form-control wow fadeInUp foo-3" name="visitorRdvNom">
 			</div>
 			<div class="inputData">
-				<label>Prénom :</label>
-				<input type="text" class="form-control wow fadeInUp" name="visitorRdvPrenom">
+				<label class="foo-3">Prénom :</label>
+				<input type="text" class="form-control wow fadeInUp foo-3" name="visitorRdvPrenom">
 			</div>
 			<div class="inputData">
-				<label>Activité :</label>
-				<input type="text" class="form-control wow fadeInUp" name="visitorRdvActivite">
+				<label class="foo-3">Activité :</label>
+				<input type="text" class="form-control wow fadeInUp foo-3" name="visitorRdvActivite">
 			</div>
 			<div class="inputData">
-				<label>Téléphone :</label>
-				<input type="number" class="form-control wow fadeInUp" name="visitorRdvTelephone">
+				<label class="foo-3">Téléphone :</label>
+				<input type="number" class="form-control wow fadeInUp foo-3" name="visitorRdvTelephone">
 			</div>
 			<div class="inputData">
-				<label>E-mail :</label>
-				<input type="email" class="form-control wow fadeInUp" name="visitorRdvMail">
+				<label class="foo-3">E-mail :</label>
+				<input type="email" class="form-control wow fadeInUp foo-3" name="visitorRdvMail">
 			</div>
 			<div class="inputData">
-				<label>Message :</label>
-				<textarea rows="3" class="form-control wow fadeInUp" name="visitorRdvMessge"></textarea>
+				<label class="foo-3">Message :</label>
+				<textarea rows="3" class="form-control wow fadeInUp foo-3" name="visitorRdvMessge"></textarea>
 			</div>
-			<div class="add-prod wow fadeInUp">
-				<button type="submit" name="formVisitorRdv">ENVOYER</button>
+			<div class="add-prod wow fadeInUp foo-3">
+				<button type="submit" name="formVisitorRdv" class="foo-3">ENVOYER</button>
 			</div>
 		</form>
 	</div>

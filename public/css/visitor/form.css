@@ -73,4 +73,9 @@ form input:focus, textarea:focus {
     .add-prod button {
         font-size: 1em;
     }
+
+form label, textarea{
+    font-size: 10px
 }
+}
+
