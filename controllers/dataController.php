@@ -172,7 +172,7 @@
             require './views/mailer/newsletterConfirm.php';
         
             // Paramètres du mail
-            $mail->AddAddress($p1,'Destinataire'); // ajout du destinataire
+            $mail->AddAddress($p1,$p1); // ajout du destinataire
             $mail->From = "jfasquelle.dev@gmail.com"; // adresse mail de l’expéditeur
             $mail->FromName = "Cabinet G.KAUFMANN"; // nom de l’expéditeur
             $mail->AddReplyTo("jfasquelle.dev@gmail.com","JFASQUELLE"); // adresse mail et nom du contact de retour
@@ -204,18 +204,23 @@
             if(empty($_GET['id']) || empty($_GET['mail'])){
                 require './views/others/404View.php';
             }
-            require './views/others/404View.php';
+            echo "Erreur dans l'URL, impossible de trouver les paramètres requis.";
         }
         else{
             $MM = new MailManager();
             $token = $_GET['id'];
             $mail = $_GET['mail'];
             if($MM->checkNewsletterToken($mail,$token) == true){
-                $MM->confirmAnEmail($mail,$token);
-                echo 'mail confirmé';
+                if($MM->checkNewsletterExist($mail) == true){
+                    echo 'Vous êtes déjà abonné à notre Newsletter';
+                }
+                else{
+                    $MM->confirmAnEmail($mail,$token);
+                    echo 'Merci de vous être abonné à notre Newsletter ! À partir de maintenant vous recevrez notre actualité. Si vous souhaitez vous désabonner, cliquez ici.';
+                }
             }
             else{
-                require './views/others/404View.php';
+                echo "Cette confirmation d'inscription à la newsletter n'existe pas ou a expirée. <br> Si vous souhaitez vous inscrire, remplissez votre adresse mail sur la page d'accueil dans la section 'Newsletter', vous recevrez ensuite un mail de confirmation.";
             }
         }
     }
