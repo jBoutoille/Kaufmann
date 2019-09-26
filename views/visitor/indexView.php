@@ -84,11 +84,11 @@
 					<h2 class="serviceSection foo-5"><?= $RServices['services3Titre'] ?></h2>
 					<p class="titleServices foo-5"><?= $RServices['services3Desc'] ?></p>
 					<ul class="listeServices">
-						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+</button><?= $RServices['services3SS1'] ?></li>				
-						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button><?= $RServices['services3SS2'] ?></li>				
-						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button><?= $RServices['services3SS3'] ?></li>			
-						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+</button><?= $RServices['services3SS4'] ?></li>
-						<li class="foo-6"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+</button><?= $RServices['services3SS5'] ?></li>
+						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+</button><?= $RServices['services3SS1'] ?></li>				
+						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button><?= $RServices['services3SS2'] ?></li>				
+						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button><?= $RServices['services3SS3'] ?></li>			
+						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+</button><?= $RServices['services3SS4'] ?></li>
+						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+</button><?= $RServices['services3SS5'] ?></li>
 					</ul>
 				</div>
 		  </div>
