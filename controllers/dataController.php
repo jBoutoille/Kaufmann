@@ -200,15 +200,23 @@
 
     // FONCTION DE CONFIRMATION DE MAIL
     function mailConfirm(){
-        if(!isset($_GET['id'])){
-            if(empty($_GET['id'])){
+        if(!isset($_GET['id']) || !isset($_GET['mail'])){
+            if(empty($_GET['id']) || empty($_GET['mail'])){
                 require './views/others/404View.php';
             }
             require './views/others/404View.php';
         }
         else{
-            $tokenToCheck = $_GET['id'];
-            
+            $MM = new MailManager();
+            $token = $_GET['id'];
+            $mail = $_GET['mail'];
+            if($MM->checkNewsletterToken($mail,$token) == true){
+                $MM->confirmAnEmail($mail,$token);
+                echo 'mail confirmé';
+            }
+            else{
+                require './views/others/404View.php';
+            }
         }
     }
 

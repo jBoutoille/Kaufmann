@@ -6,14 +6,18 @@
     class MailManager extends AdminManager {
     
         // Fonction qui modifie l'entrée d'un mail pour la newsletter pour la confirmer
-        public function confirmAnEmail($mail){
+        public function confirmAnEmail($mail,$token){
             $bdd = $this->dbConnect();
+            $query = $bdd->prepare("UPDATE newsletter SET mail = :mail , temp_mail = NULL , datetime = CURRENT_TIMESTAMP, mail_token = NULL WHERE mail_token = :token");
+            $query->bindParam(':mail',$mail);
+            $query->bindParam(':token',$token);
+            $query->execute();
         }
 
         // Fonction pour vérifier le token d'un mail pour la newsletter
         public function checkNewsletterToken($mail,$token){
             $bdd = $this->dbConnect();
-            $query = $bdd->prepare("SELECT * FROM newsletter WHERE temp_mail = :mail AND mail_token = :token");
+            $query = $bdd->prepare("SELECT * FROM newsletter WHERE temp_mail = :mail AND mail_token = :token AND mail = NULL");
             $query->bindParam(':mail',$mail);
             $query->bindParam(':token',$token);
             $query->execute();
