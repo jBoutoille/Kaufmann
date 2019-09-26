@@ -359,7 +359,7 @@ html body{
     min-height: 50px;
     padding: 0 12px;
     border-radius: 0;
-    background: #0a3d62;
+    background-color: var(--colorBlue);
     color: #fff;
     letter-spacing: 2px;
     font-size: 12px;
@@ -385,4 +385,5 @@ html body{
 	height: 100%;
 	z-index: 9999;
 	background: url(../../img/loader.gif) center no-repeat var(--colorWhite);
+    background-size: 10vh;
 }
