@@ -6,10 +6,10 @@
 	<section id="boxHeader">
 		<img src="./public/img/photoHeader.JPG" id="imgHeader" alt="">	
 		<div id="filterOne">
-			<div id="titleHeader" class="foo-3"> 
-				<p class="sarl" class="foo-3"><?= $RHeader['headerType'] ?></p>
-				<p id="kaufmann" class="foo-4"><?= $RHeader['headerTitre'] ?></p>
-				<h1 id="textOne" class="foo-5"><?= $RHeader['headerDesc'] ?></h1>
+			<div id="titleHeader" class="foo-4"> 
+				<p class="sarl" class="foo-4"><?= $RHeader['headerType'] ?></p>
+				<p id="kaufmann" class="foo-5"><?= $RHeader['headerTitre'] ?></p>
+				<h1 id="textOne" class="foo-6"><?= $RHeader['headerDesc'] ?></h1>
 				<div class="foo-6"><a id="animGif" data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet"></a></div>
 			</div>
 		</div>
@@ -19,8 +19,8 @@
 <!-- SECTION CABINET -->
 <div id="cabinet">
 	<section>
-		<h2 class="titleNav foo-1"><?= $RCabinet['cabinetTitre'] ?></h2>
-			<p id="texteSectionOne" class="foo-2">
+		<h2 class="titleNav foo-2"><?= $RCabinet['cabinetTitre'] ?></h2>
+			<p id="texteSectionOne" class="foo-3">
 				<?= $RCabinet['cabinetTxt1'] ?>
 				<br>
 				<br>
