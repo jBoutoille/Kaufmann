@@ -4,8 +4,8 @@
     padding: 0%;
     list-style:none;
     text-decoration:none;
-    --colorBlue : rgba(11,36,91,1);
-    --colorWhite : rgba(255,255,255,1);
+    --colorBlue : rgba(44, 44, 84,1.0);
+    --colorWhite : rgba(247, 241, 227,1.0);
     --colorWhiteOp : rgba(255,255,255,0.5);
     --colorBlacl : rgba(0,0,0,1);
     --titresIcones : rgba(11,36,91,1);

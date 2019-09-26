@@ -2,12 +2,15 @@
 
 @media(max-width: 900px) {
 
+h2{
+    font-size: 4vh;
+}
 /*--------------- HEADER --------------- */
 
 #titleHeader{
     top: 50%;
     left: 50%;
-    }
+}
 
 #kaufmann{
     font-size: 6vh;
@@ -18,20 +21,20 @@
     left: 50%;
     transform: translate(-50%, -70%);
     letter-spacing: 3px;
-    }
+}
 
 #textOne{
     margin-top: 17vh;
     font-size: 2.5vh;
     font-family: "Thryn";
     transform: translate(0%, -50%);
-    }
+}
 
 .sarl{
     font-family: "Thryn";
     font-size: 3vh;
     transform: translate(-20%, -15%); 
-    }
+}
 
 .sarl::before{  
     margin-left: 20%;
@@ -39,7 +42,7 @@
     background: white;
     height: 2px;
     width: 50px;
-    }
+}
 
 .sarl::after{
     margin-right: -25%;
@@ -47,17 +50,11 @@
     background: white;
     height: 2px;
     width: 50px;
-    }
+}
 
 #animGif{
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 15vh;
-    width: 100px;
-    margin-left: 0%;
-    margin: 0px -50px auto;
-    }
+    margin: 110px -40px auto;
+}
 
 /*--------------- CABINET SECTION --------------- */
 
@@ -90,6 +87,11 @@
     font-size: 4vh;
 }
 
+#texteSectionOne{
+    font-size: 2.5vh;
+    padding: 4vh 4vh;
+}
+
 #texteSectionTwo{
     font-size: 2.2vh;
     text-align: center;
@@ -108,6 +110,7 @@
 
 #titleOne{   
     margin-top: 5%;
+    padding: 1vh;
 }
 
 /*--------------- SERVICE SECTION --------------- */
