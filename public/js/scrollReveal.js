@@ -1,11 +1,12 @@
 // GENERAL SETTING
-window.sr = ScrollReveal({ reset: false });
+window.sr = ScrollReveal({ reset: true });
+
 
 // Custom Settings
 
 sr.reveal('.foo-1', { 
   origin: 'right', 
-  duration: 2000
+  duration: 1000
 
 });
 
@@ -17,18 +18,25 @@ sr.reveal('.foo-2', {
 
 sr.reveal('.foo-3', { 
   origin: 'right', 
-  duration: 2500
+  duration: 3000
 
 });
 
 sr.reveal('.foo-4', { 
   origin: 'right', 
-  duration: 3500
+  duration: 4000
 
 });
 
 sr.reveal('.foo-5', { 
   origin: 'right', 
-  duration: 4500
+  duration: 5000
 
 });
+
+sr.reveal('.foo-6', { 
+  origin: 'right', 
+  duration: 6000
+
+});
+

@@ -64,7 +64,7 @@ h2{
 }
 
 #contact{
-    margin-top: -8vh;
+    margin-top: -3vh;
 }
 
 #bluBoxOne{
@@ -117,8 +117,13 @@ h2{
 
 #serviceBox{
     font-size: 2.5vh;
-    width: 76%;
-    transform: translate(10%, 0vh);
+    width: 100%;
+    margin: 0;
+}
+
+#globalBox{
+    display: flex;
+    flex-direction: column;
 }
 
 /*--------------- CONTACT SECTION --------------- */
@@ -133,12 +138,12 @@ h2{
 
 #boxContner{
     flex-direction: column;
-    height: 50vh;
+    height: 40vh;
 }
 
 #boxAdresse{
     height: 40vh;
-    margin-top: 48vh;
+    margin-top: 40vh;
 }
 
 #twoBox{
@@ -164,7 +169,7 @@ h2{
 /*--------------- NEWSLATTER SECTION--------------- */
 
 .newsletter {
-    padding: 40px 0;
+    padding: 18vh 0;
 }
 
 ::placeholder {
