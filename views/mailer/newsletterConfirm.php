@@ -327,7 +327,7 @@
                       <td>
                         <a href="#"><img src="../../public/img/logo/logo3blue.png"></a>
                         <h1>Confirmation d'inscription à la Newsletter</h1>
-                        <p>Vous venez de remplir le formulaire d'inscription à la Newsletter du cabinet G.KAUMANN. Pour confirmer votre inscription et ainsi recevoir notre actualité, merci de cliquer sur le bouton çi dessous :</p>
+                        <p>Vous venez de remplir le formulaire d'inscription à la Newsletter du cabinet G.KAUFMANN. Pour confirmer votre inscription et ainsi recevoir notre actualité, merci de cliquer sur le bouton çi dessous :</p>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                           <tbody>
                             <tr>
@@ -335,7 +335,7 @@
                                 <table role="presentation" class="confirmBtn" border="0" cellpadding="0" cellspacing="0">
                                   <tbody>
                                     <tr>
-                                      <td><a href="<?= $RConfig['configURL'] ?>?action=confirmNewsletter&id=<?= $token ?>" target="_blank">Confirmer mon inscription</a> </td>
+                                      <td><a href="<?= $RConfig['configURL'] ?>?action=confirmNewsletter&mail=<?= $p1 ?>&id=<?= $token ?>" target="_blank">Confirmer mon inscription</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -345,9 +345,9 @@
                         </table>
                         <p>Si vous ne parvenez pas à cliquer sur le bouton, vous pouvez confirmer votre inscription avec ce lien :
                             <br>
-                            <a href="<?= $RConfig['configURL'] ?>?action=confirmNewsletter&id=<?= $token ?>" target="_blank"><?= $RConfig['configURL'] ?>?action=confirmNewsletter&id=<?= $token ?></a>
+                            <a href="<?= $RConfig['configURL'] ?>?action=confirmNewsletter&mail=<?= $p1 ?>&id=<?= $token ?>" target="_blank"><?= $RConfig['configURL'] ?>?action=confirmNewsletter&mail=<?= $p1 ?>&id=<?= $token ?></a>
                         </p>
-                        <p>Ce n'est pas vous ? <a href="<?= $RConfig['configURL'] ?>?action=deleteNewsletter&id=<?= $token ?>" target="_blank">Cliquez ici</a> pour supprimer la demande d'inscription.</p>
+                        <p>Ce n'est pas vous ? <a href="<?= $RConfig['configURL'] ?>?action=deleteNewsletter&mail=<?= $p1 ?>&id=<?= $token ?>" target="_blank">Cliquez ici</a> pour supprimer la demande d'inscription.</p>
                       </td>
                     </tr>
                   </table>
@@ -377,10 +377,10 @@
     "Confirmation d'inscription à la Newsletter
     
     Vous venez de remplir le formulaire d'inscription à la Newsletter du cabinet G.KAUFMANN. Pour confirmer votre inscription et ainsi recevoir notre actualité, allez sur ce lien :
-    " . $RConfig['configURL'] . "?action=confirmNewsletter&id=" . $token . "
+    " . $RConfig['configURL'] . "?action=confirmNewsletter&mail=" . $p1 . "&id=" . $token . "
 
     Si ce n'est pas vous, allez sur ce lien pour supprimer la demande d'inscription à la Newsletter :
-    " . $RConfig['configURL'] . "?action=confirmNewsletter&id=" . $token . "
+    " . $RConfig['configURL'] . "?action=confirmNewsletter&mail=" . $p1 . "&id=" . $token . "
     "
     ;
 ?>
