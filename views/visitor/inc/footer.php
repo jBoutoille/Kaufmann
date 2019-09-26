@@ -1,32 +1,32 @@
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4 foo-3" style="background-color: rgba(11,36,91)">
+<footer class="page-footer font-small mdb-color pt-4 foo-3" id="footerColor">
 	<div class="container text-center text-md-left">
 		<div class="row text-center text-md-left mt-3 pb-3">
 			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
 				<a href="./">
-					<img src="./public/img/logo/logo4white.png" style="width: 30vh" alt="Logo du cabinet G.KAUFMANN">
+					<img src="./public/img/logo/logo4white.png" id="imgFooter" alt="Logo du cabinet G.KAUFMANN">
 				</a>
 				<div class="row">
 					<div class="col-md-12">
-						<a href="https://www.cncc.fr/"><img src="./public/img/logo/cncc2.png" style="width: 15vh;margin-top: 3vh;margin-right: 3vh" alt="Logo CNCC"></a>
-						<a href="https://www.experts-comptables.fr/"><img src="./public/img/logo/ordre.png" style="width: 15vh;margin-top: 3vh" alt="Logo Ordre des experts comptables"></a>     
+						<a href="https://www.cncc.fr/"><img src="./public/img/logo/cncc2.png" id="imgLogoOne" alt="Logo CNCC"></a>
+						<a href="https://www.experts-comptables.fr/"><img src="./public/img/logo/ordre.png" id="imgLogoTwo" alt="Logo Ordre des experts comptables"></a>     
 					</div>             
 				</div>
 			</div>
-			<hr class="w-50 clearfix d-md-none" style="border-top: 1px solid #f8f9fa; margin: 0 auto; margin-top: 5%;">
-			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" style="color: white">
+			<hr class="w-50 clearfix d-md-none" id="footerBar">
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" id="footerContact">
 				<h6 class="text-uppercase mb-4 font-weight-bold"><?= $RFooter['footerTitreCoordonnees'] ?></h6>
-				<p style="color: white">
+				<p class="footerText">
 				<i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></p>
-				<p style="color: white">
-				<i class="fas fa-envelope mr-2" style="color: white"></i><?= $RConfig['configMail'] ?></p>
-				<p style="color: white">
-				<i class="fas fa-phone mr-2" style="color: white"></i><?= $RConfig['configTelephone'] ?></p>
-				<p style="color: white">
-				<i class="fas fa-print mr-2" style="color: white"></i><?= $RConfig['configFax'] ?></p>
+				<p class="footerText">
+				<i class="fas fa-envelope mr-2" class="footerIco"></i><?= $RConfig['configMail'] ?></p>
+				<p class="footerText">
+				<i class="fas fa-phone mr-2" class="footerIco"></i><?= $RConfig['configTelephone'] ?></p>
+				<p class="footerText">
+				<i class="fas fa-print mr-2" class="footerIco"></i><?= $RConfig['configFax'] ?></p>
 				<li class="list-inline-item">
 					<a class="btn-floating btn-sm rgba-white-slight mx-1" href="<?= $RFooter['footerLinkedin'] ?>" target="_blank">
-						<i class="fab fa-linkedin" style="color: white; font-size: 6vh;"></i>
+						<i class="fab fa-linkedin" id="linkedin"></i>
 					</a>
 				</li>
 			</div>

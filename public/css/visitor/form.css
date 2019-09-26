@@ -50,6 +50,7 @@ form label, textarea {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding: 1vh;
 }
 
 .form-control {
@@ -70,6 +71,6 @@ form input:focus, textarea:focus {
         margin-top: 25vh;
     }
     .add-prod button {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 }
