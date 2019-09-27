@@ -5,12 +5,14 @@
     
     //// -> PERMET DE SE CONNECTER ET DECONNECTER D'UN COMPTE ADMIN DE MANIERE SECURISEE
 
+
     class AdminManager {
 
         // Fonction de connection à la BDD
         public function dbConnect(){
             try{
-                $db = new PDO('mysql:host=localhost;dbname=kaufmann;charset=utf8', 'root', 'root');
+                require $_SERVER["DOCUMENT_ROOT"] . '/projets/Kaufmann/config.php';
+                $db = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser , $dbpass);
                 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 return $db;
             }catch (Exception $e){
