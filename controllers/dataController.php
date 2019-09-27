@@ -166,28 +166,35 @@
         // Formulaire de Newsletter
         elseif(isset($_POST['formVisitorNewsletter'])){
 
+            $MM = new MailManager();
             $p1 = htmlspecialchars($_POST['visitorNewsletterMail']);
-            $token = $VM->insertNewsletter($p1);
-            $RConfig = $IM->recupConfig();
-            
-            require './views/mailer/newsletterConfirm.php';
-        
-            // Paramètres du mail
-            $mail->AddAddress($p1,$p1); // ajout du destinataire
-            $mail->From = "noreply.gkaufmann@gmail.com"; // adresse mail de l’expéditeur
-            $mail->FromName = "Cabinet G.KAUFMANN"; // nom de l’expéditeur
-            $mail->AddReplyTo("noreply.gkaufmann@gmail.com","Cabinet G.KAUFMANN"); // adresse mail et nom du contact de retour
-            $mail->IsHTML(true); // envoi du mail au format HTML
-            $mail->Subject = "Veuillez confirmer votre inscription à notre Newsletter"; // sujet du mail
-            $mail->Body = $mailContent; // le corps de texte du mail en HTML
-            $mail->AltBody = $mailContentText; // le corps de texte du mail en texte brut si le HTML n'est pas supporté
 
-            // Envoi du mail
-            if(!$mail->Send()) { 
-                echo "Mail Error: " . $mail->ErrorInfo; // affichage des erreurs, s’il y en a
-            } 
-            else {
-                echo "Le message a bien été envoyé !";
+            if($MM->checkNewsletterExist($p1) == true){
+                echo 'Vous êtes déjà abonné à notre Newsletter';
+            }
+            else{
+                $token = $VM->insertNewsletter($p1);
+                $RConfig = $IM->recupConfig();
+                
+                require './views/mailer/newsletterConfirm.php';
+            
+                // Paramètres du mail
+                $mail->AddAddress($p1,$p1); // ajout du destinataire
+                $mail->From = "noreply.gkaufmann@gmail.com"; // adresse mail de l’expéditeur
+                $mail->FromName = "Cabinet G.KAUFMANN"; // nom de l’expéditeur
+                $mail->AddReplyTo("noreply.gkaufmann@gmail.com","Cabinet G.KAUFMANN"); // adresse mail et nom du contact de retour
+                $mail->IsHTML(true); // envoi du mail au format HTML
+                $mail->Subject = "Veuillez confirmer votre inscription à notre Newsletter"; // sujet du mail
+                $mail->Body = $mailContent; // le corps de texte du mail en HTML
+                $mail->AltBody = $mailContentText; // le corps de texte du mail en texte brut si le HTML n'est pas supporté
+    
+                // Envoi du mail
+                if(!$mail->Send()) { 
+                    echo "Mail Error: " . $mail->ErrorInfo; // affichage des erreurs, s’il y en a
+                } 
+                else {
+                    echo "Le message a bien été envoyé !";
+                }
             }
 
         }
