@@ -174,9 +174,9 @@
         
             // Paramètres du mail
             $mail->AddAddress($p1,$p1); // ajout du destinataire
-            $mail->From = "jfasquelle.dev@gmail.com"; // adresse mail de l’expéditeur
+            $mail->From = "noreply.gkaufmann@gmail.com"; // adresse mail de l’expéditeur
             $mail->FromName = "Cabinet G.KAUFMANN"; // nom de l’expéditeur
-            $mail->AddReplyTo("jfasquelle.dev@gmail.com","JFASQUELLE"); // adresse mail et nom du contact de retour
+            $mail->AddReplyTo("noreply.gkaufmann@gmail.com","Cabinet G.KAUFMANN"); // adresse mail et nom du contact de retour
             $mail->IsHTML(true); // envoi du mail au format HTML
             $mail->Subject = "Veuillez confirmer votre inscription à notre Newsletter"; // sujet du mail
             $mail->Body = $mailContent; // le corps de texte du mail en HTML
