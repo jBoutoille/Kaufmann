@@ -11,7 +11,7 @@
         // Fonction de connection à la BDD
         public function dbConnect(){
             try{
-                require $_SERVER["DOCUMENT_ROOT"] . '/projets/Kaufmann/config.php';
+                require './config.php';;
                 $db = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser , $dbpass);
                 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 return $db;

@@ -13,7 +13,7 @@
         $mail = new PHPMailer\PHPMailer\PHPMailer();
 
         // Paramètres SMTP
-        require $_SERVER["DOCUMENT_ROOT"] . '/projets/Kaufmann/config.php';
+        require './config.php';
         $mail->IsSMTP(); // activation des fonctions SMTP
         $mail->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
         $mail->SMTPSecure = $SMTPsecure; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
