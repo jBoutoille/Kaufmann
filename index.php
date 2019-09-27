@@ -116,7 +116,7 @@
         elseif(isset($_GET['action']) && $_GET['action'] == 'confirmNewsletter')
         { mailConfirm(); }
 
-    // CONFIRMER L'INSCRIPTION A LA NEWSLETTER
+    // SUPPRIMER L'INSCRIPTION A LA NEWSLETTER
         elseif(isset($_GET['action']) && $_GET['action'] == 'deleteNewsletter')
         { mailDelete(); }
 

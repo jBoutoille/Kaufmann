@@ -13,13 +13,14 @@
         $mail = new PHPMailer\PHPMailer\PHPMailer();
 
         // Paramètres SMTP
+        require $_SERVER["DOCUMENT_ROOT"] . '/projets/Kaufmann/config.php';
         $mail->IsSMTP(); // activation des fonctions SMTP
         $mail->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
-        $mail->SMTPSecure = 'ssl'; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
-        $mail->Host = "smtp.gmail.com"; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
-        $mail->Port = 465; // définition du port du serveur SMTP
-        $mail->Username = "jfasquelle.dev@gmail.com"; // le nom d’utilisateur SMTP
-        $mail->Password = "jf-simplon*19"; // son mot de passe SMTP
+        $mail->SMTPSecure = $SMTPsecure; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
+        $mail->Host = $SMTPhost; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
+        $mail->Port = $SMTPport; // définition du port du serveur SMTP
+        $mail->Username = $SMTPuser; // le nom d’utilisateur SMTP
+        $mail->Password = $SMTPpass; // son mot de passe SMTP
         $mail->CharSet = 'UTF-8';
 
         // Formulaire de connexion au panel admin
@@ -186,7 +187,6 @@
                 echo "Mail Error: " . $mail->ErrorInfo; // affichage des erreurs, s’il y en a
             } 
             else {
-                header('Location: ./');
                 echo "Le message a bien été envoyé !";
             }
 
