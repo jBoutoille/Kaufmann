@@ -151,6 +151,10 @@ html body{
     display: flex;
 }
 
+#globalBox div{
+    width:50%;
+}
+
 .serviceSection{
     font-family: "Roboto-Regular";
     font-size: 4vh;
@@ -159,7 +163,10 @@ html body{
     height: 6vh;
     text-align: center;
     padding-top: 3vh;
-    text-decoration: underline;
+}
+
+.fas{
+    color: var(--colorBlue);
 }
 
 .titleServices{
@@ -300,11 +307,11 @@ html body{
 }
 
 .btnSeeMore{
-    width: 4vh;
-    height: 4vh;
+    width: 5vh;
+    height: 5.2vh;
     border-radius: 50%;
     border: none;
-    background: #0a3d62;
+    background: var(--colorBlue);
     color: white;
     letter-spacing: 1px;
     cursor: pointer;

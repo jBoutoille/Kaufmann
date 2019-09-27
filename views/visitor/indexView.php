@@ -60,35 +60,35 @@
 		<h2 class="titleNav foo-2"><?= $RServices['servicesTitre'] ?></h2>	
 		  <div id="globalBox">
 				<div id="serviceBox">
-					<h2 class="serviceSection foo-2"><?= $RServices['services1Titre'] ?></h2>	
+					<h2 class="serviceSection foo-2"><i class="fas fa-chart-pie"></i> <?= $RServices['services1Titre'] ?></h2>	
 					<p class="titleServices foo-2"><?= $RServices['services1Desc'] ?></p>		
 					<ul class="listeServices">
-						<li class="liPuce foo-3"><?= $RServices['services1SS1'] ?></li>
-						<li class="liPuce foo-3"><?= $RServices['services1SS2'] ?></li>
-						<li class="liPuce foo-3"><?= $RServices['services1SS3'] ?></li>
-						<li class="liPuce foo-3"><?= $RServices['services1SS4'] ?></li>
-						<li class="liPuce foo-3"><?= $RServices['services1SS5'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services1SS1'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services1SS2'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services1SS3'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services1SS4'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services1SS5'] ?></li>
 					</ul>
 				</div>
 				<div id="serviceBox">
-					<h2 class="serviceSection foo-3"><?= $RServices['services2Titre'] ?></h2>
+					<h2 class="serviceSection foo-3"><i class="fas fa-poll"></i> <?= $RServices['services2Titre'] ?></h2>
 					<p class="titleServices foo-3"><?= $RServices['services2Desc'] ?></p>
 					<ul class="listeServices">
-						<li class="liPuce foo-4"><?= $RServices['services2SS1'] ?></li>
-						<li class="liPuce foo-4"><?= $RServices['services2SS2'] ?></li>
-						<li class="liPuce foo-4"><?= $RServices['services2SS3'] ?></li>
-						<li class="liPuce foo-4"><?= $RServices['services2SS4'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services2SS1'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services2SS2'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services2SS3'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> s<?= $RServices['services2SS4'] ?></li>
 					</ul>
 				</div>
 				<div id="serviceBox">
-					<h2 class="serviceSection foo-4"><?= $RServices['services3Titre'] ?></h2>
+					<h2 class="serviceSection foo-4"><i class="fas fa-address-card"></i> <?= $RServices['services3Titre'] ?></h2>
 					<p class="titleServices foo-4"><?= $RServices['services3Desc'] ?></p>
 					<ul class="listeServices">
-						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree">+</button><?= $RServices['services3SS1'] ?></li>				
-						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour">+</button><?= $RServices['services3SS2'] ?></li>				
-						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive">+</button><?= $RServices['services3SS3'] ?></li>			
-						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne">+</button><?= $RServices['services3SS4'] ?></li>
-						<li class="foo-5"><button class="btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo">+</button><?= $RServices['services3SS5'] ?></li>
+						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree"></button><?= $RServices['services3SS1'] ?></li>				
+						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour"></button><?= $RServices['services3SS2'] ?></li>				
+						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive"></button><?= $RServices['services3SS3'] ?></li>			
+						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne"></button><?= $RServices['services3SS4'] ?></li>
+						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo"></button><?= $RServices['services3SS5'] ?></li>
 					</ul>
 				</div>
 		  </div>
