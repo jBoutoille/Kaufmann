@@ -5,7 +5,7 @@
 
 <div class="boxPremary">
 	<div>
-		<h1 id="titileForm" class="foo-2">| Demander un rendez-vous</h1>
+		<h1 id="titileForm" class="foo-2"><i class="far fa-handshake"></i> Prendre rendez-vous</h1>
 	</div>
 	<div class="containerText">
 		<form action="./?treatment" method="POST">

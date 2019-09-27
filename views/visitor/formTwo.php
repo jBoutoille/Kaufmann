@@ -5,7 +5,7 @@
 
 <div class="boxPremary">
 	<div>
-		<h1 id="titileForm" class="foo-2">| Nous rejoindre</h1>
+		<h1 id="titileForm" class="foo-2"><i class="fas fa-users"></i>  Nous rejoindre</h1>
 	</div>
 	<div class="containerText">
 		<p class="blockText foo-2">Envoyez-nous votre CV et Lettre de motivation en remplissant le formulaire ci-dessous</p>

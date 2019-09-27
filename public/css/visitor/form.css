@@ -17,13 +17,8 @@ p{
     text-align: center;
 }
 
-.containerText {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5vh;
+.containerText {   
+ transform: translate(12%, 5%); 
 }
 
 .add-prod{

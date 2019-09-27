@@ -35,8 +35,8 @@
 		<div class="row d-flex align-items-center">
 			<div class="col-md-12" style="color: white;display: flex;justify-content: center;">
 				<p class="text-center text-md-left" style="color: white"><?= $RFooter['footerCopyrights'] ?> |  
-				Développé par 
-				<a href="#" style="color: white">JBoutoille</a> & 
+				Développeur
+				<a href="#" style="color: white">JBoutoille</a> . 
 				<a href="#" style="color: white">JFasquelle</a> | 
 				<a href="./?page=mentions" style="color: white">Mentions légales</a> | 
 				<a href="./?page=gk-admin" style="color: white">Admin</a>

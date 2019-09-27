@@ -20,7 +20,7 @@
 <!-- NAV MOBILE-->
 <div id="resize">
 	<div class="close-btn">
-		<i class="fas fa-times"></i>
+		<i class="fas fa-times burger"></i>
 	</div>
 	<ul id="menu">
 		<li><a data-scroll href="<?= $RConfig['configClient'] ?>" class="btn btn-primary" target="blank"><i class="fas fa-users"></i> Espace client </a></li>
