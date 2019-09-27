@@ -77,7 +77,7 @@
 						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services2SS1'] ?></li>
 						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services2SS2'] ?></li>
 						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services2SS3'] ?></li>
-						<li><i class="fas fa-check-circle fa-lg"></i> s<?= $RServices['services2SS4'] ?></li>
+						<li><i class="fas fa-check-circle fa-lg"></i> <?= $RServices['services2SS4'] ?></li>
 					</ul>
 				</div>
 				<div id="serviceBox">

@@ -50,7 +50,7 @@ html body{
     text-align: center;
     letter-spacing: 2px;
     font-weight:bold;
-    padding-top: 13vh;
+    padding-top: 10vh;
     margin-bottom: 5vh;
 }
 
@@ -151,8 +151,9 @@ html body{
     display: flex;
 }
 
+
 #globalBox div{
-    width:50%;
+    width:40%;
 }
 
 .serviceSection{
@@ -162,12 +163,8 @@ html body{
     font-weight: bold;
     height: 6vh;
     text-align: center;
-    padding-top: 3vh;
 }
 
-.fas{
-    color: var(--colorBlue);
-}
 
 .titleServices{
     color: black;
@@ -176,12 +173,14 @@ html body{
 
 #serviceBox{
     font-family: "Roboto-Regular";
-    margin: 0 2vh;
-    padding: 0vh 6vh 0vh;
+    margin: -1vh 3vh;
+    padding: 0vh 5vh 0vh;
 }
 
 .listeServices{
     margin-left: -5vh;
+    letter-spacing: 0.3px;
+    line-height: 30px;
 }
 
 .liPuce{
@@ -311,7 +310,7 @@ html body{
     height: 5.2vh;
     border-radius: 50%;
     border: none;
-    background: var(--colorBlue);
+    background: black;
     color: white;
     letter-spacing: 1px;
     cursor: pointer;

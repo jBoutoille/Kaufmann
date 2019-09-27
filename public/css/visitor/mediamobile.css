@@ -119,11 +119,16 @@ h2{
     font-size: 2.5vh;
     width: 100%;
     margin: 0;
+    padding: 0vh 7vh 0vh;
 }
 
 #globalBox{
     display: flex;
     flex-direction: column;
+}
+
+#globalBox div{
+    width: 100%;
 }
 
 /*--------------- CONTACT SECTION --------------- */
