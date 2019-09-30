@@ -1,9 +1,9 @@
 <!-- NAV -->
 <nav class="nav">
 	<span id="brand">
-		<a href="./"><img src="./public/img/logo/logo2white.png" class="logoBaner" ></a>
+		<a href="./"><img src="./public/img/logo/logo2white.png" class="logoBaner" alt="logo du cabinet kaufmann"></a>
 	</span>
-	<ul id="menu" class="foo-1">
+	<ul class="menu foo-1">
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#accueil">Accueil</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet">Le cabinet</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#expertise">Expertise</a></li>
@@ -22,7 +22,7 @@
 	<div class="close-btn">
 		<i class="fas fa-times burger"></i>
 	</div>
-	<ul id="menu">
+	<ul class="menu">
 		<li><a data-scroll href="<?= $RConfig['configClient'] ?>" class="btn btn-primary" target="blank"><i class="fas fa-users"></i> Espace client </a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#accueil">Accueil</a></li>
 		<li><a data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet">Le cabinet</a></li>

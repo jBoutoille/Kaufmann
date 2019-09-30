@@ -115,7 +115,7 @@ h2{
 
 /*--------------- SERVICE SECTION --------------- */
 
-#serviceBox{
+.serviceBox{
     font-size: 2.5vh;
     width: 100%;
     margin: 0;
@@ -171,7 +171,7 @@ h2{
     font-weight:bold;
 }
 
-/*--------------- NEWSLATTER SECTION--------------- */
+/*--------------- NEWSLATTER SECTION --------------- */
 
 .newsletter {
     padding: 18vh 0;
@@ -187,4 +187,19 @@ h2{
 
 }
 
+/*--------------- FORM SECTION --------------- */
+
+.containerText{
+    margin-top: 25vh;
+}
+    .add-prod button {
+    font-size: 1em;
+}
+
+form label, textarea{
+    font-size: 10px
+}
+
+#titileForm{
+    top: 25%;
 }

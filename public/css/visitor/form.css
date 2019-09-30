@@ -18,7 +18,7 @@ p{
 }
 
 .containerText {   
- transform: translate(12%, 5%); 
+    transform: translate(12%, 5%); 
 }
 
 .add-prod{
@@ -60,22 +60,3 @@ form input:focus, textarea:focus {
     outline: none !important;
     border: 2px solid #000 !important;
 }
-
-@media(max-width: 900px) {
-    .containerText{
-        margin-top: 25vh;
-    }
-    .add-prod button {
-        font-size: 1em;
-    }
-
-form label, textarea{
-    font-size: 10px
-}
-
-#titileForm{
-    top: 25%;
-}
-
-}
-

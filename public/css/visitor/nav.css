@@ -41,30 +41,30 @@ a{
     text-decoration: none;
 }
 
-.nav #menu {
+.nav .menu {
     float: left;
     right: 40px;
     position: fixed;
 }
 
-.nav #menu li {
+.nav .menu li {
     padding-left: 35px;
     display: inline-block;
     font-weight: lighter !important;
     text-transform: uppercase;
     font-size: 2vh;
-    line-height: 68px;
+    line-height: 60px;
     position: relative;
     transition: all 500ms ease-out;
 }
 
-.nav #menu li a {
+.nav .menu li a {
     font-family: "Roboto-Regular" !important;
     transition: all 500ms ease-out;
     font-size: 2.2vh;
 }
 
-.nav #menu li a:hover {
+.nav .menu li a:hover {
     text-decoration: none;
     color: rgba(178, 190, 195,1.0);
     transition: all 300ms ease-out;
@@ -122,7 +122,7 @@ a{
     transition: all 1s ease-out;
 }
 
-#resize #menu {
+#resize .menu {
     height: 90px;
     position: absolute;
     left: 45%;
@@ -133,7 +133,7 @@ a{
     margin-top: -5vh;
 }
 
-#resize #menu li {
+#resize .menu li {
     display: block;
     text-align: center;
     font-size: 50px;
@@ -147,7 +147,7 @@ a{
     margin-top: 75px;
 }
 
-#resize #menu li a:hover {
+#resize .menu li a:hover {
     text-decoration: none;
 }
 
@@ -176,7 +176,7 @@ nav #brand {
     transition: all 500ms ease-out;
 }
 
-nav #menu {
+nav .menu {
     display: none;
 }
 }

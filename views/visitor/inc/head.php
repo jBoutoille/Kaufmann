@@ -9,7 +9,6 @@
     <meta name="author" content="Julien Boutoille, Jérôme Fasquelle">
     <meta name="description" content="<?= $RConfig['configDescription'] ?>">
     <meta name="robots" content="index,follow">
-    <meta http-equiv="content-language" content="fr">
     <link rel="canonical" href="<?= $RConfig['configURL'] ?>">
 
     <!-- TITLE -->

@@ -19,16 +19,18 @@
 				<p class="footerText foo-5">
 				<i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></p>
 				<p class="footerText foo-5">
-				<i class="fas fa-envelope mr-2" class="footerIco"></i><?= $RConfig['configMail'] ?></p>
+				<i class="fas fa-envelope mr-2 footerIco"></i><?= $RConfig['configMail'] ?></p>
 				<p class="footerText foo-5">
-				<i class="fas fa-phone mr-2" class="footerIco"></i><?= $RConfig['configTelephone'] ?></p>
+				<i class="fas fa-phone mr-2 footerIco"></i><?= $RConfig['configTelephone'] ?></p>
 				<p class="footerText foo-5">
-				<i class="fas fa-print mr-2" class="footerIco"></i><?= $RConfig['configFax'] ?></p>
-				<li class="list-inline-item">
-					<a class="btn-floating btn-sm rgba-white-slight mx-1 foo-5" href="<?= $RFooter['footerLinkedin'] ?>" target="_blank">
-						<i class="fab fa-linkedin foo-5" id="linkedin"></i>
-					</a>
-				</li>
+				<i class="fas fa-print mr-2 footerIco"></i><?= $RConfig['configFax'] ?></p>
+				<ul>
+					<li class="list-inline-item">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1 foo-5" href="<?= $RFooter['footerLinkedin'] ?>" target="_blank">
+							<i class="fab fa-linkedin foo-5" id="linkedin"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<hr style="border-top: 1px solid #f8f9fa">

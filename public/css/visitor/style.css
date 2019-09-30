@@ -161,6 +161,10 @@ html body{
     width:50%;
 }
 
+.sizeVideo{
+    width: 100%;
+}
+
 .serviceSection{
     font-family: "Roboto-Regular";
     font-size: 4vh;
@@ -176,7 +180,7 @@ html body{
     margin-top: 5vh;
 }
 
-#serviceBox{
+.serviceBox{
     font-family: "Roboto-Regular";
     margin: -1vh 3vh;
     padding: 0vh 5vh 0vh;
@@ -224,6 +228,11 @@ html body{
 #contact{
     color: var(--colorWhite);
 }
+
+#contactTwo{
+    color: var(--colorWhite);
+}
+
 
 #boxContner{
     padding: 5%;
@@ -308,6 +317,7 @@ html body{
 .myBtn:hover {
      background: #60a3bc;
      color: #f1f2f6;
+     text-decoration: none;
 }
 
 .btnSeeMore{
@@ -380,6 +390,12 @@ html body{
    color: #f1f2f6;
 }
 
+
+.apiGoogle{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 /*--------------- PRELOADER --------------- */
 .no-js #loader { display: none;  }
