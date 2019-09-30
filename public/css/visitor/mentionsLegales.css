@@ -1,0 +1,14 @@
+html body{
+    background-color : rgba(241, 242, 246,1.0);
+
+}
+
+#textePresentation{
+	padding: 15vh 15vh;
+}
+
+.texteIntro{
+	color: var(--colorBlue);
+	text-align: center;
+	padding: 5vh 5vh;
+}

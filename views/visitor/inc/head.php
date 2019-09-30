@@ -28,5 +28,6 @@
     <link href="./public/css/visitor/header.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/form.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/mediamobile.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mentionsLegales.css" rel="stylesheet" type="text/css">
     
 </head>
