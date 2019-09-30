@@ -41,4 +41,8 @@
         $RFooter = $infos->recupFooter();
         require './views/visitor/formTwo.php';
     }
+
+    function getMentions(){
+        require './views/visitor/mentionsView.php';
+    }
 ?>

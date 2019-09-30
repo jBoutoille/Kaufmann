@@ -172,6 +172,9 @@
             if($MM->checkNewsletterExist($p1) == true){
                 echo 'Vous êtes déjà abonné à notre Newsletter';
             }
+            elseif (!filter_var($p1, FILTER_VALIDATE_EMAIL)) {
+                echo 'Veuillez entrer une adresse mail valide';
+            }
             else{
                 $token = $VM->insertNewsletter($p1);
                 $RConfig = $IM->recupConfig();

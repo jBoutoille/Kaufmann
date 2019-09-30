@@ -139,7 +139,7 @@
 			</div>
 			<form action="./?treatment" method="POST">
 				<div class="input-group wow fadeInUp">
-					<input type="email" class="form-control foo-4" name="visitorNewsletterMail" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>">
+					<input type="email" class="form-control foo-4" name="visitorNewsletterMail" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>" required>
 					<span class="input-group-btn">
 						<button class="btn foo-6" type="submit" name="formVisitorNewsletter"><?= $RNewsletter['newsletterTxtBtn'] ?></button>
 					</span>
