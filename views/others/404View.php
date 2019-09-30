@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Erreur 404 - G.KAUFMANN</title>
+	<title>404 - Page ou contenu introuvable | G.KAUFMANN</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Kanit:200" rel="stylesheet">

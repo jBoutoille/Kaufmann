@@ -41,5 +41,13 @@
                 return false;
             }
         }
+
+        public function deleteAnEmail($mail,$token){
+            $bdd = $this->dbConnect();
+            $query = $bdd->prepare("DELETE FROM newsletter WHERE temp_mail = :mail AND mail_token = :token");
+            $query->bindParam(':mail',$mail);
+            $query->bindParam(':token',$token);
+            $query->execute();
+        }
     
     }
