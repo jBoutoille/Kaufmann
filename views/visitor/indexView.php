@@ -65,21 +65,21 @@
 					<h2 class="serviceSection foo-2"><i class="fas fa-chart-pie"></i> <?= $RServices['services1Titre'] ?></h2>	
 					<p class="titleServices foo-2"><?= $RServices['services1Desc'] ?></p>		
 					<ul class="listeServices">
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS1'] ?></li>
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS2'] ?></li>
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS3'] ?></li>
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS4'] ?></li>
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS5'] ?></li>
+						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS1'] ?></li>
+						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS2'] ?></li>
+						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS3'] ?></li>
+						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS4'] ?></li>
+						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS5'] ?></li>
 					</ul>
 				</div>
 				<div id="serviceBox">
 					<h2 class="serviceSection foo-3"><i class="fas fa-poll"></i> <?= $RServices['services2Titre'] ?></h2>
 					<p class="titleServices foo-3"><?= $RServices['services2Desc'] ?></p>
 					<ul class="listeServices">
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS1'] ?></li>
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS2'] ?></li>
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS3'] ?></li>
-						<li><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS4'] ?></li>
+						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS1'] ?></li>
+						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS2'] ?></li>
+						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS3'] ?></li>
+						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS4'] ?></li>
 					</ul>
 				</div>
 				<div id="serviceBox">

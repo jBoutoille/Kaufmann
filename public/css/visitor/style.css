@@ -50,7 +50,7 @@ html body{
     text-align: center;
     letter-spacing: 2px;
     font-weight:bold;
-    padding-top: 10vh;
+    padding-top: 11vh;
     margin-bottom: 5vh;
 }
 
@@ -67,7 +67,8 @@ html body{
     text-align: center;
     font-family: "Roboto-Regular";
     color: black;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
+    margin-top: 10vh;
 }
 
 #BoxOne{
@@ -81,7 +82,7 @@ html body{
     text-align: center;
     color: var(--colorWhite);
     letter-spacing: 2px;
-    margin-top: 5%;
+    margin-top: 13vh;
 }
 
 #filterTwo{
@@ -109,6 +110,10 @@ html body{
     padding: 5% 10%;
     font-family: "Roboto-Regular";
     color: var(--colorWhite);
+}
+
+#expertise{
+    margin-top: 20vh;
 }
 
 #imgBoxOne{
@@ -153,7 +158,7 @@ html body{
 
 
 #globalBox div{
-    width:40%;
+    width:50%;
 }
 
 .serviceSection{
@@ -168,7 +173,7 @@ html body{
 
 .titleServices{
     color: black;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 #serviceBox{
