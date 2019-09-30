@@ -72,5 +72,10 @@ form input:focus, textarea:focus {
 form label, textarea{
     font-size: 10px
 }
+
+#titileForm{
+    top: 25%;
+}
+
 }
 
