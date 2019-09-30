@@ -41,16 +41,16 @@
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 186px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 7vh;
     font-weight: 200;
     margin: 0px;
     background: linear-gradient(130deg, rgba(11,36,91,.5), rgba(11,36,91,1));
-    color:transparent;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-transform: uppercase;
+    width: 100%;
   }
   
   .notfound h2 {

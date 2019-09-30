@@ -183,20 +183,20 @@
             
                 // Paramètres du mail
                 $mail->AddAddress($p1,$p1); // ajout du destinataire
-                $mail->From = "noreply.gkaufmann@gmail.com"; // adresse mail de l’expéditeur
-                $mail->FromName = "Cabinet G.KAUFMANN"; // nom de l’expéditeur
-                $mail->AddReplyTo("noreply.gkaufmann@gmail.com","Cabinet G.KAUFMANN"); // adresse mail et nom du contact de retour
+                $mail->From = $SMTPuser; // adresse mail de l’expéditeur
+                $mail->FromName = $SMTPname; // nom de l’expéditeur
+                $mail->AddReplyTo($SMTPuser,$SMTPname); // adresse mail et nom du contact de retour
                 $mail->IsHTML(true); // envoi du mail au format HTML
                 $mail->Subject = "Veuillez confirmer votre inscription à notre Newsletter"; // sujet du mail
                 $mail->Body = $mailContent; // le corps de texte du mail en HTML
                 $mail->AltBody = $mailContentText; // le corps de texte du mail en texte brut si le HTML n'est pas supporté
-    
+
                 // Envoi du mail
                 if(!$mail->Send()) { 
                     echo "Mail Error: " . $mail->ErrorInfo; // affichage des erreurs, s’il y en a
                 } 
                 else {
-                    echo "Le message a bien été envoyé !";
+                    echo "Le mail a bien été envoyé !";
                 }
             }
 
@@ -210,11 +210,8 @@
 
     // FONCTION DE CONFIRMATION DE MAIL
     function mailConfirm(){
-        if(!isset($_GET['id']) || !isset($_GET['mail'])){
-            if(empty($_GET['id']) || empty($_GET['mail'])){
-                require './views/others/404View.php';
-            }
-            echo "Erreur dans l'URL, impossible de trouver les paramètres requis.";
+        if(!isset($_GET['id']) || !isset($_GET['mail']) || empty($_GET['id']) || empty($_GET['mail'])){
+            require './views/others/404View.php';
         }
         else{
             $MM = new MailManager();
@@ -226,11 +223,29 @@
                 }
                 else{
                     $MM->confirmAnEmail($mail,$token);
-                    echo 'Merci de vous être abonné à notre Newsletter ! À partir de maintenant vous recevrez notre actualité. Si vous souhaitez vous désabonner, cliquez ici.';
+                    echo 'Vous êtes désormais abonné à notre Newsletter';
                 }
             }
             else{
-                echo "Cette confirmation d'inscription à la newsletter n'existe pas ou a expirée. <br> Si vous souhaitez vous inscrire, remplissez votre adresse mail sur la page d'accueil dans la section 'Newsletter', vous recevrez ensuite un mail de confirmation.";
+                require './views/others/404View.php';
+            }
+        }
+    }
+
+    function mailDelete(){
+        if(!isset($_GET['id']) || !isset($_GET['mail']) || empty($_GET['id']) || empty($_GET['mail'])){
+            require './views/others/404View.php';
+        }
+        else{
+            $MM = new MailManager();
+            $token = $_GET['id'];
+            $mail = $_GET['mail'];
+            if($MM->checkNewsletterToken($mail,$token) == true){
+                $MM->deleteAnEmail($mail,$token);
+                echo 'Vous venez de supprimer votre adresse mail de la liste de notre newsletter.';
+            }
+            else{
+                require './views/others/404View.php';
             }
         }
     }
