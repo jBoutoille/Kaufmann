@@ -38,7 +38,7 @@
 				Développeur
 				<a href="#" style="color: white">JBoutoille</a> . 
 				<a href="#" style="color: white">JFasquelle</a> | 
-				<a href="./?page=mentionsView" style="color: white">Mentions légales</a> | 
+				<a href="./?page=mentions-legales" style="color: white">Mentions légales</a> | 
 				<a href="./?page=gk-admin" style="color: white">Admin</a>
 				</p>
 			</div>
