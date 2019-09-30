@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 25 sep. 2019 à 09:11
+-- Généré le :  lun. 30 sep. 2019 à 08:24
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.3.5
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `gkconfig` (
 --
 
 INSERT INTO `gkconfig` (`id`, `configNomSite`, `configDescription`, `configURL`, `configClient`, `configAdresse`, `configCP`, `configVille`, `configMail`, `configTelephone`, `configFax`) VALUES
-(1, 'Cabinet G.KAUFMANN', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu', 'https://gkaufmann.fr/', 'http://185.23.139.150/iSuiteExpert/?CNX=CNX&CAB=CGK', '5 Place d\'Angleterre', '62200', 'Boulogne-sur-Mer', 'contact@gkaufmann.fr', '03 21 30 19 19', '03 91 18 65 65');
+(1, 'Cabinet G.KAUFMANN', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu', 'http://localhost/projets/kaufmann/', 'http://185.23.139.150/iSuiteExpert/?CNX=CNX&amp;CAB=CGK', '5 Place d\'Angleterre', '62200', 'Boulogne-sur-Mer', 'contact@gkaufmann.fr', '03 21 30 19 19', '03 91 18 65 65');
 
 -- --------------------------------------------------------
 
@@ -186,7 +186,7 @@ CREATE TABLE IF NOT EXISTS `gkheader` (
 --
 
 INSERT INTO `gkheader` (`id`, `headerType`, `headerTitre`, `headerDesc`) VALUES
-(1, 'S.A.R.L', 'G.KAUFMANN', 'Expertise comptable, Audit, Conseil & Accompagement');
+(1, 'S.A.R.L', 'G.KAUFMANN', 'Expertise comptable, Audit, Conseil &amp; Accompagement');
 
 -- --------------------------------------------------------
 
@@ -248,7 +248,7 @@ CREATE TABLE IF NOT EXISTS `gkservices` (
 --
 
 INSERT INTO `gkservices` (`id`, `servicesTitre`, `services1Titre`, `services1Desc`, `services1SS1`, `services1SS2`, `services1SS3`, `services1SS4`, `services1SS5`, `services2Titre`, `services2Desc`, `services2SS1`, `services2SS2`, `services2SS3`, `services2SS4`, `services3Titre`, `services3Desc`, `services3SS1`, `services3SS2`, `services3SS3`, `services3SS4`, `services3SS5`) VALUES
-(1, '| Nos services', 'AUDIT', 'Nous intervenons au titre de vos besoins en matière de :', 'Commissariat aux comptes', 'Audit Contractuel', 'Commissariat à la transformation', 'Commissariat à la fusion', 'Audit d\'acquisition', 'EXPERTISE COMPTABLE (comptabilité, fiscalité, social, juridique)', 'Nous vous proposons un accompagnement sur mesure en comptabilité, fiscalité, social et juridique :', 'Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie)', 'Associations (tenue, accompagnement, révision)', 'Particuliers (impôts sur le revenu, IFI, conseil patrimonial)', 'Entreprises (tenue complète, comptabilité partagée, révision, secrétariat juridique, paie, déclarations fiscales, consolidation)', 'CONSEIL/ACCOMPAGNEMENT', 'Partenaire privilégié du dirigeant, nous vous assistons sur de nombreux thèmes :', 'Création/reprise de sociétés', 'Mise en place de tableaux de bords', 'Prévisionnels', 'Évaluation de sociétés', 'Mise à disposition de logiciels spécifiques à nos différents métiers (logiciels de comptabilité, de facturation, de notes de frais, de caisse...)');
+(1, '| Nos services', 'AUDIT', 'Nous intervenons au titre de vos besoins en matière de :', 'Commissariat aux comptes', 'Audit Contractuel', 'Commissariat à la transformation', 'Commissariat à la fusion', 'Audit d\'acquisition', 'EXPERTISE COMPTABLE', 'Nous vous proposons un accompagnement sur mesure en comptabilité, fiscalité, social et juridique :', 'Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie)', 'Associations (tenue, accompagnement, révision)', 'Particuliers (impôts sur le revenu, IFI, conseil patrimonial)', 'Entreprises (tenue complète, comptabilité partagée, révision, secrétariat juridique, paie, déclarations fiscales, consolidation)', 'CONSEIL &amp; ACCOMPAGNEMENT', 'Partenaire privilégié du dirigeant, nous vous assistons sur de nombreux thèmes :', 'Création/reprise de sociétés', 'Mise en place de tableaux de bords', 'Prévisionnels', 'Évaluation de sociétés', 'Mise à disposition de logiciels spécifiques à nos différents métiers (logiciels de comptabilité, de facturation, de notes de frais, de caisse...)');
 
 -- --------------------------------------------------------
 
@@ -259,13 +259,13 @@ INSERT INTO `gkservices` (`id`, `servicesTitre`, `services1Titre`, `services1Des
 DROP TABLE IF EXISTS `newsletter`;
 CREATE TABLE IF NOT EXISTS `newsletter` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `mail` varchar(100) NOT NULL,
-  `temp_mail` varchar(100) NOT NULL,
+  `mail` varchar(100) DEFAULT NULL,
+  `temp_mail` varchar(100) DEFAULT NULL,
   `datetime` datetime DEFAULT NULL,
-  `mail_token` varchar(100) NOT NULL,
+  `mail_token` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `mail` (`mail`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -294,7 +294,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `role`, `created_at`, `session_token`, `time_last_connect`) VALUES
-(1, 'test', 'test', 'test@test', 'admin', '2019-09-16 00:00:00', '39d94f5dfd9ac04ed4b1412f01cb0d8420f232ce8faa22c180', '2019-09-25 09:26:59');
+(1, 'test', 'test', 'test@test', 'admin', '2019-09-16 00:00:00', '206d983818db3304be2192b5ab702038fa770ea8c181afcaf5', '2019-09-30 09:12:48');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
