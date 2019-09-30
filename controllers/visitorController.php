@@ -43,6 +43,10 @@
     }
 
     function getMentions(){
+        // RECUPERATION DES TABLES
+        $infos = new InfosManager();
+        $RConfig = $infos->recupConfig();
+        $RFooter = $infos->recupFooter();
         require './views/visitor/mentionsView.php';
     }
 ?>
