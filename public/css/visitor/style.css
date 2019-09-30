@@ -338,10 +338,6 @@ html body{
     background-color : rgba(241, 242, 246,1.0);
 }
 
-.newsletter input {
-    text-transform: uppercase;
-}
-
 .newsletter .news-data {
     max-width: 650px;
     margin: 0 auto;
