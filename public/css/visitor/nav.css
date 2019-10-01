@@ -17,6 +17,10 @@ a{
     z-index: 2;
 }
 
+.customer{
+    border: none;
+}
+
 .logoBaner{
     width: 45px;
     margin-top: -1.5vh;

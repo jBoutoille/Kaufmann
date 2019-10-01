@@ -45,11 +45,11 @@
 		<div id="experiences">
 			<div class="experienceOne foo-3">
 				<p class="sizeNumber" id="numberOne"><?= $RExpertise['expertiseChiffre1'] ?></p>
-				<h2><?= $RExpertise['expertiseTitre1'] ?></h2>
+				<h2 class="expertiseNumber"><?= $RExpertise['expertiseTitre1'] ?></h2>
 			</div>
 			<div class="experienceTwo foo-3">
 				<p class="sizeNumber foo-4" id="numberTwo"><?= $RExpertise['expertiseChiffre2'] ?></p>
-				<h2><?= $RExpertise['expertiseTitre2'] ?></h2>
+				<h2 class="expertiseNumber"><?= $RExpertise['expertiseTitre2'] ?></h2>
 			</div>
 		</div>
 	</div>
@@ -113,11 +113,11 @@
 				</ul>
 				<div id="twoBox">
 					<div id="boxContactOne" class="foo-2">
-						<p><?= $RContact['contactDescBtn1'] ?></p>
+						<p class="textBtn"><?= $RContact['contactDescBtn1'] ?></p>
 						<a href="./?page=rendez-vous" class="myBtn"><?= $RContact['contactBtn1'] ?></a>
 					</div>
 					<div id="boxContactTwo" class="foo-2">
-						<p><?= $RContact['contactDescBtn2'] ?></p>
+						<p class="textBtn"><?= $RContact['contactDescBtn2'] ?></p>
 						<a href="./?page=rejoignez-nous" class="myBtn"><?= $RContact['contactBtn2'] ?></a>
 					</div>
 				</div>

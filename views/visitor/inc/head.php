@@ -26,7 +26,9 @@
     <link href="./public/css/visitor/nav.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/header.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/form.css" rel="stylesheet" type="text/css">
-    <link href="./public/css/visitor/mediamobile.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mediaMobile.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mediaMobileIphoneX.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mediaTablette.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/mentionsLegales.css" rel="stylesheet" type="text/css">
     
 </head>

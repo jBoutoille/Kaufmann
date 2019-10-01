@@ -1,0 +1,67 @@
+/*--------------- MEDIA QUERIES TABLETTE --------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+
+/*--------------- HEADER --------------- */
+
+#kaufmann{
+	font-size: 9vh;
+}
+
+.span{
+	right: -25px;
+	top: -33px;
+	font-size: 2.5em;
+}
+
+.logoBaner{
+	width: 55px;
+	margin-top: -1.3vh;
+}
+
+/*--------------- CABINET SECTION --------------- */
+
+#texteSectionOne{
+	font-size: 2.8vh;
+	padding: 5vh 1vh;
+}
+
+#titleOne{
+	margin-top: 7vh;
+}
+
+.sizeNumber{
+	font-size: 10vh;
+}
+
+.expertiseNumber{
+	font-size: 3.5vh;
+}
+
+
+/*--------------- SERVICE SECTION --------------- */
+
+#globalBox{
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------- CONTACT SECTION --------------- */
+
+
+
+/*--------------- NEWSLATTER SECTION --------------- */
+
+
+
+/*--------------- FORM SECTION --------------- */
+
+
+
+
+
+
+
+}
