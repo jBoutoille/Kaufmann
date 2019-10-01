@@ -4,30 +4,30 @@
 		<div class="row text-center text-md-left mt-3 pb-3">
 			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
 				<a href="./">
-					<img src="./public/img/logo/logo4white.png" id="imgFooter" class="foo-3" alt="Logo du cabinet G.KAUFMANN">
+					<img src="./public/img/logo/logo4white.png" id="imgFooter" class="foo-2" alt="Logo du cabinet G.KAUFMANN">
 				</a>
 				<div class="row">
 					<div class="col-md-12">
-						<a href="https://www.cncc.fr/" target="_blank"><img src="./public/img/logo/cncc2.png" id="imgLogoOne" class="foo-4" alt="Logo CNCC"></a>
-						<a href="https://www.experts-comptables.fr/" target="_blank"><img src="./public/img/logo/ordre.png" id="imgLogoTwo" class="foo-5" alt="Logo Ordre des experts comptables"></a>     
+						<a href="https://www.cncc.fr/" target="_blank"><img src="./public/img/logo/cncc2.png" id="imgLogoOne" class="foo-2" alt="Logo CNCC"></a>
+						<a href="https://www.experts-comptables.fr/" target="_blank"><img src="./public/img/logo/ordre.png" id="imgLogoTwo" class="foo-2" alt="Logo Ordre des experts comptables"></a>     
 					</div>             
 				</div>
 			</div>
-			<hr class="w-50 clearfix d-md-none foo-3" id="footerBar">
-			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 foo-4" id="footerContact">
-				<h6 class="text-uppercase mb-4 font-weight-bold foo-5"><?= $RFooter['footerTitreCoordonnees'] ?></h6>
-				<p class="footerText foo-5">
+			<hr class="w-50 clearfix d-md-none foo-2" id="footerBar">
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 foo-2" id="footerContact">
+				<h6 class="text-uppercase mb-4 font-weight-bold foo-2"><?= $RFooter['footerTitreCoordonnees'] ?></h6>
+				<p class="footerText foo-2">
 				<i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></p>
-				<p class="footerText foo-5">
+				<p class="footerText foo-2">
 				<i class="fas fa-envelope mr-2 footerIco"></i><?= $RConfig['configMail'] ?></p>
-				<p class="footerText foo-5">
+				<p class="footerText foo-2">
 				<i class="fas fa-phone mr-2 footerIco"></i><?= $RConfig['configTelephone'] ?></p>
-				<p class="footerText foo-5">
+				<p class="footerText foo-2">
 				<i class="fas fa-print mr-2 footerIco"></i><?= $RConfig['configFax'] ?></p>
 				<ul>
 					<li class="list-inline-item">
-						<a class="btn-floating btn-sm rgba-white-slight mx-1 foo-5" href="<?= $RFooter['footerLinkedin'] ?>" target="_blank">
-							<i class="fab fa-linkedin foo-5" id="linkedin"></i>
+						<a class="btn-floating btn-sm rgba-white-slight mx-1 foo-2" href="<?= $RFooter['footerLinkedin'] ?>" target="_blank">
+							<i class="fab fa-linkedin" id="linkedin"></i>
 						</a>
 					</li>
 				</ul>

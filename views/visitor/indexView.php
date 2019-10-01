@@ -8,8 +8,8 @@
 		<div id="filterOne">
 			<div id="titleHeader" class="foo-4"> 
 				<p class="sarl foo-4"><?= $RHeader['headerType'] ?></p>
-				<p id="kaufmann" class="foo-5"><?= $RHeader['headerTitre'] ?></p>
-				<h1 id="textOne" class="foo-6"><?= $RHeader['headerDesc'] ?></h1>
+				<p id="kaufmann" class="foo-4"><?= $RHeader['headerTitre'] ?></p>
+				<h1 id="textOne" class="foo-5"><?= $RHeader['headerDesc'] ?></h1>
 				<div class="foo-6"><a id="animGif" data-scroll href="<?php if(!empty($_GET)){ echo './';} ?>#cabinet"></a></div>
 			</div>
 		</div>
@@ -20,11 +20,11 @@
 <div id="cabinet">
 	<section>
 		<h2 class="titleNav foo-2"><?= $RCabinet['cabinetTitre'] ?></h2>
-			<p id="texteSectionOne" class="foo-3">
-				<?= $RCabinet['cabinetTxt1'] ?>
+			<p id="texteSectionOne">
+				<span class="foo-2"><?= $RCabinet['cabinetTxt1'] ?></span>
 				<br>
 				<br>
-				<?= $RCabinet['cabinetTxt2'] ?>
+				<span class="foo-2"><?= $RCabinet['cabinetTxt2'] ?></span>
 			</p>
 	</section>
 </div>
@@ -34,7 +34,7 @@
 <section id="BoxOne">
 	<img src="./public/img/photoBureau.JPG" id="imgBoxOne" alt="">
 	<div id="filterTwo">
-		<h2 id="titleOne" class="foo-1"><?= $RExpertise['expertiseTitre'] ?></h2>
+		<h2 id="titleOne" class="foo-2"><?= $RExpertise['expertiseTitre'] ?></h2>
 		<div id="barOne"></div>
 		<p id="texteSectionTwo" class="foo-2">
 			<?= $RExpertise['expertiseTxt1'] ?>
@@ -43,12 +43,12 @@
 			<?= $RExpertise['expertiseTxt2'] ?>
 		</p>
 		<div id="experiences">
-			<div class="experienceOne foo-3">
-				<p class="sizeNumber" id="numberOne"><?= $RExpertise['expertiseChiffre1'] ?></p>
+			<div class="experienceOne foo-2">
+				<p class="sizeNumber foo-2" id="numberOne"><?= $RExpertise['expertiseChiffre1'] ?></p>
 				<h2 class="expertiseNumber"><?= $RExpertise['expertiseTitre1'] ?></h2>
 			</div>
-			<div class="experienceTwo foo-3">
-				<p class="sizeNumber foo-4" id="numberTwo"><?= $RExpertise['expertiseChiffre2'] ?></p>
+			<div class="experienceTwo foo-2">
+				<p class="sizeNumber foo-2" id="numberTwo"><?= $RExpertise['expertiseChiffre2'] ?></p>
 				<h2 class="expertiseNumber"><?= $RExpertise['expertiseTitre2'] ?></h2>
 			</div>
 		</div>
@@ -65,32 +65,32 @@
 					<h2 class="serviceSection foo-2"><i class="fas fa-chart-pie"></i> <?= $RServices['services1Titre'] ?></h2>	
 					<p class="titleServices foo-2"><?= $RServices['services1Desc'] ?></p>		
 					<ul class="listeServices">
-						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS1'] ?></li>
-						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS2'] ?></li>
-						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS3'] ?></li>
-						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS4'] ?></li>
-						<li class="foo-3"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS5'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS1'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS2'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS3'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS4'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS5'] ?></li>
 					</ul>
 				</div>
 				<div class="serviceBox">
-					<h2 class="serviceSection foo-3"><i class="fas fa-poll"></i> <?= $RServices['services2Titre'] ?></h2>
-					<p class="titleServices foo-3"><?= $RServices['services2Desc'] ?></p>
+					<h2 class="serviceSection foo-2"><i class="fas fa-poll"></i> <?= $RServices['services2Titre'] ?></h2>
+					<p class="titleServices foo-2"><?= $RServices['services2Desc'] ?></p>
 					<ul class="listeServices">
-						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS1'] ?></li>
-						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS2'] ?></li>
-						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS3'] ?></li>
-						<li class="foo-4"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS4'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS1'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS2'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS3'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS4'] ?></li>
 					</ul>
 				</div>
 				<div class="serviceBox">
-					<h2 class="serviceSection foo-4"><i class="fas fa-address-card"></i> <?= $RServices['services3Titre'] ?></h2>
-					<p class="titleServices foo-4"><?= $RServices['services3Desc'] ?></p>
+					<h2 class="serviceSection foo-2"><i class="fas fa-address-card"></i> <?= $RServices['services3Titre'] ?></h2>
+					<p class="titleServices foo-2"><?= $RServices['services3Desc'] ?></p>
 					<ul class="listeServices">
-						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree"></button><?= $RServices['services3SS1'] ?></li>				
-						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour"></button><?= $RServices['services3SS2'] ?></li>				
-						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive"></button><?= $RServices['services3SS3'] ?></li>			
-						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne"></button><?= $RServices['services3SS4'] ?></li>
-						<li class="foo-5"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo"></button><?= $RServices['services3SS5'] ?></li>
+						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalTree"></button><?= $RServices['services3SS1'] ?></li>				
+						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalFour"></button><?= $RServices['services3SS2'] ?></li>				
+						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalFive"></button><?= $RServices['services3SS3'] ?></li>			
+						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalOne"></button><?= $RServices['services3SS4'] ?></li>
+						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore" data-toggle="modal" data-target="#ExampleModalTwo"></button><?= $RServices['services3SS5'] ?></li>
 					</ul>
 				</div>
 		  </div>
@@ -103,13 +103,13 @@
 		<img src="./public/img/photoContact.JPG" id="imgContact" alt="">
 		<div class="filterOne">
 			<h2 class="titleNav foo-2" id="contactTwo"><?= $RContact['contactTitre'] ?></h2>
-			<div id="boxContner" class="foo-1">
-				<ul id="boxAdresse">
-					<li><h3 id="coordonnees" class="foo-3"><?= $RContact['contactCoordonnees'] ?></h3></li>
-					<li id="adresse" class="foo-3"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
-					<li id="adMail" class="foo-3"><i class="fas fa-envelope mr-2"></i><?= $RConfig['configMail'] ?></li>
-					<li id="telMobile" class="foo-3"><i class="fas fa-phone mr-2"></i><?= $RConfig['configTelephone'] ?></li>
-					<li id="numFax" class="foo-3"><i class="fas fa-print mr-2"></i><?= $RConfig['configFax'] ?></li>
+			<div id="boxContner">
+				<ul id="boxAdresse" class="foo-2">
+					<li><h3 id="coordonnees"><?= $RContact['contactCoordonnees'] ?></h3></li>
+					<li id="adresse"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
+					<li id="adMail"><i class="fas fa-envelope mr-2"></i><?= $RConfig['configMail'] ?></li>
+					<li id="telMobile"><i class="fas fa-phone mr-2"></i><?= $RConfig['configTelephone'] ?></li>
+					<li id="numFax"><i class="fas fa-print mr-2"></i><?= $RConfig['configFax'] ?></li>
 				</ul>
 				<div id="twoBox">
 					<div id="boxContactOne" class="foo-2">
@@ -131,13 +131,13 @@
 	<div class="container">
 		<div class="news-data">
 			<div class="section-subheading">
-				<h1 class="wow fadeInUp foo-3"><?= $RNewsletter['newsletterTitre'] ?></h1>
+				<h2 class="wow fadeInUp foo-2"><?= $RNewsletter['newsletterTitre'] ?></h2>
 			</div>
 			<form action="./?treatment" method="POST">
 				<div class="input-group wow fadeInUp">
-					<input type="email" class="form-control foo-4" name="visitorNewsletterMail" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>" required>
+					<input type="email" class="form-control foo-2" name="visitorNewsletterMail" placeholder="<?= $RNewsletter['newsletterTxtForm'] ?>" required>
 					<span class="input-group-btn">
-						<button class="btn foo-6" type="submit" name="formVisitorNewsletter"><?= $RNewsletter['newsletterTxtBtn'] ?></button>
+						<button class="btn foo-2" type="submit" name="formVisitorNewsletter"><?= $RNewsletter['newsletterTxtBtn'] ?></button>
 					</span>
 				</div>
 			</form>
@@ -146,7 +146,7 @@
 </section>
 
 <!-- API GOOGLE MAP -->	
-<div class="foo-3">
+<div class="foo-2">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.4996106340805!2d1.6007255077783342!3d50.72309948130056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc2c42e0ba61b7%3A0x7b8d42d029cd746d!2s5%20Place%20d&#39;Angleterre%2C%2062200%20Boulogne-sur-Mer!5e0!3m2!1sfr!2sfr!4v1568721375304!5m2!1sfr!2sfr" class="apiGoogle" 
 	 allowfullscreen=""></iframe>
 </div>
