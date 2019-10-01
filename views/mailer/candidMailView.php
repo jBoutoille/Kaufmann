@@ -326,28 +326,19 @@
                     <tr>
                       <td>
                         <a href="#"><img src="<?= $RConfig['configURL'] ?>public/img/logo/logo3blue.png"></a>
-                        <h1>Confirmation d'inscription à la Newsletter</h1>
-                        <p>Vous venez de remplir le formulaire d'inscription à la Newsletter du cabinet G.KAUFMANN. Pour confirmer votre inscription et ainsi recevoir notre actualité, merci de cliquer sur le bouton çi dessous :</p>
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <table role="presentation" class="confirmBtn" border="0" cellpadding="0" cellspacing="0">
-                                  <tbody>
-                                    <tr>
-                                      <td><a href="<?= $RConfig['configURL'] ?>?action=confirmNewsletter&mail=<?= $p1 ?>&id=<?= $token ?>" target="_blank">Confirmer mon inscription</a> </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <p>Si vous ne parvenez pas à cliquer sur le bouton, vous pouvez confirmer votre inscription avec ce lien :
+                        <h1>Nouvelle candidature</h1>
+                        <p>Vous venez de recevoir une candidature spontannée via le formulaire présent sur le site G.KAUFMANN. Voici la candidature :</p>
+                        <p>
+                            <b>Nom :</b> <?= $nom ?> <br>
+                            <b>Prénom :</b> <?= $prenom ?> <br>
+                            <b>E-mail :</b> <?= $mail ?> <br>
+                            <b>Téléphone :</b> <?= $telephone ?> <br>
+                            <b>Poste recherché :</b> <?= $poste ?> <br>
                             <br>
-                            <a href="<?= $RConfig['configURL'] ?>?action=confirmNewsletter&mail=<?= $p1 ?>&id=<?= $token ?>" target="_blank"><?= $RConfig['configURL'] ?>?action=confirmNewsletter&mail=<?= $p1 ?>&id=<?= $token ?></a>
+                            <b>Message :</b> <?= $message ?>
                         </p>
-                        <p>Ce n'est pas vous ? <a href="<?= $RConfig['configURL'] ?>?action=deleteNewsletter&mail=<?= $p1 ?>&id=<?= $token ?>" target="_blank">Cliquez ici</a> pour supprimer la demande d'inscription.</p>
+                        <p>Pièces jointes : CV & Lettre de motivation</p>
+                        <p>Vous pouvez directement répondre à cette demande par mail via le bouton "Répondre" de votre boite mail.</p>
                       </td>
                     </tr>
                   </table>
@@ -373,14 +364,5 @@
 </html>
 <?php 
     $mailContent = ob_get_clean();
-    $mailContentText = 
-    "Confirmation d'inscription à la Newsletter
-    
-    Vous venez de remplir le formulaire d'inscription à la Newsletter du cabinet G.KAUFMANN. Pour confirmer votre inscription et ainsi recevoir notre actualité, allez sur ce lien :
-    " . $RConfig['configURL'] . "?action=confirmNewsletter&mail=" . $p1 . "&id=" . $token . "
-
-    Si ce n'est pas vous, allez sur ce lien pour supprimer la demande d'inscription à la Newsletter :
-    " . $RConfig['configURL'] . "?action=confirmNewsletter&mail=" . $p1 . "&id=" . $token . "
-    "
-    ;
+    $mailContentText = "";
 ?>

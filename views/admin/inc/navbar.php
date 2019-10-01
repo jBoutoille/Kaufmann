@@ -36,15 +36,15 @@
                     </li>
 
                     <li>
-                        <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='newsletter'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=newsletter"><i class="fa fa-envelope"></i>Gestion de la Newsletter</a>
+                        <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='newsletter'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=newsletter"><i class="fa fa-envelope"></i>Gestion de la Newsletter <span class="badge">OFF</span></a>
                     </li>
 
                     <li>
-                        <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='actualite'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=actualite"><i class="fa fa-bullhorn"></i>Gestion de l'actualité</a>
+                        <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='actualite'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=actualite"><i class="fa fa-bullhorn"></i>Gestion de l'actualité <span class="badge">OFF</span></a>
                     </li>
 
                     <li>
-                        <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='candidatures'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=candidatures"><i class="fa fa-briefcase"></i>Candidatures reçues</a>
+                        <a <?php if(isset($_GET['p1'])&&$_GET['p1']=='candidatures'){echo 'class="active-menu"';} ?> href="./?page=gk-admin&p1=candidatures"><i class="fa fa-briefcase"></i>Candidatures reçues <span class="badge">OFF</span></a>
                     </li>
                    
                     <li>

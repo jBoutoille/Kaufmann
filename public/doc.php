@@ -146,15 +146,17 @@
                     Activité : visitorRdvActivite
                     Téléphone : visitorRdvTelephone
                     E-Mail : visitorRdvMail
-                    Message : visitorRdvMessge
+                    Message : visitorRdvMessage
             formVisitorCandidature
                 inputs:
                     Nom : visitorCandidatureNom
                     Prénom : visitorCandidaturePrenom
+                    E-mail : visitorCandidatureMail
+                    Téléphone : visitorCandidatureTelephone
                     Poste recherché : visitorCandidaturePoste
                     Message : visitorCandidatureMessage
-                    Fichier CV : visitorCandidatureFile1
-                    Fichier Lettre de motivation : visitorCandidatureFile2
+                    Fichier CV : fileOne
+                    Fichier Lettre de motivation : fileTwo
             formVisitorNewsletter
                 inputs:
                     Mail : visitorNewsletterMail

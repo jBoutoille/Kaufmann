@@ -3,25 +3,14 @@
     // FONCTION DE TRAITEMENT DES DONNEES UTILISATEUR
     function dataTreatment(){
 
+
         // Création de l'objet de gestion du compte Administrateur
         $AM = new AdminManager();
         // Création de l'objet de gestion des informations du site
         $IM = new InfosManager();
         // Création de l'objet ge gestion des formulaires visiteurs
         $VM = new VisitorManager();
-        // Création de l'objet de gestion d'envoi de mails
-        $mail = new PHPMailer\PHPMailer\PHPMailer();
 
-        // Paramètres SMTP
-        require './config.php';
-        $mail->IsSMTP(); // activation des fonctions SMTP
-        $mail->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
-        $mail->SMTPSecure = $SMTPsecure; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
-        $mail->Host = $SMTPhost; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
-        $mail->Port = $SMTPport; // définition du port du serveur SMTP
-        $mail->Username = $SMTPuser; // le nom d’utilisateur SMTP
-        $mail->Password = $SMTPpass; // son mot de passe SMTP
-        $mail->CharSet = 'UTF-8';
 
         // Formulaire de connexion au panel admin
         if(isset($_POST['formAdminLogin'])){
@@ -142,27 +131,6 @@
             header('Location: ./?page=gk-admin&p1=edit-footer');
         }
 
-        // Formulaire de prise de rendez-vous
-        elseif(isset($_POST['formVisitorRdv'])){
-            $p1 = htmlspecialchars($_POST['visitorRdvNom']);
-            $p2 = htmlspecialchars($_POST['visitorRdvPrenom']);
-            $p3 = htmlspecialchars($_POST['visitorRdvActivite']);
-            $p4 = htmlspecialchars($_POST['visitorRdvTelephone']);
-            $p5 = htmlspecialchars($_POST['visitorRdvMail']);
-            $p6 = htmlspecialchars($_POST['visitorRdvMessge']);
-        }
-
-        // Formulaire d'envois de candidatures spontannées
-        elseif(isset($_POST['formVisitorCandidature'])){
-            $p1 = htmlspecialchars($_POST['visitorCandidatureNom']);
-            $p2 = htmlspecialchars($_POST['visitorCandidaturePrenom']);
-            $p3 = htmlspecialchars($_POST['visitorCandidaturePoste']);
-            $p4 = htmlspecialchars($_POST['visitorCandidatureMessage']);
-            $p5 = htmlspecialchars($_POST['visitorCandidatureFile1']);
-            $p6 = htmlspecialchars($_POST['visitorCandidatureFile2']);
-
-        }
-
         // Formulaire de Newsletter
         elseif(isset($_POST['formVisitorNewsletter'])){
 
@@ -180,26 +148,146 @@
                 $RConfig = $IM->recupConfig();
                 
                 require './views/mailer/newsletterConfirm.php';
+
+                // Création de l'objet de gestion d'envoi de newsletter
+                $mailNewsletter = new PHPMailer\PHPMailer\PHPMailer();
+
+                // Paramètres SMTP
+                require './config.php';
+                $mailNewsletter->IsSMTP(); // activation des fonctions SMTP
+                $mailNewsletter->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
+                $mailNewsletter->SMTPSecure = $SMTPsecure; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
+                $mailNewsletter->Host = $SMTPhost; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
+                $mailNewsletter->Port = $SMTPport; // définition du port du serveur SMTP
+                $mailNewsletter->Username = $SMTPuser; // le nom d’utilisateur SMTP
+                $mailNewsletter->Password = $SMTPpass; // son mot de passe SMTP
+                $mailNewsletter->CharSet = 'UTF-8';
             
                 // Paramètres du mail
-                $mail->AddAddress($p1,$p1); // ajout du destinataire
-                $mail->From = $SMTPuser; // adresse mail de l’expéditeur
-                $mail->FromName = $SMTPname; // nom de l’expéditeur
-                $mail->AddReplyTo($SMTPuser,$SMTPname); // adresse mail et nom du contact de retour
-                $mail->IsHTML(true); // envoi du mail au format HTML
-                $mail->Subject = "Veuillez confirmer votre inscription à notre Newsletter"; // sujet du mail
-                $mail->Body = $mailContent; // le corps de texte du mail en HTML
-                $mail->AltBody = $mailContentText; // le corps de texte du mail en texte brut si le HTML n'est pas supporté
+                $mailNewsletter->AddAddress($p1,$p1); // ajout du destinataire
+                $mailNewsletter->From = $SMTPuser; // adresse mail de l’expéditeur
+                $mailNewsletter->FromName = $SMTPname; // nom de l’expéditeur
+                $mailNewsletter->AddReplyTo($SMTPuser,$SMTPname); // adresse mail et nom du contact de retour
+                $mailNewsletter->IsHTML(true);
+                $mailNewsletter->Subject = "Veuillez confirmer votre inscription à notre Newsletter";
+                $mailNewsletter->Body = $mailContent;
+                $mailNewsletter->AltBody = $mailContentText;
 
                 // Envoi du mail
-                if(!$mail->Send()) { 
-                    echo "Mail Error: " . $mail->ErrorInfo; // affichage des erreurs, s’il y en a
+                if(!$mailNewsletter->Send()) { 
+                    echo "Mail Error: " . $mailNewsletter->ErrorInfo; // affichage des erreurs, s’il y en a
                 } 
                 else {
                     echo "Le mail a bien été envoyé !";
                 }
             }
 
+        }
+
+        // Formulaire de prise de rendez vous
+        elseif(isset($_POST['formVisitorRdv'])){
+            $nom = htmlspecialchars($_POST['visitorRdvNom']);
+            $prenom = htmlspecialchars($_POST['visitorRdvPrenom']);
+            $activite = htmlspecialchars($_POST['visitorRdvActivite']);
+            $telephone = htmlspecialchars($_POST['visitorRdvTelephone']);
+            $mail = htmlspecialchars($_POST['visitorRdvMail']);
+            $message = htmlspecialchars($_POST['visitorRdvMessage']);
+
+            $finalFromName = ucfirst($nom) . " " . ucfirst($prenom);
+            $RConfig = $IM->recupConfig();
+
+            require './views/mailer/rdvMailView.php';
+        
+            if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+                echo 'Veuillez entrer une adresse mail valide';
+            }
+            else{
+                // Création de l'objet de gestion d'envoi de mail Prise de RDV
+                $mailRdv = new PHPMailer\PHPMailer\PHPMailer();
+
+                // Paramètres SMTP
+                require './config.php';
+                $mailRdv->IsSMTP(); // activation des fonctions SMTP
+                $mailRdv->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
+                $mailRdv->SMTPSecure = $SMTPsecure; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
+                $mailRdv->Host = $SMTPhost; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
+                $mailRdv->Port = $SMTPport; // définition du port du serveur SMTP
+                $mailRdv->Username = $SMTPuser; // le nom d’utilisateur SMTP
+                $mailRdv->Password = $SMTPpass; // son mot de passe SMTP
+                $mailRdv->CharSet = 'UTF-8';
+
+                // Paramètres du mail
+                $mailRdv->AddAddress($SMTPuser,$SMTPuser); // ajout du destinataire
+                $mailRdv->From = $SMTPuser; // adresse mail de l’expéditeur
+                $mailRdv->FromName = $SMTPname; // nom de l’expéditeur
+                $mailRdv->AddReplyTo($mail,$finalFromName); // adresse mail et nom du contact de retour
+                $mailRdv->IsHTML(true);
+                $mailRdv->Subject = "Demande de rendez-vous via le site G.KAUFMANN - De " . $finalFromName;
+                $mailRdv->Body = $mailContent;
+                $mailRdv->AltBody = $mailContentText;
+
+                // Envoi du mail
+                if(!$mailRdv->Send()) { 
+                    echo "Mail Error: " . $mailRdv->ErrorInfo; // affichage des erreurs, s’il y en a
+                } 
+                else {
+                    echo "Le mail a bien été envoyé !";
+                }
+            }
+        }
+
+        // Formulaire de candidature
+        elseif(isset($_POST['formVisitorCandidature'])){
+            $nom = htmlspecialchars($_POST['visitorCandidatureNom']);
+            $prenom = htmlspecialchars($_POST['visitorCandidaturePrenom']);
+            $mail  = htmlspecialchars($_POST['visitorCandidatureMail']);
+            $telephone = htmlspecialchars($_POST['visitorCandidatureTelephone']);
+            $poste = htmlspecialchars($_POST['visitorCandidaturePoste']);
+            $message = htmlspecialchars($_POST['visitorCandidatureMessage']);
+
+            $fichierCV = $_FILES['fileOne'];
+            $fichierLM = $_FILES['fileTwo'];
+
+            $finalFromName = ucfirst($nom) . " " . ucfirst($prenom);
+            $RConfig = $IM->recupConfig();
+            
+            require './views/mailer/candidMailView.php';
+
+            if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+                echo 'Veuillez entrer une adresse mail valide';
+            }
+            else{
+                $mailCandid = new PHPMailer\PHPMailer\PHPMailer();
+
+                require './config.php';
+                $mailCandid->IsSMTP();
+                $mailCandid->SMTPAuth = true;
+                $mailCandid->SMTPSecure = $SMTPsecure;
+                $mailCandid->Host = $SMTPhost;
+                $mailCandid->Port = $SMTPport;
+                $mailCandid->Username = $SMTPuser;
+                $mailCandid->Password = $SMTPpass;
+                $mailCandid->CharSet = 'UTF-8';
+
+                $mailCandid->AddAddress($SMTPuser,$SMTPuser);
+                $mailCandid->From = $SMTPuser;
+                $mailCandid->FromName = $SMTPname;
+                $mailCandid->AddReplyTo($mail,$finalFromName);
+                $mailCandid->IsHTML(true);
+                $mailCandid->Subject = "Candidature spontannée via le site G.KAUFMANN - De " . $finalFromName;
+                $mailCandid->Body = $mailContent;
+                $mailCandid->AltBody = $mailContentText;
+
+                $mailCandid->AddAttachment($_FILES['fileOne']['tmp_name'], "CV_" . $nom . "_" . $prenom . ".pdf");
+                $mailCandid->AddAttachment($_FILES['fileTwo']['tmp_name'], "LM_" . $nom . "_" . $prenom . ".pdf");
+
+                if(!$mailCandid->Send()) { 
+                    echo "Mail Error: " . $mailCandid->ErrorInfo;
+                } 
+                else {
+                    echo "Le mail a bien été envoyé !";
+                }
+            }
         }
 
         // AUCUN FORMULAIRE

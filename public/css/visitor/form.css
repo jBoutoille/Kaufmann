@@ -3,7 +3,7 @@ p{
 }
 
 .boxPremary{
-    padding: 15%;
+    padding: 10% 15%;
 }
 
 #titileForm{
@@ -42,9 +42,8 @@ p{
 
 form label, textarea {
     font-family: "Roboto-Regular";
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 2.5vh;
+    letter-spacing: 1px;
     padding: 1vh;
 }
 
@@ -59,4 +58,7 @@ form input, textarea {
 form input:focus, textarea:focus {
     outline: none !important;
     border: 2px solid #000 !important;
+}
+.inputData {
+    margin-bottom: 2vh;
 }
