@@ -2,16 +2,20 @@ p{
     font-family: "Roboto-Regular";
 }
 
+.blockText{
+    font-size: 2.75vh;
+}
+
 .boxPremary{
     padding: 10% 15%;
 }
 
-#titileForm{
+#titleForm{
     position: absolute;
     font-family: "Thryn";
-    top: 20%;
+    top: 18%;
     left: 50%;
-    font-size: 2em;
+    font-size: 5vh;
     width: 75%;
     transform: translate(-50%, -50%);
     text-align: center;

@@ -16,6 +16,10 @@ and (max-device-width : 1024px)  {
 	font-size: 2.5em;
 }
 
+.titleNav{
+	padding-top: 9vh;
+}
+
 .logoBaner{
 	width: 55px;
 	margin-top: -1.3vh;
@@ -48,9 +52,49 @@ and (max-device-width : 1024px)  {
     flex-direction: column;
 }
 
+#globalBox div{
+	width: 96%;
+}
+
+.serviceSection{
+	margin-top: 3vh;
+}
+
+.titleServices{
+	font-size: 2vh;
+}
+
+.listeServices{
+	font-size: 2vh;
+}
+
 /*--------------- CONTACT SECTION --------------- */
 
+#boxTwo{
+	height: 110vh;
+}
 
+#boxContner{
+    flex-direction: column;
+    height: 40vh;
+}
+
+#imgContact{
+	height: 110vh;
+}
+
+#twoBox{
+	width: 70%;
+}
+
+#boxAdresse{
+	padding: 2vh 3vh 5vh;
+	margin-top: 40vh;
+}
+
+.textBtn{
+	font-size: 3vh;
+}
 
 /*--------------- NEWSLATTER SECTION --------------- */
 
