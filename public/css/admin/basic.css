@@ -54,7 +54,14 @@ body {
 
 }
 
+.badge {
+    background-color: red;
+    border-radius: 5px;
+}
 
+.fs30 {
+    font-size: 30px;
+}
 /*==============================================
     MENU STYLES    
     =============================================*/
