@@ -181,6 +181,7 @@ html body{
 .titleServices{
     color: black;
     margin-top: 5vh;
+    font-size: 2.5vh;
 }
 
 .serviceBox{
@@ -192,7 +193,13 @@ html body{
 #listeServicesOne{
     margin-left: -5vh;
     letter-spacing: 0.1vh;
-    line-height: 10vh;
+    line-height: 7vh;
+}
+
+#listeServicesTwo{
+    margin-left: -5vh;
+    letter-spacing: 0.1vh;
+    line-height: 5vh;
 }
 
 .listeServices{
@@ -332,22 +339,14 @@ html body{
 .btnSeeMore{
     width: 5vh;
     height: 5.2vh;
-    border-radius: 50%;
     border: none;
-    background: var(--colorBlue);
-    color: white;
-    letter-spacing: 1px;
-    cursor: pointer;
-    font-size: 1em;
-    font-size: 2.5vh;
+    background: transparent;
     padding: 3px 1px;
-    outline: none;
-    margin: 1vh;
+    margin: .5vh;
 }
 
 .btnSeeMore:hover {
-     background: #60a3bc;
-     color: #f1f2f6;
+     color: #007bff;
 }
 
 /*--------------- NEWSLETTER SECTION --------------- */
