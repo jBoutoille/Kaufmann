@@ -41,9 +41,15 @@
 </div>
 
 <?php
-	require './views/visitor/inc/modals.php';
     $htmlTitle = 'Demander un rendez-vous | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
 ?>
 
+
+Développeurs : Julien Boutoille , Jérôme Fasquelle
+
+Simplon.co
+10 rue des carreaux
+62000, Boulogne-sur-mer
+Pas-de-Calais, France

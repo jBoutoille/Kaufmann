@@ -23,13 +23,18 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabelTwo">Logiciel comptabilité</h5>
+			<h5 class="modal-title" id="exampleModalLabelTwo">Mise à disposition de logiciels spécifiques à nos différents métiers</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
 		<div class="modal-body">
-			<video controls class="sizeVideo" src="./public/video/caisse-sous-titre.mp4">Logiciel comptabilité</video>
+			<strong>Logiciels de facturation</strong>
+			<video controls class="sizeVideo" src="./public/video/logiciel-facturation.mp4">Logiciels de facturation</video>
+			<strong>Logiciels de notes de frais</strong>
+			<video controls class="sizeVideo" src="./public/video/logiciel-ndf.mp4">Logiciels de notes de frais</video>
+			<strong>Logiciels de caisse</strong>
+			<video controls class="sizeVideo" src="./public/video/logiciel-caisse.mp4">Logiciels de caisse</video>
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -44,13 +49,13 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabelThree">Creation d'entreprise</h5>
+			<h5 class="modal-title" id="exampleModalLabelThree">Création/reprise de sociétés</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
 		<div class="modal-body">
-			<video controls class="sizeVideo" src="./public/video/creation-entreprise.mp4">Creation d'entreprise</video>
+			<video controls class="sizeVideo" src="./public/video/creation-entreprise.mp4">Création/reprise de sociétés</video>
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -65,13 +70,13 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabelFor">Note de frais</h5>
+			<h5 class="modal-title" id="exampleModalLabelFor">Mise en place de tableaux de bords</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
 		<div class="modal-body">
-			<video controls class="sizeVideo" src="./public/video/ndf.mp4">Note de frais</video>
+			<video controls class="sizeVideo" src="./public/video/tableaux.mp4">Mise en place de tableaux de bords</video>
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -86,13 +91,13 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabelFive">Facturation</h5>
+			<h5 class="modal-title" id="exampleModalLabelFive">Optimisation du coût de revient</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
 		<div class="modal-body">
-			<video controls class="sizeVideo" src="./public/video/facturation.mp4">Facturation</video>
+			<video controls class="sizeVideo" src="./public/video/optimisation.mp4">Optimisation du coût de revient</video>
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>

@@ -247,45 +247,55 @@
 
             $fichierCV = $_FILES['fileOne'];
             $fichierLM = $_FILES['fileTwo'];
+            $fichierCVext = pathinfo($fichierCV['name'], PATHINFO_EXTENSION);
+            $fichierLMext = pathinfo($fichierLM['name'], PATHINFO_EXTENSION);
 
-            $finalFromName = ucfirst($nom) . " " . ucfirst($prenom);
-            $RConfig = $IM->recupConfig();
-            
-            require './views/mailer/candidMailView.php';
-
-            if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-                echo 'Veuillez entrer une adresse mail valide';
+            if ($fichierCV['size'] > 5000000 || $fichierLM['size'] > 5000000){
+                echo 'Fichier trop volumineux';
+            }
+            elseif($fichierCVext != "pdf" || $fichierCVext != "PDF" || $fichierLMext != "pdf" || $fichierLMext != "PDF"){
+                echo 'Format de fichier incorrect, utilisez le format PDF uniquement';
             }
             else{
-                $mailCandid = new PHPMailer\PHPMailer\PHPMailer();
-
-                require './config.php';
-                $mailCandid->IsSMTP();
-                $mailCandid->SMTPAuth = true;
-                $mailCandid->SMTPSecure = $SMTPsecure;
-                $mailCandid->Host = $SMTPhost;
-                $mailCandid->Port = $SMTPport;
-                $mailCandid->Username = $SMTPuser;
-                $mailCandid->Password = $SMTPpass;
-                $mailCandid->CharSet = 'UTF-8';
-
-                $mailCandid->AddAddress($SMTPuser,$SMTPuser);
-                $mailCandid->From = $SMTPuser;
-                $mailCandid->FromName = $SMTPname;
-                $mailCandid->AddReplyTo($mail,$finalFromName);
-                $mailCandid->IsHTML(true);
-                $mailCandid->Subject = "Candidature spontannée via le site G.KAUFMANN - De " . $finalFromName;
-                $mailCandid->Body = $mailContent;
-                $mailCandid->AltBody = $mailContentText;
-
-                $mailCandid->AddAttachment($_FILES['fileOne']['tmp_name'], "CV_" . $nom . "_" . $prenom . ".pdf");
-                $mailCandid->AddAttachment($_FILES['fileTwo']['tmp_name'], "LM_" . $nom . "_" . $prenom . ".pdf");
-
-                if(!$mailCandid->Send()) { 
-                    echo "Mail Error: " . $mailCandid->ErrorInfo;
-                } 
-                else {
-                    echo "Le mail a bien été envoyé !";
+                $finalFromName = ucfirst($nom) . " " . ucfirst($prenom);
+                $RConfig = $IM->recupConfig();
+                
+                require './views/mailer/candidMailView.php';
+    
+                if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+                    echo 'Veuillez entrer une adresse mail valide';
+                }
+                else{
+                    $mailCandid = new PHPMailer\PHPMailer\PHPMailer();
+    
+                    require './config.php';
+                    $mailCandid->IsSMTP();
+                    $mailCandid->SMTPAuth = true;
+                    $mailCandid->SMTPSecure = $SMTPsecure;
+                    $mailCandid->Host = $SMTPhost;
+                    $mailCandid->Port = $SMTPport;
+                    $mailCandid->Username = $SMTPuser;
+                    $mailCandid->Password = $SMTPpass;
+                    $mailCandid->CharSet = 'UTF-8';
+    
+                    $mailCandid->AddAddress($SMTPuser,$SMTPuser);
+                    $mailCandid->From = $SMTPuser;
+                    $mailCandid->FromName = $SMTPname;
+                    $mailCandid->AddReplyTo($mail,$finalFromName);
+                    $mailCandid->IsHTML(true);
+                    $mailCandid->Subject = "Candidature spontannée via le site G.KAUFMANN - De " . $finalFromName;
+                    $mailCandid->Body = $mailContent;
+                    $mailCandid->AltBody = $mailContentText;
+    
+                    $mailCandid->AddAttachment($_FILES['fileOne']['tmp_name'], "CV_" . $nom . "_" . $prenom . ".pdf");
+                    $mailCandid->AddAttachment($_FILES['fileTwo']['tmp_name'], "LM_" . $nom . "_" . $prenom . ".pdf");
+    
+                    if(!$mailCandid->Send()) { 
+                        echo "Mail Error: " . $mailCandid->ErrorInfo;
+                    } 
+                    else {
+                        echo "Le mail a bien été envoyé !";
+                    }
                 }
             }
         }

@@ -34,13 +34,13 @@
 				<label class="foo-1">Message :</label>
 				<textarea rows="3" class="form-control wow fadeInUp foo-1" name="visitorCandidatureMessage" required></textarea>
 			</div>
-			<label class="foo-1" for="fileOne">CV (10Mo max)</label>
+			<label class="foo-1" for="fileOne">CV (5Mo maximum)</label>
 			<div class="custom-file">
-				<input class="foo-1" type="file" name="fileOne" id="fileOne" value="10000000" required>
+				<input class="foo-1" type="file" name="fileOne" id="fileOne" value="5000000" required>
 			</div>
-			<label class="foo-1" for="fileTwo">Lettre de motivation (10Mo max)</label>
+			<label class="foo-1" for="fileTwo">Lettre de motivation (5Mo maximum)</label>
 			<div class="custom-file">
-				<input class="foo-1" type="file" name="fileTwo" id="fileTwo" value="10000000" required>
+				<input class="foo-1" type="file" name="fileTwo" id="fileTwo" value="5000000" required>
 			</div>
 			<div class="add-prod wow fadeInUp foo-1">
 				<button type="submit" name="formVisitorCandidature" class="foo-1">ENVOYER</button>
@@ -50,7 +50,6 @@
 </div>
 
 <?php
-	require './views/visitor/inc/modals.php';
     $htmlTitle = 'Nous rejoindre | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
