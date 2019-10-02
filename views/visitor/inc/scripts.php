@@ -18,3 +18,4 @@
 <script src="./public/js/counter.js"></script>
 <script src="./public/js/scroll.js"></script>
 <script src="./public/js/scrollReveal.js"></script>
+<script src="./public/js/videoStop.js"></script>
