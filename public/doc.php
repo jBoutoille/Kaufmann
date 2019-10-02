@@ -76,6 +76,15 @@
                     E-mail : adminConfig2Mail
                     Téléphone : adminConfig2Telephone
                     FAX : adminConfig2Fax
+            formAdminConfig3
+                inputs:
+                    Lundi : adminConfig3Lundi
+                    Mardi : adminConfig3Mardi
+                    Mercredi : adminConfig3Mercredi
+                    Jeudi : adminConfig3Jeudi
+                    Vendredi : adminConfig3Vendredi
+                    Samedi : adminConfig3Samedi
+                    Dimanche : adminConfig3Dimanche
             formAdminEditHeader
                 inputs:
                     Type de société : adminEditHeaderType

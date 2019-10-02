@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-head-line">Tableau de bord</h1>
-                    <h2 class="page-subhead-line">Vous êtes connecté en tant que {username}</h2>
+                    <h2 class="page-subhead-line">Bienvenue sur le panel Administrateur du site G.Kaufmann !</h2>
                 </div>
             </div>
 

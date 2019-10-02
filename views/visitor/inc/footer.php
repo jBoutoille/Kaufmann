@@ -15,13 +15,13 @@
 			</div>
 			  <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-4 foo-2" id="horaires">
 		        <h6 class="text-uppercase mb-4 font-weight-bold">Horaires</h6>
-		        <div class="dateTime">Lundi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
-		        <div class="dateTime">Mardi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
-		        <div class="dateTime">Mercredi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
-		        <div class="dateTime">Jeudi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
-		        <div class="dateTime">Vendredi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
-		        <div class="dateTime">Samedi : <div class="time">Fermé</div></div>
-		        <div class="dateTime">Dimanche : <div class="time">Fermé</div></div>
+		        <div class="dateTime">Lundi : <div class="time"><?= $RConfig['configLundi'] ?></div></div>
+		        <div class="dateTime">Mardi : <div class="time"><?= $RConfig['configMardi'] ?></div></div>
+		        <div class="dateTime">Mercredi : <div class="time"><?= $RConfig['configMercredi'] ?></div></div>
+		        <div class="dateTime">Jeudi : <div class="time"><?= $RConfig['configJeudi'] ?></div></div>
+		        <div class="dateTime">Vendredi : <div class="time"><?= $RConfig['configVendredi'] ?></div></div>
+		        <div class="dateTime">Samedi : <div class="time"><?= $RConfig['configSamedi'] ?></div></div>
+		        <div class="dateTime">Dimanche : <div class="time"><?= $RConfig['configDimanche'] ?></div></div>
 		      </div>
 			<hr class="w-50 clearfix d-md-none foo-2" id="footerBar">
 			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 foo-2" id="footerContact">

@@ -28,7 +28,7 @@
             }
             $p4 = htmlspecialchars($_POST['adminConfig1Client']);
             $IM->updateConfig1($p1,$p2,$p3,$p4);
-            header('Location: ./?page=gk-admin&p1=config');
+            header('Location: ./?page=gk-admin&p1=config-site');
         }
 
         // Formulaire de configuration des coordonnées
@@ -40,7 +40,20 @@
             $p5 = htmlspecialchars($_POST['adminConfig2Telephone']);
             $p6 = htmlspecialchars($_POST['adminConfig2Fax']);
             $IM->updateConfig2($p1,$p2,$p3,$p4,$p5,$p6);
-            header('Location: ./?page=gk-admin&p1=config');
+            header('Location: ./?page=gk-admin&p1=config-coordonnees');
+        }
+
+        // Formulaire de configuration des horaires
+        elseif(isset($_POST['formAdminConfig3'])){
+            $p1 = htmlspecialchars($_POST['adminConfig3Lundi']);
+            $p2 = htmlspecialchars($_POST['adminConfig3Mardi']);
+            $p3 = htmlspecialchars($_POST['adminConfig3Mercredi']);
+            $p4 = htmlspecialchars($_POST['adminConfig3Jeudi']);
+            $p5 = htmlspecialchars($_POST['adminConfig3Vendredi']);
+            $p6 = htmlspecialchars($_POST['adminConfig3Samedi']);
+            $p7 = htmlspecialchars($_POST['adminConfig3Dimanche']);
+            $IM->updateConfig3($p1,$p2,$p3,$p4,$p5,$p6,$p7);
+            header('Location: ./?page=gk-admin&p1=config-horaires');
         }
 
         // Formulaire d'édition de la section HEADER

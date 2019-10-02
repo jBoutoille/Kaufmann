@@ -18,12 +18,36 @@
         }
     }
 
-    // CONFIGURATION DU SITE
-    function getAdminConfig(){
+    // CONFIGURATION -> SITE
+    function getAdminConfigSite(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
-            require './views/admin/configView.php';
+            require './views/admin/configSiteView.php';
+        }
+        else{
+            header('Location: ./');
+        }
+    }
+
+    // CONFIGURATION -> COORDONNEES
+    function getAdminConfigCoordonnees(){
+        if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
+            require './views/admin/configCoordonneesView.php';
+        }
+        else{
+            header('Location: ./');
+        }
+    }
+
+    // CONFIGURATION -> HORAIRES
+    function getAdminConfigHoraires(){
+        if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
+            require './views/admin/configHorairesView.php';
         }
         else{
             header('Location: ./');

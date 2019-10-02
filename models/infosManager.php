@@ -86,6 +86,19 @@
             $query->execute();
         }
 
+        public function updateConfig3($p1,$p2,$p3,$p4,$p5,$p6,$p7){
+            $bdd = $this->dbConnect();
+            $query = $bdd->prepare("UPDATE gkconfig SET configLundi = :p1 , configMardi = :p2 , configMercredi = :p3 , configJeudi = :p4 , configVendredi = :p5 , configSamedi = :p6 , configDimanche = :p7");
+            $query->bindParam(':p1',$p1,PDO::PARAM_STR);
+            $query->bindParam(':p2',$p2,PDO::PARAM_STR);
+            $query->bindParam(':p3',$p3,PDO::PARAM_STR);
+            $query->bindParam(':p4',$p4,PDO::PARAM_STR);
+            $query->bindParam(':p5',$p5,PDO::PARAM_STR);
+            $query->bindParam(':p6',$p6,PDO::PARAM_STR);
+            $query->bindParam(':p7',$p7,PDO::PARAM_STR);
+            $query->execute();
+        }
+
         public function updateHeader($p1,$p2,$p3){
             $bdd = $this->dbConnect();
             $query = $bdd->prepare("UPDATE gkheader SET headerType = :p1 , headerTitre = :p2 , headerDesc = :p3");

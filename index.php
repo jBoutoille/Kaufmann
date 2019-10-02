@@ -65,10 +65,18 @@
     // DASHBOARD
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && empty($_GET['p1']))
             { getAdmin(); }
-    // CONFIGURATION DU SITE
+    // CONFIGURATION -> SITE
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
-            isset($_GET['p1']) && $_GET['p1'] == 'config')
-            { getAdminConfig(); }
+            isset($_GET['p1']) && $_GET['p1'] == 'config-site')
+            { getAdminConfigSite(); }
+    // CONFIGURATION -> COORDONNEES
+        elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
+            isset($_GET['p1']) && $_GET['p1'] == 'config-coordonnees')
+            { getAdminConfigCoordonnees(); }
+    // CONFIGURATION -> HORAIRES
+    elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
+            isset($_GET['p1']) && $_GET['p1'] == 'config-horaires')
+            { getAdminConfigHoraires(); }
     // MODIFICATIONS -> HEADER
         elseif(isset($_GET['page']) && $_GET['page'] == 'gk-admin' && 
             isset($_GET['p1']) && $_GET['p1'] == 'edit-header')

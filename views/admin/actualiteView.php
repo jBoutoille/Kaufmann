@@ -12,7 +12,7 @@
             <div class="col-md-12">
                 <div class="alert alert-danger">
                     <b>CETTE PAGE EST ACTUELLEMENT EN STANDY POUR LES RAISONS SUIVANTES :</b><br>
-                    - Manque d'informations de la part du prestataire sur le fonctionnement du module
+                    - Ce module est géré par le prestataire de manière externe
                 </div>
             </div>
         </div>
