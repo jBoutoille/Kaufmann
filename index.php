@@ -50,6 +50,9 @@
     // PAGE DES MENTIONS LEGALES
         elseif(isset($_GET['page']) && $_GET['page'] == 'mentions-legales')
             { getMentions(); }
+    // PAGE DE CONFIDENTIALITE
+        elseif(isset($_GET['page']) && $_GET['page'] == 'politique-de-confidentialite')
+            { getConfidentialite(); }
     // PAGE DE RDV
         elseif(isset($_GET['page']) && $_GET['page'] == 'rendez-vous')
             { getRdv(); }

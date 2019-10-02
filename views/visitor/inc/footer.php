@@ -3,8 +3,8 @@
 	<div class="container text-center text-md-left">
 		<div class="row text-center text-md-left mt-3 pb-3">
 			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-				<a href="./">
-					<img src="./public/img/logo/logo4white.png" id="imgFooter" class="foo-2" alt="Logo du cabinet G.KAUFMANN">
+				<a href="<?php if(!empty($_GET)){ echo './';} ?>#accueil">
+					<img data-scroll src="./public/img/logo/logo4white.png" id="imgFooter" class="foo-2" alt="Logo du cabinet G.KAUFMANN">
 				</a>
 				<div class="row">
 					<div class="col-md-12">
@@ -13,6 +13,16 @@
 					</div>             
 				</div>
 			</div>
+			  <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-4 foo-2" id="horaires">
+		        <h6 class="text-uppercase mb-4 font-weight-bold">Horaires</h6>
+		        <div class="dateTime">Lundi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
+		        <div class="dateTime">Mardi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
+		        <div class="dateTime">Mercredi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
+		        <div class="dateTime">Jeudi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
+		        <div class="dateTime">Vendredi : <div class="time">08:30-12:00, 14:00-18:00</div></div>
+		        <div class="dateTime">Samedi : <div class="time">Fermé</div></div>
+		        <div class="dateTime">Dimanche : <div class="time">Fermé</div></div>
+		      </div>
 			<hr class="w-50 clearfix d-md-none foo-2" id="footerBar">
 			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 foo-2" id="footerContact">
 				<h6 class="text-uppercase mb-4 font-weight-bold foo-2"><?= $RFooter['footerTitreCoordonnees'] ?></h6>
@@ -40,7 +50,8 @@
 				Développeur
 				<a href="#" style="color: white">JBoutoille</a> . 
 				<a href="#" style="color: white">JFasquelle</a> | 
-				<a href="./?page=mentions-legales" style="color: white">Mentions légales</a> | 
+				<a href="./?page=mentions-legales" style="color: white">Mentions légales</a> |
+				<a href="./?page=politique-de-confidentialite" style="color: white">Politique de confidentialité</a> |
 				<a href="./?page=gk-admin" style="color: white">Admin</a>
 				</p>
 			</div>

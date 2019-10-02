@@ -2,12 +2,22 @@ html body{
     background-color : rgba(241, 242, 246,1.0);
 }
 
+
+#mentionsLegales{
+	text-align: center;
+	color: var(--colorBlue);
+}
+
 #textePresentation{
 	padding: 15vh 15vh;
 }
 
 .texteIntro{
 	color: var(--colorBlue);
-	text-align: center;
 	padding: 5vh 5vh;
+	font-size: 4vh;
+}
+
+.textePara{
+	width: 70%;
 }

@@ -23,6 +23,21 @@
 	margin-top: 5%;
 }
 
+#horaires{
+	color: white;
+}
+
+.dateTime{
+	color: white;
+	width: 100%;
+}
+
+.time{
+	display: inline-block;
+	float: right;
+	width: 40vh;
+}
+
 #footerContact{
 	color: white
 }
