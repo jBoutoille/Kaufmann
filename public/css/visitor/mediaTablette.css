@@ -108,10 +108,22 @@ and (max-device-width : 1024px)  {
 
 /*--------------- FORM SECTION --------------- */
 
+/*--------------- FOOTER --------------- */
 
+#imgFooter{
+	width: 10vh;
+}
 
+#imgLogoOne{
+	width: 5vh;
+}
 
+#imgLogoTwo{
+	width: 5vh;
+}
 
-
+.dataTime{
+	width: 30vh;
+}
 
 }

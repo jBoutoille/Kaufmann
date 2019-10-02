@@ -4,8 +4,8 @@
 <script src="./public/js/libs/polyfills.js"></script>
 <script src="./public/js/libs/modernizr.js"></script>
 <script src="https://kit.fontawesome.com/dba9f403c3.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
 <script src="./public/js/libs/scrollReveal.js"></script>
+<script src="./public/js/libs/parallax.js"></script>
 
 <!-- JS CUSTOM -->
 <script src='./public/js/preload.js'></script>

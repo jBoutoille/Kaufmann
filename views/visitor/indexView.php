@@ -64,22 +64,22 @@
 				<div class="serviceBox">
 					<h2 class="serviceSection foo-2"><i class="fas fa-chart-pie"></i> <?= $RServices['services1Titre'] ?></h2>	
 					<p class="titleServices foo-2"><?= $RServices['services1Desc'] ?></p>		
-					<ul class="listeServices">
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS1'] ?></li>
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS2'] ?></li>
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS3'] ?></li>
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS4'] ?></li>
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services1SS5'] ?></li>
+					<ul id="listeServicesOne">
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS1'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS2'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS3'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS4'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS5'] ?></li>
 					</ul>
 				</div>
 				<div class="serviceBox">
 					<h2 class="serviceSection foo-2"><i class="fas fa-poll"></i> <?= $RServices['services2Titre'] ?></h2>
 					<p class="titleServices foo-2"><?= $RServices['services2Desc'] ?></p>
 					<ul class="listeServices">
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS1'] ?></li>
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS2'] ?></li>
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS3'] ?></li>
-						<li class="foo-2"><i class="fas fa-tag fa-lg"></i> <?= $RServices['services2SS4'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services2SS1'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services2SS2'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services2SS3'] ?></li>
+						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services2SS4'] ?></li>
 					</ul>
 				</div>
 				<div class="serviceBox">
@@ -106,10 +106,10 @@
 			<div id="boxContner">
 				<ul id="boxAdresse" class="foo-2">
 					<li><h3 id="coordonnees"><?= $RContact['contactCoordonnees'] ?></h3></li>
-					<li id="adresse"><i class="fas fa-building mr-2"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
-					<li id="adMail"><i class="fas fa-envelope mr-2"></i><?= $RConfig['configMail'] ?></li>
-					<li id="telMobile"><i class="fas fa-phone mr-2"></i><?= $RConfig['configTelephone'] ?></li>
-					<li id="numFax"><i class="fas fa-print mr-2"></i><?= $RConfig['configFax'] ?></li>
+					<li id="adresse"><i class="fas fa-building mr-2 customIco"></i><?= $RConfig['configAdresse'] ?><br><?= $RConfig['configCP'] ?>, <?= $RConfig['configVille'] ?></li>
+					<li id="adMail"><i class="fas fa-envelope mr-2 customIco"></i><?= $RConfig['configMail'] ?></li>
+					<li id="telMobile"><i class="fas fa-phone mr-2 customIco"></i><?= $RConfig['configTelephone'] ?></li>
+					<li id="numFax"><i class="fas fa-print mr-2 customIco"></i><?= $RConfig['configFax'] ?></li>
 				</ul>
 				<div id="twoBox">
 					<div id="boxContactOne" class="foo-2">
