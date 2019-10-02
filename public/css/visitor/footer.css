@@ -1,3 +1,7 @@
+hr{
+	border-top: 1px solid #f8f9fa;
+}
+
 #footerColor{
 	background-color: var(--colorBlue);
 }
@@ -35,7 +39,7 @@
 .time{
 	display: inline-block;
 	float: right;
-	width: 40vh;
+	width: 70%;
 }
 
 #footerContact{
@@ -53,4 +57,15 @@
 #linkedin{
 	color: white;
 	font-size: 6vh;
+}
+
+
+#footerStyleOne{
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.footerTextStyle{
+	color: white;
 }

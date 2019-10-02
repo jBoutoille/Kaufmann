@@ -62,8 +62,16 @@ and (max-device-width : 1024px)  {
 	width: 96%;
 }
 
+#listeServicesOne{
+	line-height:3vh;
+	font-size: 2vh;
+}
+
 .serviceSection{
 	margin-top: 3vh;
+	font-size: 3vh;
+	height: 10vh;
+	padding: 5vh;
 }
 
 .titleServices{
@@ -108,10 +116,22 @@ and (max-device-width : 1024px)  {
 
 /*--------------- FORM SECTION --------------- */
 
+/*--------------- FOOTER --------------- */
 
+#imgFooter{
+	width: 10vh;
+}
 
+#imgLogoOne{
+	width: 5vh;
+}
 
+#imgLogoTwo{
+	width: 5vh;
+}
 
-
+.dataTime{
+	width: 30vh;
+}
 
 }
