@@ -64,7 +64,7 @@
 				<div class="serviceBox">
 					<h2 class="serviceSection foo-2"><i class="fas fa-chart-pie"></i><br> <?= $RServices['services1Titre'] ?></h2>	
 					<p class="titleServices foo-2"><?= $RServices['services1Desc'] ?></p>		
-					<ul id="listeServicesOne">
+					<ul class="listeServices">
 						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS1'] ?></li>
 						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS2'] ?></li>
 						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services1SS3'] ?></li>
@@ -75,7 +75,7 @@
 				<div class="serviceBox">
 					<h2 class="serviceSection foo-2"><i class="fas fa-poll"></i> <?= $RServices['services2Titre'] ?></h2>
 					<p class="titleServices foo-2"><?= $RServices['services2Desc'] ?></p>
-					<ul class="listeServicesTwo">
+					<ul class="listeServices">
 						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services2SS1'] ?></li>
 						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services2SS2'] ?></li>
 						<li class="foo-2"><i class="fas fa-tag fa-lg customIco"></i> <?= $RServices['services2SS3'] ?></li>

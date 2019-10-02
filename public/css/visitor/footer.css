@@ -69,3 +69,7 @@ hr{
 .footerTextStyle{
 	color: white;
 }
+
+footer a:hover {
+	color:white;
+}

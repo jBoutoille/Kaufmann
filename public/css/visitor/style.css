@@ -190,22 +190,10 @@ html body{
     padding: 0vh 5vh 0vh;
 }
 
-#listeServicesOne{
-    margin-left: -5vh;
-    letter-spacing: 0.1vh;
-    line-height: 7vh;
-}
-
-#listeServicesTwo{
-    margin-left: -5vh;
-    letter-spacing: 0.1vh;
-    line-height: 5vh;
-}
-
 .listeServices{
     margin-left: -5vh;
     letter-spacing: 0.1vh;
-    line-height: 30px;
+    line-height: 5vh;
 }
 
 .liPuce{

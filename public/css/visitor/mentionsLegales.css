@@ -6,6 +6,7 @@ html body{
 #mentionsLegales{
 	text-align: center;
 	color: var(--colorBlue);
+	font-size: 5vh;
 }
 
 #textePresentation{
@@ -15,11 +16,7 @@ html body{
 .texteIntro{
 	color: var(--colorBlue);
 	padding: 5vh 5vh;
-	font-size: 4vh;
-}
-
-.textePara{
-	width: 70%;
+	font-size: 3vh;
 }
 
 #textePresentation a {

@@ -6,218 +6,225 @@
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-h2{
-    font-size: 4vh;
-}
-/*--------------- HEADER --------------- */
+    h2{
+        font-size: 4vh;
+    }
+    /*--------------- HEADER --------------- */
 
-#titleHeader{
-    top: 50%;
-    left: 50%;
-}
+    #titleHeader{
+        top: 50%;
+        left: 50%;
+    }
 
-#kaufmann{
-    font-size: 6vh;
-    text-align: center;
-    color : var(--colorWhite);
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    letter-spacing: 3px;
-}
+    #kaufmann{
+        font-size: 6vh;
+        text-align: center;
+        color : var(--colorWhite);
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        letter-spacing: 3px;
+    }
 
-#textOne{
-    margin-top: 17vh;
-    font-size: 2.5vh;
-    font-family: "Thryn";
-    transform: translate(0%, -50%);
-}
+    #textOne{
+        margin-top: 17vh;
+        font-size: 2.5vh;
+        font-family: "Thryn";
+        transform: translate(0%, -50%);
+    }
 
-.sarl{
-    font-family: "Thryn";
-    font-size: 3vh;
-    transform: translate(-20%, -15%); 
-}
+    .sarl{
+        font-family: "Thryn";
+        font-size: 3vh;
+        transform: translate(-20%, -15%); 
+    }
 
-.sarl::before{  
-    margin-left: 20%;
-    float: left;
-    background: white;
-    height: 2px;
-    width: 50px;
-}
+    .sarl::before{  
+        margin-left: 20%;
+        float: left;
+        background: white;
+        height: 2px;
+        width: 50px;
+    }
 
-.sarl::after{
-    margin-right: -25%;
-    float: right;
-    background: white;
-    height: 2px;
-    width: 50px;
-}
+    .sarl::after{
+        margin-right: -25%;
+        float: right;
+        background: white;
+        height: 2px;
+        width: 50px;
+    }
 
-#animGif{
-    margin: 110px -40px auto;
-}
+    #animGif{
+        margin: 110px -40px auto;
+    }
 
-/*--------------- CABINET SECTION --------------- */
+    /*--------------- CABINET SECTION --------------- */
 
 
-.titleNav{
-    font-size: 5vh;
-}
+    .titleNav{
+        font-size: 5vh;
+    }
 
-#contact{
-    margin-top: -3vh;
-}
+    #contact{
+        margin-top: -3vh;
+    }
 
-#bluBoxOne{
-    height: 100vh;
-}
+    #bluBoxOne{
+        height: 100vh;
+    }
 
-.filterOne{
-    height: 105vh;
-}
+    .filterOne{
+        height: 105vh;
+    }
 
-#filterTwo{
-    height: 105vh;
-}
+    #filterTwo{
+        height: 105vh;
+    }
 
-#imgContact{
-    height: 105vh;
-}
+    #imgContact{
+        height: 105vh;
+    }
 
-#titleOne{   
-    font-size: 4vh;
-}
+    #titleOne{   
+        font-size: 4vh;
+    }
 
-#texteSectionOne{
-    font-size: 2.5vh;
-    padding: 1vh 2vh;
-}
+    #texteSectionOne{
+        font-size: 2.5vh;
+        padding: 1vh 2vh;
+    }
 
-#texteSectionTwo{
-    font-size: 2.2vh;
-    text-align: center;
-    letter-spacing: 2px;
-    padding: 8% 4%;
-}
+    #texteSectionTwo{
+        font-size: 2.2vh;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 8% 4%;
+    }
 
-#experiences{
-    align-items: center;
-}
+    #experiences{
+        align-items: center;
+    }
 
-.sizeNumber{
-    font-size: 8vh;
-}
+    .sizeNumber{
+        font-size: 8vh;
+    }
 
-#titleOne{   
-    margin-top: 25%;
-    padding: 1vh;
-}
+    #titleOne{   
+        margin-top: 25%;
+        padding: 1vh;
+    }
 
-/*--------------- SERVICE SECTION --------------- */
+    /*--------------- SERVICE SECTION --------------- */
 
-.serviceBox{
-    font-size: 2.5vh;
-    width: 100%;
-    margin: 0;
-    padding: 0vh 7vh 0vh;
-}
+    .serviceBox{
+        font-size: 2.5vh;
+        width: 100%;
+        margin: 0;
+        padding: 0vh 7vh 0vh;
+    }
 
-.titleServices{
-    margin-top:10vh;
-    width: 48vh;
+    .titleServices{
+        margin-top:10vh;
+        width: 48vh;
 
-}
+    }
 
-.serviceSection{
-    height: 5vh;
-}
+    .serviceSection{
+        height: 5vh;
+    }
 
-.listeServices{
-    letter-spacing: 0px;
-    line-height: 40px;
-}
+    .listeServices{
+        letter-spacing: 0px;
+        line-height: 40px;
+    }
 
-#globalBox{
-    display: flex;
-    flex-direction: column;
-}
+    #globalBox{
+        display: flex;
+        flex-direction: column;
+    }
 
-#globalBox div{
-    width: 100%;
-}
+    #globalBox div{
+        width: 100%;
+    }
 
-/*--------------- CONTACT SECTION --------------- */
+    /*--------------- CONTACT SECTION --------------- */
 
-#bluBoxTwo{
-    height: 110vh;
-}
+    #bluBoxTwo{
+        height: 110vh;
+    }
 
-#imgBoxOne{
-    height: 105vh;
-}
+    #imgBoxOne{
+        height: 105vh;
+    }
 
-#boxContner{
-    flex-direction: column;
-    height: 40vh;
-}
+    #boxContner{
+        flex-direction: column;
+        height: 40vh;
+    }
 
-#boxAdresse{
-    height: 40vh;
-    margin-top: 40vh;
-}
+    #boxAdresse{
+        height: 40vh;
+        margin-top: 40vh;
+    }
 
-#twoBox{
-    width: 100%;
-}
+    #twoBox{
+        width: 100%;
+    }
 
-#boxContactOne{
-    background-color: var(--colorWhiteOp);
-    padding: 2vh 5vh 3vh;
-    margin-bottom:3vh;
-    font-weight: bold;
-}
+    #boxContactOne{
+        background-color: var(--colorWhiteOp);
+        padding: 2vh 5vh 3vh;
+        margin-bottom:3vh;
+        font-weight: bold;
+    }
 
-#boxContactTwo{
-    padding: 1vh 5vh 4vh;
-}
+    #boxContactTwo{
+        padding: 1vh 5vh 4vh;
+    }
 
-.textBtn{
-    font-size: 2.7vh;
-    font-weight:bold;
-}
+    .textBtn{
+        font-size: 2.7vh;
+        font-weight:bold;
+    }
 
-/*--------------- NEWSLATTER SECTION --------------- */
+    /*--------------- NEWSLATTER SECTION --------------- */
 
-.newsletter {
-    padding: 18vh 0;
-}
+    .newsletter {
+        padding: 18vh 0;
+    }
 
-::placeholder {
-    font-size: 2vh;
-    letter-spacing: 3px;
-}
+    ::placeholder {
+        font-size: 2vh;
+        letter-spacing: 3px;
+    }
 
-.wow {
-    font-size: 3vh;
+    .wow {
+        font-size: 3vh;
 
-}
+    }
 
-/*--------------- FORM SECTION --------------- */
+    /*--------------- FORM SECTION --------------- */
 
-.containerText{
-    margin-top: 25vh;
-}
-    .add-prod button {
-    font-size: 1em;
-}
+    .containerText{
+        margin-top: 25vh;
+    }
+        .add-prod button {
+        font-size: 1em;
+    }
 
-form label, textarea{
-    font-size: 10px
-}
+    form label, textarea{
+        font-size: 10px
+    }
 
-#titileForm{
-    top: 25%;
+    #titileForm{
+        top: 25%;
+    }
+
+    /*--------------- TEXTES DE LOIS --------------- */
+
+	#textePresentation {
+		padding: 15vh 3vh !important;
+	}
 }

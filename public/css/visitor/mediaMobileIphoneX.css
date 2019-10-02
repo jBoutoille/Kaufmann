@@ -8,62 +8,64 @@
 /*--------------- HEADER --------------- */
 
 
+	#kaufmann{
+		font-size: 5vh;
+	}
 
-#kaufmann{
-    font-size: 5vh;
+	.span{
+		font-size: 2.5em;
+	}
+
+	.logoBaner{
+		width: 50px;
+		margin-top: -1vh;
+		margin-left: -4vh;
+	}
+
+	.sarl{
+		font-size: 2.6vh;
+	}
+
+	/*--------------- CABINET SECTION --------------- */
+
+
+
+
+
+	/*--------------- SERVICE SECTION --------------- */
+
+	.titleServices{
+		width: 35vh;
+	}
+
+	/*--------------- CONTACT SECTION --------------- */
+
+	#boxAdresse{
+		padding: 1vh 1vh 5vh;
+		height: 30vh;
+		margin-top: 43vh;
+	}
+
+	.textBtn{
+		font-size: 1.5em;
+	}
+
+
+	/*--------------- NEWSLATTER SECTION --------------- */
+
+	.newsletter h1{
+		font-size: 4vh;
+	}
+
+	::placeholder {
+		letter-spacing: 1px;
+		color: black;
+	}
+
+	/*--------------- TEXTES DE LOIS --------------- */
+
+	#textePresentation {
+		padding: 15vh 3vh !important;
+	}
+
 }
-
-.span{
-	font-size: 2.5em;
-}
-
-.logoBaner{
-	width: 50px;
-	margin-top: -1vh;
-	margin-left: -4vh;
-}
-
-.sarl{
-	font-size: 2.6vh;
-}
-
-/*--------------- CABINET SECTION --------------- */
-
-
-
-
-
-/*--------------- SERVICE SECTION --------------- */
-
-.titleServices{
-	width: 35vh;
-}
-
-/*--------------- CONTACT SECTION --------------- */
-
-#boxAdresse{
-	padding: 1vh 1vh 5vh;
-	height: 30vh;
-	margin-top: 43vh;
-}
-
-.textBtn{
-	font-size: 1.5em;
-}
-
-
-/*--------------- NEWSLATTER SECTION --------------- */
-
-.newsletter h1{
-	font-size: 4vh;
-}
-
-::placeholder {
-    letter-spacing: 1px;
-    color: black;
-}
-
-/*--------------- FORM SECTION --------------- */
-
-
-     }

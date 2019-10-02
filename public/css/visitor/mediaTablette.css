@@ -3,135 +3,141 @@
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
 
-/*--------------- NAV --------------- */
+	/*--------------- NAV --------------- */
 
-#resize .menu{
-	transform: translateX(-30%);
-	margin-top: 10vh;
-}
+	#resize .menu{
+		transform: translateX(-30%);
+		margin-top: 10vh;
+	}
 
-/*--------------- HEADER --------------- */
+	/*--------------- HEADER --------------- */
 
-#kaufmann{
-	font-size: 9vh;
-}
+	#kaufmann{
+		font-size: 9vh;
+	}
 
-.span{
-	right: -25px;
-	top: -33px;
-	font-size: 2.5em;
-}
+	.span{
+		right: -25px;
+		top: -33px;
+		font-size: 2.5em;
+	}
 
-.titleNav{
-	padding-top: 9vh;
-}
+	.titleNav{
+		padding-top: 9vh;
+	}
 
-.logoBaner{
-	width: 55px;
-	margin-top: -1.3vh;
-}
+	.logoBaner{
+		width: 55px;
+		margin-top: -1.3vh;
+	}
 
-/*--------------- CABINET SECTION --------------- */
+	/*--------------- CABINET SECTION --------------- */
 
-#texteSectionOne{
-	font-size: 2.8vh;
-	padding: 5vh 1vh;
-}
+	#texteSectionOne{
+		font-size: 2.8vh;
+		padding: 5vh 1vh;
+	}
 
-#titleOne{
-	margin-top: 7vh;
-}
+	#titleOne{
+		margin-top: 7vh;
+	}
 
-.sizeNumber{
-	font-size: 10vh;
-}
+	.sizeNumber{
+		font-size: 10vh;
+	}
 
-.expertiseNumber{
-	font-size: 3.5vh;
-}
-
-
-/*--------------- SERVICE SECTION --------------- */
-
-#globalBox{
-    display: flex;
-    flex-direction: column;
-}
-
-#globalBox div{
-	width: 96%;
-}
-
-#listeServicesOne{
-	line-height:3vh;
-	font-size: 2vh;
-}
-
-.serviceSection{
-	margin-top: 3vh;
-	font-size: 3vh;
-	height: 10vh;
-	padding: 5vh;
-}
-
-.titleServices{
-	font-size: 2vh;
-}
-
-.listeServices{
-	font-size: 2vh;
-}
-
-/*--------------- CONTACT SECTION --------------- */
-
-#boxTwo{
-	height: 110vh;
-}
-
-#boxContner{
-    flex-direction: column;
-    height: 40vh;
-}
-
-#imgContact{
-	height: 110vh;
-}
-
-#twoBox{
-	width: 70%;
-}
-
-#boxAdresse{
-	padding: 2vh 3vh 5vh;
-	margin-top: 40vh;
-}
-
-.textBtn{
-	font-size: 3vh;
-}
-
-/*--------------- NEWSLATTER SECTION --------------- */
+	.expertiseNumber{
+		font-size: 3.5vh;
+	}
 
 
+	/*--------------- SERVICE SECTION --------------- */
 
-/*--------------- FORM SECTION --------------- */
+	#globalBox{
+		display: flex;
+		flex-direction: column;
+	}
 
-/*--------------- FOOTER --------------- */
+	#globalBox div{
+		width: 96%;
+	}
 
-#imgFooter{
-	width: 10vh;
-}
+	#listeServicesOne{
+		line-height:3vh;
+		font-size: 2vh;
+	}
 
-#imgLogoOne{
-	width: 5vh;
-}
+	.serviceSection{
+		margin-top: 3vh;
+		font-size: 3vh;
+		height: 10vh;
+		padding: 5vh;
+	}
 
-#imgLogoTwo{
-	width: 5vh;
-}
+	.titleServices{
+		font-size: 2vh;
+	}
 
-.dataTime{
-	width: 30vh;
-}
+	.listeServices{
+		font-size: 2vh;
+	}
+
+	/*--------------- CONTACT SECTION --------------- */
+
+	#boxTwo{
+		height: 110vh;
+	}
+
+	#boxContner{
+		flex-direction: column;
+		height: 40vh;
+	}
+
+	#imgContact{
+		height: 110vh;
+	}
+
+	#twoBox{
+		width: 70%;
+	}
+
+	#boxAdresse{
+		padding: 2vh 3vh 5vh;
+		margin-top: 40vh;
+	}
+
+	.textBtn{
+		font-size: 3vh;
+	}
+
+	/*--------------- NEWSLATTER SECTION --------------- */
+
+
+
+	/*--------------- FORM SECTION --------------- */
+
+	/*--------------- FOOTER --------------- */
+
+	#imgFooter{
+		width: 10vh;
+	}
+
+	#imgLogoOne{
+		width: 5vh;
+	}
+
+	#imgLogoTwo{
+		width: 5vh;
+	}
+
+	.dataTime{
+		width: 30vh;
+	}
+
+	/*--------------- TEXTES DE LOIS --------------- */
+
+	#textePresentation {
+		padding: 15vh 5vh !important;
+	}
 
 }

@@ -4,7 +4,7 @@
 
 
     <!-- HTML DE LA PAGE ACTUALITE -->
-    <h1 style="text-align: center; padding: 50vh 50vh 50vh;">Service indisponible pour le moment</h1>
+    <h1 style="text-align: center; padding: 20.5vh 10vh;">Service indisponible pour le moment</h1>
 
 <?php
     $htmlTitle = 'Actualité | Cabinet G.KAUFMANN';

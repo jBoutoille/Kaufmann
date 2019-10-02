@@ -25,9 +25,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
   if (document.body.scrollTop > 1150 || document.documentElement.scrollTop > 1150) {
 		var cpt1 = 0; // Initialisation du compteur
-    	var delta1 = (duree * 2000) / final1;
+    	var delta1 = (duree * 1000) / final1;
 		var cpt2 = 0;
-		var delta2 = (duree * 2000) / final2;
+		var delta2 = (duree * 1000) / final2;
     	async function countdown1() {
   			n1.innerHTML = ++cpt1;
   			if( cpt1 < final1) { // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
