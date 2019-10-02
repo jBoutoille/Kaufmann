@@ -49,4 +49,12 @@
         $RFooter = $infos->recupFooter();
         require './views/visitor/mentionsView.php';
     }
+
+    function getConfidentialite(){
+        // RECUPERATION DES TABLES
+        $infos = new InfosManager();
+        $RConfig = $infos->recupConfig();
+        $RFooter = $infos->recupFooter();
+        require './views/visitor/confidentialiteView.php';
+    }
 ?>

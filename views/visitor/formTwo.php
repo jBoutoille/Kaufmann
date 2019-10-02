@@ -50,7 +50,7 @@
 </div>
 
 <?php
-	require './views/visitor/inc/modals.php';
+	
     $htmlTitle = 'Nous rejoindre | Cabinet G.KAUFMANN';
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
