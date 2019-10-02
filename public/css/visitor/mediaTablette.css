@@ -3,6 +3,12 @@
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
 
+/*--------------- NAV --------------- */
+
+#resize .menu{
+	transform: translateX(-30%);
+	margin-top: 10vh;
+}
 
 /*--------------- HEADER --------------- */
 
