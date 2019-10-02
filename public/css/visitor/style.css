@@ -353,7 +353,7 @@ html body{
 /*--------------- NEWSLETTER SECTION --------------- */
 
 .newsletter {
-    padding: 20vh 0;
+    padding: 20vh 0vh;
     background-color : rgba(241, 242, 246,1.0);
 }
 
@@ -361,6 +361,7 @@ html body{
     margin: 0 auto;
     text-align: center;
     position: relative;
+    max-width: 640px;
 }
 
 .newsletter h2 {
