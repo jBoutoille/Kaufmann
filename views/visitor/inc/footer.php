@@ -43,19 +43,20 @@
 				</ul>
 			</div>
 		</div>
-		<hr style="border-top: 1px solid #f8f9fa">
+		<hr>
 		<div class="row d-flex align-items-center">
-			<div class="col-md-12" style="color: white;display: flex;justify-content: center;">
-				<p class="text-center text-md-left" style="color: white"><?= $RFooter['footerCopyrights'] ?> |  
+			<div class="col-md-12" id="footerStyleOne">
+				<p class="text-center text-md-left footerTextStyle"><?= $RFooter['footerCopyrights'] ?> |  
 				Développeur
-				<a href="#" style="color: white">JBoutoille</a> . 
-				<a href="#" style="color: white">JFasquelle</a> | 
-				<a href="./?page=mentions-legales" style="color: white">Mentions légales</a> |
-				<a href="./?page=politique-de-confidentialite" style="color: white">Politique de confidentialité</a> |
-				<a href="./?page=gk-admin" style="color: white">Admin</a>
+				<a href="#">JBoutoille</a> . 
+				<a href="#">JFasquelle</a> | 
+				<a href="./?page=mentions-legales">Mentions légales</a> |
+				<a href="./?page=politique-de-confidentialite">Politique de confidentialité</a> |
+				<a href="./public/pdf/rapport-de-transparence.pdf" target="_blank">Rapport de transparence</a> |
+				<a href="./?page=gk-admin">Admin</a>
 				</p>
 			</div>
-			<div class="col-md-5 col-lg-4 ml-lg-0" style="color: white"></div>
+			<div class="col-md-5 col-lg-4 ml-lg-0"></div>
 		</div>
 	</div>
 </footer>
