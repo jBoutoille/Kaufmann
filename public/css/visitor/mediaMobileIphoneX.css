@@ -36,6 +36,7 @@
 
 	.titleServices{
 		width: 35vh;
+		margin-bottom: 9vh;
 	}
 
 	/*--------------- CONTACT SECTION --------------- */
@@ -61,6 +62,17 @@
 		letter-spacing: 1px;
 		color: black;
 	}
+
+	/*--------------- FORM SECTION --------------- */
+
+	.blockText{
+		margin-left: -6vh;
+		margin-top: -5vh;
+	}
+
+    .wow{
+    	width: 35vh;
+    }
 
 	/*--------------- TEXTES DE LOIS --------------- */
 
