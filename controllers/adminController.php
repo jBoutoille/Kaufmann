@@ -226,13 +226,8 @@
         }
     }
 
-    $test = 1;
-
     // CANDIDATURES RECUES
     function adminCandidatures(){
-
-        $GLOBALS[$test];
-
         if(isset($_SESSION['sessionToken'])){
             require './views/admin/candidaturesView.php';
         }
@@ -248,7 +243,7 @@
         $_SESSION['sessionToken'] = NULL;
         session_destroy();
         session_start();
-        $_SESSION['notif'] = '<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> Vous venez de vous déconnecter</div>';
+        $_SESSION['notif'] = '<div class="alert alert-info"><i class="fa fa-exclamation-circle"></i> Vous venez de vous déconnecter</div>';
         header('Location: ./?page=gk-admin');
     }
     

@@ -36,11 +36,11 @@
 			</div>
 			<label class="foo-1" for="fileOne">CV (5Mo maximum)</label>
 			<div class="custom-file">
-				<input class="foo-1" type="file" name="fileOne" id="fileOne" value="5000000" required>
+				<input class="foo-1" type="file" name="fileOne" id="fileOne" value="5000000" accept="application/pdf" required>
 			</div>
 			<label class="foo-1" for="fileTwo">Lettre de motivation (5Mo maximum)</label>
 			<div class="custom-file">
-				<input class="foo-1" type="file" name="fileTwo" id="fileTwo" value="5000000" required>
+				<input class="foo-1" type="file" name="fileTwo" id="fileTwo" value="5000000" accept="application/pdf" required>
 			</div>
 			<div class="add-prod wow fadeInUp foo-1">
 				<button type="submit" name="formVisitorCandidature" class="foo-1">ENVOYER</button>

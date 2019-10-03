@@ -35,7 +35,7 @@
                     $_SESSION['notif'] = '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Identifiant invalide</div>';
                 }
                 else{
-                    if($pw == $data['password']){
+                    if(password_verify($pw,$data['password'])){
                         $id = $data['id'];
                         $token = $this->setToken($id);
                         $this->setLastConnexionDate($id);
