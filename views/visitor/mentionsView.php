@@ -9,6 +9,8 @@
 				<h1 id="mentionsLegales" class="foo-2">Mentions légales</h1>
 
 				<h2 class="texteIntro foo-2">Propriétaire du site</h2>
+				
+				<h3 id="bCauchet">Benjamin CAUCHET</h3>
 				<p class="textePara foo-2"> 
 				Cabinet G.KAUFMANN <br><br>
 				5 Place d'Angleterre<br>

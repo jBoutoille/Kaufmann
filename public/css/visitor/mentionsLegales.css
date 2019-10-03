@@ -2,6 +2,10 @@ html body{
     background-color : rgba(241, 242, 246,1.0);
 }
 
+#bCauchet{
+	font-size: 3vh;
+
+}
 
 #mentionsLegales{
 	text-align: center;
