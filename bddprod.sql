@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 30 sep. 2019 à 08:24
+-- Généré le :  jeu. 03 oct. 2019 à 07:07
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.3.5
 
@@ -83,6 +83,13 @@ CREATE TABLE IF NOT EXISTS `gkconfig` (
   `configMail` varchar(1000) NOT NULL,
   `configTelephone` varchar(1000) NOT NULL,
   `configFax` varchar(1000) NOT NULL,
+  `configLundi` varchar(1000) NOT NULL,
+  `configMardi` varchar(1000) NOT NULL,
+  `configMercredi` varchar(1000) NOT NULL,
+  `configJeudi` varchar(1000) NOT NULL,
+  `configVendredi` varchar(1000) NOT NULL,
+  `configSamedi` varchar(1000) NOT NULL,
+  `configDimanche` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
@@ -90,8 +97,8 @@ CREATE TABLE IF NOT EXISTS `gkconfig` (
 -- Déchargement des données de la table `gkconfig`
 --
 
-INSERT INTO `gkconfig` (`id`, `configNomSite`, `configDescription`, `configURL`, `configClient`, `configAdresse`, `configCP`, `configVille`, `configMail`, `configTelephone`, `configFax`) VALUES
-(1, 'Cabinet G.KAUFMANN', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu', 'http://localhost/projets/kaufmann/', 'http://185.23.139.150/iSuiteExpert/?CNX=CNX&amp;CAB=CGK', '5 Place d\'Angleterre', '62200', 'Boulogne-sur-Mer', 'contact@gkaufmann.fr', '03 21 30 19 19', '03 91 18 65 65');
+INSERT INTO `gkconfig` (`id`, `configNomSite`, `configDescription`, `configURL`, `configClient`, `configAdresse`, `configCP`, `configVille`, `configMail`, `configTelephone`, `configFax`, `configLundi`, `configMardi`, `configMercredi`, `configJeudi`, `configVendredi`, `configSamedi`, `configDimanche`) VALUES
+(1, 'Cabinet G.KAUFMANN', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu', 'http://localhost/projets/kaufmann/', 'http://185.23.139.150/iSuiteExpert/?CNX=CNX&amp;CAB=CGK', '5 Place d\'Angleterre', '62200', 'Boulogne-sur-Mer', 'contact@gkaufmann.fr', '03 21 30 19 19', '03 91 18 65 65', '08:30-12:00, 14:00-18:00', '08:30-12:00, 14:00-18:00', '08:30-12:00, 14:00-18:00', '08:30-12:00, 14:00-18:00', '08:30-12:00, 14:00-18:00', 'Fermé', 'Fermé');
 
 -- --------------------------------------------------------
 
@@ -248,7 +255,7 @@ CREATE TABLE IF NOT EXISTS `gkservices` (
 --
 
 INSERT INTO `gkservices` (`id`, `servicesTitre`, `services1Titre`, `services1Desc`, `services1SS1`, `services1SS2`, `services1SS3`, `services1SS4`, `services1SS5`, `services2Titre`, `services2Desc`, `services2SS1`, `services2SS2`, `services2SS3`, `services2SS4`, `services3Titre`, `services3Desc`, `services3SS1`, `services3SS2`, `services3SS3`, `services3SS4`, `services3SS5`) VALUES
-(1, '| Nos services', 'AUDIT', 'Nous intervenons au titre de vos besoins en matière de :', 'Commissariat aux comptes', 'Audit Contractuel', 'Commissariat à la transformation', 'Commissariat à la fusion', 'Audit d\'acquisition', 'EXPERTISE COMPTABLE', 'Nous vous proposons un accompagnement sur mesure en comptabilité, fiscalité, social et juridique :', 'Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie)', 'Associations (tenue, accompagnement, révision)', 'Particuliers (impôts sur le revenu, IFI, conseil patrimonial)', 'Entreprises (tenue complète, comptabilité partagée, révision, secrétariat juridique, paie, déclarations fiscales, consolidation)', 'CONSEIL &amp; ACCOMPAGNEMENT', 'Partenaire privilégié du dirigeant, nous vous assistons sur de nombreux thèmes :', 'Création/reprise de sociétés', 'Mise en place de tableaux de bords', 'Prévisionnels', 'Évaluation de sociétés', 'Mise à disposition de logiciels spécifiques à nos différents métiers (logiciels de comptabilité, de facturation, de notes de frais, de caisse...)');
+(1, '| Nos services', 'AUDIT', 'Nous intervenons au titre de vos besoins en matière de :', 'Commissariat aux comptes', 'Audit contractuel', 'Commissariat à la transformation', 'Commissariat à la fusion', 'Audit d\'acquisition', 'EXPERTISE COMPTABLE', 'Nous vous proposons un accompagnement sur mesure en comptabilité, fiscalité, social et juridique :', 'Professions libérales (déclaration fiscale annuelles, conseil patrimonial, assistance fiscale, paie)', 'Associations (tenue, accompagnement, révision)', 'Particuliers (impôts sur le revenu, IFI, conseil patrimonial)', 'Entreprises (tenue complète, comptabilité partagée, révision, secrétariat juridique, paie, déclarations fiscales, consolidation)', 'CONSEIL &amp; ACCOMPAGNEMENT', 'Partenaire privilégié du dirigeant, nous vous assistons sur de nombreux thèmes :', 'Création/reprise de sociétés', 'Mise en place de tableaux de bords', 'Optimisation du coût de revient', 'Évaluation de sociétés', 'Mise à disposition de logiciels spécifiques à nos différents métiers (logiciels de comptabilité, de facturation, de notes de frais, de caisse...)');
 
 -- --------------------------------------------------------
 
@@ -265,7 +272,14 @@ CREATE TABLE IF NOT EXISTS `newsletter` (
   `mail_token` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `mail` (`mail`)
-) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `newsletter`
+--
+
+INSERT INTO `newsletter` (`id`, `mail`, `temp_mail`, `datetime`, `mail_token`) VALUES
+(38, 'jf.jeromefasquelle@gmail.com', NULL, '2019-09-30 15:55:30', NULL);
 
 -- --------------------------------------------------------
 
@@ -294,7 +308,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `role`, `created_at`, `session_token`, `time_last_connect`) VALUES
-(1, 'test', 'test', 'test@test', 'admin', '2019-09-16 00:00:00', '206d983818db3304be2192b5ab702038fa770ea8c181afcaf5', '2019-09-30 09:12:48');
+(1, 'test', 'test', 'test@test', 'admin', '2019-09-16 00:00:00', 'a70b7daf1691434bcb4b96ff94b7eb56e48e221065ab85e7a3', '2019-10-02 15:06:29');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
