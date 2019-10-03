@@ -2,7 +2,7 @@
 
     session_start();   
 
-    function startsWith ($string, $startString) 
+    function startsWith($string, $startString) 
     { 
         $len = strlen($startString); 
         return (substr($string, 0, $len) === $startString); 
@@ -132,17 +132,16 @@
         { mailDelete(); }
 
 
-        // URL INTROUVABLE
+// URL INTROUVABLE  ----------------------------------
+    // PAGE 404 SI GET INTROUVABLE
         else
             { get404(); }
 
     }
+
     catch(Exception $e) 
     {
         echo 'Erreur : ' . $e->getMessage();
     }
-
-    // DESTRUCTION DES NOTIFICATIONS
-    $notif = NULL;
-
+    
 ?>

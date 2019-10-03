@@ -28,6 +28,7 @@
             }
             $p4 = htmlspecialchars($_POST['adminConfig1Client']);
             $IM->updateConfig1($p1,$p2,$p3,$p4);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=config-site');
         }
 
@@ -40,6 +41,7 @@
             $p5 = htmlspecialchars($_POST['adminConfig2Telephone']);
             $p6 = htmlspecialchars($_POST['adminConfig2Fax']);
             $IM->updateConfig2($p1,$p2,$p3,$p4,$p5,$p6);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=config-coordonnees');
         }
 
@@ -53,6 +55,7 @@
             $p6 = htmlspecialchars($_POST['adminConfig3Samedi']);
             $p7 = htmlspecialchars($_POST['adminConfig3Dimanche']);
             $IM->updateConfig3($p1,$p2,$p3,$p4,$p5,$p6,$p7);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=config-horaires');
         }
 
@@ -62,6 +65,7 @@
             $p2 = htmlspecialchars($_POST['adminEditHeaderTitre']);
             $p3 = htmlspecialchars($_POST['adminEditHeaderDescription']);
             $IM->updateHeader($p1,$p2,$p3);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=edit-header');
         }
 
@@ -71,6 +75,7 @@
             $p2 = htmlspecialchars($_POST['adminEditLecabinet1er']);
             $p3 = htmlspecialchars($_POST['adminEditLecabinet2eme']);
             $IM->updateCabinet($p1,$p2,$p3);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=edit-lecabinet');
         }
 
@@ -84,6 +89,7 @@
             $p6 = htmlspecialchars($_POST['adminEditExpertiseTitreChiffre1']);
             $p7 = htmlspecialchars($_POST['adminEditExpertiseTitreChiffre2']);
             $IM->updateExpertise($p1,$p2,$p3,$p4,$p5,$p6,$p7);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=edit-expertise');
         }
 
@@ -111,6 +117,7 @@
             $p20 = htmlspecialchars($_POST['adminEditServices3SS4']);
             $p21 = htmlspecialchars($_POST['adminEditServices3SS5']);
             $IM->updateServices($p1,$p2,$p3,$p4,$p5,$p6,$p7,$p8,$p9,$p10,$p11,$p12,$p13,$p14,$p15,$p16,$p17,$p18,$p19,$p20,$p21);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=edit-services');
         }
 
@@ -123,6 +130,7 @@
             $p5 = htmlspecialchars($_POST['adminEditContactDescBtn2']);
             $p6 = htmlspecialchars($_POST['adminEditContactBtn2']);
             $IM->updateContat($p1,$p2,$p3,$p4,$p5,$p6);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=edit-contact');
         }
 
@@ -132,6 +140,7 @@
             $p2 = htmlspecialchars($_POST['adminEditNewsletterTxtForm']);
             $p3 = htmlspecialchars($_POST['adminEditNewsletterTxtBtn']);
             $IM->updateNewsletter($p1,$p2,$p3);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=edit-newsletter');
         }
 
@@ -141,6 +150,7 @@
             $p2 = htmlspecialchars($_POST['adminEditFooterLinkedin']);
             $p3 = htmlspecialchars($_POST['adminEditFooterCopyrights']);
             $IM->updateFooter($p1,$p2,$p3);
+            $_SESSION['adminNotif'] = "Les données ont été sauvegardées";
             header('Location: ./?page=gk-admin&p1=edit-footer');
         }
 

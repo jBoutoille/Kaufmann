@@ -7,6 +7,7 @@
         Mail: contact@gkaufmann.fr
              no-reply@gkaufmann.fr
     
+
     LISTE DES URLS
 
         https://gkaufmann.fr/
@@ -27,6 +28,7 @@
         https://gkaufmann.fr/gk-admin/actualite/
         https://gkaufmann.fr/gk-admin/candidatures/
 
+
     CODE COULEUR
 
         bleu :                      background-color: rgba(11,36,91,0.8);
@@ -35,10 +37,12 @@
         blanc :                     background-color: rgba(255,255,255,1);
         gris :                      background-color: rgba(64,64,64,1);
 
+
     FONTS 
     
         ROBOTO - texte
         THRYOMANES - titres
+
 
     UTILISATION DES VARIABLES CSS
 
@@ -53,6 +57,7 @@
             background-color : var(--mavariable) ;
             color : var(--ma-variable-2) ;
         }
+
 
     LISTE DES FORMULAIRES
 
@@ -169,6 +174,13 @@
             formVisitorNewsletter
                 inputs:
                     Mail : visitorNewsletterMail
+
+
+        VARIABLES GLOBALES
+
+            $_SESSION['adminNotif'] = Variable contenant le texte de la notif formulaires admin
+            $_SESSION['sessionToken'] = Variable contenant le token de l'admin connecté à sa session
+
 */
 ?>
 

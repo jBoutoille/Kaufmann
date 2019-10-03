@@ -23,7 +23,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/configSiteView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -35,7 +43,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/configCoordonneesView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -47,7 +63,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/configHorairesView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -59,7 +83,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RHeader = $infos->recupHeader();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/editHeaderView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -69,7 +101,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RCabinet = $infos->recupCabinet();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/editPresentationView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -79,7 +119,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RExpertise = $infos->recupExpertise();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/editExpertiseView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -89,7 +137,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RServices = $infos->recupServices();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/editServicesView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -99,7 +155,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RContact = $infos->recupContact();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/editContactView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -109,7 +173,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RNewsletter = $infos->recupNewsletter();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/editNewsletterView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -119,7 +191,15 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RFooter = $infos->recupFooter();
+            if(isset($_SESSION['adminNotif'])){
+                $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
+            }
+            else{
+                $adminNotif = NULL;
+            }
             require './views/admin/editFooterView.php';
+            $adminNotif = NULL;
+            $_SESSION['adminNotif'] = NULL;
         }
         else{
             header('Location: ./');
@@ -146,8 +226,13 @@
         }
     }
 
+    $test = 1;
+
     // CANDIDATURES RECUES
     function adminCandidatures(){
+
+        $GLOBALS[$test];
+
         if(isset($_SESSION['sessionToken'])){
             require './views/admin/candidaturesView.php';
         }

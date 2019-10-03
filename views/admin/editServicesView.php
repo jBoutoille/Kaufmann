@@ -12,6 +12,9 @@
 
         <div class="row">
             <div class="col-md-12">
+
+                <?= $adminNotif ?>
+
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         MODIFICATIONS DES SERVICES
