@@ -43,7 +43,7 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 7vh;
+    font-size: 20vh;
     font-weight: 200;
     margin: 0px;
     background: linear-gradient(130deg, rgba(11,36,91,.5), rgba(11,36,91,1));
@@ -108,7 +108,7 @@
     }
   
     .notfound .notfound-404 h1 {
-      font-size: 142px;
+      font-size: 20vh;
     }
   
     .notfound h2 {

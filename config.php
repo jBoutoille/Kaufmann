@@ -3,7 +3,8 @@
     $dbname = "kaufmann";
     $dbuser = "root";
     $dbpass = "root";
-    $SMTPuser = "noreply.gkaufmann@gmai.com";
+    $SMTPname = "Cabinet G.KAUFMANN";
+    $SMTPuser = "noreply.gkaufmann@gmail.com";
     $SMTPpass = "jf-simplon*19";
     $SMTPsecure = "ssl";
     $SMTPhost = "smtp.gmail.com";

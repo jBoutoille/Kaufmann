@@ -1,7 +1,15 @@
 <?php 
+    
+// RECUPERATION DE LA SESSION UTILISATEUR
+    session_start(); 
+    if(isset($_SESSION['sessionToken'])){
+        $_TOKEN = $_SESSION['sessionToken'];
+    }
+    else{
+        $_TOKEN = NULL;
+    }  
 
-    session_start();   
-
+// DECLARATION DES FONCTIONS GLOBALES
     function startsWith($string, $startString) 
     { 
         $len = strlen($startString); 
@@ -16,22 +24,29 @@
         return (substr($currentString, -$length) === $target);
     }
 
+// DECLARATION DES NAMESPACE
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
+// IMPORTATION DES CLASSES PHPMAILER
     require './models/phpmailer/PHPMailer.php';
     require './models/phpmailer/SMTP.php';
     require './models/phpmailer/Exception.php';
 
+// IMPORTATION DES CLASSES CUSTOM
     require './models/AdminManager.php';
     require './models/InfosManager.php';
     require './models/VisitorManager.php';
     require './models/MailManager.php';
 
+// IMPORTATION DES CONTROLLERS CUSTOM
     require './controllers/visitorController.php';
     require './controllers/adminController.php';
     require './controllers/dataController.php';
 
+
+
+// DEBUT DU ROUTING URL ------------------------------------------------------------
     try
     {
 
@@ -59,6 +74,9 @@
     // PAGE DE CV
         elseif(isset($_GET['page']) && $_GET['page'] == 'rejoignez-nous')
             { getCv(); }
+    // PAGE D'INFORMATIONS FORMULAIRES
+        elseif(isset($_GET['page']) && $_GET['page'] == 'informations')
+            { getInformations(); }
 
 
 // PARTIE ADMIN ----------------------------------
@@ -139,9 +157,13 @@
 
     }
 
+
+// CATCH D'ERREUR GLOBALE
     catch(Exception $e) 
     {
         echo 'Erreur : ' . $e->getMessage();
     }
+
+// FIN DU ROUTING --------------------------------------------------------------------
     
 ?>

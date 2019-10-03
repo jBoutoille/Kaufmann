@@ -154,6 +154,26 @@
             header('Location: ./?page=gk-admin&p1=edit-footer');
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // Formulaire de Newsletter
         elseif(isset($_POST['formVisitorNewsletter'])){
 
@@ -161,10 +181,20 @@
             $p1 = htmlspecialchars($_POST['visitorNewsletterMail']);
 
             if($MM->checkNewsletterExist($p1) == true){
-                echo 'Vous êtes déjà abonné à notre Newsletter';
+                $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                $_SESSION['notif-infosP'] = "Une erreur est survenue lors de l'envoi du mail de confirmation pour s'inscrire à la Newsletter :<br>- Vous êtes déjà abonné à notre Newsletter";
+                $_SESSION['notif-infosLINK'] = "./";
+                $_SESSION['notif-infosLINKTEXT'] = "Retourner à l'accueil";
+                header('Location: ./?page=informations');
             }
             elseif (!filter_var($p1, FILTER_VALIDATE_EMAIL)) {
-                echo 'Veuillez entrer une adresse mail valide';
+                $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                $_SESSION['notif-infosP'] = "Une erreur est survenue lors de l'envoi du mail de confirmation pour s'inscrire à la Newsletter :<br>- Veuillez entrer une adresse mail valide";
+                $_SESSION['notif-infosLINK'] = "./";
+                $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                header('Location: ./?page=informations');
             }
             else{
                 $token = $VM->insertNewsletter($p1);
@@ -177,20 +207,20 @@
 
                 // Paramètres SMTP
                 require './config.php';
-                $mailNewsletter->IsSMTP(); // activation des fonctions SMTP
-                $mailNewsletter->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
-                $mailNewsletter->SMTPSecure = $SMTPsecure; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
-                $mailNewsletter->Host = $SMTPhost; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
-                $mailNewsletter->Port = $SMTPport; // définition du port du serveur SMTP
-                $mailNewsletter->Username = $SMTPuser; // le nom d’utilisateur SMTP
-                $mailNewsletter->Password = $SMTPpass; // son mot de passe SMTP
+                $mailNewsletter->IsSMTP();
+                $mailNewsletter->SMTPAuth = true;
+                $mailNewsletter->SMTPSecure = $SMTPsecure;
+                $mailNewsletter->Host = $SMTPhost;
+                $mailNewsletter->Port = $SMTPport;
+                $mailNewsletter->Username = $SMTPuser;
+                $mailNewsletter->Password = $SMTPpass;
                 $mailNewsletter->CharSet = 'UTF-8';
             
                 // Paramètres du mail
-                $mailNewsletter->AddAddress($p1,$p1); // ajout du destinataire
-                $mailNewsletter->From = $SMTPuser; // adresse mail de l’expéditeur
-                $mailNewsletter->FromName = $SMTPname; // nom de l’expéditeur
-                $mailNewsletter->AddReplyTo($SMTPuser,$SMTPname); // adresse mail et nom du contact de retour
+                $mailNewsletter->AddAddress($p1,$p1);
+                $mailNewsletter->From = $SMTPuser;
+                $mailNewsletter->FromName = $SMTPname;
+                $mailNewsletter->AddReplyTo($SMTPuser,$SMTPname);
                 $mailNewsletter->IsHTML(true);
                 $mailNewsletter->Subject = "Veuillez confirmer votre inscription à notre Newsletter";
                 $mailNewsletter->Body = $mailContent;
@@ -198,10 +228,20 @@
 
                 // Envoi du mail
                 if(!$mailNewsletter->Send()) { 
-                    echo "Mail Error: " . $mailNewsletter->ErrorInfo; // affichage des erreurs, s’il y en a
+                    $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                    $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                    $_SESSION['notif-infosP'] = "L'erreur suivante est survenue :<br>" . $mailNewsletter->ErrorInfo;
+                    $_SESSION['notif-infosLINK'] = "./";
+                    $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                    header('Location: ./?page=informations');
                 } 
                 else {
-                    echo "Le mail a bien été envoyé !";
+                    $_SESSION['notif-infosICON'] = "fa-paper-plane";
+                    $_SESSION['notif-infosH1'] = "Le mail a bien été envoyé !";
+                    $_SESSION['notif-infosP'] = "Vous venez de remplir le formulaire de ";
+                    $_SESSION['notif-infosLINK'] = "./";
+                    $_SESSION['notif-infosLINKTEXT'] = "Retourner à l'accueil";
+                    header('Location: ./?page=informations');
                 }
             }
 
@@ -222,7 +262,12 @@
             require './views/mailer/rdvMailView.php';
         
             if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-                echo 'Veuillez entrer une adresse mail valide';
+                $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                $_SESSION['notif-infosP'] = "Veuillez entrer une adresse mail valide";
+                $_SESSION['notif-infosLINK'] = "./?page=rendez-vous";
+                $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                header('Location: ./?page=informations');
             }
             else{
                 // Création de l'objet de gestion d'envoi de mail Prise de RDV
@@ -230,20 +275,20 @@
 
                 // Paramètres SMTP
                 require './config.php';
-                $mailRdv->IsSMTP(); // activation des fonctions SMTP
-                $mailRdv->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
-                $mailRdv->SMTPSecure = $SMTPsecure; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
-                $mailRdv->Host = $SMTPhost; // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
-                $mailRdv->Port = $SMTPport; // définition du port du serveur SMTP
-                $mailRdv->Username = $SMTPuser; // le nom d’utilisateur SMTP
-                $mailRdv->Password = $SMTPpass; // son mot de passe SMTP
+                $mailRdv->IsSMTP();
+                $mailRdv->SMTPAuth = true;
+                $mailRdv->SMTPSecure = $SMTPsecure;
+                $mailRdv->Host = $SMTPhost;
+                $mailRdv->Port = $SMTPport;
+                $mailRdv->Username = $SMTPuser;
+                $mailRdv->Password = $SMTPpass;
                 $mailRdv->CharSet = 'UTF-8';
 
                 // Paramètres du mail
-                $mailRdv->AddAddress($SMTPuser,$SMTPuser); // ajout du destinataire
-                $mailRdv->From = $SMTPuser; // adresse mail de l’expéditeur
-                $mailRdv->FromName = $SMTPname; // nom de l’expéditeur
-                $mailRdv->AddReplyTo($mail,$finalFromName); // adresse mail et nom du contact de retour
+                $mailRdv->AddAddress($SMTPuser,$SMTPuser);
+                $mailRdv->From = $SMTPuser;
+                $mailRdv->FromName = $SMTPname;
+                $mailRdv->AddReplyTo($mail,$finalFromName);
                 $mailRdv->IsHTML(true);
                 $mailRdv->Subject = "Demande de rendez-vous via le site G.KAUFMANN - De " . $finalFromName;
                 $mailRdv->Body = $mailContent;
@@ -251,10 +296,20 @@
 
                 // Envoi du mail
                 if(!$mailRdv->Send()) { 
-                    echo "Mail Error: " . $mailRdv->ErrorInfo; // affichage des erreurs, s’il y en a
+                    $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                    $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                    $_SESSION['notif-infosP'] = "L'erreur suivante est survenue :<br>" . $mailRdv->ErrorInfo;
+                    $_SESSION['notif-infosLINK'] = "./?page=rendez-vous";
+                    $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                    header('Location: ./?page=informations');
                 } 
                 else {
-                    echo "Le mail a bien été envoyé !";
+                    $_SESSION['notif-infosICON'] = "fa-paper-plane";
+                    $_SESSION['notif-infosH1'] = "Le mail a bien été envoyé !";
+                    $_SESSION['notif-infosP'] = "Vous venez de remplir le formulaire de demande de rendez vous. Un e-mail a été envoyé à l'adresse du cabinet.<br>Vous recevrez une réponses dans les plus bref délais.";
+                    $_SESSION['notif-infosLINK'] = "./";
+                    $_SESSION['notif-infosLINKTEXT'] = "Retourner à l'accueil";
+                    header('Location: ./?page=informations');
                 }
             }
         }
@@ -270,14 +325,22 @@
 
             $fichierCV = $_FILES['fileOne'];
             $fichierLM = $_FILES['fileTwo'];
-            $fichierCVext = pathinfo($fichierCV['name'], PATHINFO_EXTENSION);
-            $fichierLMext = pathinfo($fichierLM['name'], PATHINFO_EXTENSION);
 
             if ($fichierCV['size'] > 5000000 || $fichierLM['size'] > 5000000){
-                echo 'Fichier trop volumineux';
+                $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                $_SESSION['notif-infosP'] = "L'un des fichiers est trop volumineux. Ne dépassez pas 5Mo et utilisez le format PDF pour envoyer votre candidature.";
+                $_SESSION['notif-infosLINK'] = "./?page=rejoignez-nous";
+                $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                header('Location: ./?page=informations');
             }
-            elseif($fichierCVext != "pdf" || $fichierCVext != "PDF" || $fichierLMext != "pdf" || $fichierLMext != "PDF"){
-                echo 'Format de fichier incorrect, utilisez le format PDF uniquement';
+            elseif($fichierCV['type'] != "application/pdf" || $fichierLM['type'] != "application/pdf"){
+                $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                $_SESSION['notif-infosP'] = "Format de fichier incorrect, utilisez le format PDF uniquement";
+                $_SESSION['notif-infosLINK'] = "./?page=rejoignez-nous";
+                $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                header('Location: ./?page=informations');
             }
             else{
                 $finalFromName = ucfirst($nom) . " " . ucfirst($prenom);
@@ -286,7 +349,12 @@
                 require './views/mailer/candidMailView.php';
     
                 if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-                    echo 'Veuillez entrer une adresse mail valide';
+                    $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                    $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                    $_SESSION['notif-infosP'] = "Veuillez entrer une adresse mail valide.";
+                    $_SESSION['notif-infosLINK'] = "./?page=rejoignez-nous";
+                    $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                    header('Location: ./?page=informations');
                 }
                 else{
                     $mailCandid = new PHPMailer\PHPMailer\PHPMailer();
@@ -314,10 +382,20 @@
                     $mailCandid->AddAttachment($_FILES['fileTwo']['tmp_name'], "LM_" . $nom . "_" . $prenom . ".pdf");
     
                     if(!$mailCandid->Send()) { 
-                        echo "Mail Error: " . $mailCandid->ErrorInfo;
+                        $_SESSION['notif-infosICON'] = "fa-exclamation-circle";
+                        $_SESSION['notif-infosH1'] = "Erreur d'envoi de mail";
+                        $_SESSION['notif-infosP'] = "L'erreur suivante est survenue :<br>" . $mailCandid->ErrorInfo;
+                        $_SESSION['notif-infosLINK'] = "./?page=rejoignez-nous";
+                        $_SESSION['notif-infosLINKTEXT'] = "Réessayer";
+                        header('Location: ./?page=informations');
                     } 
                     else {
-                        echo "Le mail a bien été envoyé !";
+                        $_SESSION['notif-infosICON'] = "fa-paper-plane";
+                        $_SESSION['notif-infosH1'] = "Le mail a bien été envoyé !";
+                        $_SESSION['notif-infosP'] = "Vous venez de remplir le formulaire de candidature spontannée. Un e-mail a été envoyé à l'adresse du cabinet.<br>Vous recevrez une réponses dans les plus bref délais.";
+                        $_SESSION['notif-infosLINK'] = "./";
+                        $_SESSION['notif-infosLINKTEXT'] = "Retourner à l'accueil";
+                        header('Location: ./?page=informations');
                     }
                 }
             }
@@ -328,6 +406,15 @@
             require './views/others/404View.php';
         }
     }
+
+
+
+
+
+
+
+
+
 
     // FONCTION DE CONFIRMATION DE MAIL
     function mailConfirm(){
@@ -341,10 +428,12 @@
             if($MM->checkNewsletterToken($mail,$token) == true){
                 if($MM->checkNewsletterExist($mail) == true){
                     echo 'Vous êtes déjà abonné à notre Newsletter';
+                    header('Location: ./?page=informations');
                 }
                 else{
                     $MM->confirmAnEmail($mail,$token);
                     echo 'Vous êtes désormais abonné à notre Newsletter';
+                    header('Location: ./?page=informations');
                 }
             }
             else{
@@ -352,6 +441,12 @@
             }
         }
     }
+
+
+
+
+
+
 
     function mailDelete(){
         if(!isset($_GET['id']) || !isset($_GET['mail']) || empty($_GET['id']) || empty($_GET['mail'])){
@@ -364,19 +459,12 @@
             if($MM->checkNewsletterToken($mail,$token) == true){
                 $MM->deleteAnEmail($mail,$token);
                 echo 'Vous venez de supprimer votre adresse mail de la liste de notre newsletter.';
+                header('Location: ./?page=informations');
             }
             else{
                 require './views/others/404View.php';
             }
         }
-    }
-
-    // RECUPERATION DE LA SESSION UTILISATEUR
-    if(isset($_SESSION['sessionToken'])){
-        $_TOKEN = $_SESSION['sessionToken'];
-    }
-    else{
-        $_TOKEN = NULL;
     }
     
 ?>
