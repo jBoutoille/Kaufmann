@@ -51,7 +51,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Modifications - Newsletter | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Modifications - Newsletter | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

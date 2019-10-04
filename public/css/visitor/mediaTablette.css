@@ -23,12 +23,15 @@ and (max-device-width : 1024px)  {
 	}
 
 	.titleNav{
-		padding-top: 9vh;
+		padding-top: 8vh;
 	}
 
 	.logoBaner{
 		width: 55px;
-		margin-top: -1.3vh;
+	}
+
+	#animGif {
+		margin: 18vh -5vh auto;
 	}
 
 	/*--------------- CABINET SECTION --------------- */
@@ -90,7 +93,7 @@ and (max-device-width : 1024px)  {
 
 	#boxContner{
 		flex-direction: column;
-		height: 40vh;
+		height: 34vh;
 	}
 
 	#imgContact{
@@ -98,28 +101,47 @@ and (max-device-width : 1024px)  {
 	}
 
 	#twoBox{
-		width: 70%;
+		width: 75%;
 	}
 
 	#boxAdresse{
-		padding: 2vh 3vh 5vh;
+		padding: 2vh 3vh;
 		margin-top: 40vh;
+		width: 75%;
 	}
 
 	.textBtn{
-		font-size: 3vh;
+		font-size: 2.5vh;
+	}
+
+	#boxContactOne {
+		background-color: var(--colorWhiteOp);
+		padding: 4vh 2vh;
+		padding-top: 2vh;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	#boxContactTwo {
+		background-color: var(--colorWhiteOp);
+		padding: 4vh 2vh;
+		padding-top: 2vh;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	.myBtn {
+		width:75%;
 	}
 
 	/*--------------- NEWSLATTER SECTION --------------- */
 
 
 
-	/*--------------- FORM SECTION --------------- */
-
 	/*--------------- FOOTER --------------- */
 
 	#imgFooter{
-		width: 10vh;
+		width: 14vh;
 	}
 
 	#imgLogoOne{
@@ -138,6 +160,13 @@ and (max-device-width : 1024px)  {
 
 	#textePresentation {
 		padding: 15vh 5vh !important;
+	}
+
+	/*--------------- FORMULAIRES --------------- */
+
+	.containerText {
+		transform: translate(10%, 14%);
+    	padding-bottom: 20vh;
 	}
 
 }

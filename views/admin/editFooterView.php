@@ -53,7 +53,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Modifications - Bas de page | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Modifications - Bas de page | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

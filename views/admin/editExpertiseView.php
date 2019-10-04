@@ -85,7 +85,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Modifications - Expertise | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Modifications - Expertise | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

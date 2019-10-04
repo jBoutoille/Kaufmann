@@ -3,8 +3,9 @@ html body{
 }
 
 #bCauchet{
-	font-size: 3vh;
-
+	font-size: 2vh;
+	font-weight: inherit;
+	font-family: "Roboto-Regular";
 }
 
 #mentionsLegales{

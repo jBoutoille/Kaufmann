@@ -26,7 +26,8 @@
 				Simplon.co<br>
 				10 Rue des Carreaux <br>
 				62200 Boulogne-Sur-Mer<br>
-				Nord-Pas-De-Calais, France</p>
+				Nord-Pas-De-Calais, France<br>
+				Site Web : <a href="http://simplonboulogne.fr/">http://simplonboulogne.fr/</a></p>
 				<br>
 
 				<h2 class="texteIntro foo-2">Hébergement</h2>
@@ -104,7 +105,7 @@
 
 <?php
 	
-    $htmlTitle = 'Mentions légales | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Mentions légales | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
 ?>

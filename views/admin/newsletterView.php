@@ -21,7 +21,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Gestion de la Newsletter | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Gestion de la Newsletter | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

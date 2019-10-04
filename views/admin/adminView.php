@@ -12,7 +12,7 @@
             <!-- /. ROW  -->
             <div class="row">
                 <div class="col-md-4">
-                    <a href="./?page=gk-admin&p1=config" class="modulesLinks">
+                    <a href="./?page=gk-admin&p1=config-site" class="modulesLinks">
                         <div class="main-box mb-1">
                             <i class="fa fa-desktop fa-5x"></i>
                             <h5>Configuration</h5>
@@ -67,7 +67,7 @@
     </div>
 
 <?php
-    $htmlTitle = 'Tableau de bord | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Tableau de bord | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

@@ -66,3 +66,32 @@ form input:focus, textarea:focus {
 .inputData {
     margin-bottom: 2vh;
 }
+
+.customFileBtn {
+    padding:1vh;
+    color:white;
+    background-color: rgba(44,44,84,0.8);
+    margin-bottom:1vh;
+}
+
+.labelFile2 {
+    padding-top: 3vh;
+}
+
+.asterix {
+    color: #e74c3c;
+}
+
+.acceptLois {
+    padding: 0;
+    font-size: 1.8vh;
+}
+
+.acceptLois a{
+    color:var(--colorBlue);
+    text-decoration: underline;
+}
+
+.customFileFile {
+    padding-bottom: 10vh;
+}

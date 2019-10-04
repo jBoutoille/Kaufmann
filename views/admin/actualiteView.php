@@ -20,7 +20,7 @@
 </div>
 
 <?php
-    $htmlTitle = "Gestion de l'actualité | Admin | Cabinet G.KAUFMANN";
+    $htmlTitle = "Gestion de l'actualité | Admin | " . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

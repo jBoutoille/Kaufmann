@@ -2,7 +2,7 @@
 <html lang="fr">
 
     <?php 
-        $htmlTitle="Connexion | Admin | Cabinet G.KAUFMANN";
+        $htmlTitle="Connexion | Admin | " . $RConfig['configNomSite'];
         $htmlContent="";
         require './views/admin/inc/head.php';
     ?>

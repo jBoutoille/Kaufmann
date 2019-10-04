@@ -25,7 +25,7 @@
     </div>
 
 <?php
-    $htmlTitle = 'Informations | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Informations | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
 ?>

@@ -86,11 +86,11 @@
 					<h2 class="serviceSection foo-2"><i class="fas fa-address-card"></i> <?= $RServices['services3Titre'] ?></h2>
 					<p class="titleServices foo-2"><?= $RServices['services3Desc'] ?></p>
 					<ul class="listeServices">
-						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalTree"></button><?= $RServices['services3SS1'] ?></li>				
-						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalFour"></button><?= $RServices['services3SS2'] ?></li>				
-						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalFive"></button><?= $RServices['services3SS3'] ?></li>			
-						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalOne"></button><?= $RServices['services3SS4'] ?></li>
-						<li class="foo-2"><button class="far fa-play-circle fa-lg btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalTwo"></button><?= $RServices['services3SS5'] ?></li>
+						<li class="foo-2"><button class="far fa-play-circle fa-2x btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalTree"></button><?= $RServices['services3SS1'] ?></li>				
+						<li class="foo-2"><button class="far fa-play-circle fa-2x btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalFour"></button><?= $RServices['services3SS2'] ?></li>				
+						<li class="foo-2"><button class="far fa-play-circle fa-2x btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalFive"></button><?= $RServices['services3SS3'] ?></li>			
+						<li class="foo-2"><button class="far fa-play-circle fa-2x btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalOne"></button><?= $RServices['services3SS4'] ?></li>
+						<li class="foo-2"><button class="far fa-play-circle fa-2x btnSeeMore customIco" data-toggle="modal" data-target="#ExampleModalTwo"></button><?= $RServices['services3SS5'] ?></li>
 					</ul>
 				</div>
 		  </div>
@@ -155,7 +155,7 @@
 
 <?php
 	require './views/visitor/inc/modals.php';
-    $htmlTitle = 'Accueil | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Accueil | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/visitor/template.php';
 ?>

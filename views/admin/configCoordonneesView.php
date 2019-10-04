@@ -70,7 +70,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Configuration - Coordonnées | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Configuration - Coordonnées | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

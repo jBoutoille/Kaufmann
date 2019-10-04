@@ -47,8 +47,8 @@
 		<div class="row d-flex align-items-center">
 			<div class="col-md-12" id="footerStyleOne">
 				<p class="text-center text-md-left footerTextStyle"><?= $RFooter['footerCopyrights'] ?> |  
-				Développeur
-				<a href="#">JBoutoille</a> . 
+				Développeurs : 
+				<a href="#">JBoutoille</a> & 
 				<a href="#">JFasquelle</a> | 
 				<a href="./?page=mentions-legales">Mentions légales</a> |
 				<a href="./?page=politique-de-confidentialite">Politique de confidentialité</a> |

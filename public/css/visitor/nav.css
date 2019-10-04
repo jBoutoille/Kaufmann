@@ -6,24 +6,26 @@ a{
 
 .nav {
     width: 100%;
-    height: 60px;
+    height: 7vh;
     position: fixed;
     z-index: 2;
 }
 
 .nav.scrolled {
     background-color: var(--colorBlue);
-    transition: background-color 500ms linear;
+    border-bottom: solid .2vh #60a3bc;
+    transition: all 500ms linear;
     z-index: 2;
 }
 
 .customer{
     border: none;
+    margin-bottom: 0.7vh;
 }
 
 .logoBaner{
     width: 45px;
-    margin-top: -1.5vh;
+    margin-top: -0.5vh;
     margin-left: -2vh;
 }
 
@@ -31,7 +33,7 @@ a{
     float: left;
     display: block;
     margin-left: 40px;
-    line-height: 70px;
+    line-height: 7vh;
     text-transform: uppercase;
 }
 
@@ -47,8 +49,9 @@ a{
 
 .nav .menu {
     float: left;
-    right: 40px;
     position: fixed;
+    margin-left: 10vh;
+    width: 100%;
 }
 
 .nav .menu li {
@@ -56,7 +59,7 @@ a{
     display: inline-block;
     font-weight: lighter !important;
     font-size: 2vh;
-    line-height: 60px;
+    line-height: 7vh;
     position: relative;
     transition: all 500ms ease-out;
 }
@@ -69,8 +72,9 @@ a{
 
 .nav .menu li a:hover {
     text-decoration: none;
-    color: rgba(178, 190, 195,1.0);
+    color: white;
     transition: all 300ms ease-out;
+    border-radius: 15px;
 }
 
 #toggle {
@@ -101,16 +105,19 @@ a{
 
 .close-btn {
     position: absolute;
-    right: 25px;
+    right: 2.2vh;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     z-index: 2;
-    top: -5px;
+    top: -10px;
+    right: 2vh;
     line-height: 80px;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 3em;
+    padding-top: 0vh;
+    margin-right: 0;
 }
 
 #resize {
@@ -158,36 +165,46 @@ a{
     visibility: visible;
     opacity: 1;
 }
-@media(max-width: 900px) {
 
-
-#toggle {
-    visibility: visible;
-    opacity: 1;
-    margin-top: 4px;
-    margin-right: 4px;
+.leftNav {
+    float: left;
 }
 
-nav #brand {
-    margin-left: 10px;
+.rightNav {
+    float: right;
+    margin-right: 12vh;
 }
 
-#resize ul li a {
-    font-size: 15px;
-    font-family: "Roboto-Regular" !important;
-    font-weight: lighter !important;
-    transition: all 500ms ease-out;
-}
+@media(max-width: 1050px) {
 
-nav .menu {
-    display: none;
-}
+
+    #toggle {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 4px;
+        margin-right: 4px;
+    }
+
+    nav #brand {
+        margin-left: 10px;
+    }
+
+    #resize ul li a {
+        font-size: 3vh;
+        font-family: "Roboto-Regular" !important;
+        font-weight: lighter !important;
+        transition: all 500ms ease-out;
+    }
+
+    nav .menu {
+        display: none;
+    }
 }
 
 @media(min-width: 900px) {
       
-#resize {
-    visibility: hidden !important;
-}
+    #resize {
+        visibility: hidden !important;
+    }
 
 }

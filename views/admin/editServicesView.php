@@ -149,7 +149,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Modifications - Services | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Modifications - Services | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

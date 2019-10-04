@@ -61,7 +61,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Configuration - Horaires | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Configuration - Horaires | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

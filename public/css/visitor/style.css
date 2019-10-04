@@ -337,6 +337,12 @@ html body{
      color: #007bff;
 }
 
+.textBtn {
+    font-size: 2.25vh;
+    padding-bottom: 2vh;
+    letter-spacing: 1px;
+}
+
 /*--------------- NEWSLETTER SECTION --------------- */
 
 .newsletter {

@@ -71,7 +71,7 @@
 </div>
 
 <?php
-    $htmlTitle = 'Candidatures reçues | Admin | Cabinet G.KAUFMANN';
+    $htmlTitle = 'Candidatures reçues | Admin | ' . $RConfig['configNomSite'];
     $htmlContent = ob_get_clean();
     require './views/admin/template.php';
 ?>

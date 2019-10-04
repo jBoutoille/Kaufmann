@@ -3,6 +3,8 @@
     // ACCUEIL ADMIN LOGGED - Dashboard
     function getAdmin(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             require './views/admin/adminView.php';            
         }
         else{
@@ -12,6 +14,8 @@
             else{
                 $notif = NULL;
             }
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             require './views/admin/loginView.php';
             $notif = NULL;
             $_SESSION['notif'] = NULL;
@@ -82,6 +86,7 @@
     function getAdminHeader(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             $RHeader = $infos->recupHeader();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -100,6 +105,7 @@
     function getAdminLecabinet(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             $RCabinet = $infos->recupCabinet();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -118,6 +124,7 @@
     function getAdminExpertise(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             $RExpertise = $infos->recupExpertise();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -136,6 +143,7 @@
     function getAdminServices(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             $RServices = $infos->recupServices();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -154,6 +162,7 @@
     function getAdminContact(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             $RContact = $infos->recupContact();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -172,6 +181,7 @@
     function getAdminNewsletter(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             $RNewsletter = $infos->recupNewsletter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -190,6 +200,7 @@
     function getAdminFooter(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -209,6 +220,8 @@
     // GESTION DE LA NEWSLETTER
     function adminNewsletter(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             require './views/admin/newsletterView.php';
         }
         else{
@@ -219,6 +232,8 @@
     // GESTION DE L'ACTUALITE
     function adminActualite(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             require './views/admin/actualiteView.php';
         }
         else{
@@ -229,6 +244,8 @@
     // CANDIDATURES RECUES
     function adminCandidatures(){
         if(isset($_SESSION['sessionToken'])){
+            $infos = new InfosManager();
+            $RConfig = $infos->recupConfig();
             require './views/admin/candidaturesView.php';
         }
         else{
