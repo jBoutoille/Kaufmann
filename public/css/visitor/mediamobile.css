@@ -1,10 +1,6 @@
 /*--------------- MEDIA QUERIES MOBILE --------------- */
 
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 667px) {
 
     h2{
         font-size: 4vh;
