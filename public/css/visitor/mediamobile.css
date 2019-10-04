@@ -225,10 +225,14 @@
     /*--------------- FORM SECTION --------------- */
 
     .containerText{
-        margin-top: 25vh;
+        width: 100%;      
     }
 
-        .add-prod button {
+    .containerText form{
+        width: 90%;
+    }
+
+    .add-prod button {
         font-size: 1em;
     }
 
@@ -241,7 +245,7 @@
     }
 
     .boxPremary{
-        padding: 1% 7%;
+        padding: 20% 7%;
     }
 
     .inputData{

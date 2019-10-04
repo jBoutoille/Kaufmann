@@ -165,8 +165,11 @@ and (max-device-width : 1024px)  {
 	/*--------------- FORMULAIRES --------------- */
 
 	.containerText {
-		transform: translate(10%, 14%);
     	padding-bottom: 20vh;
+	}
+
+	.boxPremary{
+		padding: 13% 15%;
 	}
 
 }

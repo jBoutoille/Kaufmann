@@ -7,22 +7,26 @@ p{
 }
 
 .boxPremary{
-    padding: 10% 15%;
+    padding: 20vh 0;
 }
 
 #titleForm{
-    position: absolute;
     font-family: "Thryn";
     top: 18%;
     left: 50%;
     font-size: 5vh;
-    width: 75%;
-    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
 }
 
 .containerText {   
-    transform: translate(12%, 5%); 
+    width: 100%;
+    margin-top: 5%;
+}
+
+.containerText form{
+    width: 60%;
+    margin: 0 auto;
 }
 
 .add-prod{
@@ -52,7 +56,8 @@ form label, textarea {
 }
 
 .form-control {
-    box-shadow: none !important
+    box-shadow: none !important;
+    width: 100%;
 }
 
 form input, textarea {
