@@ -5,6 +5,16 @@
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) {
 
+/*--------------- NAV --------------- */
+#resize ul li a{
+	font-size: 2.5vh;
+	margin-top: 10vh;
+}
+
+.sarl::before{
+	margin-left: 9%;
+}
+
 /*--------------- HEADER --------------- */
 
 
@@ -17,18 +27,25 @@
 	}
 
 	.logoBaner{
-		width: 50px;
-		margin-top: -1vh;
-		margin-left: -4vh;
+		width: 55px;
+	    margin-top: 1vh;
+	    margin-left: -3vh;
 	}
 
 	.sarl{
 		font-size: 2.6vh;
 	}
 
+	.close-btn{
+		right: 2.9vh;
+	}
+
+
 	/*--------------- CABINET SECTION --------------- */
 
-
+	#texteSectionOne{
+		margin-top: -4vh;
+	}
 
 
 
@@ -36,7 +53,7 @@
 
 	.titleServices{
 		width: 35vh;
-		margin-bottom: 9vh;
+		margin-bottom: 5vh;
 	}
 
 	/*--------------- CONTACT SECTION --------------- */
@@ -44,11 +61,11 @@
 	#boxAdresse{
 		padding: 1vh 1vh 5vh;
 		height: 30vh;
-		margin-top: 43vh;
+		margin-top: 37vh;
 	}
 
 	.textBtn{
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 
 
@@ -71,7 +88,7 @@
 	}
 
     .wow{
-    	width: 35vh;
+    	width: 42vh;
     }
 
 	/*--------------- TEXTES DE LOIS --------------- */
