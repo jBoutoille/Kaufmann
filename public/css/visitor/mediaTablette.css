@@ -164,12 +164,9 @@ and (max-device-width : 1024px)  {
 
 	/*--------------- FORMULAIRES --------------- */
 
-	.containerText {
-    	padding-bottom: 20vh;
-	}
 
 	.boxPremary{
-		padding: 13% 15%;
+		padding: 14vh 0;
 	}
 
 }
