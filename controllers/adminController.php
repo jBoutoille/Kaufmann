@@ -1,10 +1,17 @@
 <?php 
+    // ADMIN CONTROLLER --------------------------------------------------
+    // -------------------------------------------------------------------
+    // ---- CE FICHIER SERT A AFFICHER L'ENSEMBLE DES PAGES DU PANEL ADMIN
+    // ---- CHAQUE FONCTION REGARDE SI IL Y A UNE SESSION - ADMIN CONNECTÉ
+    // ---- 
+
 
     // ACCUEIL ADMIN LOGGED - Dashboard
     function getAdmin(){
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             require './views/admin/adminView.php';            
         }
         else{
@@ -16,6 +23,7 @@
             }
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             require './views/admin/loginView.php';
             $notif = NULL;
             $_SESSION['notif'] = NULL;
@@ -27,6 +35,7 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -47,6 +56,7 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -67,6 +77,7 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -88,6 +99,7 @@
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
             $RHeader = $infos->recupHeader();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -107,6 +119,7 @@
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
             $RCabinet = $infos->recupCabinet();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -126,6 +139,7 @@
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
             $RExpertise = $infos->recupExpertise();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -145,6 +159,7 @@
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
             $RServices = $infos->recupServices();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -164,6 +179,7 @@
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
             $RContact = $infos->recupContact();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -183,6 +199,7 @@
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
             $RNewsletter = $infos->recupNewsletter();
+            $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
             }
@@ -201,6 +218,7 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             $RFooter = $infos->recupFooter();
             if(isset($_SESSION['adminNotif'])){
                 $adminNotif = '<div class="alert alert-success"><i class="fa fa-check-square"></i> ' . $_SESSION['adminNotif'] . '</div>';
@@ -222,6 +240,7 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             require './views/admin/newsletterView.php';
         }
         else{
@@ -234,6 +253,7 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             require './views/admin/actualiteView.php';
         }
         else{
@@ -246,6 +266,7 @@
         if(isset($_SESSION['sessionToken'])){
             $infos = new InfosManager();
             $RConfig = $infos->recupConfig();
+            $RFooter = $infos->recupFooter();
             require './views/admin/candidaturesView.php';
         }
         else{

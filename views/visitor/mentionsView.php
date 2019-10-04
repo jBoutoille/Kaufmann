@@ -12,11 +12,11 @@
 				
 				<h3 id="bCauchet">Benjamin CAUCHET</h3>
 				<p class="textePara foo-2"> 
-				Cabinet G.KAUFMANN <br><br>
-				5 Place d'Angleterre<br>
-				62200 Boulogne-Sur-Mer<br>
-				Tél : 03 21 30 19 19<br>
-				Fax : 03 91 18 65 65<br>
+				<?= $RConfig['configNomSite'] ?><br><br>
+				<?= $RConfig['configAdresse'] ?><br>
+				<?= $RConfig['configCP'] ?> <?= $RConfig['configVille'] ?><br>
+				Tél : <?= $RConfig['configTelephone'] ?><br>
+				Fax : <?= $RConfig['configFax'] ?><br>
 				Nord-Pas-De-Calais, France</p>
 				<br>
 

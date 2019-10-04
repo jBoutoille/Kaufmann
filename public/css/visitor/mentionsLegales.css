@@ -3,7 +3,8 @@ html body{
 }
 
 #bCauchet{
-	font-size: 2vh;
+    font-size: 1rem;
+    color: black;
 	font-weight: inherit;
 	font-family: "Roboto-Regular";
 }

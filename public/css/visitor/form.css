@@ -87,6 +87,19 @@ form input:focus, textarea:focus {
     font-size: 1.8vh;
 }
 
+.acceptLois::before {
+    top: 0;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--colorBlue);
+    border: none;
+}
+
+.acceptLois::after {
+    top: 0;
+}
+
 .acceptLois a{
     color:var(--colorBlue);
     text-decoration: underline;
