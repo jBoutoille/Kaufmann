@@ -9,6 +9,26 @@
     h2{
         font-size: 4vh;
     }
+
+/*--------------- NAV --------------- */
+
+    .close-btn{
+        font-size: 5vh;
+        top: -7px;
+        right: 4vh;
+    }
+
+    #resize .menu li{
+        font-size: 6vh;
+    }
+
+    .logoBaner{
+        margin-top: 1vh;
+    }
+
+    .span{
+        width: 4vh;
+    }
     /*--------------- HEADER --------------- */
 
     #titleHeader{
@@ -203,7 +223,7 @@
     .wow {
         font-size: 3vh;
         margin-bottom: 7vh;
-        width: 40vh;
+        width: 51vh;
     }
 
     /*--------------- FORM SECTION --------------- */
@@ -211,6 +231,7 @@
     .containerText{
         margin-top: 25vh;
     }
+
         .add-prod button {
         font-size: 1em;
     }
