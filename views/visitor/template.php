@@ -7,7 +7,6 @@
 
     <body>
 
-        <div class="se-pre-con"></div>
         <?php
 
             echo $htmlContent;

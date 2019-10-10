@@ -92,7 +92,7 @@
     }
 
     .filterOne{
-        height: 105vh;
+        height: 109vh;
     }
 
     #filterTwo{
@@ -100,7 +100,7 @@
     }
 
     #imgContact{
-        height: 105vh;
+        height: 109vh;
     }
 
     #titleOne{   
@@ -177,12 +177,11 @@
 
     #boxContner{
         flex-direction: column;
-        height: 40vh;
     }
 
     #boxAdresse{
-        height: 40vh;
-        margin-top: 40vh;
+    width: 100%;
+    text-align: center;
     }
 
     #twoBox{
@@ -198,6 +197,7 @@
 
     #boxContactTwo{
         padding: 1vh 5vh 4vh;
+        margin: 0;
     }
 
     .textBtn{

@@ -19,6 +19,7 @@
 
     <!-- CSS LIBRARIES -->
     <link href="./public/css/libs/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/others/paceTheme.css" rel="stylesheet" type="text/css">
 
     <!-- CSS CUSTOM -->
     <link href="./public/css/visitor/style.css" rel="stylesheet" type="text/css">
