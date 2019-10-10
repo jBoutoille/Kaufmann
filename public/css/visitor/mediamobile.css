@@ -30,6 +30,7 @@
     #titleHeader{
         top: 50%;
         left: 50%;
+        width: 80%;
     }
 
     #kaufmann{
@@ -37,10 +38,8 @@
         text-align: center;
         color : var(--colorWhite);
         position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -70%);
         letter-spacing: 3px;
+        width: 100%;
     }
 
     #textOne{
@@ -53,23 +52,25 @@
     .sarl{
         font-family: "Thryn";
         font-size: 3vh;
-        transform: translate(-20%, -15%); 
+        /* transform: translate(0, -15%); */
+        width: 100%;
+        text-align: center;
     }
 
-    .sarl::before{  
-        margin-left: 20%;
+    .sarl::before{
+        /* margin-left: 20%; */
         float: left;
         background: white;
         height: 2px;
-        width: 50px;
+        width: 10%;
     }
 
     .sarl::after{
-        margin-right: -25%;
+        /* margin-right: -25%; */
         float: right;
         background: white;
         height: 2px;
-        width: 50px;
+        width: 10%;
     }
 
     #animGif{

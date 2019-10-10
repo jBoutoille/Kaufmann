@@ -19,7 +19,7 @@
 
     <!-- CSS LIBRARIES -->
     <link href="./public/css/libs/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="./public/css/others/paceTheme.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/others/pacetheme.css" rel="stylesheet" type="text/css">
 
     <!-- CSS CUSTOM -->
     <link href="./public/css/visitor/style.css" rel="stylesheet" type="text/css">
@@ -27,9 +27,9 @@
     <link href="./public/css/visitor/nav.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/header.css" rel="stylesheet" type="text/css">
     <link href="./public/css/visitor/form.css" rel="stylesheet" type="text/css">
-    <link href="./public/css/visitor/mediaMobile.css" rel="stylesheet" type="text/css">
-    <link href="./public/css/visitor/mediaMobileIphoneX.css" rel="stylesheet" type="text/css">
-    <link href="./public/css/visitor/mediaTablette.css" rel="stylesheet" type="text/css">
-    <link href="./public/css/visitor/mentionsLegales.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mediamobile.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mediamobileiphonex.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mediatablette.css" rel="stylesheet" type="text/css">
+    <link href="./public/css/visitor/mentionslegales.css" rel="stylesheet" type="text/css">
     
 </head>

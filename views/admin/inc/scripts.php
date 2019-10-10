@@ -3,6 +3,6 @@
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="./public/js/admin/bootstrap.js"></script>
     <!-- METISMENU SCRIPTS -->
-    <script src="./public/js/admin/jquery.metisMenu.js"></script>
+    <script src="./public/js/admin/jquery.metismenu.js"></script>
        <!-- CUSTOM SCRIPTS -->
     <script src="./public/js/admin/custom.js"></script>

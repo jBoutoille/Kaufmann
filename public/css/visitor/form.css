@@ -78,6 +78,7 @@ form input:focus, textarea:focus {
     color:white;
     background-color: rgba(44,44,84,0.8);
     margin-bottom:1vh;
+    width: 100%;
 }
 
 .labelFile2 {
